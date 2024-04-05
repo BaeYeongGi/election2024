@@ -1,0 +1,1 @@
+{"version":3,"file":"test.js","sources":["test.js"],"sourcesContent":["const get = {\r\n  name: 'yeonggi',\r\n  gender: 'male',\r\n  age: 30\r\n}"],"names":["get","name","gender","age"],"mappings":"AAAA,MAAMA,IAAM,CACVC,KAAM,UACNC,OAAQ,OACRC,IAAK,EACP"}
