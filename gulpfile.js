@@ -3,7 +3,8 @@ const uglify = require('gulp-uglify');
 const browserSync = require("browser-sync");
 const cache = require("gulp-cached"); // CRUD 이력이 없으면 빌드 하지 않음
 const sourceMaps = require("gulp-sourcemaps");
-const gulpSass = require("gulp-sass");
+const gulpSass = require('gulp-sass')(require('sass'));
+const include = require("gulp-file-include");
 
 // watch file list
 const watcher = {}
@@ -19,30 +20,35 @@ function getPath(value){
 }
 
 function server() {
-  browserSync({
+  browserSync.init({
     directory: true,
-    notify: true,
+    open: false,
     server: {
       baseDir: "./",
     },
     port: 85,
-    ui: {
-      weinre: {
-        port: 9090,
-      },
-    },
-    startPath: PATH.output,
   });
 }
 
 function html(){
   return new Promise((resolve, reject) => {
     try {
-      watcher["html"] = [PATH.input + "*.html/", PATH.input + "**/*.html"];
+      watcher["html"] = [
+        PATH.input + "*.html/",
+        PATH.input + "**/*.html"
+      ];
+      watcher["html"].push("!" + PATH.input + "include/*.html/");
+      watcher["html"].push("!" + PATH.input + "**/include/*.html");
+
       src(watcher.html)
         .on("error", function(err){
           console.log(err.toString());
         })
+        .pipe(include({
+          prefix: "@@",
+          basepath: "@file",
+          
+        }))
         .pipe(cache("html"))
         .pipe(dest(PATH.output))
         .pipe(browserSync.reload({ stream: true }));
@@ -109,12 +115,12 @@ function scss(){
 
 async function election2024(){
   PATH = await getPath();
-  await html();
   await js();
   await scss();
-  watch(watcher["html"], html);
+  await html();
   watch(watcher["js"], js);
   watch(watcher["scss"], scss);
+  watch(watcher["html"], html);
   server();
 }
 

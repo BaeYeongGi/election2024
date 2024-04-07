@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AACE,OACE,UACA,cACE","file":"main.css","sourcesContent":["body {\r\n  p {\r\n    color:red;\r\n    &.active {\r\n      color:blue;\r\n    }\r\n  }\r\n}"]}
