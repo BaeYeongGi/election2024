@@ -1,0 +1,128 @@
+// .seat_image {
+//   width:231px;
+// }
+// .seat {
+//   position:fixed;
+//   left:50%;
+//   top:50%;
+//   transform:translate(-50%, -50%);
+//   width:236px;
+//   padding:30px 30px;
+//   background-color:#eee;
+//   position:relative;
+//   margin:0 0 30px 30px;
+//   display:flex;
+//   flex-wrap:wrap;
+//   transform:rotate(270deg);
+//   > span {
+//     display:block;
+//     background-color:#222;
+//     width:10px;
+//     height:10px;
+//     border-radius: 10px;
+//     margin:6px;
+
+//     &:nth-of-type(1) {
+//       background-color:yellow;
+//     }
+//     &:nth-of-type(2) {
+//       background-color:blue;
+//     }
+//   }
+//   .seat_name_wrap {
+//     position:absolute;
+//     bottom:-40px;
+//     left:0;
+//     transform:rotate(90deg);
+//     display:flex;
+//     align-items:center;
+//     > p {
+//       &:not(:last-child) {
+//         margin:10px;
+//       }
+//     }
+//   }
+// }
+
+
+.main_guide_area {
+  ul {
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:20px;
+    li {
+      .img {
+        width:30px;
+        height:30px;
+        background-size:30px;
+        background-repeat: no-repeat;
+        margin:0 auto 15px auto;
+        &.guide_red_circle {
+          background-image:url($icon-vote-guide-red-circle);
+        }
+        &.guide_blue_circle {
+          background-image:url($icon-vote-guide-blue-circle);
+        }
+        &.guide_check {
+          background-image:url($icon-vote-guide-check);
+        }
+        &.guide_person {
+          background-image:url($icon-vote-guide-person);
+        }
+      }
+      dl {
+        text-align:center;
+        dt {
+          font-size:14px;
+          font-weight:400;
+          letter-spacing: -0.8px;
+          margin:0 0 6px 0;
+          color:$color-black-1;
+        }
+        dd {
+          font-size:13px;
+          line-height:1.3;
+          &:not(:last-child){
+            margin-bottom:2px;
+          }
+          span {
+            color:#777;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) { 
+  .main_guide_area {
+    ul {
+      li {
+        .img {
+          &.guide_check, &.guide_person {
+            filter:invert(30%);
+          }
+        }
+        dl {
+          dt {
+            color:$font-color-1;
+          }
+          dd {
+            color:$font-color-2;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.main_wrap {
+  .ad_section {
+    & + .cluster_line {
+      & + .section {
+        padding-top:20px;
+      }
+    }
+  }
+}

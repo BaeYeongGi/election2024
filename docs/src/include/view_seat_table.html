@@ -1,0 +1,440 @@
+@@if(type === "3box"){
+  <table class="vote_seat_table clan_box">
+    <colgroup>
+      <col width="28%">
+      <col width="28%">
+      <col width="22%">
+      <col width="22%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th><span class="highlight">정당</span></th>
+        <th><span class="highlight">총 의석수(석)</span></th>
+        <th><span>지역구(254)</span></th>
+        <th><span>비례(46)</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="bg clan1">더불어민주당<br/>&middot; 위성정당</span></td>
+        <td><span class="highlight">100-121</span></td>
+        <td><span>99-103</span></td>
+        <td><span>10-23</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan2">국민의힘</span></td>
+        <td><span class="highlight">100-120</span></td>
+        <td><span>99-103</span></td>
+        <td><span>0</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan3">녹색정의당</span></td>
+        <td><span class="highlight">10-15</span></td>
+        <td><span>8-10</span></td>
+        <td><span>10-15</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan4">새로운미래</span></td>
+        <td><span class="highlight">30-35</span></td>
+        <td><span>99-103</span></td>
+        <td><span>10-23</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan5">개혁신당</span></td>
+        <td><span class="highlight">20-25</span></td>
+        <td><span>19-20</span></td>
+        <td><span>1-3</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan_others">기타정당</span></td>
+        <td><span class="highlight">1-2</span></td>
+        <td><span>1-2</span></td>
+        <td><span>1-2</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan_independent">무소속</span></td>
+        <td><span class="highlight">12-14</span></td>
+        <td><span>99-103</span></td>
+        <td><span>10-23</span></td>
+      </tr>                          
+    </tbody>
+  </table>  
+}
+
+@@if(type === "3box_result"){
+  <table class="vote_seat_table clan_box">
+    <colgroup>
+      <col width="28%">
+      <col width="28%">
+      <col width="22%">
+      <col width="22%">
+    </colgroup>
+    @@if(state === "current"){
+    <thead>
+      <tr>
+        <th><span class="highlight">정당</span></th>
+        <th><span class="highlight">총 의석수(석)</span></th>
+        <th><span>지역구(254)</span></th>
+        <th><span>비례(46)</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="bg clan1">더불어민주당</span></td>
+        <td><span class="highlight">163</span></td>
+        <td><span>163</span></td>
+        <td><span>23</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan2">국민의힘</span></td>
+        <td><span class="highlight">120</span></td>
+        <td><span>103</span></td>
+        <td><span>0</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan3">녹색정의당</span></td>
+        <td><span class="highlight">15</span></td>
+        <td><span>10</span></td>
+        <td><span>15</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan4">새로운미래</span></td>
+        <td><span class="highlight">35</span></td>
+        <td><span>103</span></td>
+        <td><span>23</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan5">개혁신당</span></td>
+        <td><span class="highlight">25</span></td>
+        <td><span>20</span></td>
+        <td><span>3</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan_others">기타정당</span></td>
+        <td><span class="highlight">2</span></td>
+        <td><span>2</span></td>
+        <td><span>2</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan_independent">무소속</span></td>
+        <td><span class="highlight">14</span></td>
+        <td><span>103</span></td>
+        <td><span>23</span></td>
+      </tr>                
+    </tbody>
+    }
+    @@if(state === "previous"){
+    <thead>
+      <tr>
+        <th><span class="highlight">정당</span></th>
+        <th><span class="highlight">총 의석수(석)</span></th>
+        <th><span>지역구(253)</span></th>
+        <th><span>비례(47)</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="bg clan001">더불어민주당</span></td>
+        <td><span class="highlight">163</span></td>
+        <td><span>163</span></td>
+        <td><span>0</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan002">미래통합당</span></td>
+        <td><span class="highlight">84</span></td>
+        <td><span>84</span></td>
+        <td><span>0</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan002">미래한국당</span></td>
+        <td><span class="highlight">19</span></td>
+        <td><span>0</span></td>
+        <td><span>19</span></td>
+      </tr>      
+      <tr>
+        <td><span class="bg clan001">더불어시민당</span></td>
+        <td><span class="highlight">17</span></td>
+        <td><span>0</span></td>
+        <td><span>17</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan003">정의당</span></td>
+        <td><span class="highlight">6</span></td>
+        <td><span>1</span></td>
+        <td><span>5</span></td>
+      </tr>      
+      <tr>
+        <td><span class="bg clan004">국민의당</span></td>
+        <td><span class="highlight">3</span></td>
+        <td><span>0</span></td>
+        <td><span>3</span></td>
+      </tr>  
+      <tr>
+        <td><span class="bg clan005">열린민주당</span></td>
+        <td><span class="highlight">3</span></td>
+        <td><span>0</span></td>
+        <td><span>3</span></td>
+      </tr> 
+      <tr>
+        <td><span class="bg clan00_independent">무소속</span></td>
+        <td><span class="highlight">5</span></td>
+        <td><span>5</span></td>
+        <td><span>0</span></td>
+      </tr>              
+    </tbody>      
+    }
+  </table>  
+}
+
+
+@@if(type === "1box"){
+  <table class="vote_seat_table clan_box">
+    <colgroup>
+      <col width="28%">
+      <col width="72%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th><span class="highlight">정당</span></th>
+        <th><span class="highlight">총 의석수(석)</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="bg clan1">더불어민주당</span></td>
+        <td><span class="highlight">100-121</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan2">국민의힘</span></td>
+        <td><span class="highlight">100-120</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan3">녹색정의당</span></td>
+        <td><span class="highlight">10-15</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan4">새로운미래</span></td>
+        <td><span class="highlight">30-35</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan5">개혁신당</span></td>
+        <td><span class="highlight">20-25</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan_others">기타정당</span></td>
+        <td><span class="highlight">1-2</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan_independent">무소속</span></td>
+        <td><span class="highlight">12-14</span></td>
+      </tr>                          
+    </tbody>
+  </table> 
+}
+
+@@if(type === "dotted_2box"){
+  <table class="vote_seat_table clan_dotted">
+    <colgroup>
+      <col width="35%">
+      <col width="37%">
+      <col width="28%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th><span>정당</span></th>
+        <th><span>지역구 의석수(석)</span></th>
+        <th><span>비율(%)</span></th>
+      </tr>
+    </thead>
+    @@if(state === "current"){
+      <tbody>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan1"></span>더불어민주당</p>
+          </td>
+          <td><span class="highlight">103</span></td>
+          <td><span class="highlight">30.7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan2"></span>국민의힘</p>     
+          </td>
+          <td><span class="highlight">100</span></td>
+          <td><span class="highlight">20.3</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan3"></span>녹색정의당</p>           
+          </td>
+          <td><span class="highlight">100</span></td>
+          <td><span class="highlight">20.3</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan4"></span>새로운미래</p>   
+          </td>
+          <td><span class="highlight">5</span></td>
+          <td><span class="highlight">8.8</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan5"></span>개혁신당</p>  
+          </td>
+          <td><span class="highlight">5</span></td>
+          <td><span class="highlight">8.8</span></td>
+        </tr>           
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan_others"></span>기타정당</p>  
+          </td>
+          <td><span class="highlight">1</span></td>
+          <td><span class="highlight">0.1</span></td>
+        </tr>        
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan_independent"></span>무소속</p>  
+          </td>
+          <td><span class="highlight">12</span></td>
+          <td><span class="highlight">0.1</span></td>
+        </tr>                         
+      </tbody>
+    }
+    @@if(state === "previous"){
+      <tbody>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan001"></span>더불어민주당</p>
+          </td>
+          <td><span class="highlight">163</span></td>
+          <td><span class="highlight">64.4</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan002"></span>미래통합당</p>      
+          </td>
+          <td><span class="highlight">84</span></td>
+          <td><span class="highlight">33.2</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan003"></span>정의당</p> 
+          </td>
+          <td><span class="highlight">1</span></td>
+          <td><span class="highlight">0.4</span></td>
+        </tr>  
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan00_independent"></span>무소속</p>              
+          </td>
+          <td><span class="highlight">5</span></td>
+          <td><span class="highlight">2.0</span></td>
+        </tr>                     
+      </tbody>
+    }
+  </table>
+}
+
+@@if(type === "dotted_graph"){
+  <table class="vote_seat_table clan_dotted_graph">
+    <colgroup>
+      <col width="35%">
+      <col width="20%">
+      <col width="45%">
+    </colgroup>
+    @@if(state === "current"){
+      <tbody>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan1"></span>더불어민주당</p>    
+          </td>
+          <td><p class="value">100%</p></td>
+          <td>
+            <div class="graph_wrap"><span @@if(state === "previous"){class="bg clan001"} class="bg clan1" style="width:100%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>   
+            <p class="party"><span class="dotted bg clan2"></span>국민의힘</p>
+          </td>
+          <td><p class="value">89.8%</p></td>
+          <td><div class="graph_wrap"><span @@if(state === "previous"){class="bg clan002"} class="bg clan2" style="width:89.8%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>            
+            <p class="party"><span class="dotted bg clan3"></span>녹색정의당</p> 
+          </td>
+          <td><p class="value">30%</p></td>
+          <td><div class="graph_wrap"><span @@if(state === "previous"){class="bg clan003"} class="bg clan3" style="width:30%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan4"></span>새로운미래</p>  
+          </td>
+          <td><p class="value">34석</p></td>
+          <td><div class="graph_wrap"><span @@if(state === "previous"){class="bg clan004"} class="bg clan4" style="width:50%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan5"></span>개혁신당</p>  
+          </td>
+          <td><p class="value">50석</p></td>
+          <td><div class="graph_wrap"><span @@if(state === "previous"){class="bg clan005"} class="bg clan5" style="width:44%;"></span></div></td>
+        </tr>           
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan_others"></span>기본소득당</p>  
+          </td>
+          <td><p class="value">2석</p></td>
+          <td><div class="graph_wrap"><span class="bg clan_others" style="width:33%;"></span></div></td>
+        </tr>        
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan_independent"></span>무소속</p>  
+          </td>
+          <td><p class="value">1석</p></td>
+          <td><div class="graph_wrap"><span class="bg clan_independent" style="width:20%;"></span></div></td>
+        </tr>                         
+      </tbody>
+    }
+    @@if(state === "previous"){
+      <tbody>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan002"></span>미래한국당</p>
+          </td>
+          <td><p class="value">19석</p></td>
+          <td>
+            <div class="graph_wrap"><span class="bg clan002" style="width:40%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>   
+            <p class="party"><span class="dotted bg clan001"></span>더불어시민당</p>
+          </td>
+          <td><p class="value">17석</p></td>
+          <td><div class="graph_wrap"><span class="bg clan001" style="width:36%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>            
+            <p class="party"><span class="dotted bg clan003"></span>정의당</p> 
+          </td>
+          <td><p class="value">5석</p></td>
+          <td><div class="graph_wrap"><span class="bg clan003" style="width:11%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan004"></span>국민의당</p> 
+          </td>
+          <td><p class="value">3석</p></td>
+          <td><div class="graph_wrap"><span class="bg clan004"  style="width:6%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan005"></span>열린민주당</p> 
+          </td>
+          <td><p class="value">3석</p></td>
+          <td><div class="graph_wrap"><span class="bg clan005" style="width:6%;"></span></div></td>
+        </tr>                                
+      </tbody>
+    }
+    
+  </table>
+}

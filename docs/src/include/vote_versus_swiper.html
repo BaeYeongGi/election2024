@@ -1,0 +1,246 @@
+@@if(type === "survey"){
+  <div @@if(target === "true"){class="vote_versus_contents_container survey target"} class="vote_versus_contents_container survey">
+    <ul class="swiper-wrapper">
+      @@for(var i = 1; i < 7; i++){
+        <li @@if(target === "true"){id="aaa`+i+`"} class="swiper-slide">
+          <a href=""# class="left">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">`+i+`국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">2<span>%</span></p>
+            </div>
+          </a>
+          <span class="state versus">VS</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:2%"></span>
+            </div>
+          </div>
+        </li>
+      }
+    </ul>
+    @@if(arrow === "false"){
+      <div class="swiper-pagination"></div>
+    }
+    @@if(arrow === "true"){
+      <div class="control_wrap">
+        <button class="prev"></button>
+        <div class="swiper-pagination"></div>
+        <button class="next"></button>
+      </div>
+    }
+  </div>
+}
+
+@@if(type === "count"){
+  <div class="vote_versus_contents_container count">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        @@if(state === "rate"){
+          <dl class="vote_rate">
+            <dt aria-label="개표율"></dt>
+            <dd>100.0<span>%</span></dd>
+          </dl>
+        }
+        @@if(state === "open"){
+          <div class="vote_open complete" aria-label="개표완료"></div>
+        }
+        <a href="#" class="left">
+          <div class="vote_candidate_img_wrap confirm">
+            <span class="rank">1위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">이름네자</p>
+            <p class="font clan2">`+i+`국민의힘</p>
+            <p class="value">100<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="vote_candidate_img_wrap">
+            <span class="rank">2위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">홍길동</p>
+            <p class="font clan1">더불어민주당</p>
+            <p class="value">2<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <span class="state gap">999,999표차</span>
+        <div class="graph_wrap">
+          <div class="left_graph">
+            <span class="clan2 bg" style="height:100%;"></span>
+          </div>
+          <div class="right_graph">
+            <span class="clan1 bg" style="height:2%"></span>
+          </div>
+        </div>
+      </li>        
+      <li class="swiper-slide">
+        @@if(state === "rate"){
+          <dl class="vote_rate">
+            <dt aria-label="개표율"></dt>
+            <dd>100.0<span>%</span></dd>
+          </dl>
+        }
+        @@if(state === "open"){
+          <div class="vote_open complete" aria-label="개표완료"></div>
+        }
+        <a href="#" class="left">
+          <div class="vote_candidate_img_wrap certain">
+            <span class="rank">1위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">이름네자</p>
+            <p class="font clan2">`+i+`국민의힘</p>
+            <p class="value">64.9<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="vote_candidate_img_wrap">
+            <span class="rank">2위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">홍길동</p>
+            <p class="font clan1">더불어민주당</p>
+            <p class="value">2<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <span class="state gap">999,999표차</span>
+        <div class="graph_wrap">
+          <div class="left_graph">
+            <span class="clan2 bg" style="height:64%;"></span>
+          </div>
+          <div class="right_graph">
+            <span class="clan1 bg" style="height:2%"></span>
+          </div>
+        </div>
+      </li>        
+      <li class="swiper-slide">
+        @@if(state === "rate"){
+          <dl class="vote_rate">
+            <dt aria-label="개표율"></dt>
+            <dd>100.0<span>%</span></dd>
+          </dl>
+        }
+        @@if(state === "open"){
+          <div class="vote_open complete" aria-label="개표완료"></div>
+        }
+        <a href="#" class="left">
+          <div class="vote_candidate_img_wrap selected">
+            <span class="rank">1위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">이름네자</p>
+            <p class="font clan2">`+i+`국민의힘</p>
+            <p class="value">64.9<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="vote_candidate_img_wrap">
+            <span class="rank">2위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">홍길동</p>
+            <p class="font clan1">더불어민주당</p>
+            <p class="value">23.2<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <span class="state gap">999,999표차</span>
+        <div class="graph_wrap">
+          <div class="left_graph">
+            <span class="clan2 bg" style="height:64%;"></span>
+          </div>
+          <div class="right_graph">
+            <span class="clan1 bg" style="height:23%"></span>
+          </div>
+        </div>
+      </li>        
+      @@for(var i = 1; i < 5; i++){
+        <li class="swiper-slide">
+          @@if(state === "rate"){
+            <dl class="vote_rate">
+              <dt aria-label="개표율"></dt>
+              <dd>100.0<span>%</span></dd>
+            </dl>
+          }
+          @@if(state === "open"){
+            <div class="vote_open complete" aria-label="개표완료"></div>
+          }
+          <a href="#" class="left">
+            <div class="vote_candidate_img_wrap lead">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">`+i+`국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">23.2<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <span class="state gap">999,999표차</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:23%"></span>
+            </div>
+          </div>
+        </li>
+      }
+    </ul>
+    @@if(arrow === "false"){
+    <div class="swiper-pagination"></div>
+    }
+    @@if(arrow === "true"){
+      <div class="control_wrap">
+        <button class="prev"></button>
+        <div class="swiper-pagination"></div>
+        <button class="next"></button>
+      </div>
+    }
+  </div>
+}

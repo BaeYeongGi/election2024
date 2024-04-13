@@ -1,0 +1,34 @@
+@@if(type === "news"){
+  <ul class="menu item4">
+    <li><a href="news_type_A.html" @@if(active === "n1"){class="active"}>주요뉴스</a></li>
+    <li><a href="rank.html" @@if(active === "n2"){class="active"}>랭킹뉴스</a></li>
+    <li><a href="behind.html" @@if(active === "n3"){class="active"}>비하인드</a></li>
+    <li><a href="recent.html" @@if(active === "n4"){class="active"}>최신뉴스</a></li>
+  </ul>
+}
+
+@@if(type === "candidate"){
+  <ul class="menu item3">
+    <li><a href="candidate01.html" @@if(active === "n1"){class="active"}>지역구별 후보</a></li>
+    <li><a href="mycandidate.html" @@if(active === "n2"){class="active"}>내 지역 후보</a></li>
+    <li><a href="candidate02.html" @@if(active === "n3"){class="active"}>비례대표 후보</a></li>
+  </ul>
+}
+
+@@if(type === "vote"){
+  <ul class="menu item4">
+    <li><a href="turnout.html" @@if(active === "n1"){class="active"}>투표현황</a></li>
+    <li><a href="expect.html" @@if(active === "n2"){class="active"}>출구조사</a></li>
+    <li><a href="voteall.html" @@if(active === "n3"){class="active"}>개표현황</a></li>
+    <li><a href="live.html" @@if(active === "n4"){class="active"}>생중계</a></li>
+  </ul>
+}
+
+@@if(type === "result"){
+  <ul class="menu item4">
+    <li><a href="turnout.html" @@if(active === "n1"){class="active"}>투표율</a></li>
+    <li><a href="expect.html" @@if(active === "n2"){class="active"}>출구조사</a></li>
+    <li><a href="result.html" @@if(active === "n3"){class="active"}>선거결과</a></li>
+    <li><a href="live.html" @@if(active === "n4"){class="active"}>생중계</a></li>
+  </ul>
+}

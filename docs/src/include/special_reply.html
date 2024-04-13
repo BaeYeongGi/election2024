@@ -1,0 +1,215 @@
+@@include("include/reply_guide_pop.html")  
+  <div id="areaComment">
+    <div class="reply_wrap">
+        <div class="replyContent">
+          <div class="replyWrite f_clear mal_guide_area">
+            <a class="go_re_list" href="#">
+              <span class="title">댓글 <em id="totalcntComment">128</em></span>
+            </a>
+            <button class="mal_guide_button" aria-controls="notes" aria-label="댓글운영원칙 안내">
+                @@include("svg/icon_survey_info.html")                
+            </button>
+            <script>
+                // 댓글 안내 원칙 > CORS이슈로 페이지 내 삽입
+                var replyBtn = document.querySelector('.mal_guide_button');
+                var replyPOP = parent.document.querySelector('.reply-guide-popup');
+                var closeBtn = parent.document.querySelector('#notes_confirm');
+                if (replyBtn) {
+                  replyBtn.onclick = function(e) {
+                    e.preventDefault();
+                    replyPOP.setAttribute('aria-hidden', true)
+                    replyPOP.querySelector('.context').scrollTop = 0;
+                    parent.document.body.style.overflow = 'hidden'
+                  }
+                  closeBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    replyPOP.setAttribute('aria-hidden', false);
+                    parent.document.body.style.overflow = 'visible';
+                  })
+                }
+              </script>            
+            <div class="info_layer_popup">
+                <p>'말말말' 영역의 <span>댓글쓰기</span> 버튼으로 댓글 작성 시, 해당 발언이 댓글에 표시됩니다.</p>
+            </div>
+          </div>
+
+          <div class="write_btn" id="op_write" style="display: block;">
+              <a class="colgray">로그인 해 주세요.</a>
+          </div>
+          <!-- <form name="frmCmt" id="frmCmt" method="POST" action="http://m.comm.news.nate.com/comment/commonComment/writeAction"> -->
+            <form>
+              <input type="hidden" name="__natkn" value="" id="__natkn">
+              <input type="hidden" name="r_url" value="http://m.comm.news.nate.com/poll/result?poll_sq=22671&amp;section=ent&amp;mid=e0008">
+              <input type="hidden" name="ctgr_cd" value="100"> <input type="hidden" name="ctgr_sq" value="22671">
+              <input type="hidden" name="mid" value="">
+              <input type="hidden" name="sndData" value="0">
+              <fieldset class="write" id="exp_write" style="display: none;">
+                  <legend>댓글쓰기</legend>
+                  <div class="textArea">
+                      <!-- AOS4.4 이슈로 인한 수정:S -->
+                      <textarea value="로그인 해 주세요." title="댓글 입력" name="cmt_content" id="cmt_content" class="colgray" placeholder="로그인 해 주세요." readonly></textarea>
+                      <!-- <div class="mal_comment_blank_area mal_comment_articles"> -->
+                      <div class="mal_comment_blank_area"></div>
+                  </div>
+                  <div class="btn">
+                      <a id="cls_wbox" href="#">취소</a>
+                      <a href="#" class="ok"><span class="reg">등록</span></a>
+                  </div>
+                  <script type="text/javascript">
+                      var writeForm = {
+                          target : {
+                              cancelBtn : document.getElementById('cls_wbox'),
+                              txtAreaWrap : document.getElementById('exp_write'),
+                              txtArea : document.getElementById('cmt_content'),
+                              txtNoti : document.getElementById('op_write'),
+                              emoticon : document.querySelectorAll('.emoticon_select label')
+                          },
+                          // 클릭시
+                          show : function(e){
+                              e.preventDefault();
+                              writeForm.target.txtNoti.style.display = 'none';
+                              writeForm.target.txtAreaWrap.style.display = 'block';
+                              writeForm.target.txtArea.focus();
+                          },
+                          close : function(){
+                              writeForm.target.txtNoti.style.display = 'block';
+                              writeForm.target.txtAreaWrap.style.display = 'none';
+                          },
+                          // 이모티콘 클릭 시
+                          click : function(e){
+                              var _input = e.target.previousSibling;
+                              var isChecked = _input.checked;
+                              if(isChecked){
+                                  e.preventDefault();
+                                  _input.checked = false;
+                              }
+                          }
+                      };
+                      window.addEventListener('load', function(){
+                          writeForm.target.txtNoti.onclick = writeForm.show;
+                          writeForm.target.cancelBtn.onclick = writeForm.close;
+                          for(var i=0;i<writeForm.target.emoticon.length;i++){
+                              writeForm.target.emoticon[i].onclick = writeForm.click;
+                          }
+                      });
+                  </script>
+              </fieldset>
+          </form>
+          <!-- //댓글쓰기 -->
+          <!-- 댓글리스트 -->
+          <div class="reply_common_wrap">
+              <div class="reply others">
+                  <dl>
+                      <dt>
+                          <span><a  class="n">jeny****</a></span>
+                          <em>08.02 11:55</em>
+                          <a href="javascript:reportArticleComment('20231124n03703', '249116412','','m03');" class="report"><span>신고</span></a>                          
+                      </dt>
+                      <dd class="userText">[inc/module]이모티콘없는댓글프레임.html / 당연히 김우빈 수지라고 생각했는데 뭐지? @@include("../base64/icon_reply_new.html") </dd>
+                      <dd class="btn">
+                          <p class="updw">
+                              <a href="#" class="read"><em>추천</em><span>117</span></a>
+                              <a href="#" class="read"><em class="no">반대</em><span>52</span></a>
+                          </p>
+                      </dd>
+                      @@if(type === "mal"){
+                        <dd>
+                            <div class="mal_reply_content">
+                                @@include("svg/icon_reply_mal_arrow.html")
+                                <a href="#">
+                                    <div class="text_wrap">
+                                        <div class="info">
+                                            <span class="name">홍길동</span>
+                                            <span class="party">국민의힘</span>
+                                        </div>
+                                        <p class="text">정신무장 체력안배 누가해도 해야할 일 정신무장 체력안배 누가해도 해야할 일</p>
+                                    </div>
+                                    @@include("include/image.html", {
+                                        x: "57",
+                                        y: "57",
+                                        alt: "사이즈17 1줄일 경우 세로 가운데",
+                                        imageWithText: "false",
+                                        type: ""
+                                    })
+                                </a>
+                            </div>
+                          </dd>
+                      }
+                  </dl>
+              </div>
+              <div class="reply others">
+                  <dl>
+                      <dt>
+                          <span><a  class="n">jeny****</a></span>
+                          <em>08.02 11:55</em>
+                          <a href="javascript:reportArticleComment('20231124n03703', '249116412','','m03');" class="report"><span>신고</span></a>                          
+                      </dt>
+                      <dd class="userText">당연히 김우빈 수지라고 생각했는데 뭐지? @@include("../base64/icon_reply_new.html")</dd>
+                      <dd class="btn">
+                          <p class="updw">
+                              <a href="#" class="read"><em>추천</em><span>117</span></a>
+                              <a href="#" class="read"><em class="no">반대</em><span>52</span></a>
+                          </p>
+                      </dd>
+                  </dl>
+              </div>
+              <div class="reply others">
+                  <dl>
+                      <dt>
+                          <span><a   class="n">김유진</a></span>
+                          <em>08.03 08:45</em>
+                      </dt>
+                      <dd class="userText">수지&amp;우빈</dd>
+                      <dd class="btn">
+                          <p class="updw">
+                              <a href="#" class="read"><em>추천</em><span>5</span></a>
+                              <a href="#" class="read"><em class="no">반대</em><span>4</span></a>
+                          </p>
+                      </dd>
+                  </dl>
+              </div>
+              <div class="reply others">
+                  <dl>
+                      <dt>
+                          <span><a  class="n">김유진</a></span>
+                          <em>08.03 08:45</em>
+                      </dt>
+                      <dd class="userText">추모합니다.</dd>
+                      <dd class="btn">
+                          <p class="updw">
+                              <a href="#" class="read"><em>추천</em><span>5</span></a>
+                              <a href="#" class="read"><em class="no">반대</em><span>4</span></a>
+                          </p>
+                      </dd>
+                  </dl>
+              </div>
+                      
+          </div>
+        </div>
+    </div>
+    @@if(type === "mal"){
+        @@include("include/news_list_more_button.html", {
+            "value": "더보기"
+        })
+    }
+  </div>
+  @@if(type === "vote"){
+    <div class="replyBottom">
+        <div class="btn type1">
+        <div class="moreWrap">
+            <div class="btn_more">
+            <button type="button">
+                <span>더보기</span>
+            </button>
+            </div>
+        </div>
+        </div>
+    </div> 
+    }
+
+
+
+
+
+
+    

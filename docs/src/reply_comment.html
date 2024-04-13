@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head> @@include("include/head.html", { "type": "" }) </head>
+  <body>
+    <div id="wrap"> @@include("include/view_shortcut.html") @@include("include/header.html", { "active": "n1", "type": "" }) <section id="contents" role="main" class="f2">
+        <!-- S :: 기사 정보 -->
+        <div class="viewHeader">
+          <h1>
+            <strong>대댓글 타이틀 대댓글 타이틀 대댓글 타이틀 대댓글 타이틀 대댓글 타이틀 대댓글 타이틀</strong>
+            <span>
+              <em class="from">경향신문</em>| <em class="date">기사전송 2024-02-07 09:36</em>
+              <em class="lastEdit">최종수정 2024.02.07 10:22</em>
+            </span>
+          </h1>
+          <a href="#" class="n_view">기사보기</a>
+          <ul class="cmt_count">
+            <li>
+              <a href="#">댓글 <em id="totalcnt">464</em>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="replyList_banner">
+          <iframe src="//m.news.nate.com/etc/AdTop?mid=m02&amp;pos=cmt" name="ad_big" id="ad_big" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" width="100%" height="50" title="320x150사이즈 광고 배너" style="height: 200px;"></iframe>
+        </div>
+        <div class="replyContent">
+          <div class="reply_reply_wrap">
+            <li>
+              <a href="#"></a>
+            </li>
+            <div class="reply selectedReply" id="reply_cmt_251334820">
+              <dl>
+                <dt>
+                  <span class="bestReple">베플</span>
+                  <span>
+                    <a href="#" class="n">heyg****</a>
+                  </span>
+                  <em>02.07 09:54</em>
+                  <a href="#" class="report">
+                    <span>신고</span>
+                  </a>
+                </dt>
+                <dd class="userText">
+                  <a href="#"> 베플 내용베플 내용베플 내용베플 내용베플 내용베플 내용베플 내용베플 내용베플 내용베플 내용베플 내용베플 내용</a>
+                </dd>
+                <dd class="btn">
+                  <p class="updw">
+                    <a href="#" class="read" role="button">
+                      <em>추천</em>
+                      <span id="replyBest_O_251334820">1,704</span>
+                    </a>
+                    <a href="#" class="read" role="button">
+                      <em class="no">반대</em>
+                      <span id="replyBest_X_251334820">66</span>
+                    </a>
+                  </p>
+                </dd>
+              </dl>
+              <!-- 대댓글 입력 시작 -->
+              <div class="replyWrite replysOfReplyWrite">
+                <form name="frmReply" id="frmReply" method="POST" action="//m.comm.news.nate.com/comment/articleComment/replyWriteAction">
+                  <input type="hidden" name="__natkn" id="__natkn" value="MTg2NTkxMTQ5Mg==">
+                  <input type="hidden" name="artc_sq" value="20240207n10340">
+                  <input type="hidden" name="cmt_sq" value="251334820">
+                  <input type="hidden" name="mid" value="m02">
+                  <input type="hidden" name="sndData" value="">
+                  <fieldset class="write">
+                    <legend>대댓글 입력 폼</legend>
+                    <div class="view_write">
+                      <div class="textArea">
+                        <div class="user">
+                          <span class="name">byk5****</span>
+                          <span class="txtCntWrapper">
+                            <span class="txtCnt">0</span>
+                            <span>/300</span>
+                          </span>
+                        </div>
+                        <textarea placeholder="대댓글을 작성해주세요." cols="50" rows="1" style="word-wrap:break-word;" name="reply_content" id="reply_content"></textarea>
+                      </div>
+                    </div>
+                    <button type="button" class="btn_rereply">등록</button>
+                  </fieldset>
+                </form>
+                <iframe name="frm_hidden" id="frm_hidden" src="about:blank" width="100%" height="0" frameborder="0"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="func_view">
+            <span class="qty_reply">총 대댓글 <em id="totalcnt_reply">16</em>
+            </span>
+            <a class="lk_p" href="//m.comm.news.nate.com/My/Comment">MY 댓글</a>
+          </div>
+          <!-- 댓글의 댓글 List -->
+          <div class="rereply_wrap" id="more_list_reply">
+            <div class="reply mine" id="reply_128060913">
+              <dl>
+                <dt><span><a href="#" class="n cmt_sub">byk5****</a>	</span><em>02.07 18:04</em></dt>
+                <dd class="userText">마이댓글달기														
+                  <a href="#" class="delete"><span>삭제</span></a>
+                  <img width="7" height="7" alt="새글" src="//nimg.nate.com/ui/uidev/images/mobile/img/ico/ico_new_v2.gif">							
+                </dd>
+              </dl>
+            </div>            
+            @@for(var i = 1; i < 11; i++){
+              <div class="reply others" id="reply_12805996`+i+`">
+                <dl>
+                  <dt>
+                    <span>
+                      <a href="#" class="n cmt_sub"> mbc4****</a>
+                    </span>
+                    <em>02.07 15:09</em>
+                    <a href="#" class="report">
+                      <span>신고</span>
+                    </a>
+                  </dt>
+                  <dd class="userText">대댓글 내용 contents comment 대댓글 대댓글 내용 contents comment 대댓글대댓글 내용 contents comment 대댓글대댓글 내용 contents comment 대댓글대댓글 내용 contents comment 대댓글 <img width="7" height="7" alt="새글" src="//nimg.nate.com/ui/uidev/images/mobile/img/ico/ico_new_v2.gif">
+                  </dd>
+                </dl>
+              </div>
+            }
+
+
+          </div>
+        </div>
+        <div class="replyBottom">
+          <div class="btn type1">
+            <div class="moreWrap">
+              <div class="btn_more" id="more_btn">
+                <button type="button">
+                  <span>더보기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="bottom_btn">
+            <button class="left_btn">댓글보기</button>
+            <button class="right_btn">기사보기</button>
+          </div>
+          <div class="etc_footer">
+            <div class="scroll_up_v2">
+              <a href="#header">맨위로</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

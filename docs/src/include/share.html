@@ -1,0 +1,26 @@
+<div id="sns_share_pop" style="display: none;">
+  <div class="sns_share_layer">
+    <button type="button" class="btnClosePopup">닫기</button>
+    <div class="title">공유하기</div>
+    <ul class="sns_btns">
+      <li><a class="no" title="새창으로 이동" id="sns-no" href="javascript:;">네이트온</a></li>
+      <li><a class="kt" title="새창으로 이동" id="sns-kt" href="javascript:;">카카오톡</a></li>
+      <li><a class="fb" title="새창으로 이동" id="sns-fb" href="javascript:;">페이스북</a></li>
+      <li><a class="tw" title="새창으로 이동" id="sns-tw" href="javascript:;">엑스</a></li>
+      <li><a class="ks" title="새창으로 이동" id="sns-ks" href="javascript:;">카카오스토리</a></li>
+      <li><a class="bd" title="새창으로 이동" id="sns-bd" href="javascript:;">밴드</a></li>
+      <li><a class="li" title="새창으로 이동" id="sns-li" href="javascript:;">라인</a></li>
+      <li><a class="lk" title="새창으로 이동" id="sns-url" href="javascript:;">URL 복사</a></li>
+    </ul>	
+  </div>
+  <div class="modal_backdrop"></div>
+</div>
+<script>
+  document.querySelector('.btnClosePopup').addEventListener('click', (e) => {
+    e.target.parentElement.parentElement.style.display = 'none';
+  })
+  document.querySelector('.modal_backdrop').addEventListener('click', (e) => {
+    e.target.parentElement.style.display = 'none';
+  })
+</script>
+

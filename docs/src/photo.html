@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include("include/head.html", {
+    "type": ""
+  })
+</head>
+<body class="body">
+  @@include("include/header.html", {
+    "active": "n3",
+    "type": ""
+  })
+  <section class="section">
+    <!--
+    -- 첫번째 큰 썸네일 photo 에는 'large' class 추가
+    -- 'large' class 없는경우 큰 썸네일을 제외한 리스트와 동일한 사이즈로 노출
+    -->
+    <div class="photo_list_container">
+      <ul class="photo_list_wrap">
+        <li class="large">
+          <a href="#">
+            <div class="img_wrap photo">
+              @@include("include/image.html", {
+                x: "345",
+                y: "164",
+                alt: "D-2 국회의원 선거 얼어붙은 경기 풀어",
+                imageWithText: "true",
+                type: ""
+              })
+              <h2 class="title">D-2 국회의원 선거 얼어붙은 경기 풀어 D-2 국회의원 선거 얼어붙은 경기 풀어</h2>
+            </div>
+          </a>
+        </li>
+        @@for(var i = 0; i < 4; i++){
+          <li>
+            <a href="#">
+              @@include("include/image.html", {
+                x: "168",
+                y: "115",
+                alt: "D-2 국회의원 선거 얼어붙은 경기 풀어",
+                imageWithText: "false",
+                type: "photo"
+              })
+              <h2 class="title">국회의원 선거 얼어붙은 경기 풀어 국회의원 선거 얼어붙은 경기 풀어국회의원 선거 얼어붙은 경기 풀어국회의원 선거 얼어붙은 경기 풀어</h2>
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="photo_list_container">
+      <ul class="photo_list_wrap">
+        @@for(var i = 0; i < 4; i++){
+          <li>
+            <a href="#">
+              @@include("include/image.html", {
+                x: "168",
+                y: "115",
+                alt: "D-2 국회의원 선거 얼어붙은 경기 풀어",
+                imageWithText: "false",
+                type: "photo"
+              })
+              <h2 class="title">국회의원 선거 얼어붙은 경기 풀어 국회의원 선거 얼어붙은 경기 풀어국회의원 선거 얼어붙은 경기 풀어국회의원 선거 얼어붙은 경기 풀어</h2>
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section> 
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="photo_list_container">
+      <ul class="photo_list_wrap">
+        @@for(var i = 0; i < 4; i++){
+          <li>
+            <a href="#">
+              @@include("include/image.html", {
+                x: "168",
+                y: "115",
+                alt: "D-2 국회의원 선거 얼어붙은 경기 풀어",
+                imageWithText: "false",
+                type: "photo"
+              })
+              <h2 class="title">국회의원 선거 얼어붙은 경기 풀어 국회의원 선거 얼어붙은 경기 풀어국회의원 선거 얼어붙은 경기 풀어국회의원 선거 얼어붙은 경기 풀어</h2>
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+  </section>  
+  @@include("include/news_list_more_button.html", {
+    "value": "더보기"
+  })
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section> 
+  <hr class="cluster_line">
+  @@include("include/scroll_button.html")
+  @@include("include/footer.html")
+  <script>
+    
+  </script>
+</body>
+</html>

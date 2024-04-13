@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="@@enc">
+    <title>홈 | 제22대 국회의원 총선거 : 네이트뉴스</title>
+    <link rel="shortcut icon" href="http://m.news.nate.com/icon/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="http://news.nateimg.co.kr/etc/ui/images/mnews/common/nate_news_114.png?v=20140911" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+      <link rel="stylesheet" type="text/css" href="http://10.22.1.116:8070/trunk/_nate/media/new_trunk/m/release/css/common.css">
+    -->
+    <link rel="stylesheet" type="text/css" href="../css/election2024.css">
+    <!-- 기사뷰 DEV JS -->
+    <script type="text/javascript" src="http://m.news.nate.com/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="http://m.news.nate.com/js/flickLib/plast-low-min.js"></script>
+    <script type="text/javascript" src="http://m.news.nate.com/js/flickLib/MNComponent.js"></script>
+    <script type="text/javascript" src="http://m.news.nate.com/js/common.js"></script>
+    <script type="text/javascript" src="http://m.news.nate.com/js/reply.js"></script>
+    <script type="text/javascript" src="http://m.news.nate.com/js/media.js"></script>
+    <!--선거 css/js -->
+  </head>
+  <body style="background:#fff">
+    <div class="replyContent view">
+      <!-- //Start Module Write Reply -->
+      <div class="mdu_reply_write">
+        <form>
+          <!-- DEV491 -->
+          <div class="replyWrite f_clear">
+            <a class="go_re_list" href="#">
+              <span class="title">댓글 <em>52</em>
+              </span>
+            </a>
+            <!-- 댓글 안내 원칙:S -->
+            <button class="reply_guid_btn" aria-controls="notes">
+              <span>댓글 운영 원칙 안내</span>
+            </button>
+            <script>
+              // 댓글 안내 원칙 > CORS이슈로 페이지 내 삽입
+              var replyBtn = document.querySelector('.reply_guid_btn');
+              var replyPOP = parent.document.querySelector('.reply-guide-popup');
+              var closeBtn = parent.document.querySelector('#notes_confirm');
+              if (replyBtn) {
+                replyBtn.onclick = function(e) {
+                  e.preventDefault();
+                  replyPOP.setAttribute('aria-hidden', true)
+                  replyPOP.querySelector('.context').scrollTop = 0;
+                  parent.document.body.style.overflow = 'hidden'
+                }
+                closeBtn.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  replyPOP.setAttribute('aria-hidden', false);
+                  parent.document.body.style.overflow = 'visible';
+                })
+              }
+            </script>
+            <!-- 댓글 안내 원칙:E -->
+            <a href="#" class="myCmtBtn">MY댓글</a>
+          </div>
+          <!-- UIDEV520 시사  class="sisa ent sports"-->
+          <a href="#" id="reply_banner" class="reply_banner special" aria-label="제22대 국회의원 선거, 중앙선거관리 위원회, 허위사실, 비방, 딥페이크 등 게시물 신고,제보 "></a>
+          <div class="write_btn" id="op_write" style="display: block;">
+            <a class="colgray">댓글을 작성해 주세요.</a>
+          </div>
+          <fieldset class="write" id="exp_write" style="display: none;">
+            <legend>댓글쓰기</legend>
+            <div class="textArea">
+              <div class="user">
+                <span class="name">becka****</span>
+                <span class="txtCntWrapper">
+                  <span class="txtCnt">0</span>
+                  <span>/300</span>
+              </span>
+              </div>
+              <textarea id="tx_reply" autofocus class="colgray" placeholder="명예훼손, 개인정보 유출, 인격권 침해, 허위사실 유포 등은 이용약관 및 관련 법률에 의해 제재를 받을 수 있습니다. 건전한 댓글문화 정착을 위해 이용에 주의를 부탁드립니다."></textarea>
+              <script type="text/javascript">
+                var textareaFunc = function() {
+                  var textArea = document.getElementsByTagName("textArea");
+                  for (var i = 0; i < textArea.length; i++) {
+                    if (textArea[i].className == 'colgray') {
+                      var textArea_txt = textArea[i].value;
+                      textArea[i].onfocus = function() {
+                        if (this.value == textArea_txt) {
+                          this.value = '';
+                        }
+                      }
+                      textArea[i].onblur = function() {
+                        if (this.value.length == 0) {
+                          this.value = textArea_txt;
+                        }
+                      }
+                    }
+                  }
+                }
+                textareaFunc()
+              </script>
+            </div>
+            <div class="emoticon_select">
+              <p>댓글 이모티콘을 함께 선택해 주세요.</p>
+              <script type="text/javascript">
+                //<![CDATA[
+                makeEmoticonList(["<input id=\"emo13\" name=\"emoticon\" type=\"radio\" value=\"13\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo13\" >투표합시다<\/label>","<input id=\"emo1\" name=\"emoticon\" type=\"radio\" value=\"1\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo1\" >최고<\/label>","<input id=\"emo2\" name=\"emoticon\" type=\"radio\" value=\"2\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo2\" >폭소<\/label>","<input id=\"emo18\" name=\"emoticon\" type=\"radio\" value=\"18\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo18\" >응원<\/label>","<input id=\"emo6\" name=\"emoticon\" type=\"radio\" value=\"6\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo6\" >분노<\/label>","<input id=\"emo12\" name=\"emoticon\" type=\"radio\" value=\"12\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo12\" >경고  <\/label>","<input id=\"emo19\" name=\"emoticon\" type=\"radio\" value=\"19\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo19\" >슬픔<\/label>","<input id=\"emo17\" name=\"emoticon\" type=\"radio\" value=\"17\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo17\" >반함<\/label>","<input id=\"emo4\" name=\"emoticon\" type=\"radio\" value=\"4\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo4\" >감동<\/label>","<input id=\"emo3\" name=\"emoticon\" type=\"radio\" value=\"3\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo3\" >경악<\/label>","<input id=\"emo5\" name=\"emoticon\" type=\"radio\" value=\"5\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo5\" >실망<\/label>","<input id=\"emo7\" name=\"emoticon\" type=\"radio\" value=\"7\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo7\" >안타까움 <\/label>","<input id=\"emo8\" name=\"emoticon\" type=\"radio\" value=\"8\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo8\" >놀람<\/label>","<input id=\"emo9\" name=\"emoticon\" type=\"radio\" value=\"9\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo9\" >멘붕<\/label>","<input id=\"emo10\" name=\"emoticon\" type=\"radio\" value=\"10\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo10\" >황당<\/label>","<input id=\"emo11\" name=\"emoticon\" type=\"radio\" value=\"11\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo11\" >기도<\/label>"]);
+
+                /* 특집 페이지 감정
+                "<input id=\"emo14\" name=\"emoticon\" type=\"radio\" value=\"14\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo14\" >대한민국 화이팅<\/label>","<input id=\"emo15\" name=\"emoticon\" type=\"radio\" value=\"15\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo15\" >대한민국 우승<\/label>","<input id=\"emo16\" name=\"emoticon\" type=\"radio\" value=\"16\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo16\" >맥주<\/label>","<input id=\"emo20\" name=\"emoticon\" type=\"radio\" value=\"20\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo20\" >동계 응원<\/label>","<input id=\"emo21\" name=\"emoticon\" type=\"radio\" value=\"21\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo21\" >동계 우승<\/label>","<input id=\"emo22\" name=\"emoticon\" type=\"radio\" value=\"22\" onclick=\"olapclick('NEWRE05')\"><label for=\"emo22\" >동계 환희<\/label>"*/
+                //]]>
+           </script>
+            </div>
+            <div class="btn">
+              <a id="cls_wbox" href="#">취소</a>
+              <a href="#" class="ok">
+                <span class="reg">등록</span>
+              </a>
+            </div>
+          </fieldset>
+          <script type="text/javascript">
+            //  UIDEV520
+            var writeForm = {
+              target: {
+                // banner: document.getElementById('reply_banner'),
+                cancelBtn: document.getElementById('cls_wbox'),
+                txtAreaWrap: document.getElementById('exp_write'),
+                txtArea: document.getElementById('tx_reply'),
+                txtNoti: document.getElementById('op_write'),
+                emoticon: document.querySelectorAll('.emoticon_select label')
+              },
+              // 클릭시 
+              show: function(e) {
+                e.preventDefault();
+                writeForm.target.txtNoti.style.display = 'none';
+                writeForm.target.txtAreaWrap.style.display = 'block';
+                writeForm.target.txtArea.focus();
+                // 이모티콘 첫번째 클릭활성화
+                if (e.target.tagName === 'IMG') {
+                  document.getElementById('emo13').checked = true
+                }
+              },
+              close: function() {
+                writeForm.target.txtNoti.style.display = 'block';
+                writeForm.target.txtAreaWrap.style.display = 'none';
+              },
+              // 이모티콘 클릭 시
+              click: function(e) {
+                var _input = e.target.previousSibling;
+                var isChecked = _input.checked;
+                if (isChecked) {
+                  e.preventDefault();
+                  _input.checked = false;
+                }
+              }
+            }
+            window.addEventListener('load', function() {
+              writeForm.target.txtNoti.onclick = writeForm.show;
+              // writeForm.target.banner.onclick = writeForm.show;
+              writeForm.target.cancelBtn.onclick = writeForm.close;
+              for (var i = 0; i < writeForm.target.emoticon.length; i++) {
+                writeForm.target.emoticon[i].onclick = writeForm.click;
+              }
+            });
+          </script>
+        </form>
+      </div>
+      <!-- //End Module Write Reply -->
+      <div class="reply_best_wrap">
+        <div class="reply">
+          <dl>
+            <dt>
+              <span>
+                <a href="#">dong789</a>
+              </span>
+              <em>03.02 15:42</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <!-- UIDEV520 삭제 된 것 중 이미 작성된 이모티콘은 노출 -->
+            <dd class="emoticon emo13">선택된 감정 투표합시다</dd>
+            <dd class="userText">
+              <a href="#">지겨운 수지팔이~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</a>
+              <a href="#" class="delete">
+                <span>삭제</span>
+              </a>
+              <img src="http://news.nateimg.co.kr/etc/ui/images/mobile/img/ico/reply_new.png" width="7" height="7" alt="새글" />
+            </dd>
+            <dd class="btn">
+              <a href="#" class="read">
+                <span>대댓글 <em>124</em>
+                </span>
+              </a>
+              <p class="updw">
+                <a href="#" class="read">
+                  <em>추천</em>
+                  <span>124</span>
+                </a>
+                <a href="#" class="read">
+                  <em class="no">반대</em>
+                  <span>124</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply">
+          <dl>
+            <dt>
+              <span>
+                <a href="#">dong789</a>
+              </span>
+              <em>03.02 15:42</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <!-- UIDEV520 -->
+            <dd class="emoticon emo2">선택된 감정 폭소</dd>
+            <dd class="userText">
+              <a href="#">이어 "나는 모든 선수가 올바른 정신을 갖고 있다고 믿는다. 이어 "나는 모든 선수가 올바른 정신을 갖고 있다고 믿는다.이어 "나는 모든 선수가 올바른 정신을 갖고 있다고 믿는다.</a>
+              <a href="#" class="delete">
+                <span>삭제</span>
+              </a>
+              <img src="http://news.nateimg.co.kr/etc/ui/images/mobile/img/ico/reply_new.png" width="7" height="7" alt="새글">
+            </dd>
+            <dd class="btn">
+              <a href="#" class="read">
+                <span>대댓글 <em>124</em>
+                </span>
+              </a>
+              <p class="updw">
+                <a href="#" class="read">
+                  <em>추천</em>
+                  <span>124</span>
+                </a>
+                <a href="#" class="read">
+                  <em class="no">반대</em>
+                  <span>124</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply">
+          <dl>
+            <dt>
+              <span>
+                <a href="#">knakkki***</a>
+              </span>
+              <em>03.02 15:42</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <!-- UIDEV520 -->
+            <dd class="emoticon emo1">선택된 감정 최고</dd>
+            <dd class="userText">
+              <a href="#">이어 "나는 모든 선수가 올바른 정신을 갖고 있다고 믿는다.</a>
+              <a href="#" class="delete">
+                <span>삭제</span>
+              </a>
+              <img src="http://news.nateimg.co.kr/etc/ui/images/mobile/img/ico/reply_new.png" width="7" height="7" alt="새글">
+            </dd>
+            <dd class="btn">
+              <a href="#" class="read">
+                <span>대댓글 <em>124</em>
+                </span>
+              </a>
+              <p class="updw">
+                <a href="#" class="read">
+                  <em>추천</em>
+                  <span>124</span>
+                </a>
+                <a href="#" class="read">
+                  <em class="no">반대</em>
+                  <span>124</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="reply_common_wrap">
+        <div class="reply others">
+          <div class="reply others">
+            <dl>
+              <dt>
+                <span>
+                  <a href="#">dong****</a>
+                </span>
+                <em>03.02 15:42</em>
+                <a href="#" class="report">
+                  <span>신고</span>
+                </a>
+              </dt>
+              <dd class="emoticon emo11">선택된 감정 기도</dd>
+              <dd class="userText">
+                <a href="#">이게 대중교통이다 시민들의 불편함을 해소해주는거지 시민들의 상황에 맞춰서 승차거부따위 하는</a>
+                <a href="#" class="delete">
+                  <span>삭제</span>
+                </a>
+                <img src="http://news.nateimg.co.kr/etc/ui/images/mobile/img/ico/reply_new.png" width="7" height="7" alt="새글">
+              </dd>
+              <dd class="btn">
+                <a href="#" class="read">
+                  <span>대댓글 <em>124</em>
+                  </span>
+                </a>
+                <p class="updw">
+                  <a href="#" class="read">
+                    <em>추천</em>
+                    <span>124</span>
+                  </a>
+                  <a href="#" class="read">
+                    <em class="no">반대</em>
+                    <span>124</span>
+                  </a>
+                </p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="reply others">
+          <div class="reply others">
+            <dl>
+              <dt>
+                <span>
+                  <a href="#">dong****</a>
+                </span>
+                <em>03.02 15:42</em>
+                <a href="#" class="report">
+                  <span>신고</span>
+                </a>
+              </dt>
+              <dd class="emoticon emo11">선택된 감정 기도</dd>
+              <dd class="userText">
+                <a href="#">이게 대중교통이다 시민들의 불편함을 해소해주는거지 시민들의 상황에 맞춰서 승차거부따위 하는</a>
+                <a href="#" class="delete">
+                  <span>삭제</span>
+                </a>
+                <img src="http://news.nateimg.co.kr/etc/ui/images/mobile/img/ico/reply_new.png" width="7" height="7" alt="새글">
+              </dd>
+              <dd class="btn">
+                <a href="#" class="read">
+                  <span>대댓글 <em>124</em>
+                  </span>
+                </a>
+                <p class="updw">
+                  <a href="#" class="read">
+                    <em>추천</em>
+                    <span>124</span>
+                  </a>
+                  <a href="#" class="read">
+                    <em class="no">반대</em>
+                    <span>124</span>
+                  </a>
+                </p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="replyBottom">
+        <div class="btn type1">
+          <div class="moreWrap">
+            <div class="btn_more">
+              <button type="button">
+                <span>더보기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        // VIEW TEST
+        resizeIfr(parent.document.getElementById('ifr_reple'));
+        $('.btn .updw a').click(function() {
+          var classNames = $(this).find('em').is('.no');
+          console.log(classNames);
+          (classNames) ? classNames = 'down': classNames = 'up';
+          $(this).addClass(classNames).parent().addClass('already');
+          return false;
+        });
+      </script>
+    </div>
+  </body>
+</html>

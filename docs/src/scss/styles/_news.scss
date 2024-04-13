@@ -1,0 +1,190 @@
+
+.news_photo_list {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  width:345px;
+  margin:0 auto;
+  li {
+    // width:calc(50% - 4px);
+    margin-bottom:20px;
+    width:168px;
+    > a {
+      display:block;
+      .img_wrap {
+        margin:0 0 10px 0;
+        width:168px;
+        height:115px;
+      }
+      .title {
+        line-height:20px;
+        font-weight:$font-weight-normal;
+        letter-spacing: -0.8px;
+        font-size:16px;
+        color:$color-black-1;
+        padding:0 5px;
+        text-align:center;
+        @include ell(2);
+      }
+    }
+
+  }
+}
+@media (max-width: 380px) {
+  .news_photo_list {
+    width:auto;
+    li {
+      width:calc(50% - 4px);
+      > a {
+        .img_wrap {
+          width:100%;
+          // height:auto;
+        }
+      }
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  .news_photo_list {
+    width:100%;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    margin:0 -15px;
+    padding:0 15px;
+    justify-content: flex-start;
+    &::-webkit-scrollbar {
+      display: none;
+    }    
+    li {
+      &:not(:last-child){
+        margin-right:9px;
+      }
+    }
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .news_photo_list {
+    li {
+      > a {
+        .title {
+          color:$font-color-2;
+        }
+      }
+    }
+  }
+}
+.news_list_more {
+  width:calc(100% - 30px);
+  height:54px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-size:15px;
+  letter-spacing: -0.8px;
+  font-weight:500;
+  border:1px solid #ccc;
+  border-radius:8px;
+  color:$color-black-1;
+  margin:0 auto 20px auto;
+  span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #222;
+    border-bottom: 1px solid #222;
+    transform: rotate(45deg);
+    margin:-4px 0 0 8px;    
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .news_list_more {
+    border-color:$border-color-1;   
+    background-color:$bg-black-3; 
+    color:$font-color-2;
+    span {
+      border-color:$font-color-2;
+    }
+  }
+}
+
+/* 랭킹뉴스 */
+.section {
+  &.rank {
+    padding: 10px 15px 0 15px;
+  }
+}
+.rank_pagination {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  height:64px;
+  background-color:$point;
+  padding:0 15px;
+  box-sizing:border-box;
+  margin-top:-1px;
+  > a {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    line-height:64px;
+    &.prev {
+      img {
+        margin-right:6px;
+      }
+    }
+    &.next {
+      img {
+        transform:rotate(180deg);
+        margin-left:6px;
+      }
+    }
+    &.prev, &.next {
+      font-weight:400;
+      font-size:14px;
+      .date {
+        font-size:16px;
+        margin-right:2px;
+      }
+    }
+    &.current {
+      font-weight:700;
+      font-size:15px;
+      .date {
+        margin-right:2px;
+        font-weight:600;
+        font-size:18px;
+      }
+    }
+    &.disabled {
+      opacity:0.6;
+    }
+  }
+}
+
+.survey_notice {
+  display:flex;
+  align-items: center;
+  width:calc(100% + 30px);
+  padding:0 15px;
+  margin:-20px -15px 20px -15px;
+  box-sizing:border-box;
+  height:40px;
+  font-size:14px;
+  letter-spacing: -0.8px;
+  color:#777;
+  border-bottom:1px solid #efefef;
+  svg {
+    margin-right:3px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .survey_notice {
+    border-color:$border-color-1;
+  }
+}

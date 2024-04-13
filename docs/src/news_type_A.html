@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include("include/head.html", {
+    "type": ""
+  })
+</head>
+<body class="body">
+  @@include("include/header.html", {
+    "active": "n2",
+    "type": ""
+  })
+  @@include("include/menu.html", {
+    "type": "news",
+    "active": "n1",
+  })
+  @@include("include/keyword_swiper.html", {
+    "isBackground": "true",
+    "isMain": "false"    
+  })
+  
+  <section class="section" id="cid1">
+    <p class="news_cluster_title">기본형 클러스터 제목</p>
+    <ul class="news_cluster_list">
+      <li class="first_thumb remove_border">
+        <a href="#">
+          @@include("include/image.html", {
+            x: "107",
+            y: "80",
+            alt: "올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일",
+            imageWithText: "false",
+            type: "video"
+          })
+          <div class="text_wrap">
+            <h2 class="text">올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일 올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일</h2>            
+          </div>
+        </a>
+      </li>
+      @@for(var i = 0; i < 6; i++){
+        <li>
+          <a href="#">
+            <h2 class="text">
+              올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일 올해 韓은 총선, 美 
+            </h2>
+          </a>
+        </li>
+      }
+    </ul>
+  </section>
+  @@include("include/news_list_more_button.html", {
+    "value": "더보기"
+  })
+  <hr class="cluster_line">
+  <section class="section" id="cid2">
+    <p class="news_cluster_title">기본형 클러스터 제목</p>
+    <ul class="news_cluster_list">
+      @@for(var i = 0; i < 7; i++){
+        <li>
+          <a href="#">
+            <h2 class="text">
+              올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일 올해 韓은 총선, 美 
+            </h2>
+          </a>        
+        </li>
+      }
+    </ul>
+  </section>
+  <hr class="cluster_line">
+  <section class="section" id="cid3">
+    <p class="news_cluster_title">대립형 클러스터 제목</p>
+    <ul class="news_cluster_list thumb">
+      <li>
+        <a href="#">
+          @@include("include/image.html", {
+            x: "107",
+            y: "80",
+            alt: "사이즈17 1줄일 경우 세로 가운데",
+            imageWithText: "false",
+            type: "photo"
+          })
+          <div class="text_wrap">
+            <h2 class="text">사이즈17 1줄일 경우 세로 가운데</h2>            
+          </div>
+        </a>
+      </li>    
+      <li>
+        <a href="#">
+          @@include("include/image.html", {
+            x: "107",
+            y: "80",
+            alt: "사이즈17 3줄까지 나올 수 있으며 기사제목 기사제목 기사제목 기사제목 말줄임 처리하면 이",
+            imageWithText: "false",
+            type: "video"
+          })
+          <div class="text_wrap">
+            <h2 class="text">
+              사이즈17 3줄까지 나올 수 있으며 기사제목 기사제목 기사제목 기사제목 말줄임 처리하면 이 사이즈17 3줄까지 나올 수 있으며 기사제목 기사제목 기사제목 기사제목 말줄임 처리하면 이             
+            </h2>            
+          </div>
+        </a>
+      </li>               
+    </ul>
+  </section>
+  <hr class="cluster_line">
+  <section class="section" id="cid4">
+    <p class="news_cluster_title">포토리스트형 클러스터 제목</p>
+    <ul class="news_photo_list">
+      @@for(var i = 0; i < 4; i++){
+        <li>
+          <a href="#">
+            @@include("include/image.html", {
+              x: "168",
+              y: "115",
+              alt: "기사제목 기사제목 기사제목 기사제목기사제목 기사",
+              imageWithText: "false",
+              type: "photo"
+            })
+            <h2 class="title">기사제목 기사제목 기사제목 기사제목기사제목 기사기사제목 기사제목 기사제목 기사제목기사제목 기사기사제목 기사제목 기사제목 기사제목기사제목 기사</h2>
+          </a>
+        </li>
+      }
+    </ul>
+  </section>
+  @@include("include/news_list_more_button.html", {
+    "value": "더보기"
+  })
+  <hr class="cluster_line">
+  <section class="section" id="cid5">
+    <ul class="news_cluster_list thumb info">
+      @@for(var i = 0; i < 2; i++){
+        <li>
+          <a href="#">
+            @@include("include/image.html", {
+              x: "107",
+              y: "80",
+              alt: "사이즈17 1줄일 경우 세로 가운데",
+              imageWithText: "false",
+              type: "photo"
+            })
+            <div class="text_wrap">
+              <h2 class="text">사이즈17 1줄일 경우 세로 가운데</h2>            
+              <div class="info">
+                <span class="auth">언론사</span>
+                <span class="time">03.28</span>
+              </div>
+            </div>
+          </a>
+        </li>  
+        <li>
+          <a href="#">
+            @@include("include/image.html", {
+              x: "107",
+              y: "80",
+              alt: "사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데",
+              imageWithText: "false",
+              type: "video"
+            })
+            <div class="text_wrap">
+              <h2 class="text">사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데</h2>            
+              <div class="info">
+                <span class="auth">언론사</span>
+                <span class="time">03.28</span>
+              </div>
+            </div>
+          </a>
+        </li>       
+        <li>
+          <a href="#"> 
+            <div class="text_wrap">
+              <h2 class="text">사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데</h2>            
+              <div class="info">
+                <span class="auth">언론사</span>
+                <span class="time">03.28</span>
+              </div>
+            </div>
+          </a>
+        </li>     
+        <li>
+          <a href="#"> 
+            <div class="text_wrap">
+              <h2 class="text">사이즈17 1줄일 경우</h2>            
+              <div class="info">
+                <span class="auth">언론사</span>
+                <span class="time">03.28</span>
+              </div>
+            </div>
+          </a>
+        </li>       
+        <li>
+          <a href="#">
+            @@include("include/image.html", {
+              x: "107",
+              y: "80",
+              alt: "사이즈17 1줄일 경우 세로 가운데",
+              imageWithText: "false",
+              type: "photo"
+            })
+            <div class="text_wrap">
+              <h2 class="text">사이즈17 1줄일 경우 세로 가운데</h2>            
+              <div class="info">
+                <span class="auth">언론사</span>
+                <span class="time">03.28</span>
+              </div>
+            </div>
+          </a>
+        </li>  
+      }
+    </ul>
+  </section>
+  @@include("include/news_list_more_button.html", {
+    "value": "기사 더보기"
+  })
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>  
+  <hr class="cluster_line">
+  @@include("include/scroll_button.html")
+  @@include("include/footer.html")
+  <script>
+    
+    fixedTabs({
+      fixedTarget: document.querySelector('.keyword_swiper'),
+      fixedTop: document.querySelector('.keyword_swiper').getBoundingClientRect().top
+    });
+
+    sectionTargeting({
+      id: 'cid'
+    });
+
+
+  </script>
+</body>
+</html>

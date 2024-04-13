@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	@@include("include/head.html", {
+    "type": "view"
+  })	
+</head>
+<body class="view_pg">
+  @@include("include/view_shortcut.html")
+  <div id="wrap">
+    <header id="header" role="banner">
+      <div class="gnbWrap">
+          <h1 class="gnb">
+              <a href="../" class="nate"><span class="hd-img">네이트</span></a>
+              <a href="../" class="service">뉴스</a>
+          </h1>
+          <div class="relsvc">
+              <a href="#">스포츠</a>
+              <a href="#">연예</a>
+          </div>
+          <div class="banner">
+              <a href="https://news.nate.com/">
+                <div class="special_logo" aria-label="국회의원 선거"></div>
+              </a>
+          </div>
+          <div class="searchWrap">
+              <form id="search-field" role="search" aria-labelledby="search-keyword">
+                  <fieldset>
+                      <legend id="search-keyword">뉴스 기사 검색</legend>
+                      <input type="search" type="text">
+                      <button class="delete hd-img" type="button"><span class="hd-img">검색어 삭제</span></button>
+                      <button class="srchbtn" type="submit"><span class="hd-img">검색</span></button>
+                  </fieldset>
+              </form>
+          </div>
+      </div>
+      <!-- SNB 2depth  -->
+      <!-- 기사뷰일때 data-floating="true" -->
+      <div class="lnbContainer" data-floating="true">
+          <h2 class="hide">뉴스 메인 메뉴</h2>
+          <nav class="lnb flick sisa" role="navigation">
+              <ul style="min-width: 700px">
+                  <li role="menuitem"><a href="#" class="on">오늘</a></li>
+                  <li role="menuitem"><a href="#">랭킹뉴스</a></li>
+                  <li role="menuitem"><a href="#">이슈픽</a></li>
+                  <li role="menuitem"><a href="#">정치</a></li>
+                  <li role="menuitem"><a href="#">경제</a></li>
+                  <li role="menuitem"><a href="#">사회</a></li>
+                  <li role="menuitem"><a href="#">세계</a></li>
+                  <li role="menuitem"><a href="#">IT</a></li>
+                  <li role="menuitem"><a href="#">포토</a></li>
+                  <li role="menuitem"><a href="#">TV</a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+    <section id="contents" role="main">
+      <div class="responsive_wrap">
+        <section class="rwd_left">
+          <!-- 카툰일경우 <div class="news_view viewCartoon"> 변경 -->
+          <div class="news_view">
+            <div class="float-adv-wrap">
+              <div class="adv" id="ad_snb" style="background-color: rgb(240, 240, 240);">
+                <a href="http://cyad1.nate.com/click.kti/mnate/news@snb_Top2?ads_no=203027&amp;cmp_no=27438&amp;img_no=351277" style="display:block;height:80px;background:#f0f0f0" target="_blank">
+                  <img alt="광고" src="http://adimg.nate.com/img/2021/08/house/house_0805_640x160.jpg" width="320" height="80" border="0">
+                </a>
+              </div>
+              <div class="adv-temp"></div>
+          </div>                
+          <header>
+            <h1 id="artcTitle">기사뷰 타이틀 기사뷰 타이틀 기사뷰 타이틀 기사뷰 타이틀 기사뷰 타이틀</h1>
+            <div class="medium">
+              <div class="author">
+                <em><b>아이아투데이</b><span>2024-01-29 20:16</span></em>
+                <em><b>최종수정</b><span>2024-01-29 20:16</span></em>
+              </div>
+            </div>   
+            <div class="view_tools_wrap">
+              <ul class="cmt_count">
+                <li>
+                  <a href="#" aria-label="댓글">
+                    @@include("svg/icon_comment.html")
+                    <em>193</em>
+                  </a>
+                </li>
+                <li class="top-emotion">
+                  <a href="#md-emotion-view" class="md-emotion" aria-label="감정선택 바로가기">
+                    @@include("svg/icon_view_emotion.html")
+                    <span class="text">9,999+</span>
+                  </a>
+                </li>                
+              </ul>
+              <ul class="tools">
+                <li>
+                  <button class="btnShare">
+                    @@include("svg/icon_view_share.html")
+                  </button>
+                </li>
+                <li class="ai_btn_wrap">
+                  @@include("../base64/icon_view_ai_summary_chat.html")
+                  <button class="ai_summary_btn">
+                    @@include("svg/icon_view_ai_summary_btn.html")
+                  </button>
+                </li>
+                <li>
+                  <button class="font_size">
+                    @@include("svg/icon_view_font_size.html")
+                  </button>
+                </li>
+              </ul>
+              <div class="font_sizing_popup">
+                <ul>
+                  <li>
+                    <button class="size1">가<sub>1</sub>
+                      <span class="txt">작게</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="size2 active">가<sub>2</sub>
+                      <span class="txt">보통</span>
+                    </button>
+                  </li> 
+                  <li>
+                    <button class="size3">가<sub>3</sub>
+                      <span class="txt">크게</span>
+                    </button>
+                  </li>  
+                  <li>
+                    <button class="size4">가<sub>4</sub>
+                      <span class="txt">아주<br>크게</span>
+                    </button>
+                  </li>  
+                  <li>
+                    <button class="size5">가<sub>5</sub>
+                      <span class="txt">가장<br>크게</span>
+                    </button>
+                  </li>          
+                </ul>
+              </div>
+            </div>
+          </header>
+            <article>
+              <div id="txt_size" class="view_cont">
+                @@include("@@ROOT/m/src/doc/sisa/inc/contents.html")
+              </div>
+              <div class="isolation">
+                <h3>댓글 차단</h3>
+                <p>위 기사에 허위정보 유포, 개인정보 유출, 욕설 등이 담긴 댓글이 올라오고 있습니다.<br />이에 네티즌의 민형사상 불이익과 이해당사자의 명예훼손을 예방하고자 해당기사에 한해 댓글을 차단합니다.<br />네티즌 여러분의 양해 부탁드립니다.</p>
+                <h3>정정보도문</h3>
+                <p>본지는 6월25일자 1판(인천)1면에 한나라당 의원 11명의 백령도 시찰과 관련해 국정원측에 사과드립니다.</p>
+              </div>
+              <ul class="seo_tag">
+                <li><h2><a href="#">원영</a></h2></li>
+                <li><h2><a href="#">락스</a></h2></li>
+                <li><h2><a href="#">계모</a></h2></li>
+                <li><h2><a href="#">신원영</a></h2></li>
+                <li><h2><a href="#">화장실</a></h2></li>
+              </ul>
+              <div class="main_banner"></div>                
+              <div class="md-emotion-view" id="md-emotion-view">
+                <ul class="md-emotion">
+                  <li>
+                    <button>
+                      <span class="img em-type1"></span>
+                      <span class="state">최고예요</span>
+                      <span class="cnt">321</span>
+                    </button>
+                    </li>
+                    <li>
+                    <button>
+                      <span class="img em-type2"></span>
+                      <span class="state">훈훈해요</span>
+                      <span class="cnt">1,321</span>
+                    </button>
+                    </li>
+                    <li>
+                    <button>
+                      <span class="img em-type3"></span>
+                      <span class="state">어이없어요</span>
+                      <span class="cnt">9,999</span>
+                    </button>
+                    </li>
+                    <li>
+                    <button>
+                      <span class="img em-type4"></span>
+                      <span class="state">속상해요</span>
+                      <span class="cnt">321</span>
+                    </button>
+                    </li>
+                    <li>
+                    <button>
+                      <span class="img em-type5"></span>
+                      <span class="state">화나요</span>
+                      <span class="cnt">1,321</span>
+                    </button>
+                    </li>
+                  </ul>
+                </div>              
+              <!-- UIDEV-386:S up down Button UI -->				
+              <div class="upDown">
+                <ul>
+                  <li id="up_cnt"><a href="javascript:" onclick="testEvent(this)"><span class="up img"></span><span>올려<em>2</em></span></a></li>
+                                    <li id="down_cnt"><a href="javascript:" onclick="testEvent(this)"><span class="down img"></span><span>내려<em>0</em></span></a></li>
+                </ul>
+                <!-- <button class="bt_share" value="공유하기">공유하기</button> -->
+                                <script>
+                  // UIDEV-386 TEST EVENT
+                  function testEvent(t){
+                    t.parentNode.className = 'active';
+                  }
+                                </script>
+              </div>
+              <!-- UIDEV-386:E /-->
+              <div class="social_plugin">
+                <div class="snsBtn">
+                  <a href="#" id="nateon" class="nateon" title="네이트온쪽지">
+                    <span class="hide">네이트온쪽지</span>
+                  </a>
+                  <a href="#" id="kakao" class="kakao" title="카카오톡">
+                    <span class="hide">카카오톡</span>
+                  </a>
+                  <a href="#" class="facebook" title="페이스북">
+                    <span class="hide">페이스북</span>
+                  </a>
+                  <a href="#" class="twitter" title="트위터">
+                    <span class="hide">트위터</span>
+                  </a>
+                </div>
+              </div>
+              <hr class="vt-space">
+              <div class="main_banner"></div>
+              <hr class="vt-space">
+              @@include("include/reply_guide_pop.html")  
+              <div class="news_cmt"></div>
+              <script type="text/javascript">
+              // 성능개선_0324  : 초기 로딩 속도에 필요 없는 자원 나중에 로딩
+              window.addEventListener('load', function(){
+              var big_banner = document.querySelector('.main_banner');
+              if(big_banner){
+                big_banner.innerHTML = '<iframe src="../iframe/ad320x200.html"  title="320x200사이즈 광고 배너" style="width:100%; background:#ccc; border:0;"></iframe>'; 
+              }
+              var comment =  document.querySelector('.news_cmt');
+              if(comment){
+                comment.innerHTML = '<iframe src="reply.html" id="ifr_reple" class="sports" name="ifr_reple" style="margin: 0;padding: 0;width:100%;height:1450px;border:0" title="댓글프레임"></iframe>';
+              }
+            });
+              </script>
+            </article>
+          </div>
+        </section>
+        <section class="rwd_right">
+          <aside class="news_point">
+            <ul>
+                @@include("@@ROOT/m/src/inc/module/CT1기본형.html", { "tv" : "true", "hot": "false", "view": "true" })
+                @@include("@@ROOT/m/src/inc/module/99_natesisaq.html", {
+                    "from" : "view",
+                })
+                <hr class="comonentDivision"/>
+                @@include("@@ROOT/m/src/inc/module/CT2기사나열형.html", { "tv" : "true", "hot": "false", "view": "true" })
+                @@include("@@ROOT/m/src/inc/module/CT3대립형.html", { "tv" : "true", "hot": "false", "view": "true" })
+                @@include("@@ROOT/m/src/inc/module/CT4포토리스트형.html", { "tv" : "true", "hot": "false", "view": "true" })
+            </ul>
+             @@include("@@SRC/m/src/inc/module/99_ssulLeverage.html", {
+                "comment": false,
+                "type": "sisa",
+             })
+            <!-- 기사뷰 정치 랭킹 _ 홈의 정치랭킹과 스타일이 다름 -->
+            @@include("@@SRC/m/src/inc/module/99_view_rank.html",{
+                "addClass" : "ranking_list2",
+                "title" :"정치 랭킹",
+                "cmt" : ""
+            })
+            <div class="mlt01">
+                <div class="contents1">
+                    <h3 class="cluster_title">이미지 있을 경우 / 모듈 이름 : 기본형</h3>
+                    <ul>
+                        <!-- 이미지가 없는 경우 span class=\"ib\"가 삭제된 상태 -->
+                        <li class="lt1 ep2">
+                            <a href="#">
+                                <span class="ib"><img width="107" height="80" alt="" src="https://via.placehold.com/107x80/f2f2f2"></span>
+                                <span class="tb">
+                <strong class="tit">BBBB朴당선인 인수위 중대발표 금일 실무진 소집 후 노래방 朴당선인 인수위? 朴당선인 인수위</strong>
+                <span class="short">새누리당 지도부ㆍ원내지도부와 금일 맛난 오찬을 새누리당 지도부ㆍ원내지도부와 금일 맛난 오찬을 새누리당 지도부ㆍ원내지도부와 금일 맛난 오찬을</span>
+              </span>
+                            </a>
+                        </li>
+                        <!-- //이미지가 없는 경우 span class=\"ib\"가 삭제된 상태 -->
+                        <li class="lt2_1 ep">
+                            <a href="#">
+              <span class="tb">
+                <strong class="tit"><strong>정치</strong>"국민연금 지난 2년간 5천300억 못 걷어 문제"</strong>
+              </span>
+                            </a>
+                        </li>
+                        @@for(var i=0; i < 8; i++){
+                        <li class="lt2_1 ep">
+                            <a href="#">
+              <span class="tb">
+                <strong class="tit">inc/module/00_clusterDefault.html [thumb,type,opt]</strong>
+              </span>
+                            </a>
+                        </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <!-- 포토&영상 : 포토리스트형에서 확장 -->
+            <div class="photo_mov mlt01" data-fwrapper="y">
+                <h3 class="cluster_title">가로포토3 [inc/module/00_photo3.html]</h3>
+                <div data-fcover="y">
+                    <div class="photoListA">
+                        @@include("@@SRC/m/src/inc/module/00_photo3.html", {
+                        "imgSrc" : "",
+                        "view": 'true'
+                        })
+                    </div>
+                    <div class="photoListA" style="display:none;">
+                        @@include("@@SRC/m/src/inc/module/00_photo3.html", {
+                        "imgSrc" : "",
+                        "view": 'true'
+                        })
+                    </div>
+                    <div class="photoListA" style="display:none;">
+                        @@include("@@SRC/m/src/inc/module/00_photo3.html", {
+                        "imgSrc" : "",
+                        "view": 'true'
+                        })
+                    </div>
+                </div>
+                @@include("@@SRC/m/src/inc/module/99_swipeNav2.html", { "arr" : 3 })
+                <a class="more" href="#">더 보기</a>
+            </div>
+            <!-- 공감 많은 뉴스 모듈  -->
+            @@include("@@SRC/m/src/inc/module/04_emotion.html",{"category": "시사","type":"sisa", "count":5})
+            <!-- 댓글많은 뉴스 시사 -->
+            @@include("@@SRC/m/src/inc/module/99_view_rank.html",{
+                "addClass": "mlt01 reply_list",
+                "title" : "댓글많은 뉴스",
+                "cmt" : '<span class="rcnt">221</span>'
+            })
+            <!-- 인기 많은 썰 모듈 -->
+            @@include("@@SRC/m/src/inc/module/06_news_ssul.html")
+            <!-- 톡커들의 선택 판 모듈 -->
+            @@include("@@SRC/m/src/inc/module/99_pann_rank.html",{"addClass": "mlt01 pann_list", "title" : "톡커들의 선택", "cmt" : '<span class="rcnt">(9,999)</span>', "sub" : '<p class="sub"><span>조회 99,999</span><span>추천 999</span></p>'})
+            @@include("@@SRC/m/src/inc/module/99_etc_footer.html")
+            @@include("@@SRC/m/src/inc/module/adShoppingbox.html")
+            @@include("@@SRC/m/src/inc/module/SA_shopBox.html")
+        </aside>
+        </section>
+      </div>
+    </section>
+    
+  </div>
+  <script>
+
+  </script>
+</body>
+</html>

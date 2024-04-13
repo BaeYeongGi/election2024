@@ -1,0 +1,44 @@
+@@if(type === 1){
+  <form class="candidate_search_form type1">
+    <select class="select step1">
+      <option value="default">시·도</option>
+      <option value="1">지역명1</option>
+      <option value="2">지역명2</option> 
+      <option value="3">지역명3</option> 
+    </select>
+    <select class="select step2" disabled>
+      <option value="default">선거구</option>
+      <option value="1">선거구명1</option>
+      <option value="2">선거구명2</option>
+      <option value="3">선거구명3</option>
+      <option value="4">선거구명4</option>
+    </select>
+    <button class="button"></button>
+  </form>
+}
+
+@@if(type === 2){
+  <form class="candidate_search_form type2">
+    <select class="select step1">
+      <option value="default">시·도</option>
+      <option value="1">경기</option>
+      <option value="2">경북</option> 
+      <option value="3">전북</option> 
+    </select>
+    <select class="select step2" disabled>
+      <option value="default">구·시·군</option>
+      <option value="1">선거구명1</option>
+      <option value="2">선거구명2</option>
+      <option value="3">선거구명3</option>
+      <option value="4">선거구명4</option>
+    </select>
+    <select class="select step3" disabled>
+      <option value="default">읍·면·동</option>
+      <option value="1">강남구</option>
+      <option value="2">서초구</option>
+      <option value="3">구</option>
+      <option value="4">구</option>
+    </select>
+    <button class="button"></button>
+  </form>    
+}

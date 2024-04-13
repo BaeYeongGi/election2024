@@ -1,0 +1,53 @@
+<div class="view_ai_pop_dimmed">
+  <div class="view_ai_pop @@type">
+    <div class="top">
+      <div class="left">
+        <p><span>AI</span>요약</p>
+        <a href="#">
+          @@include("@@SRC/m/src/inc/svg/icon_notice.html", {
+            className: "icon_ai_notice"
+          })
+        </a>
+      </div>
+      <button class="right ai_pop_close_btn">
+        @@include("@@SRC/m/src/inc/svg/icon_ai_gray_close.html")
+      </button>
+    </div>
+    <p class="view_ai_pop_guide">
+      기사 제목과 본문 내용을 자동 요약한 내용입니다.<span></span> 전체 내용을 이해하기 위해서는 기사 본문 전체를 확인하는 것이 더 좋습니다.
+    </p>
+    @@if(type === "active"){
+    <!-- AI챗 텍스트 입력상태 -->
+    <div class="view_ai_contents">
+      <ul>
+        @@for(var i = 0; i < 5; i++){
+          <li>전부터 개발에 착수한 ‘수중핵무기’를 전부터 개발에 착수한 ‘수중핵무기’를 전부터 개발에 착수한 ‘수중핵무기’를 전부터 개발에 착수한 ‘수중핵무기’를</li>
+        }     
+      </ul>     
+    </div>
+    }
+    @@if(type === "loading"){
+    <!-- AI챗 노출전 Loading 상태 -->
+    <div class="view_ai_contents state loading">
+      @@include("@@SRC/m/src/inc/svg/icon_ai_summary.html", {
+        className: "icon_ai"
+      })
+      <p class="state">AI챗이 열심히 분석 중입니다.<span></span>잠시만 기다려주세요.</p>
+    </div>
+    }
+    @@if(type === "error"){
+    <!-- AI챗 오류 상태 -->
+    <div class="view_ai_contents state error">
+      @@include("@@SRC/m/src/inc/svg/icon_ai_error.html", {
+        className: "icon_ai_error"
+      })
+      <p class="state">기사 요약 중 오류가 발생했습니다.<span></span>잠시 후 다시 시도해주세요.</p>
+    </div>
+    }
+    <div class="bottom">
+      <a href="#" class="bubble"><p><span>AI챗</span> 바로가기</p></a>
+      <button class="ai_chat_btn" aria-label="AI챗"></button>
+    </div>
+  </div>
+</div>
+

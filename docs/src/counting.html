@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include("include/head.html", {
+    "type": ""
+  })
+</head>
+<body class="body">
+  @@include("include/header.html", {
+    "active": "n2",
+    "type": ""
+  })
+  @@include("include/menu.html", {
+    "type": "result",
+    "active": "n3",
+  })  
+  @@include("include/three_depth_menu.html", {
+    "active": "n4"
+  })
+  @@include("include/hot_local_area.html")
+  <section class="section">
+    @@include("include/candidate_search_form.html", {
+      type: 1
+    })
+    <dl class="candidate_select_guide">
+      <dt>선거구 해당지역 안내</dt>
+      <dd>청운효자동, 사직동, 삼청동, 부암동, 평창동, 이화동</dd>
+    </dl>
+  </section>
+  <hr class="cluster_line">
+
+  <section class="section" id="aaa3">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title refresh">서울 강남을<button>@@include("svg/icon_refresh.html")</button></p>
+    </div>    
+    <div class="vote_versus_contents_container result">
+      <div class="vote_versus_box">
+        <div class="vote_versus_wrap">
+          <dl class="vote_rate">
+            <dt aria-label="개표율"></dt>
+            <dd>100.0<span>%</span></dd>
+          </dl>
+          <a href="#" class="left">
+            <div class="vote_candidate_img_wrap selected">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">`+i+`국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">23.2<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <span class="state gap">99표차</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:23%"></span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="vote_versus_others_rank">
+          <span class="rank">3위</span>
+          <span class="name">이름네자</span>
+          <span class="font clan1">더불어민주당</span>
+          <span class="value">99.9%</span>
+          <span class="count">9,999,999표</span>
+        </a>
+        <a href="#" class="vote_versus_others_rank">
+          <span class="rank">4위</span>
+          <span class="name">이름네자</span>
+          <span class="font clan2">국민의힘</span>
+          <span class="value">99.9%</span>
+          <span class="count">9,999,999표</span>
+        </a>     
+        <a href="#" class="vote_versus_others_rank">
+          <span class="rank">5위</span>
+          <span class="name">이름네자</span>
+          <span class="font clan2">국민의힘</span>
+          <span class="value">99.9%</span>
+          <span class="count">9,999,999표</span>
+        </a> 
+        <a href="#" class="vote_versus_others_rank">
+          <span class="rank">6위</span>
+          <span class="name">이름네자</span>
+          <span class="font clan2">국민의힘</span>
+          <span class="value">99.9%</span>
+          <span class="count">9,999,999표</span>
+        </a> 
+        <a href="#" class="vote_versus_others_rank">
+          <span class="rank">7위</span>
+          <span class="name">이름네자</span>
+          <span class="font clan2">국민의힘</span>
+          <span class="value">99.9%</span>
+          <span class="count">9,999,999표</span>
+        </a> 
+        <a href="#" class="vote_versus_others_rank">
+          <span class="rank">8위</span>
+          <span class="name">이름네자</span>
+          <span class="font clan2">국민의힘</span>
+          <span class="value">99.9%</span>
+          <span class="count">9,999,999표</span>
+        </a> 
+      </div>
+      <div class="vote_versus_result_history">
+        <p class="text">지난 21대 선거 결과</p>
+        <p class="name">홍길동 <span class="font clan1">더불어민주당</span></p>
+      </div>         
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title refresh">서울 서초갑<button>@@include("svg/icon_refresh.html")</button></p>
+    </div>
+    <p class="vote_blank_wrap">개표 준비중입니다.<br/>잠시 후 업데이트 됩니다.</p> 
+    <div class="vote_versus_result_history">
+      <p class="text">지난 21대 선거 결과</p>
+      <p class="name">홍길동 <span class="font clan1">더불어민주당</span></p>
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title refresh">서울 서초갑<button>@@include("svg/icon_refresh.html")</button></p>
+    </div>        
+    <div class="vote_versus_contents_container result">
+      <div class="vote_versus_box">
+        <div class="vote_versus_wrap">
+          <div class="vote_open no_select" aria-label="무투표당선"></div>
+          <a href="#" class="cemter">
+            <div class="vote_candidate_img_wrap selected">
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">`+i+`국민의힘</p>
+            </div>
+          </a>
+
+
+        </div>
+   
+      </div>
+      <div class="vote_versus_result_history">
+        <p class="text">지난 21대 선거 결과</p>
+        <p class="name">홍길동 <span class="font clan1">더불어민주당</span></p>
+      </div>         
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <ul class="candidate_caption">
+    <li>선거구가 변경된 지역의 경우 지난 21대 선거 결과를 제공하지 않습니다.</li>
+    <li>
+      X/XX 기준으로 의석수가 5석 미만인 정당은 ‘기타정당’으로 구분하여 공통 정당컬러를 사용했습니다.
+    </li>
+    <li>투·개표 정보는 <a href="#">중앙선거관리위원회</a>에서 제공하며, 정보제공처의 사정에 따라 지연되거나 변경될 수 있습니다.</li>
+  </ul> 
+  <hr class="cluster_line">
+  <section class="reply_section">
+    @@include("include/special_reply.html", {
+      type: "vote"
+    })
+  </section>
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>  
+  <hr class="cluster_line">
+  @@include("include/scroll_button.html")
+  @@include("include/footer.html")
+  <script>
+    candidateSelectActiveStyle();
+    candidateToggleEvent({
+      position: "2depth"
+    });
+    fixedTabs({
+      fixedTarget: document.querySelector('.three_depth_menu'),
+      fixedTop: document.querySelector('.three_depth_menu').offsetTop
+    });
+    sectionTargeting({
+      id: 'count'
+    })
+  </script>
+</body>
+</html>

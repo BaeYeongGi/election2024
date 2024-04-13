@@ -1,0 +1,657 @@
+@@include("include/reply_guide_pop.html")  
+<div id="areaComment">
+  <div class="reply_wrap">
+    <div class="replyContent">
+      <div class="replyWrite f_clear">
+        <a class="go_re_list" href="#">
+          <span class="title">댓글 <em id="totalcntComment">39</em>
+          </span>
+        </a>
+        <button class="reply_guid_btn" aria-controls="notes">
+          <span>댓글 운영 원칙 안내</span>
+        </button>
+        <script>
+          // 댓글 안내 원칙 > CORS이슈로 페이지 내 삽입
+          var replyBtn = document.querySelector('.reply_guid_btn');
+          var replyPOP = parent.document.querySelector('.reply-guide-popup');
+          var closeBtn = parent.document.querySelector('#notes_confirm');
+          if (replyBtn) {
+            replyBtn.onclick = function(e) {
+              e.preventDefault();
+              replyPOP.setAttribute('aria-hidden', true)
+              replyPOP.querySelector('.context').scrollTop = 0;
+              parent.document.body.style.overflow = 'hidden'
+            }
+            closeBtn.addEventListener('click', function(e) {
+              e.preventDefault();
+              replyPOP.setAttribute('aria-hidden', false);
+              parent.document.body.style.overflow = 'visible';
+            })
+          }
+        </script>          
+      </div>
+      <div class="write_btn" id="op_write" style="display: block;">
+        <a class="colgray">댓글을 작성해 주세요</a>
+      </div>
+      <iframe name="frm_hidden" id="frm_hidden" src="about:blank" style="position:absolute;left:-999em;" width="100%" height="0" frameborder="0"></iframe>
+      <!-- //댓글쓰기 -->
+      <!-- 댓글리스트 -->
+      <div class="reply_best_wrap">
+        <div class="reply">
+          <dl>
+            <dt>
+              <span class="bestReple">베플</span>
+              <span>
+                <a class="n">tkat****</a>
+              </span>
+              <em>03.11 16:22</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">중립적으로 정치얘기좀 할게... 여 야를 떠나서 이놈들아 민생이랑 아무 상관도 없는거랑 싸우는거 안지겹냐? 국민들 그거 아는지 모르겠네 정치인들 도와주는 보좌관들이 전세계에서 한국이 젤 많대 ㄷㄷㄷ 보좌관이 그렇게 많으니깐 일은 안하고 쓸데없는거 가지고 싸우지.... 싸우는거 좋아 그러면 니들이 받는 혜택 억대 연봉 다 반으로 줄여라 줄이고 싸워라 그럼 인정한다... 국민좀 챙겨라... </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>119</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>16</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply">
+          <dl>
+            <dt>
+              <span class="bestReple">베플</span>
+              <span>
+                <a class="n">k544****</a>
+              </span>
+              <em>03.11 16:31</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">검은사제들이 훨씬 재밌었다. 진짜로 무서웠음. </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span id="best_cmt_9907972_O">91</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="best_cmt_9907972_X">21</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="best_cmt_9907981" class="reply">
+          <dl>
+            <dt>
+              <span class="bestReple">베플</span>
+              <span>
+                <a class="n">tkat****</a>
+              </span>
+              <em>03.11 19:55</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">대학생들 돈아끼려고 점심때 싼걸로 떼우고 힘들다고 ㄷㄷ 대학생들아 sns에 올리려고 스타벅스 가서 비싼 커피 디저트 먹지말고 점심에 맛있고 든든하게 돈까스 김치찌개 볶음밥 제육볶음 이런거 사먹어라... 세월 지나봐라 그런거 다 쓸모 없더라.... 남들한테 잘보여서 뭐하게??? 그런거 올리면 부자됨? 취업됨? 다 한때다... </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>66</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>8</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="reply_common_wrap" id="reply_common_wrap">
+        <div id="list_cmt_9908473" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">jun8****</a>
+              </span>
+              <em>03.15 12:26</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">파묘는 검은 사제들 사바하에 절대 못비빔 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>2</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">levi****</a>
+              </span>
+              <em>03.15 12:05</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">파묘는 강시영화 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908470_O">0</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>1</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="#" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">wind****</a>
+              </span>
+              <em>03.15 11:37</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">中, '파묘' 조롱하더니 또 도둑시청…서경덕 "이젠 당국 나서야" •••••••••• ㅂㅅ같은 상상이지만 짱깨들이 한국을 포함한 해외 콘텐츠 도둑시청하면 실명시켜버리는 기술이든 초능력이든 등장 했으면 좋겠다. </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>0</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908469_X">0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908462" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">pes0****</a>
+              </span>
+              <em>03.15 10:17</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">파묘는 영화관에서 봐야 심장 쫄깃 집에서 보면 그 느낌이 안 나겠던데 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908462_O">3</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>2</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">bcu1****</a>
+              </span>
+              <em>03.15 00:45</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">아아 잊으랴 어찌 우리 2022.3.9 친일매국 국짐들이짓밟아 오던 날을눈물과 좌절감에 원수를 못막아내어 발을 굴러 땅을 치며 의분에 떤 날을 이제야 갚으리 그 날의 원수를 2024.4.10 친일파 무리들을 쫓고 또 쫓아 민주당 국회의원 모두 당선시켜 이제야 빛내리 이 나라 이 겨레 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>3</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>3</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908397" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">leew****</a>
+              </span>
+              <em>03.14 20:05</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">까만신부들이 장르에 훨씬 충실하다는 느낌. 파묘는 대작의 느낌이고~! 오컬트측면에서 검은사제들 한표!! </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>6</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">wind****</a>
+              </span>
+              <em>03.14 18:51</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">[단독] '세상에 이런 일이' 임성훈 "종영까지 한달 이상 남아"…사실상 인정 •••••••••• 솔직히 나도 방송 본 지 오래된 입장에서 폐지하지 말라고 반대하고 욕할 명분은 없다. 너무 아쉽지만 시대의 흐름으로 받아들여야 하지 않을까 싶다. </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908393_O">4</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908393_X">3</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">wind****</a>
+              </span>
+              <em>03.14 16:13</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">김창완, 23년만 라디오 DJ 하차…연주하며 '한참 오열'[스타이슈] •••••••••• 그래도 새로운 프로그램으로 돌아신다니 그나마 다행 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>3</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">bobo****</a>
+              </span>
+              <em>03.14 15:30</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">여자들 쳐벗고 다니는게 이쁘다고 생각되는 줄 아나 봐 천해 보이는데 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>6</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908283" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">bboo****</a>
+              </span>
+              <em>03.13 18:34</em>
+              <a href="javascript:reportCommonComment('100','31217','9908283');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">홍록기도 여기저기 방송 다시 나오겠네 사업망해서... </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908283', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908283_O">13</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908283', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908283_X">0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908253" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">wing****</a>
+              </span>
+              <em>03.13 14:50</em>
+              <a href="javascript:reportCommonComment('100','31217','9908253');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">귀신나오는거 너무 별로다 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908253', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908253_O">6</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908253', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908253_X">6</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908240" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">meef****</a>
+              </span>
+              <em>03.13 13:28</em>
+              <a href="javascript:reportCommonComment('100','31217','9908240');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">파묘 핵심은 일제가 우리나라의 정기를 끊으려 했다는걸 알리는거 같은데..과거에 얽매일 필욘 없지만 역사를 잃어버리면 안되지. </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908240', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908240_O">33</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908240', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908240_X">3</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908236" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">kang****</a>
+              </span>
+              <em>03.13 13:21</em>
+              <a href="javascript:reportCommonComment('100','31217','9908236');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">솔직히 스토리로는 검은 사제들이 더 잘 만들었음. 파묘는 중간부터 에러야.. </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908236', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908236_O">12</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908236', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908236_X">4</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908214" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">pure****</a>
+              </span>
+              <em>03.13 10:20</em>
+              <a href="javascript:reportCommonComment('100','31217','9908214');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">사바하!!! </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908214', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908214_O">1</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908214', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908214_X">5</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908196" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">chun****</a>
+              </span>
+              <em>03.13 08:50</em>
+              <a href="javascript:reportCommonComment('100','31217','9908196');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">파묘 극장에서 보고 왔는데 같이 간 5명 다 이게 800만 넘었다고..... 다같이 이런 소리 했음그냥 쏘쏘지....이게 이렇게 많이 볼일 인가 하고 낚여서 옴 ㅜㅜ </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908196', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908196_O">17</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908196', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908196_X">22</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908190" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">milu****</a>
+              </span>
+              <em>03.13 08:32</em>
+              <a href="javascript:reportCommonComment('100','31217','9908190');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">대박!! </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908190', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908190_O">2</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908190', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908190_X">0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908180" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">asca****</a>
+              </span>
+              <em>03.13 07:20</em>
+              <a href="javascript:reportCommonComment('100','31217','9908180');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">검은사제들이 좀더무서움 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908180', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908180_O">6</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908180', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908180_X">3</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908166" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">zzar****</a>
+              </span>
+              <em>03.12 23:26</em>
+              <a href="javascript:reportCommonComment('100','31217','9908166');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">이거 1년뒤에 투표 다시해보면 검은사제들이 이길걸 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908166', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908166_O">23</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908166', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908166_X">9</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908157" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">rldb****</a>
+              </span>
+              <em>03.12 21:16</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">나에겐 랑종과 비슷했음.. 내용이 비슷하다는 것이 아니라 그렇~~~게 무섭고 재밌다고 해서 봤더니 그냥.. 그냥 그냥..... </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>4</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>1</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">rive****</a>
+              </span>
+              <em>03.12 18:37</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">한국형 오컬트 파묘 검은사제들 여기에 추가적으로 변신이나 사바하 곡성도 좋음. 사도같은 좀 캐쥬얼한것도 좋음 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>3</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <div class="replyBottom">
+      <div class="btn type1 f_clear">
+        <div class="moreWrap">
+          <div class="btn_more">
+            <button type="button">
+              <span>더보기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

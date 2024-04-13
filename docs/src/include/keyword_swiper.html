@@ -1,0 +1,64 @@
+
+@@if(isMain === "false"){
+  <ul @@if(isBackground === "true"){class="keyword_swiper bg"}  class="keyword_swiper">
+    <li>
+      <a href="#">
+        <p>韓, 22대총선</p>
+      </a>
+    </li>   
+    @@for(var i = 0; i < 9; i++){
+      <li>
+        <a href="#">
+          <p>韓, 22대총선 韓, 선 韓, 韓, 선 韓,韓, 선 韓,</p>
+        </a>
+      </li> 
+    }
+    <li>
+      <a href="#" class="active">
+        <p>'br처리 br처리'<br/>'br처리 br처리'</p>
+      </a>
+    </li> 
+  </ul>
+  }
+  @@if(isMain === "true"){
+    <ul @@if(isBackground === "true"){class="keyword_swiper main bg"}  class="keyword_swiper main">
+      <li>
+        <a href="#">
+          <p>韓, 22대총선</p>
+        </a>
+      </li>
+      @@for(var i = 0; i < 10; i++){
+        <li>
+          <a href="#">
+            <p>韓, 22대총선 韓, 22대총선 韓, 22대총선 韓, 22대총선</p>
+          </a>
+        </li> 
+      }
+      <li>
+        <a href="#" class="active">
+          <p>'br처리 br처리'<br/>'br처리 br처리'</p>
+        </a>
+      </li>       
+    </ul>
+  }
+  @@if(isMain === "mal"){
+    <ul @@if(isBackground === "true"){class="keyword_swiper mal bg"}  class="keyword_swiper mal">
+      <li>
+        <a href="#" >
+          <p>韓, 22대총선</p>
+        </a>
+      </li>     
+      @@for(var i = 0; i < 10; i++){
+        <li>
+          <a href="#">
+            <p>韓, 22대총선 韓, 22대총선 韓, 22대총선 韓, 22대총선</p>
+          </a>
+        </li> 
+      }
+      <li>
+        <a href="#" class="active">
+          <p>'br처리 br처리'<br/>'br처리 br처리'</p>
+        </a>
+      </li>  
+    </ul>
+  }

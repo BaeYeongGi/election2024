@@ -1,8 +1,23 @@
-body {
-  p {
-    color:red;
-    &.active {
-      color:blue;
-    }
-  }
-}
+/***
+*
+* var - 변수 포함
+* reset - css초기화
+* common - 공통스타일 [header, footer, aside].html
+* main - 메인페이지 [home].html
+*
+***/
+
+@import './styles/swiper';
+@import './styles/var';
+@import './styles/reset';
+@import './styles/base64';
+@import './styles/common';
+@import './styles/main';
+@import './styles/news';
+@import './styles/photo';
+@import './styles/mal';
+@import './styles/guide';
+@import './styles/reply';
+@import './styles/candidate';
+@import './styles/vote';
+@import './styles/view';

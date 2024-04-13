@@ -1,0 +1,30 @@
+<ul class="three_depth_menu">
+  <li>
+    <a href="voteall.html" @@if(active === "n1"){class="active"}>
+        종합
+    </a>
+  </li>
+  <li>
+    <a href="voteregion.html"
+    @@if(active === "n2"){class="active"}
+    @@if(active === "n1"){class="disabled"}
+    >
+      시도별
+    </a>
+  </li>
+  <li>
+    <a href="ratio.html" @@if(active === "n3"){class="active"}>
+      비례대표
+    </a>
+  </li>
+  <li>
+    <a href="counting.html" @@if(active === "n4"){class="active"}>
+      지역구조회
+    </a>
+  </li>
+  <li>
+    <a href="myregion.html" @@if(active === "n5"){class="active"}>
+      내지역조회
+    </a>
+  </li>
+</ul>

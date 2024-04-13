@@ -1,25 +1,401 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  @@include("include/head.html", {
+    "type": ""
+  })
 </head>
-<body>
-  테스트1
-  @@include('include/test.html', {
-    aaa: "sub"
+<body class="body">
+  @@include("include/header.html", {
+    "active": "n1",
+    "type": ""
   })
-  
-  @@include('include/test.html', {
-    aaa: "main"
-  })
+<div class="main_wrap">
+  <section class="section">
+    <ul class="news_cluster_list main type1">
+      <li class="first_thumb remove_border">
+        <a href="#">
+          <h2 class="top_text">
+            <span class="point">1번째 타입</span> 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터  
+          </h2>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <h2 class="text">
+            <span class="point">여론조사</span> 올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일 올해 韓은 총선, 美 
+          </h2>
+        </a>
+      </li>      
+      @@for(var i = 0; i < 2; i++){
+        <li>
+          <a href="#">
+            <h2 class="text">
+              올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일 올해 韓은 총선, 美 
+            </h2>
+          </a>
+        </li>
+      }      
+    </ul>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <ul class="news_cluster_list main type1">
+      <li class="first_thumb remove_border">
+        <a href="#">
+          @@include("include/image.html", {
+            x: "152",
+            y: "114",
+            alt: "韓총선 美는 대선…선거와 증시의 상관 관계는 여론조사 결결과는 제22대 국회의원 선거",
+            imageWithText: "false",
+            type: "video"
+          })
+          <h2 class="top_text">
+            <span class="point">1번째 타입</span> 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터  
+          </h2>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <h2 class="text">
+            <span class="point">여론조사</span> 올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일 올해 韓은 총선, 美 
+          </h2>
+        </a>
+      </li>      
+      @@for(var i = 0; i < 2; i++){
+        <li>
+          <a href="#">
+            <h2 class="text">
+              올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일 올해 韓은 총선, 美 
+            </h2>
+          </a>
+        </li>
+      }      
+    </ul>
+  </section>
+  <hr class="cluster_line">  
+  <section class="section" id="cid2">
+    <ul class="news_cluster_list main type2">
+      <li class="first_thumb remove_border">
+        <a href="#">
 
-45345fds
-  @@for(let i = 0; i < 5; i++){
-    <p>`+i+`</p>
-  }
-11
-  11sdfsfdfsddfss
+          <h2 class="top_text">
+            <span class="point">2번째 타입</span> 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터 메인 상단 클러스터  
+          </h2>
+          <p class="top_sub_text">한동훈 "업무 효율성·연속성 위해 이철규"4·10총선 인재영입 한동훈·이철규 공동위원장 체제 국회의원 선거 타 한동훈 "업무 효율성·연속성 위해 이철규"4·10총선 인재영입 한동훈·이철규 공동위원장 체제 국회의원 선거 타이</p>          
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <h2 class="text">
+            <span class="point">여론조사</span> 올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일 올해 韓은 총선, 美 
+          </h2>
+        </a>
+      </li>      
+      @@for(var i = 0; i < 2; i++){
+        <li>
+          <a href="#">
+            <h2 class="text">
+              올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일 올해 韓은 총선, 美 
+            </h2>
+          </a>
+        </li>
+      }      
+    </ul>
+  </section>
+  <hr class="cluster_line">  
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">키워드로 보는 선거</p>
+      <a href="#" class="more">더보기</a>
+    </div>
+    @@include("include/keyword_swiper.html", {
+      "isBackground": "false",
+      "isMain": "true"    
+    })
+  </section>
+  <hr class="cluster_line">
+  <section class="section main_slide">
+    @@include("include/news_cluster_normal.html", {
+      "type": ""
+    })
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    @@include("include/news_cluster_photo.html")
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">말말말</p>
+      <a href="#" class="more talk">더보기</a>
+    </div>
+    <ul class="mal_buttons">
+      <li><button><span>br 텍스트<br/>br 텍스트</span></button></li>
+      <li><button><span>김포시 서울편입 김포시 서울편입김포시 서울편입김포시 서울편입김포시 서울편입김포시 서울편입김포시 서울편입</span></button></li>
+      <li><button>김포시 서울편입</button></li>
+    </ul>
+    <div class="mal_swiper">
+      <div class="swiper-wrapper">
+        @@include("include/mal.html")
+        @@include("include/mal.html")
+        @@include("include/mal.html")
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <hr class="cluster_line">
+
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">화제의 선거구 후보자</p>
+      <a href="#" class="more">더보기</a>
+    </div>   
+    @@include("include/candidate_list.html", {
+      "type": "home"
+    })     
+    <ul class="view_candidate_buttons">
+      <li><a href="#">내 지역 후보<span></span></a></li>
+      <li><a href="#">비례대표 후보<span></span></a></li>
+    </ul>       
+  </section>
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">팩트체크</p>
+      <a href="#" class="more">더보기</a>
+    </div>
+    <ul class="news_cluster_list thumb info">
+      @@for(var i = 0; i < 2; i++){
+        <li>
+          <a href="#">
+            @@include("include/image.html", {
+              x: "107",
+              y: "80",
+              alt: "사이즈17 1줄일 경우 세로 가운데",
+              imageWithText: "false",
+              type: "video"
+            })
+            <div class="text_wrap">
+              <h2 class="text">사이즈17 1줄일 경우 세로 가운데</h2>            
+              <div class="info">
+                <span class="auth">언론사</span>
+                <span class="time">03.28</span>
+              </div>
+            </div>
+          </a>
+        </li>  
+      }
+      <li>
+        <a href="#">
+          <div class="text_wrap">
+            <h2 class="text">사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데</h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>         
+    </ul>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">여론조사</p>
+      <a href="#" class="more">더보기</a>
+    </div>
+    <ul class="news_survey_list">
+      @@for(var i = 0; i < 3; i++){
+        <li>
+          <a href="#" class="img_area">
+            @@include("include/image.html", {
+              x: "134",
+              y: "100",
+              alt: "사이즈17 1줄일 경우 세로 가운데",
+              imageWithText: "false",
+              type: "video"
+            })
+          </a>
+          <div class="text_wrap">
+            <a href="#" class="survey_link">각 정당별 지지도 조사</a>
+            <a href="#">
+              <h2 class="text">사이즈17 기사제목 기사제목 뉴뉴뉴뉴뉴 뉴뉴뉴뉴뉴뉴뉴 이즈17 기사제목 기사제목 뉴뉴뉴뉴뉴 뉴뉴뉴뉴뉴뉴</h2>
+              <div class="info">
+                <span class="auth">언론사</span>
+                <span class="time">3분전</span>
+              </div>
+            </a>
+          </div>
+        </li>
+      }
+    </ul>
+    <div class="survey_caption"><span>* 중앙선거여론조사심의위원회</span> 여론조사 결과입니다.</div>
+  </section>
+  <hr class="cluster_line">
+  <section class="survey_banner_section">
+    <a href="#">
+      @@include("../base64/icon_survey.html")
+      <dl>
+        <dt>중앙선거관리위원회</dt>
+        <dd>선거여론조사결과 자세히보기</dd>
+      </dl>
+    </a>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">비하인드</p>
+      <a href="#" class="more">더보기</a>
+    </div>
+    <ul class="news_cluster_list thumb info">
+        <li>
+          <a href="#">
+            @@include("include/image.html", {
+              x: "107",
+              y: "80",
+              alt: "사이즈17 1줄일 경우 세로 가운데",
+              imageWithText: "false",
+              type: "photo"
+            })
+            <div class="text_wrap">
+              <h2 class="text">사이즈17 1줄일 경우 세로 가운데</h2>            
+              <div class="info">
+                <span class="auth">언론사</span>
+                <span class="time">03.28</span>
+              </div>
+            </div>
+          </a>
+        </li>   
+      <li>
+        <a href="#">
+          @@include("include/image.html", {
+            x: "107",
+            y: "80",
+            alt: "사이즈17 1줄일 경우 세로 가운데",
+            imageWithText: "false",
+            type: "photo"
+          })
+          <div class="text_wrap">
+            <h2 class="text">사이즈17 1줄일 경우 세로 가운데
+              사이즈17 1줄일 경우 세로 가운데사이즈17 1줄일 경우 세로 가운데사이즈17 1줄일 경우 세로 가운데사이즈17 1줄일 경우 세로 가운데
+            </h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>         
+      <li>
+        <a href="#">
+          <div class="text_wrap">
+            <h2 class="text">사이즈17 1줄일 경우 세로 가운데</h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>   
+    <li>
+      <a href="#">
+        <div class="text_wrap">
+          <h2 class="text">사이즈17 1줄일 경우 세로 가운데
+            사이즈17 1줄일 경우 세로 가운데사이즈17 1줄일 경우 세로 가운데사이즈17 1줄일 경우 세로 가운데사이즈17 1줄일 경우 세로 가운데
+          </h2>            
+          <div class="info">
+            <span class="auth">언론사</span>
+            <span class="time">03.28</span>
+          </div>
+        </div>
+      </a>
+    </li>      
+    </ul>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    @@include("include/news_cluster_ranking.html")
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">선거 안내</p>
+      <a href="#" class="more">더보기</a>
+    </div>
+    <a href="#" class="main_guide_area">
+      <ul>
+        <li>
+          <div class="img guide_red_circle"></div>
+          <dl class="text">
+            <dt>투표</dt>
+            <dd>4.10(수)<br/><span>6시~18시</span></dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img guide_blue_circle"></div>
+          <dl class="text">
+            <dt>사전투표</dt>
+            <dd>4.5(금)~4.6(토)<br/><span>6시 ~ 18시</span></dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img guide_check"></div>
+          <dl class="text">
+            <dt>1인2표제</dt>
+            <dd>지역구 후보</dd>
+            <dd>정당 투표</dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img guide_person"></div>
+          <dl class="text">
+            <dt>선출 인원</dt>
+            <dd>지역구 253명<br/>비례대표 47명</dd>
+          </dl>
+        </li>                
+      </ul>
+    </a>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">불공정 선거보도 기사</p>
+      <a href="#" class="more">더보기</a>
+    </div>
+    <ul class="news_unfair_list">
+      @@for(var i = 0; i < 5; i++){
+        <li>
+          <a href="#">
+            <h2 class="text">쌍특검법 국회 쌍특검법 국회 쌍특검법 국회 쌍특검법 국회 쌍특검법 국회 쌍특검법 국회 </h2>
+            <div class="info">
+              <span class="auth">세계일보</span>
+              <span class="time">30분전</span>
+            </div>
+          </a>
+        </li>
+      }
+    </ul>
+    <div class="unfair_caption">인터넷선거보도위원회에서 경고문 게재, 경고, 주의등의 조치를 한 기사들입니다.</div>
+  </section>
+  <hr class="cluster_line">
+</div>
+  @@include("include/scroll_button.html")
+  @@include("include/footer.html")
+  <script>
+    mainNewsSwiper();
+    malmalmalSwiper({
+      links: ['11111','22222','3333'],
+    });
+    rankingNewsSwiper();
+    showRandomCandidateList();
+    sectionTargeting({
+      id: 'cid',
+    });
+  </script>
 </body>
 </html>

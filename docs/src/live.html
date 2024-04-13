@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include("include/head.html", {
+    "type": ""
+  })
+</head>
+<body class="body">
+  @@include("include/header.html", {
+    "active": "n2",
+    "type": ""
+  })
+  @@include("include/menu.html", {
+    "type": "result",
+    "active": "n4",
+  })  
+  <ul class="live_tab item4">
+    <li><a href="#" class="active">@@include("svg/icon_live.html") JTBC</a></li>
+    <li><a href="#">@@include("svg/icon_live.html") 연합뉴스</a></li>
+    <li><a href="#">@@include("svg/icon_live.html") SBS</a></li>
+    <li><a href="#">YTN</a></li>
+  </ul>
+  <ul class="live_tab item3">
+    <li><a href="#" class="active">@@include("svg/icon_live.html") JTBC</a></li>
+    <li><a href="#">@@include("svg/icon_live.html") 연합뉴스</a></li>
+    <li><a href="#">YTN</a></li>
+  </ul>
+  <ul class="live_tab item2">
+    <li><a href="#" class="active">@@include("svg/icon_live.html") JTBC</a></li>
+    <li><a href="#">YTN</a></li>
+  </ul>
+  <ul class="live_tab">
+    <li><a href="#" class="active">@@include("svg/icon_live.html") JTBC</a></li>
+  </ul>  
+  <div id="live-box" class="player">
+    <div class="youtube_wrap">
+      <iframe id="player" src="https://www.youtube.com/embed/-JhoMGoAfFc?si=BgktoDlfWSsDhnHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>       
+    <div class="live_prepare" aria-label="제22대 국회의원 선거 개표방송 준비중"></div>
+    <div class="live_end">개표방송 종료되었습니다.</div>
+    <div class="player_state_text">
+      <span class="state prepare" aria-label="준비중"></span>
+      <p class="time">17:00~</p>
+      <p class="title">제22회 국회의원 선거 개표방송 (JTBC)</p>
+    </div>   
+    <div class="player_state_text">
+      <span class="state on_air" aria-label="on air"></span>
+      <p class="time">17:00~</p>
+      <p class="title">제22회 국회의원 선거 개표방송 (JTBC)</p>
+    </div>  
+    <div class="player_state_text">
+      <span class="state over" aria-label="종료"></span>
+      <p class="time">17:00~22:00</p>
+      <p class="title">방송이 종료되었습니다.</p>
+    </div>      
+  </div> 
+  <hr class="cluster_line">
+  <section class="reply_section">
+    @@include("include/special_reply.html", {
+      type: "vote"
+    })
+  </section>
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>  
+  <hr class="cluster_line">
+  @@include("include/scroll_button.html")
+  @@include("include/footer.html")
+</body>
+</html>

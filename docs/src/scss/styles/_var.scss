@@ -1,0 +1,91 @@
+// 멀티줄임말
+@mixin ell($n){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  -webkit-line-clamp: $n;
+}
+
+// 기본 값
+$color-black-1: #222;
+$color-white-1: #fff;
+$color-gray-1: #838383;
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+$bg-white: #fff;
+$bg-black: #000;
+$point: #CD20A7;
+$shadow: 0px 0px 4px 0 rgba(0,0,0,0.25);
+$text-shadow: 0 0 4px rgba(0,0,0,0.25);
+$target: #F6F6F6;
+$ROOT: '../../../../../images';
+
+// 다크모드 색상
+$bg-black-1: #262626;
+$bg-black-2: #121212;
+$bg-black-3: #2f2f2f;
+$font-color-1: #fafafa;
+$font-color-2: #d7d7d7;
+$font-color-3: #8e8e8e;
+$font-color-4: #777;
+$font-color-5: #464646;
+$border-color-1: #393939;
+$border-color-2: #666;
+
+$image-border-radius: 8px;
+
+// 정당별색상
+$clan1: #0080EE;
+$clan2: #FF2C2E;
+$clan3: #FACF00;
+$clan3_font: #F4B506;
+$clan4: #45BABD; 
+$clan5: #C19D66; 
+$clan_independent: #9BA690;
+$clan_others: #C19D66;
+
+// 21대 정당 색상
+$clan001: #0080EE;
+$clan002: #E84573;
+$clan003: #FFD600; 
+$clan004: #FF8A00;
+$clan005: #0F55A8;
+$clan00_independent: #9BA690;
+
+.bg {
+  &.clan1 {background-color:$clan1;}
+  &.clan2 {background-color:$clan2;}
+  &.clan3 {background-color:$clan3;}
+  &.clan4 {background-color:$clan4;}
+  &.clan5 {background-color:$clan5;}
+  &.clan_independent {background-color:$clan_independent;}
+  &.clan_others {background-color:$clan_others;}
+  &.clan001 {background-color:$clan001;}
+  &.clan002 {background-color:$clan002;}
+  &.clan003 {background-color:$clan003;}
+  &.clan004 {background-color:$clan004;}
+  &.clan005 {background-color:$clan005;}
+  &.clan00_independent {background-color:$clan00_independent;}
+}
+
+.font {
+  &.clan1 {color:$clan1;}
+  &.clan2 {color:$clan2;}
+  &.clan3 {color:$clan3_font;}
+  &.clan4 {color:$clan4;}
+  &.clan5 {color:$clan5;}
+  &.clan_independent {color:$clan_independent;}
+  &.clan_others {color:$clan_others;}
+  &.clan001 {color:$clan001;}
+  &.clan002 {color:$clan002;}
+  &.clan003 {color:$clan003;}
+  &.clan004 {color:$clan004;}
+  &.clan005 {color:$clan005;}
+  &.clan00_independent {color:$clan00_independent;}
+}
+
+.point {
+  color:$point;
+}

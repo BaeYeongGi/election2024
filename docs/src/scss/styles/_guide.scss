@@ -1,0 +1,113 @@
+.guide_container {
+  display:flex;
+  flex-wrap: wrap;
+  section {
+    width:100%;
+  }
+  hr {
+    width:100%;
+  }
+  &.type_A {
+    section {
+      &:nth-of-type(2) {
+        padding-bottom:0;
+      }
+    }
+  }
+  &.type_B {
+    section {
+      &:nth-of-type(1) {
+        order:5;
+        padding-top:0;
+      }
+      &:nth-of-type(2) {
+        order:3;
+        padding-bottom:0;
+      }    
+      &:nth-of-type(3) { // ok
+        order:1;
+      }       
+      &:nth-of-type(4) {
+        order:8;
+      }        
+    }
+    hr {
+      &:nth-of-type(1) {
+        order:2;
+      }
+      &:nth-of-type(2) {
+        order:4;
+      }    
+      &:nth-of-type(3) {
+        order:7;
+      }       
+      &:nth-of-type(4) {
+        order:9;
+      }              
+    }
+    .guide_button { 
+      order:6;
+    }
+  }
+}
+
+.guide {
+  background-image:url($ROOT + '/election2024/m/img_guide.png');
+  background-repeat: no-repeat;
+  background-size:345px auto;
+  width:345px;
+  margin:0 auto;
+  &.img1 {
+    height:1191px;
+    background-position:0 -1866px;
+  }
+  &.img2 {
+    height:933px;
+    background-position:0 0;
+  }  
+}
+.guide_button {
+  display:block;
+  width:100%;
+  height:85px;
+  background-color:$point;
+  background-size:131px 22px;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-image:url($icon-guide-button);
+}
+
+@media (max-width:360px) {
+  .guide {
+    background-size:300px auto;
+    &.img1 {
+      height:1035px;
+      background-position:0 -1623px;
+    }
+    &.img2 {
+      height:811px;
+      background-position:0 0;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) { 
+  .guide {
+    &.img1 {
+      background-position:0 -3057px;
+    }
+    &.img2 {
+      background-position:0 -933px;
+    } 
+  }
+  @media (max-width:360px) {
+    .guide {
+      &.img1 {
+        background-position:0 -2658px;
+      }
+      &.img2 {
+        background-position:0 -811px;
+      } 
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<div class="cluster_title_more_wrap">
+  <p class="news_cluster_title">포토</p>
+  <a href="#" class="more">더보기</a>
+</div>
+<ul class="news_photo_swiper">
+  @@for(var i = 0; i < 6; i++){  
+    <li>
+      <a href="#">
+        @@include("include/image.html", {
+          x: "150",
+          y: "103",
+          alt: "제동 걸린 홍길동 제동 걸린 홍길동 제동 걸린 홍길동 제동 걸린 홍길동",
+          imageWithText: "false",
+          type: "photo"
+        })
+        <h2 class="text">제동 걸린 홍길동 제동 걸린 홍길동</h2>
+      </a>
+    </li>
+  }
+</ul>

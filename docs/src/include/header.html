@@ -1,0 +1,73 @@
+<header id="header" role="banner">
+	<div class="gnbWrap" id="type2">
+		<div class="gnb">
+			<a href="#" class="nate"><span class="hd-img">네이트</span></a>
+			<a href="#" class="service">뉴스</a>
+		</div>
+		<div class="relsvc">
+			<a href="#">스포츠</a>
+			<a href="#">연예</a>
+		</div>
+		<div class="searchWrap">
+			<button class="srchlink" aria-expanded="false" aria-controls="search-field" aria-label="검색창 열기"><span class="hd-img"></span></button>
+			<!-- 검색 레이어 열릴 때 -->
+			<form id="search-field" role="search" aria-labelledby="search-keyword">
+				<fieldset>
+					<legend id="search-keyword">뉴스 기사 검색</legend>
+					<input type="search" type="text">
+					<button class="delete hd-img" type="button" aria-label="검색어 삭제"><span class="hd-img"></span></button>
+					<button class="srchbtn" type="submit"><span class="hd-img" aria-label="검색하기"></span></button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</header>
+<div class="gnb_container">
+  <div class="gnb_title_wrap">
+    <a href="home.html" class="logo"><h1>제22대 국회의원 선거</h1></a>
+    <button class="gnb_share" aria-label="공유하기 버튼">
+      @@include("../base64/icon_header_share.html")
+    </button>
+  </div>
+  <div class="vote_state_wrap">
+    <dl class="early_vote">
+      <dt>@@include("../base64/icon_header_early_vote.html")</dt>
+      <dd>4.5-4.6</dd>
+    </dl>
+  </div>
+  <div class="nav_wrap">
+    <ul class="nav">
+      @@if(type === "candidate"){
+        <li><a href="home.html" @@if(active === "n1"){class="active"}><span class="name">홈</span></a></li>
+        <li><a href="news_type_A.html" @@if(active === "n2"){class="active"}><span class="name">뉴스</span></a></li>
+        <li><a href="photo.html" @@if(active === "n3"){class="active"}><span class="name">포토</span></a></li>
+        <li><a href="survey_type_A.html" @@if(active === "n4"){class="active"}><span class="name">여론조사</span></a></li>
+        <li><a href="talk.html" @@if(active === "n5"){class="active"}><span class="name">말말말</span></a></li>
+        <li><a href="candidate01.html" @@if(active === "n7"){class="active new"} class="new"><span class="name">후보자</span>@@include("../base64/icon_header_new_menu.html")</a></li>
+        <li><a href="guide_type_A.html" @@if(active === "n6"){class="active"}><span class="name">선거안내</span></a></li>
+        <li><a href="#" @@if(active === "n8"){class="active"}><span class="name">투&middot;개표</span></a></li>
+      }
+      @@if(type !== "candidate"){
+        <li><a href="home.html" @@if(active === "n1"){class="active"}><span class="name">홈</span></a></li>
+        <li><a href="news_type_A.html" @@if(active === "n2"){class="active"}><span class="name">뉴스</span></a></li>
+        <li><a href="photo.html" @@if(active === "n3"){class="active"}><span class="name">포토</span></a></li>
+        <li><a href="survey_type_A.html" @@if(active === "n4"){class="active"}><span class="name">여론조사</span></a></li>
+        <li><a href="talk.html" @@if(active === "n5"){class="active"}><span class="name">말말말</span></a></li>
+        <li><a href="guide_type_A.html" @@if(active === "n6"){class="active"}><span class="name">선거안내</span></a></li>
+        <li><a href="candidate01.html" @@if(active === "n7"){class="active new"} class="new"><span class="name">후보자</span>@@include("../base64/icon_header_new_menu.html")</a></li>
+        <li><a href="#" @@if(active === "n8"){class="active"}><span class="name">투&middot;개표</span></a></li>
+      }
+    </ul>
+  </div>
+</div>
+<div class="dimmed"></div>
+@@include("share.html")
+<script>
+  document.querySelector('.gnb_share').addEventListener('click', function(){
+    const layer = document.querySelector('#sns_share_pop');
+    layer.classList.add('active');
+    layer.style.display = 'block';
+  })
+  navigationEvent();
+  setIOS();
+</script>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include("include/head.html", {
+    "type": ""
+  })
+</head>
+<body class="body">
+  @@include("include/header.html", {
+    "active": "n7",
+    "type": "candidate"
+  })
+  @@include("include/menu.html", {
+    "type": "candidate",
+    "active": "n2",
+  })
+  
+  <section class="section">
+    @@include("include/candidate_search_form.html", {
+      type: 2
+    })
+    <dl class="candidate_select_list">
+      <dt>선거구 선택</dt>
+      <dd><a href="#" class="active">갑선거구</a></dd>
+      <dd><a href="#">을선거구</a></dd>
+      <dd><a href="#">갑을병선거구</a></dd>
+    </dl>
+  </section>
+  <hr class="cluster_line">
+  @@include("include/candidate_list.html", {
+    "type": "candidate"
+  })
+  <section class="candidate_info">
+    <div class="candidate_title_wrap">
+      <div class="title_area">
+        <p class="candidate_name">기호 1번 윤석열</p>
+        <span class="candidate_clan font clan1">국민의힘</span>
+      </div>
+    </div>
+    <table class="candidate_info_table">
+      <tbody>
+        <tr>
+          <th>나이</th>
+          <td>1964. 12. 22 (57세)</td>          
+        </tr>
+        <tr>
+          <th>주소</th>
+          <td>서울특별시 종로구 북촌로6길</td>          
+        </tr>
+        <tr>
+          <th>직업</th>
+          <td>34대 경기도지사</td>          
+        </tr>
+        <tr>
+          <th>학력</th>
+          <td>중앙대학교 법학과 졸업</td>          
+        </tr>
+        <tr>
+          <th>경력</th>
+          <td>
+            <div>(전) 경기도지사</div>
+            <div>(전) 성남시장</div>
+          </td>          
+        </tr>      
+        <!-- <tr>
+          <th>병역신고 (본인)</th>
+          <td>군복무를 마친 사람</td>          
+        </tr>      
+        <tr>
+          <th>재산신고액 (천원)</th>
+          <td>162,920,097</td>          
+        </tr>      
+        <tr>
+          <th>납부액 (천원)</th>
+          <td>20,704,400</td>          
+        </tr>      
+        <tr>
+          <th>최근 5년간 체납액 (천원)</th>
+          <td>0</td>          
+        </tr>      
+        <tr>
+          <th>현 체납액 (천원)</th>
+          <td>0</td>          
+        </tr>                                     
+        <tr>
+          <th>전과유무 (건수)</th>
+          <td>5</td>          
+        </tr>                      -->
+      </tbody>
+    </table>
+    <a href="#" class="candidate_info_detail_button">후보자 상세정보 확인<span class="arrow"></span></a>
+    <ul class="candidate_caption">
+      <li>
+        후보자 정보는 <a href="#">중앙선거관리위원회</a>에서 제공하며, 정보제공처의 사정에 따라 지연되거나 변경될 수 있습니다. 
+      </li>
+      <li>의석수 5석 이상의 정당만 정당 컬러로 표기합니다.</li>
+    </ul>
+  </section>
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>  
+  <hr class="cluster_line">
+  @@include("include/scroll_button.html")
+  @@include("include/footer.html")
+  <script>
+    
+    candidateSelectActiveStyle();
+    
+
+  </script>
+</body>
+</html>

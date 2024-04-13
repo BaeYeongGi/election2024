@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  @@include("include/head.html", {
+    "type": ""
+  })
+</head>
+<body class="body">
+  @@include("include/header.html", {
+    "active": "n2",
+    "type": ""
+  })
+  @@include("include/menu.html", {
+    "type": "result",
+    "active": "n3",
+  })  
+  @@include("include/three_depth_menu.html", {
+    "active": "n1"
+  })
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">제22대 국회의원 선거결과 <span>(300석)</span></p>
+      <a href="#" class="more">더보기</a>
+    </div>    
+    @@include("include/vote_swipe_buttons.html", {
+      "value1": "22대 국회의원 선거",
+      "value2": "21대 국회의원 선거",
+    })
+    <div class="vote_swipe_container">
+      <ul class="swiper-wrapper">
+
+          <li class="swiper-slide">
+            <div class="seat_wrap">
+              @@include("svg/seat.html", {
+                className: "seat"
+              })
+              <p class="count">300석</p>
+            </div>
+            @@include("include/vote_seat_table.html", {
+              type: "3box_result",
+              state: "current",
+            })
+          </li>
+          <li class="swiper-slide">
+            <div class="seat_wrap">
+              @@include("svg/seat.html", {
+                className: "seat"
+              })
+              <p class="count">300석</p>
+            </div>
+            @@include("include/vote_seat_table.html", {
+              type: "3box_result",
+              state: "previous",
+            })
+          </li>
+      </ul>     
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <section class="section vote">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">지도별 1위 의석수 <button class="info">@@include("svg/icon_survey_info.html")  </button></p>
+      <a href="#" class="more">더보기</a>
+      <div class="map_info_layer_popup"><p>지도에서 지역은 1위 의석수/당선자수가 많은 정당 컬러로 표시됩니다. 정당별 1위 의석수/당선자수가 동일하거나, 개표 준비중일 경우 회색으로 표시됩니다.</p></div>
+    </div>      
+    @@include("include/vote_swipe_buttons.html", {
+      "value1": "22대 국회의원 선거",
+      "value2": "지난 21대 국회의원 선거",
+    })  
+    <div class="vote_swipe_container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="map_wrap">
+            @@include("svg/map.html", {
+              className: "map",
+            })
+            @@include("include/map_tabs.html")
+          </div>
+          <p class="vote_versus_caption">
+            @@include("svg/icon_vote_click.html")
+            지역을 클릭해, 상세 개표현황을 확인하세요!
+          </p>   
+          @@include("include/map_color_guide.html", {
+            state: "current"
+          })
+        </li>
+        <li class="swiper-slide">
+          <div class="map_wrap">
+            @@include("svg/map.html", {
+              className: "map",
+            })
+            @@include("include/map_tabs.html")
+          </div>
+          <p class="vote_versus_caption">
+            @@include("svg/icon_vote_click.html")
+            지역을 클릭해, 상세 개표현황을 확인하세요!
+          </p>   
+          @@include("include/map_color_guide.html", {
+            state: "previous_voteall"
+          })         
+        </li>
+      </ul>
+    </div>
+    @@include("include/map_data_popup.html", {
+      isLink: "true"
+    })
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">화제의 선거구 개표결과</p>
+      <a href="#" class="more">더보기</a>
+    </div>        
+    <ul class="vote_versus_tab_container">
+      <li><button>서울 종로</button></li>
+      <li><button>서울 용산</button></li>
+      <li><button>경기 의정부갑</button></li>
+      @@for(var i = 0; i < 4; i++){
+        <li><button>서울 서울</button></li>
+      }
+    </ul>
+    @@include("include/vote_versus_swiper.html", {
+      type: "count",
+      state: "rate",
+      arrow: "false",
+      target: "false"
+    })
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">격전지 개표결과</p>
+      <a href="#" class="more">더보기</a>
+    </div>        
+    <ul class="vote_versus_tab_container">
+      <li><button>서울 종로</button></li>
+      <li><button>서울 용산</button></li>
+      <li><button>경기 의정부갑</button></li>
+      @@for(var i = 0; i < 4; i++){
+        <li><button>서울 서울</button></li>
+      }
+    </ul>
+    @@include("include/vote_versus_swiper.html", {
+      type: "count",
+      state: "open",
+      arrow: "false",
+      target: "false"
+    })
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">정당별 비례대표 개표결과</p>
+      <a href="#" class="more">더보기</a>
+    </div> 
+    @@include("include/vote_swipe_buttons.html", {
+      "value1": "22대 (46석)",
+      "value2": "지난 21대 (47석)",
+    })    
+    <div class="vote_swipe_container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          @@include("include/vote_seat_table.html", {
+            type: "dotted_graph",
+            state: "current"
+          })   
+        </li>
+        <li class="swiper-slide">
+          @@include("include/vote_seat_table.html", {
+            type: "dotted_graph",
+            state: "previous"
+          })  
+        </li>        
+      </ul>
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <ul class="candidate_caption">
+    <li>
+      X/XX 기준으로 의석수가 5석 미만인 정당은 ‘기타정당’으로 구분하여 공통 정당컬러를 사용했습니다. 
+    </li>
+    <li>투·개표 정보는 <a href="#">중앙선거관리위원회</a>에서 제공하며, 정보제공처의 사정에 따라 지연되거나 변경될 수 있습니다.</li>
+  </ul> 
+  <hr class="cluster_line">
+  <section class="reply_section">
+    @@include("include/special_reply.html", {
+      type: "vote"
+    })
+  </section>
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>  
+  <hr class="cluster_line">
+  @@include("include/scroll_button.html")
+  @@include("include/footer.html")
+  <script>
+    voteVersusSwiper();
+    voteHideGraphText();
+    voteSwiper();
+    // 투개표 지도 탭 set data
+    const mapData = {
+      current: {
+        local11: {
+        name: '서울',
+        link: 'local11_link',
+        list: {
+          0:{
+            clan: 'clan2',
+            party: '국민의힘',
+            value: 77,
+          },    
+        }        
+        },
+        local28: {
+          name: '인천',
+          link: 'local28_link',
+          list: {
+            0:{
+              clan: 'clan1',
+              party: '더불어민주당·위성정당명',
+              value: 77
+            },
+            1:{
+              clan: 'clan2',
+              party: '국민의힘',
+              value: 44
+            },        
+            2: {
+              clan: 'clan3',
+              party: 'local11',
+              value: 11,
+            }
+          }        
+        },
+        local52: {
+          name: '강원',
+          link: 'local52_link',
+          list: {
+            0:{
+              clan: 'clan2',
+              party: '국민의힘',
+              value: 99
+            },
+            1:{
+              clan: 'clan1',
+              party: '더불어민주당·위성정당명',
+              value: 44
+            },        
+            2: {
+              clan: 'clan3',
+              party: 'local26',
+              value: 5,
+            }
+          }
+        },        
+        local27: {
+          name: '대구',
+          link: 'local27_link',
+          list: {
+            0:{
+              clan: 'clan1',
+              party: '더불어민주당·위성정당명',
+              value: 55
+            },
+            1:{
+              clan: 'clan2',
+              party: '국민의힘',
+              value: 33
+            },        
+            2: {
+              clan: 'clan3',
+              party: 'local27',
+              value: 5,
+            }
+          }
+        },  
+      },
+      previous: {
+        local11: {
+          name: '서울2',
+          link: 'local11_link',
+          list: {
+            0:{
+              clan: 'clan2',
+              party: '더불어민주당·위성정당명',
+              value: 66
+            },
+            1:{
+              clan: 'clan1',
+              party: '국민의힘',
+              value: 55
+            },        
+            2: {
+              clan: 'clan3',
+              party: 'local11',
+              value: 33,
+            }
+          }        
+        },
+        local28: {
+          name: '인천2',
+          link: 'local28_link',
+          list: {
+            0:{
+              clan: 'clan1',
+              party: '더불어민주당·위성정당명',
+              value: 55
+            },
+            1:{
+              clan: 'clan2',
+              party: '국민의힘',
+              value: 43
+            },        
+            2: {
+              clan: 'clan3',
+              party: 'local11',
+              value: 28,
+            }
+          }        
+        },
+      }
+    }
+  
+    voteMapSetData({data: mapData});
+    candidateSelectActiveStyle();
+    voteMapGuidePopupUI();
+    seatsOf300([
+      {name: '더불어민주당', value: 23, clan: 'clan1'},
+      {name: '국민의힘', value: 21, clan: 'clan2'},
+      {name: '녹색정의당', value: 80, clan: 'clan3'}, 
+    ]);
+  </script>
+</body>
+</html>
