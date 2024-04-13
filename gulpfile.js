@@ -22,7 +22,7 @@ function getPath(value){
 function server() {
   browserSync.init({
     directory: true,
-    open: false,
+    open: true,
     server: {
       baseDir: "./",
     },
