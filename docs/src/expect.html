@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  @@include("include/head.html", {
+  @@include("@@SRC/include/head.html", {
     "type": ""
   })
 </head>
 <body class="body">
-  @@include("include/header.html", {
+  @@include("@@SRC/include/header.html", {
     "active": "n2",
     "type": ""
   })
-  @@include("include/menu.html", {
+  @@include("@@SRC/include/menu.html", {
     "type": "vote",
     "active": "n2",
   })  
@@ -18,11 +18,11 @@
     <div class="cluster_title_more_wrap">
       <p class="news_cluster_title">정당별 예상 의석수 <span>(총300석)</span></p>
     </div>    
-    @@include("include/vote_seat_table.html", {
+    @@include("@@SRC/include/vote_seat_table.html", {
       type: "3box",
       state: "current"
     })
-    @@include("include/vote_seat_table.html", {
+    @@include("@@SRC/include/vote_seat_table.html", {
       type: "1box",
       state: "current"
     })    
@@ -40,7 +40,7 @@
         <li><button>서울 서울</button></li>
       }
     </ul>
-    @@include("include/vote_versus_swiper.html", {
+    @@include("@@SRC/include/vote_versus_swiper.html", {
       type: "survey",
       state: "",
       arrow: "false",
@@ -63,7 +63,7 @@
     <ul class="news_cluster_list thumb info">
       <li id="spring1">
         <a href="#">
-          @@include("include/image.html", {
+          @@include("@@SRC/include/image.html", {
             x: "107",
             y: "80",
             alt: "사이즈17 1줄일 경우 세로 가운데",
@@ -81,7 +81,7 @@
       </li>  
       <li id="spring2">
         <a href="#">
-          @@include("include/image.html", {
+          @@include("@@SRC/include/image.html", {
             x: "107",
             y: "80",
             alt: "사이즈17 1줄일 경우 세로 가운데",
@@ -121,7 +121,7 @@
       </li>  
       <li id="spring5">
         <a href="#">
-          @@include("include/image.html", {
+          @@include("@@SRC/include/image.html", {
             x: "107",
             y: "80",
             alt: "사이즈17 1줄일 경우 세로 가운데",
@@ -139,7 +139,7 @@
       </li>  
       <li>
         <a href="#">
-          @@include("include/image.html", {
+          @@include("@@SRC/include/image.html", {
             x: "107",
             y: "80",
             alt: "사이즈17 1줄일 경우 세로 가운데",
@@ -157,7 +157,7 @@
       </li>  
       <li>
         <a href="#">
-          @@include("include/image.html", {
+          @@include("@@SRC/include/image.html", {
             x: "107",
             y: "80",
             alt: "사이즈17 1줄일 경우 세로 가운데",
@@ -197,7 +197,7 @@
       </li>  
       <li id="spring99">
         <a href="#">
-          @@include("include/image.html", {
+          @@include("@@SRC/include/image.html", {
             x: "107",
             y: "80",
             alt: "사이즈17 1줄일 경우 세로 가운데",
@@ -215,7 +215,7 @@
       </li>  
     </ul>
   </section>    
-  @@include("include/news_list_more_button.html", {
+  @@include("@@SRC/include/news_list_more_button.html", {
     "value": "기사 더보기"
   })
   <hr class="cluster_line">
@@ -224,7 +224,7 @@
   </section>  
   <hr class="cluster_line">
   <section class="reply_section">
-    @@include("include/special_reply.html", {
+    @@include("@@SRC/include/special_reply.html", {
       type: "vote"
     })
     
@@ -234,8 +234,8 @@
     <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
   </section>  
   <hr class="cluster_line">
-  @@include("include/scroll_button.html")
-  @@include("include/footer.html")
+  @@include("@@SRC/include/scroll_button.html")
+  @@include("@@SRC/include/footer.html")
   <script>
 
 

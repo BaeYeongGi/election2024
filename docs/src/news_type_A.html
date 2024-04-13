@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  @@include("include/head.html", {
+  @@include("@@SRC/include/head.html", {
     "type": ""
   })
 </head>
 <body class="body">
-  @@include("include/header.html", {
+  @@include("@@SRC/include/header.html", {
     "active": "n2",
     "type": ""
   })
-  @@include("include/menu.html", {
+  @@include("@@SRC/include/menu.html", {
     "type": "news",
     "active": "n1",
   })
-  @@include("include/keyword_swiper.html", {
+  @@include("@@SRC/include/keyword_swiper.html", {
     "isBackground": "true",
     "isMain": "false"    
   })
@@ -24,7 +24,7 @@
     <ul class="news_cluster_list">
       <li class="first_thumb remove_border">
         <a href="#">
-          @@include("include/image.html", {
+          @@include("@@SRC/include/image.html", {
             x: "107",
             y: "80",
             alt: "올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일",
@@ -47,7 +47,7 @@
       }
     </ul>
   </section>
-  @@include("include/news_list_more_button.html", {
+  @@include("@@SRC/include/news_list_more_button.html", {
     "value": "더보기"
   })
   <hr class="cluster_line">
@@ -71,7 +71,7 @@
     <ul class="news_cluster_list thumb">
       <li>
         <a href="#">
-          @@include("include/image.html", {
+          @@include("@@SRC/include/image.html", {
             x: "107",
             y: "80",
             alt: "사이즈17 1줄일 경우 세로 가운데",
@@ -85,7 +85,7 @@
       </li>    
       <li>
         <a href="#">
-          @@include("include/image.html", {
+          @@include("@@SRC/include/image.html", {
             x: "107",
             y: "80",
             alt: "사이즈17 3줄까지 나올 수 있으며 기사제목 기사제목 기사제목 기사제목 말줄임 처리하면 이",
@@ -108,7 +108,7 @@
       @@for(var i = 0; i < 4; i++){
         <li>
           <a href="#">
-            @@include("include/image.html", {
+            @@include("@@SRC/include/image.html", {
               x: "168",
               y: "115",
               alt: "기사제목 기사제목 기사제목 기사제목기사제목 기사",
@@ -121,7 +121,7 @@
       }
     </ul>
   </section>
-  @@include("include/news_list_more_button.html", {
+  @@include("@@SRC/include/news_list_more_button.html", {
     "value": "더보기"
   })
   <hr class="cluster_line">
@@ -130,7 +130,7 @@
       @@for(var i = 0; i < 2; i++){
         <li>
           <a href="#">
-            @@include("include/image.html", {
+            @@include("@@SRC/include/image.html", {
               x: "107",
               y: "80",
               alt: "사이즈17 1줄일 경우 세로 가운데",
@@ -148,7 +148,7 @@
         </li>  
         <li>
           <a href="#">
-            @@include("include/image.html", {
+            @@include("@@SRC/include/image.html", {
               x: "107",
               y: "80",
               alt: "사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데",
@@ -188,7 +188,7 @@
         </li>       
         <li>
           <a href="#">
-            @@include("include/image.html", {
+            @@include("@@SRC/include/image.html", {
               x: "107",
               y: "80",
               alt: "사이즈17 1줄일 경우 세로 가운데",
@@ -207,7 +207,7 @@
       }
     </ul>
   </section>
-  @@include("include/news_list_more_button.html", {
+  @@include("@@SRC/include/news_list_more_button.html", {
     "value": "기사 더보기"
   })
   <hr class="cluster_line">
@@ -215,8 +215,8 @@
     <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
   </section>  
   <hr class="cluster_line">
-  @@include("include/scroll_button.html")
-  @@include("include/footer.html")
+  @@include("@@SRC/include/scroll_button.html")
+  @@include("@@SRC/include/footer.html")
   <script>
     
     fixedTabs({

@@ -45,6 +45,10 @@ function html(){
           console.log(err.toString());
         })
         .pipe(include({
+          context: {
+            
+            SRC: "/work/workspace/election2024/docs/src/"
+          },
           prefix: "@@",
           basepath: "@file",
           

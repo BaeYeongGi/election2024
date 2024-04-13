@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  @@include("include/head.html", {
+  @@include("@@SRC/include/head.html", {
     "type": ""
   })
 </head>
 <body class="body">
-  @@include("include/header.html", {
+  @@include("@@SRC/include/header.html", {
     "active": "n3",
     "type": ""
   })
@@ -20,7 +20,7 @@
         <li class="large">
           <a href="#">
             <div class="img_wrap photo">
-              @@include("include/image.html", {
+              @@include("@@SRC/include/image.html", {
                 x: "345",
                 y: "164",
                 alt: "D-2 국회의원 선거 얼어붙은 경기 풀어",
@@ -34,7 +34,7 @@
         @@for(var i = 0; i < 4; i++){
           <li>
             <a href="#">
-              @@include("include/image.html", {
+              @@include("@@SRC/include/image.html", {
                 x: "168",
                 y: "115",
                 alt: "D-2 국회의원 선거 얼어붙은 경기 풀어",
@@ -59,7 +59,7 @@
         @@for(var i = 0; i < 4; i++){
           <li>
             <a href="#">
-              @@include("include/image.html", {
+              @@include("@@SRC/include/image.html", {
                 x: "168",
                 y: "115",
                 alt: "D-2 국회의원 선거 얼어붙은 경기 풀어",
@@ -84,7 +84,7 @@
         @@for(var i = 0; i < 4; i++){
           <li>
             <a href="#">
-              @@include("include/image.html", {
+              @@include("@@SRC/include/image.html", {
                 x: "168",
                 y: "115",
                 alt: "D-2 국회의원 선거 얼어붙은 경기 풀어",
@@ -98,7 +98,7 @@
       </ul>
     </div>
   </section>  
-  @@include("include/news_list_more_button.html", {
+  @@include("@@SRC/include/news_list_more_button.html", {
     "value": "더보기"
   })
   <hr class="cluster_line">
@@ -106,8 +106,8 @@
     <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
   </section> 
   <hr class="cluster_line">
-  @@include("include/scroll_button.html")
-  @@include("include/footer.html")
+  @@include("@@SRC/include/scroll_button.html")
+  @@include("@@SRC/include/footer.html")
   <script>
     
   </script>

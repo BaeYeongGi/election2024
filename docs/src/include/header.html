@@ -26,12 +26,12 @@
   <div class="gnb_title_wrap">
     <a href="home.html" class="logo"><h1>제22대 국회의원 선거</h1></a>
     <button class="gnb_share" aria-label="공유하기 버튼">
-      @@include("../base64/icon_header_share.html")
+      @@include("@@SRC/base64/icon_header_share.html")
     </button>
   </div>
   <div class="vote_state_wrap">
     <dl class="early_vote">
-      <dt>@@include("../base64/icon_header_early_vote.html")</dt>
+      <dt>@@include("@@SRC/base64/icon_header_early_vote.html")</dt>
       <dd>4.5-4.6</dd>
     </dl>
   </div>
@@ -43,7 +43,7 @@
         <li><a href="photo.html" @@if(active === "n3"){class="active"}><span class="name">포토</span></a></li>
         <li><a href="survey_type_A.html" @@if(active === "n4"){class="active"}><span class="name">여론조사</span></a></li>
         <li><a href="talk.html" @@if(active === "n5"){class="active"}><span class="name">말말말</span></a></li>
-        <li><a href="candidate01.html" @@if(active === "n7"){class="active new"} class="new"><span class="name">후보자</span>@@include("../base64/icon_header_new_menu.html")</a></li>
+        <li><a href="candidate01.html" @@if(active === "n7"){class="active new"} class="new"><span class="name">후보자</span>@@include("@@SRC/base64/icon_header_new_menu.html")</a></li>
         <li><a href="guide_type_A.html" @@if(active === "n6"){class="active"}><span class="name">선거안내</span></a></li>
         <li><a href="#" @@if(active === "n8"){class="active"}><span class="name">투&middot;개표</span></a></li>
       }
@@ -54,7 +54,7 @@
         <li><a href="survey_type_A.html" @@if(active === "n4"){class="active"}><span class="name">여론조사</span></a></li>
         <li><a href="talk.html" @@if(active === "n5"){class="active"}><span class="name">말말말</span></a></li>
         <li><a href="guide_type_A.html" @@if(active === "n6"){class="active"}><span class="name">선거안내</span></a></li>
-        <li><a href="candidate01.html" @@if(active === "n7"){class="active new"} class="new"><span class="name">후보자</span>@@include("../base64/icon_header_new_menu.html")</a></li>
+        <li><a href="candidate01.html" @@if(active === "n7"){class="active new"} class="new"><span class="name">후보자</span>@@include("@@SRC/base64/icon_header_new_menu.html")</a></li>
         <li><a href="#" @@if(active === "n8"){class="active"}><span class="name">투&middot;개표</span></a></li>
       }
     </ul>

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  @@include("include/head.html", {
+  @@include("@@SRC/include/head.html", {
     "type": ""
   })
 </head>
 <body class="body">
-  @@include("include/header.html", {
+  @@include("@@SRC/include/header.html", {
     "active": "n7",
     "type": "candidate"
   })
-  @@include("include/menu.html", {
+  @@include("@@SRC/include/menu.html", {
     "type": "candidate",
     "active": "n3",
   })
@@ -228,8 +228,8 @@
     <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
   </section>  
   <hr class="cluster_line">
-  @@include("include/scroll_button.html")
-  @@include("include/footer.html")
+  @@include("@@SRC/include/scroll_button.html")
+  @@include("@@SRC/include/footer.html")
   <script>
     candidateSelectActiveStyle();
     candidateToggleTable();

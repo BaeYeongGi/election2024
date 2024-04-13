@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  @@include("include/head.html", {
+  @@include("@@SRC/include/head.html", {
     "type": ""
   })
 </head>
 <body class="body">
-  @@include("include/header.html", {
+  @@include("@@SRC/include/header.html", {
     "active": "n2",
     "type": ""
   })
-  @@include("include/menu.html", {
+  @@include("@@SRC/include/menu.html", {
     "type": "news",
     "active": "n2",
   })
   <div class="rank_pagination">
     <a href="#" class="prev">
-      @@include("../base64/icon_news_rank_page_arrow.html")
+      @@include("@@SRC/base64/icon_news_rank_page_arrow.html")
       <span class="date">03.08.</span>목
     </a>
     <a href="#" class="current">
@@ -24,7 +24,7 @@
     </a>
     <a href="#" class="next">
       <span class="date">03.10.</span>토
-      @@include("../base64/icon_news_rank_page_arrow.html")
+      @@include("@@SRC/base64/icon_news_rank_page_arrow.html")
     </a>
   </div>
   <section class="section">
@@ -32,7 +32,7 @@
       <li>
         <a href="#">
           <span class="rank">1</span>
-          @@include("include/image.html", {
+          @@include("@@SRC/include/image.html", {
             x: "107",
             y: "80",
             alt: "2줄일때 기본 폰트사이즈 17 제목 기사제목 기사제목 사 2줄일때 기본 폰트사이즈 17 제목 기사제목 기사제목 사 2줄일때 기본 폰트사이즈 17 제목 기사제목 기사제목 사 ",
@@ -51,7 +51,7 @@
       <li>
         <a href="#">
           <span class="rank">2</span>
-          @@include("include/image.html", {
+          @@include("@@SRC/include/image.html", {
             x: "107",
             y: "80",
             alt: "사이즈17 2줄일 경우 사이즈17 2줄일 경우사이즈17 2줄일 경우사이즈17 2줄일 경우사이즈17 2줄일 경우사이즈17 2줄일 경우",
@@ -107,7 +107,7 @@
         <li>
           <a href="#">
             <span class="rank">`+i+`</span>
-            @@include("include/image.html", {
+            @@include("@@SRC/include/image.html", {
               x: "107",
               y: "80",
               alt: "사이즈17 2줄일 경우 사이즈17 2줄일 경우사이즈17 2줄일 경우사이즈17 2줄일 경우사이즈17 2줄일 경우사이즈17 2줄일 경우",
@@ -137,7 +137,7 @@
         <li>
           <a href="#">
             <span class="rank">`+i+`</span>
-            @@include("include/image.html", {
+            @@include("@@SRC/include/image.html", {
               x: "107",
               y: "80",
               alt: "사이즈17 2줄일 경우 사이즈17 2줄일 경우사이즈17 2줄일 경우사이즈17 2줄일 경우사이즈17 2줄일 경우사이즈17 2줄일 경우",
@@ -158,7 +158,7 @@
   </section>
   <div class="rank_pagination">
     <a href="#" class="prev disabled">
-      @@include("../base64/icon_news_rank_page_arrow.html")
+      @@include("@@SRC/base64/icon_news_rank_page_arrow.html")
       <span class="date">03.08.</span>목
     </a>
     <a href="#" class="current">
@@ -166,11 +166,11 @@
     </a>
     <a href="#" class="next disabled">
       <span class="date">03.10.</span>토
-      @@include("../base64/icon_news_rank_page_arrow.html")
+      @@include("@@SRC/base64/icon_news_rank_page_arrow.html")
     </a>
   </div>
-  @@include("include/scroll_button.html")
-  @@include("include/footer.html")
+  @@include("@@SRC/include/scroll_button.html")
+  @@include("@@SRC/include/footer.html")
   <script>
     rankTop5();
     

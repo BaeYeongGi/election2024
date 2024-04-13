@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  @@include("include/head.html", {
+  @@include("@@SRC/include/head.html", {
     "type": ""
   })
 </head>
 <body class="body rest view_pg">
-  @@include("include/view_shortcut.html")
-  @@include("include/header.html", {
+  @@include("@@SRC/include/view_shortcut.html")
+  @@include("@@SRC/include/header.html", {
     "active": "n1",
     "type": ""
   })
@@ -45,7 +45,7 @@
                   </button>
                 </li>
                 <li class="ai_btn_wrap">
-                  @@include("../base64/icon_view_ai_summary_chat.html")
+                  @@include("@@SRC/base64/icon_view_ai_summary_chat.html")
                   <button class="ai_summary_btn">
                     @@include("svg/icon_view_ai_summary_btn.html")
                   </button>
@@ -89,7 +89,7 @@
           </header>
           <article>
             <div id="txt_size" class="view_cont">
-              @@include("@@ROOT/m/src/doc/sisa/inc/contents.html")
+              @@include("@@SRC/include/view_article.html")
             </div>
             <div class="isolation">
               <h3>댓글 차단</h3>
@@ -175,7 +175,7 @@
                 <a href="javascript:;" id="copyURL" class="copyURL" title="URL 복사"><span class="hide">URL 복사</span></a>
               </div>
             </div>
-            @@include("include/reply_guide_pop.html")  
+            @@include("@@SRC/include/reply_guide_pop.html")  
             <div class="news_cmt"></div>
             <script type="text/javascript">
               // 성능개선_0324  : 초기 로딩 속도에 필요 없는 자원 나중에 로딩
@@ -196,7 +196,7 @@
       <section class="rwd_right">
         <aside class="news_point view_special">
           <hr class="cluster_line">
-          @@include("include/view_dday_link.html",{
+          @@include("@@SRC/include/view_dday_link.html",{
             type: "step3"
           })
           <hr class="cluster_line">
@@ -239,7 +239,7 @@
                 <li><button>서울 서울</button></li>
               }
             </ul>
-            @@include("include/vote_versus_swiper.html", {
+            @@include("@@SRC/include/vote_versus_swiper.html", {
               type: "survey",
               state: "",
               arrow: "false",
@@ -260,7 +260,7 @@
                 <li><button>서울 서울</button></li>
               }
             </ul>
-            @@include("include/vote_versus_swiper.html", {
+            @@include("@@SRC/include/vote_versus_swiper.html", {
               type: "count",
               state: "rate",
               arrow: "false",
@@ -273,7 +273,7 @@
               <p class="news_cluster_title">정당별 비례대표 개표현황 <span>(46석)</span></p>
               <a href="#" class="more">더보기</a>
             </div> 
-            @@include("include/vote_seat_table.html", {
+            @@include("@@SRC/include/vote_seat_table.html", {
               type: "dotted_graph",
               state: "current"
             })     
@@ -284,7 +284,7 @@
               <p class="news_cluster_title">내지역 개표현황</p>
               <a href="#" class="more">더보기</a>
             </div> 
-            @@include("include/candidate_search_form.html", {
+            @@include("@@SRC/include/candidate_search_form.html", {
               type: 2
             })
           </section>
@@ -318,12 +318,12 @@
       </section>
     </div>
   </section>
-  @@include("@@SRC/m/src/inc/module/viewAiSummaryPop.html", {
+  @@include("@@SRC/include/view_ai_summary_pop.html", {
       type: "active"
   })
-  @@include("@@ROOT/m/src/inc/module/viewAppPop2023.html")
-  @@include("include/scroll_button.html")
-  @@include("include/footer.html")
+  @@include("@@SRC/include/view_app_pop_2023.html")
+  @@include("@@SRC/include/scroll_button.html")
+  @@include("@@SRC/include/footer.html")
 <script>
 
 

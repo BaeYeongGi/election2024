@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+
+
+  <meta charset="utf-8"/>
+  <title>제22대 국회의원 총선거</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <!--CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/election2024.css">
+  <!-- JS -->
+  <script type="text/javascript" src="../js/swiper-bundle.js"></script>
+  <script type="text/javascript" src="../js/election2024.js"></script>
+
+
+</head>
+<body class="body">
+  <header id="header" role="banner">
+	<div class="gnbWrap" id="type2">
+		<div class="gnb">
+			<a href="#" class="nate"><span class="hd-img">네이트</span></a>
+			<a href="#" class="service">뉴스</a>
+		</div>
+		<div class="relsvc">
+			<a href="#">스포츠</a>
+			<a href="#">연예</a>
+		</div>
+		<div class="searchWrap">
+			<button class="srchlink" aria-expanded="false" aria-controls="search-field" aria-label="검색창 열기"><span class="hd-img"></span></button>
+			<!-- 검색 레이어 열릴 때 -->
+			<form id="search-field" role="search" aria-labelledby="search-keyword">
+				<fieldset>
+					<legend id="search-keyword">뉴스 기사 검색</legend>
+					<input type="search" type="text">
+					<button class="delete hd-img" type="button" aria-label="검색어 삭제"><span class="hd-img"></span></button>
+					<button class="srchbtn" type="submit"><span class="hd-img" aria-label="검색하기"></span></button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</header>
+<div class="gnb_container">
+  <div class="gnb_title_wrap">
+    <a href="home.html" class="logo"><h1>제22대 국회의원 선거</h1></a>
+    <button class="gnb_share" aria-label="공유하기 버튼">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAsCAYAAAAwwXuTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMuSURBVHgB1VoNdeMwDFYPQRksEMpgYbAyWA/ByqBl0DHoMSiEbAg6Bh6DjMF39kWpFS9pEv8t972nl9dGT/Jny7LseEUBALDWj1LLo5ZCy0bLmsUHX1o++fmh5V3L22q1+qKc0MRKLZWWGnlw0bKl1DBOtCjHeaXlpOVJywOaUfW1v9ayYVsHti1hfD9TbGijheOs5gZ4k5npe+d07NX8TzGgDe1hQ9E8X+iH4BA1bdlTCLSBo+i1U44Rm9AmM6Jn0a4j+cAh92OjNgSOLD+SgpwJg0daKDgh1bNIOj2zoYUDzZLVYj+mXIgeWVxYDkEMSn03u3L6NThTInBYFRQZnAQNqiGFHSuoFA1gH6XwETUjoykS2ujb9ikofhm/Uug2ovVzTUCyDVXlvtj2vkgAnucq1VQQo1jKPy+pR89pRDKSaEpIOxc5bFoUlAnwWcOm2V2LjLqW4VlRZjBJJCBZsc2nX9RsVg3eKDP0RtZsan/zzwNCi2eLD36WHbaUETwPCw4pWT0F5wERlRe5uCcry5jECyczhXGUFADuOAMl02r0rRA7OqH/aEOx9L27UgAgEg21Fiky0N0oG1Q8ig8D+n+EbowwbXilIOg01oRlMaK/E/oHigBJMGqIws5pY3f0JAzd7U4scp0QVfzjgQKhbbyyLYUJRQO6i30UcsKuwVWWaUHLBKbuyay+LNdOFBGQxQvsPsrbCbob5dEEgfQF9+HGCRFKNdhTrtHGOuSib5nYR3WLSnQ3irOdwS6qmBiaSszTVGsvOnwE49kTHXZCn2foKiDZqUG75Fzkn22qrskDaL4lTBqNObqebVG38Bx4Eauizw4xeqrvZZts6pQ9nApO8noeUqpYIeq6lAOwmfx6T0muZ/9NqGJOkYHu5rOkhQPdY49pp/GwlYDpkcV+n+Ds71fLCpKLDFcn0vwKdYfkGch3rHinTabyeg0mJwzKnblCpsPhCW2J9zmds+tV9No/ojlGlEfsiO/HHwXFBr7fdmidHdAUCiajhV4jKdjWCf3XSLLclzH15AV5UDNRr0/pKwoAmtEyjkuy17gKCrvK1V7j+qTmtP095CrXXweDg+oiZHa7AAAAAElFTkSuQmCC" alt="">
+    </button>
+  </div>
+  <div class="vote_state_wrap">
+    <dl class="early_vote">
+      <dt><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAAAcCAYAAACERFoMAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQySURBVHgB7Zr/VdswEMe/4fE/6QSoEzSdADNB0wmSTkCYIGECYIKECQgTYCZomAAzAekE7h0+k/PFP2Q7oYXnz3t6RtJZlnSn00kB6Ojo6Ojo+Jj0yirjOJ7R44jSWoque73e2shM6TFTRWOSuZG6Eefhz5re/Snvxqo8ovKvUt6nxy3ac0Vt3kmbjh4jtOeG2ox0AbU9lLYHlJwUrySxfGjkC+eTOUQ5J5QClV9gozwfnHm/ishDpl+zzSIW6m+H7CQ1JYSMQYyADWuQIzeQNCY5NpxzeHJQUd9HR1Puka8sy0RWlRdVK8wq7A/q8YCs5TpkXWSErKXXWb0p7FquUJ8H7AlSQICN+2MiJOPm5xckHuJS1bPStrabPKoU5nTGp0EjHyJxE69Qp8bIKmxJMheq/pLSE+rRt/307NuN6WdP+lC6h8gY5qp+pscgOJNnt5cayDOlFbXD280QmzHoWKGQQoXJ5q6J0J6qjb3J5Ds0238u8H5kXKPMrXWXXt7rwPcjaKkwsczAFLMreJIN+jOxRHa1cHDxWzwIr072Ik7VR77eq8wlfjP5Ffy4kuPAMo1+RFmXBfKOEiuNLZ7D7EjKZ/AjQnYf/Ofw5Mt49JjTyNDCijqFJ2UK84lw8uiniTo9oecPbK+sFbbdH+8dEaVTPsuI0n15Rk04MEjPQPS3nkw77oDq9Xn1xNQPxCCZFbX5atj0ZMNlZfC4HPIJKZ3bs1sjxFVZBjly0zifOaX7nPIndoHsx8VFWKbSbuYd9T0X74a5xxjqMi2YyxNKZ/IdTiNKxwWywziZuzQFuv6w4CUWcjlVt1T3vcLfrlWycPh9od4/p/YesbHCq5yI68MiRuEKqnlfgwdHOlPkEouiOYdkcstO5hN1NcWHxwjJJrxUoe0bVLYguVDa9VVWiPb47sltCNDgyGFY6MyWwuIkYhujGI7sHmiil6iAZE6lPU49Wbkru0LFh/+CByLrvUl7co3NxHDb+pzF45yYvN4aAmwCJRuaR6hPGgPkklGYTO69kQmRWKPuNPvWledmyStnrPIBGt4yiMLvsTteD71iQGv5RmRk+EL6WfXBuvpI1xvYExVOfgGlF+aHqiMzepzlfIAtnzs5xGZ5swxb4a4tXTNTf9e6YfmP4Mtfhx2iV1hehDNLVxEplBWnrZvD3Qn2xHsFH7Jq9Z5tDTbQESVyrp3Mqtv6yWSXlJ3DFnrSuBPUMY7ytJL4TFJ3817muBUfAvnWuEJG14coP1RzhDpAeZuuon5o8mGJbBOPFOWWqrPES1xy3R8nVyzMmeSn5iwyMvLzeDccowKSGZt35g3eactItf0UtyczBr3CFtj8Clq2Al6jufRE/wl4wW4utlP2ut++KYwU4BtWW0XZ37weTb2+H2xD3d/ivJB/E7jDfuAtpG6UaHlER0dHR0fHJ+Av4qrVzTV9lH8AAAAASUVORK5CYII=" alt="사전투표일" /></dt>
+      <dd>4.5-4.6</dd>
+    </dl>
+  </div>
+  <div class="nav_wrap">
+    <ul class="nav">
+      
+      
+        <li><a href="home.html" ><span class="name">홈</span></a></li>
+        <li><a href="news_type_A.html" ><span class="name">뉴스</span></a></li>
+        <li><a href="photo.html" ><span class="name">포토</span></a></li>
+        <li><a href="survey_type_A.html" ><span class="name">여론조사</span></a></li>
+        <li><a href="talk.html" ><span class="name">말말말</span></a></li>
+        <li><a href="guide_type_A.html" class="active"><span class="name">선거안내</span></a></li>
+        <li><a href="candidate01.html"  class="new"><span class="name">후보자</span><img class="badge" src="data:image/png;base64,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" alt="new"></a></li>
+        <li><a href="#" ><span class="name">투&middot;개표</span></a></li>
+      
+    </ul>
+  </div>
+</div>
+<div class="dimmed"></div>
+<div id="sns_share_pop" style="display: none;">
+  <div class="sns_share_layer">
+    <button type="button" class="btnClosePopup">닫기</button>
+    <div class="title">공유하기</div>
+    <ul class="sns_btns">
+      <li><a class="no" title="새창으로 이동" id="sns-no" href="javascript:;">네이트온</a></li>
+      <li><a class="kt" title="새창으로 이동" id="sns-kt" href="javascript:;">카카오톡</a></li>
+      <li><a class="fb" title="새창으로 이동" id="sns-fb" href="javascript:;">페이스북</a></li>
+      <li><a class="tw" title="새창으로 이동" id="sns-tw" href="javascript:;">엑스</a></li>
+      <li><a class="ks" title="새창으로 이동" id="sns-ks" href="javascript:;">카카오스토리</a></li>
+      <li><a class="bd" title="새창으로 이동" id="sns-bd" href="javascript:;">밴드</a></li>
+      <li><a class="li" title="새창으로 이동" id="sns-li" href="javascript:;">라인</a></li>
+      <li><a class="lk" title="새창으로 이동" id="sns-url" href="javascript:;">URL 복사</a></li>
+    </ul>	
+  </div>
+  <div class="modal_backdrop"></div>
+</div>
+<script>
+  document.querySelector('.btnClosePopup').addEventListener('click', (e) => {
+    e.target.parentElement.parentElement.style.display = 'none';
+  })
+  document.querySelector('.modal_backdrop').addEventListener('click', (e) => {
+    e.target.parentElement.style.display = 'none';
+  })
+</script>
+
+
+<script>
+  document.querySelector('.gnb_share').addEventListener('click', function(){
+    const layer = document.querySelector('#sns_share_pop');
+    layer.classList.add('active');
+    layer.style.display = 'block';
+  })
+  navigationEvent();
+  setIOS();
+</script>
+  <div class="guide_container type_A">
+    <section class="section">
+      <div class="guide img1"></div>
+    </section>
+    <hr class="cluster_line">
+    <section class="ad_section" style="background-color:#ececec;">
+      <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+    </section>      
+    <hr class="cluster_line">
+    <a href="#" class="guide_button" aria-label="내 투표소 찾기"></a>
+    <section class="section">
+      <div class="guide img2"></div>
+    </section>
+    <hr class="cluster_line">
+    <section class="ad_section" style="background-color:#ececec;">
+      <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+    </section> 
+    <hr class="cluster_line">
+  </div>
+  <div class="scroll_btns_wrap">
+  <a href="home.html" class="home">
+    <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 6L8 1L15 6" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M3 5V12H13V5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  
+  </a>
+  <a href="#" class="top">
+    <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 9L7 3L13 9" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7 3V16" stroke="black" stroke-linecap="round"/>
+  <path d="M1.5 0.5H12.5" stroke="black" stroke-linecap="round"/>
+</svg>
+  
+  </a>
+</div>
+  <footer id="footer" role="contentinfo">
+  <div class="footer">
+      <div class="svcBtn">
+        <a href="//m.nate.com">네이트홈</a><a href="#"><span id="loginbtnmsg">로그아웃</span></a><a href="//news.nate.com/view/20231124n16511">PC버전</a><a href="#" >전체서비스</a>
+      </div> 
+      <ul class="sitemap">
+        <li><a href="//news.nate.com/enews/editguide">기사배열기본방침(책임:김경옥)</a></li>
+        <li><span>청소년보호책임:조유형</span></li>
+        <li><a href="//m.news.nate.com/newssitemap">뉴스 전체서비스</a></li>
+      </ul>
+      <div class="copyright"><span>&copy; SK Communications</span><a class="cscenter" href="//m.helpdesk.nate.com">고객센터</a></div>
+  </div>
+</footer>
+  <script>
+    
+  </script>
+</body>
+</html>

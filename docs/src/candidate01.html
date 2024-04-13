@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  @@include("include/head.html", {
+  @@include("@@SRC/include/head.html", {
     "type": ""
   })
 </head>
 <body class="body">
-  @@include("include/header.html", {
+  @@include("@@SRC/include/header.html", {
     "active": "n7",
     "type": "candidate"
   })
-  @@include("include/menu.html", {
+  @@include("@@SRC/include/menu.html", {
     "type": "candidate",
     "active": "n1",
   })
-  @@include("include/hot_local_area.html")
+  @@include("@@SRC/include/hot_local_area.html")
   
   <section class="section">
-    @@include("include/candidate_search_form.html", {
+    @@include("@@SRC/include/candidate_search_form.html", {
       type: 1
     })
     <dl class="candidate_select_guide">
@@ -26,7 +26,7 @@
     </dl>
   </section>
   <hr class="cluster_line">
-  @@include("include/candidate_list.html", {
+  @@include("@@SRC/include/candidate_list.html", {
     "type": "candidate"
   })
   <section class="candidate_info">
@@ -101,8 +101,8 @@
     <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
   </section>  
   <hr class="cluster_line">
-  @@include("include/scroll_button.html")
-  @@include("include/footer.html")
+  @@include("@@SRC/include/scroll_button.html")
+  @@include("@@SRC/include/footer.html")
   <script>
     candidateToggleEvent({
       position: "1depth"

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  @@include("include/head.html", {
+  @@include("@@SRC/include/head.html", {
     "type": ""
   })
 </head>
 <body class="body">
-  @@include("include/header.html", {
+  @@include("@@SRC/include/header.html", {
     "active": "n5",
     "type": ""
   })
   
-  @@include("include/keyword_swiper.html", {
+  @@include("@@SRC/include/keyword_swiper.html", {
     "isBackground": "true",
     "isMain": "mal",
   })
   <a href="#" class="issue_news">
-    @@include("include/image.html", {
+    @@include("@@SRC/include/image.html", {
       x: "107",
       y: "80",
       alt: "홍길동 원칙과상식 과 협력하겠다…민주당 44%가 전과자",
@@ -32,7 +32,7 @@
   <section class="section" >
     <div class="mal_top_wrap mal_target" id="item_top_issue">
       <a href="#">
-        @@include("include/image.html", {
+        @@include("@@SRC/include/image.html", {
           x: "70",
           y: "70",
           alt: "올해 韓은 총선, 美 는 대선…선거와 증시의 상관 관계는 여론조사 결과는 22대 국회의원 선거 D-20일",
@@ -103,7 +103,7 @@
       <ul class="mal_contents">
         <li class="right mal_target" id="item1">
           <a href="#">
-            @@include("include/image.html", {
+            @@include("@@SRC/include/image.html", {
               x: "57",
               y: "57",
               alt: "제동 걸린 이재명 마지막 '치적' 일산대교… 與 법원 판결 유감이다 유감이다. 유감입니다.",
@@ -138,7 +138,7 @@
             </dl>
           </a>
           <a href="#">
-            @@include("include/image.html", {
+            @@include("@@SRC/include/image.html", {
               x: "57",
               y: "57",
               alt: "제1동 걸린 이재명 마지막 '치적' 일산대교… 與 법원 판결 유감이다 유감이다. 유감입니다.",
@@ -159,7 +159,7 @@
         </li>
         <li class="right mal_target" id="item3">
           <a href="#">
-            @@include("include/image.html", {
+            @@include("@@SRC/include/image.html", {
               x: "57",
               y: "57",
               alt: "제동2 걸린 이재명 마지막 '치적' 일산대교… 與 법원 판결 유감이다 유감이다. 유감입니다.",
@@ -171,7 +171,7 @@
           <a href="#" class="mal_text">
             <dl>
               <dt><span class="name">홍길동</span><span class="party">민주당3</span></dt>
-              <dd>제동3 걸린 이재명 마지막 '치적' 일산대교… 與 "법원 판결 유감이다 유감이다. 유감입니다.제동 걸린 이재명 @@include("../base64/icon_mal_hot.html")</dd>
+              <dd>제동3 걸린 이재명 마지막 '치적' 일산대교… 與 "법원 판결 유감이다 유감이다. 유감입니다.제동 걸린 이재명 @@include("@@SRC/base64/icon_mal_hot.html")</dd>
             </dl>
           </a>
           <div class="mal_count">
@@ -190,11 +190,11 @@
           <a href="https://www.nate.com/" class="mal_text">
             <dl>
               <dt><span class="name">홍길동</span><span class="party">한국당4</span></dt>
-              <dd>제동4 걸린 이재명 마지막 '치적' 일산대교… 與 "법원 판결 유감이다 유감이다. 유감입니다." @@include("../base64/icon_mal_new.html")</dd>
+              <dd>제동4 걸린 이재명 마지막 '치적' 일산대교… 與 "법원 판결 유감이다 유감이다. 유감입니다." @@include("@@SRC/base64/icon_mal_new.html")</dd>
             </dl>
           </a>
           <a href="#">
-            @@include("include/image.html", {
+            @@include("@@SRC/include/image.html", {
               x: "57",
               y: "57",
               alt: "제동 걸린 이재명 마지막 '치적' 일산대교… 與 법원 판결 유감이다 유감이다. 유감입니다.",
@@ -215,7 +215,7 @@
         </li>              
       </ul>
     </div>
-    @@include("include/news_list_more_button.html", {
+    @@include("@@SRC/include/news_list_more_button.html", {
       "value": "더보기"
     })
 
@@ -226,7 +226,7 @@
   </section>  
   <hr class="cluster_line">
   <section class="reply_section">
-    @@include("include/special_reply.html", {
+    @@include("@@SRC/include/special_reply.html", {
       type: "mal"
     })
   </section>
@@ -236,8 +236,8 @@
     <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
   </section>  
   <hr class="cluster_line">
-  @@include("include/scroll_button.html")
-  @@include("include/footer.html")
+  @@include("@@SRC/include/scroll_button.html")
+  @@include("@@SRC/include/footer.html")
   <script>
     malCommentCreateUI();
     malGuidePopupUI();

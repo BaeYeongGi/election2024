@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	@@include("include/head.html", {
+	@@include("@@SRC/include/head.html", {
     "type": "view"
   })	
 </head>
 <body class="view_pg">
-  @@include("include/view_shortcut.html")
+  @@include("@@SRC/include/view_shortcut.html")
   <div id="wrap">
     <header id="header" role="banner">
       <div class="gnbWrap">
@@ -97,7 +97,7 @@
                   </button>
                 </li>
                 <li class="ai_btn_wrap">
-                  @@include("../base64/icon_view_ai_summary_chat.html")
+                  @@include("@@SRC/base64/icon_view_ai_summary_chat.html")
                   <button class="ai_summary_btn">
                     @@include("svg/icon_view_ai_summary_btn.html")
                   </button>
@@ -141,7 +141,7 @@
           </header>
             <article>
               <div id="txt_size" class="view_cont">
-                @@include("@@ROOT/m/src/doc/sisa/inc/contents.html")
+                @@include("@@SRC/include/view_article.html")
               </div>
               <div class="isolation">
                 <h3>댓글 차단</h3>
@@ -230,7 +230,7 @@
               <hr class="vt-space">
               <div class="main_banner"></div>
               <hr class="vt-space">
-              @@include("include/reply_guide_pop.html")  
+              @@include("@@SRC/include/reply_guide_pop.html")  
               <div class="news_cmt"></div>
               <script type="text/javascript">
               // 성능개선_0324  : 초기 로딩 속도에 필요 없는 자원 나중에 로딩

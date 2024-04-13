@@ -1,4 +1,4 @@
-@@include("include/reply_guide_pop.html")  
+@@include("../include/reply_guide_pop.html")  
   <div id="areaComment">
     <div class="reply_wrap">
         <div class="replyContent">
@@ -7,7 +7,7 @@
               <span class="title">댓글 <em id="totalcntComment">128</em></span>
             </a>
             <button class="mal_guide_button" aria-controls="notes" aria-label="댓글운영원칙 안내">
-                @@include("svg/icon_survey_info.html")                
+                @@include("../svg/icon_survey_info.html")                
             </button>
             <script>
                 // 댓글 안내 원칙 > CORS이슈로 페이지 내 삽입
@@ -115,7 +115,7 @@
                       @@if(type === "mal"){
                         <dd>
                             <div class="mal_reply_content">
-                                @@include("svg/icon_reply_mal_arrow.html")
+                                @@include("@@SRC/svg/icon_reply_mal_arrow.html")
                                 <a href="#">
                                     <div class="text_wrap">
                                         <div class="info">
@@ -124,7 +124,7 @@
                                         </div>
                                         <p class="text">정신무장 체력안배 누가해도 해야할 일 정신무장 체력안배 누가해도 해야할 일</p>
                                     </div>
-                                    @@include("include/image.html", {
+                                    @@include("@@SRC/include/image.html", {
                                         x: "57",
                                         y: "57",
                                         alt: "사이즈17 1줄일 경우 세로 가운데",
@@ -188,7 +188,7 @@
         </div>
     </div>
     @@if(type === "mal"){
-        @@include("include/news_list_more_button.html", {
+        @@include("@@SRC/include/news_list_more_button.html", {
             "value": "더보기"
         })
     }

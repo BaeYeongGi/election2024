@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+
+
+  <meta charset="utf-8"/>
+  <title>제22대 국회의원 총선거</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <!--CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/election2024.css">
+  <!-- JS -->
+  <script type="text/javascript" src="../js/swiper-bundle.js"></script>
+  <script type="text/javascript" src="../js/election2024.js"></script>
+
+
+</head>
+<body class="body">
+  <header id="header" role="banner">
+	<div class="gnbWrap" id="type2">
+		<div class="gnb">
+			<a href="#" class="nate"><span class="hd-img">네이트</span></a>
+			<a href="#" class="service">뉴스</a>
+		</div>
+		<div class="relsvc">
+			<a href="#">스포츠</a>
+			<a href="#">연예</a>
+		</div>
+		<div class="searchWrap">
+			<button class="srchlink" aria-expanded="false" aria-controls="search-field" aria-label="검색창 열기"><span class="hd-img"></span></button>
+			<!-- 검색 레이어 열릴 때 -->
+			<form id="search-field" role="search" aria-labelledby="search-keyword">
+				<fieldset>
+					<legend id="search-keyword">뉴스 기사 검색</legend>
+					<input type="search" type="text">
+					<button class="delete hd-img" type="button" aria-label="검색어 삭제"><span class="hd-img"></span></button>
+					<button class="srchbtn" type="submit"><span class="hd-img" aria-label="검색하기"></span></button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</header>
+<div class="gnb_container">
+  <div class="gnb_title_wrap">
+    <a href="home.html" class="logo"><h1>제22대 국회의원 선거</h1></a>
+    <button class="gnb_share" aria-label="공유하기 버튼">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAsCAYAAAAwwXuTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMuSURBVHgB1VoNdeMwDFYPQRksEMpgYbAyWA/ByqBl0DHoMSiEbAg6Bh6DjMF39kWpFS9pEv8t972nl9dGT/Jny7LseEUBALDWj1LLo5ZCy0bLmsUHX1o++fmh5V3L22q1+qKc0MRKLZWWGnlw0bKl1DBOtCjHeaXlpOVJywOaUfW1v9ayYVsHti1hfD9TbGijheOs5gZ4k5npe+d07NX8TzGgDe1hQ9E8X+iH4BA1bdlTCLSBo+i1U44Rm9AmM6Jn0a4j+cAh92OjNgSOLD+SgpwJg0daKDgh1bNIOj2zoYUDzZLVYj+mXIgeWVxYDkEMSn03u3L6NThTInBYFRQZnAQNqiGFHSuoFA1gH6XwETUjoykS2ujb9ikofhm/Uug2ovVzTUCyDVXlvtj2vkgAnucq1VQQo1jKPy+pR89pRDKSaEpIOxc5bFoUlAnwWcOm2V2LjLqW4VlRZjBJJCBZsc2nX9RsVg3eKDP0RtZsan/zzwNCi2eLD36WHbaUETwPCw4pWT0F5wERlRe5uCcry5jECyczhXGUFADuOAMl02r0rRA7OqH/aEOx9L27UgAgEg21Fiky0N0oG1Q8ig8D+n+EbowwbXilIOg01oRlMaK/E/oHigBJMGqIws5pY3f0JAzd7U4scp0QVfzjgQKhbbyyLYUJRQO6i30UcsKuwVWWaUHLBKbuyay+LNdOFBGQxQvsPsrbCbob5dEEgfQF9+HGCRFKNdhTrtHGOuSib5nYR3WLSnQ3irOdwS6qmBiaSszTVGsvOnwE49kTHXZCn2foKiDZqUG75Fzkn22qrskDaL4lTBqNObqebVG38Bx4Eauizw4xeqrvZZts6pQ9nApO8noeUqpYIeq6lAOwmfx6T0muZ/9NqGJOkYHu5rOkhQPdY49pp/GwlYDpkcV+n+Ds71fLCpKLDFcn0vwKdYfkGch3rHinTabyeg0mJwzKnblCpsPhCW2J9zmds+tV9No/ojlGlEfsiO/HHwXFBr7fdmidHdAUCiajhV4jKdjWCf3XSLLclzH15AV5UDNRr0/pKwoAmtEyjkuy17gKCrvK1V7j+qTmtP095CrXXweDg+oiZHa7AAAAAElFTkSuQmCC" alt="">
+    </button>
+  </div>
+  <div class="vote_state_wrap">
+    <dl class="early_vote">
+      <dt><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAAAcCAYAAACERFoMAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQySURBVHgB7Zr/VdswEMe/4fE/6QSoEzSdADNB0wmSTkCYIGECYIKECQgTYCZomAAzAekE7h0+k/PFP2Q7oYXnz3t6RtJZlnSn00kB6Ojo6Ojo+Jj0yirjOJ7R44jSWoque73e2shM6TFTRWOSuZG6Eefhz5re/Snvxqo8ovKvUt6nxy3ac0Vt3kmbjh4jtOeG2ox0AbU9lLYHlJwUrySxfGjkC+eTOUQ5J5QClV9gozwfnHm/ishDpl+zzSIW6m+H7CQ1JYSMQYyADWuQIzeQNCY5NpxzeHJQUd9HR1Puka8sy0RWlRdVK8wq7A/q8YCs5TpkXWSErKXXWb0p7FquUJ8H7AlSQICN+2MiJOPm5xckHuJS1bPStrabPKoU5nTGp0EjHyJxE69Qp8bIKmxJMheq/pLSE+rRt/307NuN6WdP+lC6h8gY5qp+pscgOJNnt5cayDOlFbXD280QmzHoWKGQQoXJ5q6J0J6qjb3J5Ds0238u8H5kXKPMrXWXXt7rwPcjaKkwsczAFLMreJIN+jOxRHa1cHDxWzwIr072Ik7VR77eq8wlfjP5Ffy4kuPAMo1+RFmXBfKOEiuNLZ7D7EjKZ/AjQnYf/Ofw5Mt49JjTyNDCijqFJ2UK84lw8uiniTo9oecPbK+sFbbdH+8dEaVTPsuI0n15Rk04MEjPQPS3nkw77oDq9Xn1xNQPxCCZFbX5atj0ZMNlZfC4HPIJKZ3bs1sjxFVZBjly0zifOaX7nPIndoHsx8VFWKbSbuYd9T0X74a5xxjqMi2YyxNKZ/IdTiNKxwWywziZuzQFuv6w4CUWcjlVt1T3vcLfrlWycPh9od4/p/YesbHCq5yI68MiRuEKqnlfgwdHOlPkEouiOYdkcstO5hN1NcWHxwjJJrxUoe0bVLYguVDa9VVWiPb47sltCNDgyGFY6MyWwuIkYhujGI7sHmiil6iAZE6lPU49Wbkru0LFh/+CByLrvUl7co3NxHDb+pzF45yYvN4aAmwCJRuaR6hPGgPkklGYTO69kQmRWKPuNPvWledmyStnrPIBGt4yiMLvsTteD71iQGv5RmRk+EL6WfXBuvpI1xvYExVOfgGlF+aHqiMzepzlfIAtnzs5xGZ5swxb4a4tXTNTf9e6YfmP4Mtfhx2iV1hehDNLVxEplBWnrZvD3Qn2xHsFH7Jq9Z5tDTbQESVyrp3Mqtv6yWSXlJ3DFnrSuBPUMY7ytJL4TFJ3817muBUfAvnWuEJG14coP1RzhDpAeZuuon5o8mGJbBOPFOWWqrPES1xy3R8nVyzMmeSn5iwyMvLzeDccowKSGZt35g3eactItf0UtyczBr3CFtj8Clq2Al6jufRE/wl4wW4utlP2ut++KYwU4BtWW0XZ37weTb2+H2xD3d/ivJB/E7jDfuAtpG6UaHlER0dHR0fHJ+Av4qrVzTV9lH8AAAAASUVORK5CYII=" alt="사전투표일" /></dt>
+      <dd>4.5-4.6</dd>
+    </dl>
+  </div>
+  <div class="nav_wrap">
+    <ul class="nav">
+      
+      
+        <li><a href="home.html" ><span class="name">홈</span></a></li>
+        <li><a href="news_type_A.html" class="active"><span class="name">뉴스</span></a></li>
+        <li><a href="photo.html" ><span class="name">포토</span></a></li>
+        <li><a href="survey_type_A.html" ><span class="name">여론조사</span></a></li>
+        <li><a href="talk.html" ><span class="name">말말말</span></a></li>
+        <li><a href="guide_type_A.html" ><span class="name">선거안내</span></a></li>
+        <li><a href="candidate01.html"  class="new"><span class="name">후보자</span><img class="badge" src="data:image/png;base64,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" alt="new"></a></li>
+        <li><a href="#" ><span class="name">투&middot;개표</span></a></li>
+      
+    </ul>
+  </div>
+</div>
+<div class="dimmed"></div>
+<div id="sns_share_pop" style="display: none;">
+  <div class="sns_share_layer">
+    <button type="button" class="btnClosePopup">닫기</button>
+    <div class="title">공유하기</div>
+    <ul class="sns_btns">
+      <li><a class="no" title="새창으로 이동" id="sns-no" href="javascript:;">네이트온</a></li>
+      <li><a class="kt" title="새창으로 이동" id="sns-kt" href="javascript:;">카카오톡</a></li>
+      <li><a class="fb" title="새창으로 이동" id="sns-fb" href="javascript:;">페이스북</a></li>
+      <li><a class="tw" title="새창으로 이동" id="sns-tw" href="javascript:;">엑스</a></li>
+      <li><a class="ks" title="새창으로 이동" id="sns-ks" href="javascript:;">카카오스토리</a></li>
+      <li><a class="bd" title="새창으로 이동" id="sns-bd" href="javascript:;">밴드</a></li>
+      <li><a class="li" title="새창으로 이동" id="sns-li" href="javascript:;">라인</a></li>
+      <li><a class="lk" title="새창으로 이동" id="sns-url" href="javascript:;">URL 복사</a></li>
+    </ul>	
+  </div>
+  <div class="modal_backdrop"></div>
+</div>
+<script>
+  document.querySelector('.btnClosePopup').addEventListener('click', (e) => {
+    e.target.parentElement.parentElement.style.display = 'none';
+  })
+  document.querySelector('.modal_backdrop').addEventListener('click', (e) => {
+    e.target.parentElement.style.display = 'none';
+  })
+</script>
+
+
+<script>
+  document.querySelector('.gnb_share').addEventListener('click', function(){
+    const layer = document.querySelector('#sns_share_pop');
+    layer.classList.add('active');
+    layer.style.display = 'block';
+  })
+  navigationEvent();
+  setIOS();
+</script>
+  
+
+
+
+
+  <ul class="menu item4">
+    <li><a href="turnout.html" >투표현황</a></li>
+    <li><a href="expect.html" class="active">출구조사</a></li>
+    <li><a href="voteall.html" >개표현황</a></li>
+    <li><a href="live.html" >생중계</a></li>
+  </ul>
+
+
+  
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">정당별 예상 의석수 <span>(총300석)</span></p>
+    </div>    
+    
+  <table class="vote_seat_table clan_box">
+    <colgroup>
+      <col width="28%">
+      <col width="28%">
+      <col width="22%">
+      <col width="22%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th><span class="highlight">정당</span></th>
+        <th><span class="highlight">총 의석수(석)</span></th>
+        <th><span>지역구(254)</span></th>
+        <th><span>비례(46)</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="bg clan1">더불어민주당<br/>&middot; 위성정당</span></td>
+        <td><span class="highlight">100-121</span></td>
+        <td><span>99-103</span></td>
+        <td><span>10-23</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan2">국민의힘</span></td>
+        <td><span class="highlight">100-120</span></td>
+        <td><span>99-103</span></td>
+        <td><span>0</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan3">녹색정의당</span></td>
+        <td><span class="highlight">10-15</span></td>
+        <td><span>8-10</span></td>
+        <td><span>10-15</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan4">새로운미래</span></td>
+        <td><span class="highlight">30-35</span></td>
+        <td><span>99-103</span></td>
+        <td><span>10-23</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan5">개혁신당</span></td>
+        <td><span class="highlight">20-25</span></td>
+        <td><span>19-20</span></td>
+        <td><span>1-3</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan_others">기타정당</span></td>
+        <td><span class="highlight">1-2</span></td>
+        <td><span>1-2</span></td>
+        <td><span>1-2</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan_independent">무소속</span></td>
+        <td><span class="highlight">12-14</span></td>
+        <td><span>99-103</span></td>
+        <td><span>10-23</span></td>
+      </tr>                          
+    </tbody>
+  </table>  
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+  <table class="vote_seat_table clan_box">
+    <colgroup>
+      <col width="28%">
+      <col width="72%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th><span class="highlight">정당</span></th>
+        <th><span class="highlight">총 의석수(석)</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="bg clan1">더불어민주당</span></td>
+        <td><span class="highlight">100-121</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan2">국민의힘</span></td>
+        <td><span class="highlight">100-120</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan3">녹색정의당</span></td>
+        <td><span class="highlight">10-15</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan4">새로운미래</span></td>
+        <td><span class="highlight">30-35</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan5">개혁신당</span></td>
+        <td><span class="highlight">20-25</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan_others">기타정당</span></td>
+        <td><span class="highlight">1-2</span></td>
+      </tr>
+      <tr>
+        <td><span class="bg clan_independent">무소속</span></td>
+        <td><span class="highlight">12-14</span></td>
+      </tr>                          
+    </tbody>
+  </table> 
+
+
+
+
+    
+  </section>
+  <hr class="cluster_line">
+  <section class="section target_section" id="aaa5">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">화제의 선거구 출구조사</p>
+    </div>        
+    <ul class="vote_versus_tab_container">
+      <li><button>서울 종로</button></li>
+      <li><button>서울 용산</button></li>
+      <li><button>경기 의정부갑</button></li>
+      
+        <li><button>서울 서울</button></li>
+      
+        <li><button>서울 서울</button></li>
+      
+        <li><button>서울 서울</button></li>
+      
+    </ul>
+    
+  <div class="vote_versus_contents_container survey target" class="vote_versus_contents_container survey">
+    <ul class="swiper-wrapper">
+      
+        <li id="aaa1" class="swiper-slide">
+          <a href=""# class="left">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">1국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">2<span>%</span></p>
+            </div>
+          </a>
+          <span class="state versus">VS</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:2%"></span>
+            </div>
+          </div>
+        </li>
+      
+        <li id="aaa2" class="swiper-slide">
+          <a href=""# class="left">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">2국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">2<span>%</span></p>
+            </div>
+          </a>
+          <span class="state versus">VS</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:2%"></span>
+            </div>
+          </div>
+        </li>
+      
+        <li id="aaa3" class="swiper-slide">
+          <a href=""# class="left">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">3국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">2<span>%</span></p>
+            </div>
+          </a>
+          <span class="state versus">VS</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:2%"></span>
+            </div>
+          </div>
+        </li>
+      
+        <li id="aaa4" class="swiper-slide">
+          <a href=""# class="left">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">4국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">2<span>%</span></p>
+            </div>
+          </a>
+          <span class="state versus">VS</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:2%"></span>
+            </div>
+          </div>
+        </li>
+      
+        <li id="aaa5" class="swiper-slide">
+          <a href=""# class="left">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">5국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">2<span>%</span></p>
+            </div>
+          </a>
+          <span class="state versus">VS</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:2%"></span>
+            </div>
+          </div>
+        </li>
+      
+        <li id="aaa6" class="swiper-slide">
+          <a href=""# class="left">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">6국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">2<span>%</span></p>
+            </div>
+          </a>
+          <span class="state versus">VS</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:2%"></span>
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+    
+      <div class="swiper-pagination"></div>
+    
+    
+  </div>
+
+
+
+    <p class="vote_versus_caption">
+      <svg width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_216_7632)">
+  <path d="M15.9482 14.3523C15.9657 14.0507 15.9843 13.7487 15.9961 13.4467C16.0061 13.1815 16.0025 12.9107 15.9129 12.6576C15.809 12.3636 15.664 12.0838 15.4288 11.8658C15.1971 11.6512 14.9193 11.4674 14.6058 11.3873C14.2598 11.2989 13.8807 11.2871 13.539 11.4012C13.4987 11.4147 13.459 11.4282 13.4198 11.4424C13.2684 11.2469 13.0809 11.0788 12.8671 10.9574C12.5879 10.799 12.2794 10.6998 11.9549 10.6832C11.6296 10.6665 11.3211 10.7352 11.0234 10.8565C10.9912 10.8697 10.9598 10.8846 10.9291 10.8995C10.6924 10.6967 10.4089 10.5445 10.1119 10.4717C9.88407 10.4159 9.65593 10.3902 9.426 10.4013C9.48312 9.53872 9.54453 8.67648 9.61094 7.81493C9.62451 7.64089 9.61665 7.47309 9.59452 7.29904C9.57417 7.13922 9.5174 6.99014 9.45813 6.84036C9.41957 6.74329 9.37066 6.65072 9.31104 6.56439C9.22142 6.43368 9.13002 6.30506 9.0147 6.19446C8.6059 5.802 8.04179 5.5184 7.45447 5.53747C6.89465 5.55584 6.34375 5.75277 5.9403 6.14003C5.71716 6.35394 5.55756 6.589 5.43653 6.86914C5.32442 7.12881 5.30621 7.41207 5.29408 7.68943C5.24088 8.89698 5.1991 10.1049 5.15162 11.3124C5.12806 11.9146 5.10449 12.5172 5.08021 13.1194C5.06843 13.4152 5.05915 13.7105 5.04522 14.0056C4.86564 13.8523 4.68427 13.7005 4.50646 13.5452C4.32366 13.3853 4.14943 13.203 3.92915 13.0917C3.68458 12.9679 3.43109 12.8837 3.15189 12.8771C2.87162 12.8708 2.62241 12.928 2.36463 13.0272C2.16898 13.1024 1.98404 13.2234 1.82873 13.3593C1.6163 13.5459 1.46991 13.7639 1.34995 14.0132C1.10217 14.5294 1.17858 15.1296 1.44135 15.6247C1.53739 15.8053 1.65878 15.9721 1.77232 16.1426C1.89799 16.3312 2.02153 16.5212 2.14399 16.7116C2.63027 17.4677 3.10297 18.2329 3.62031 18.97C4.13622 19.705 4.68248 20.4264 5.33156 21.0567C5.65896 21.375 6.01242 21.6746 6.39195 21.9329C6.77361 22.1929 7.1917 22.4054 7.62299 22.5763C9.25748 23.225 11.2208 23.129 12.7642 22.2861C14.1431 21.5331 15.1913 20.2222 15.5712 18.7273C15.6369 18.469 15.6851 18.2055 15.724 17.942C15.8915 16.7535 15.8786 15.5477 15.9486 14.3519L15.9482 14.3523ZM12.4515 20.898C12.1459 21.0952 11.8195 21.2589 11.4771 21.3875C11.0858 21.5175 10.6813 21.6038 10.2697 21.6451C9.85158 21.6708 9.43278 21.65 9.0197 21.5827C8.61125 21.5005 8.21423 21.3736 7.83542 21.2044C7.43805 21.0089 7.06959 20.7676 6.7272 20.4906C6.03492 19.8974 5.45438 19.1887 4.92491 18.4565C4.2619 17.5222 3.67601 16.54 3.04371 15.5865C2.89304 15.3594 2.72595 15.1372 2.61527 14.8883C2.60099 14.8401 2.58921 14.7912 2.58064 14.742C2.58064 14.708 2.58278 14.674 2.58599 14.64C2.59742 14.5995 2.61099 14.5596 2.62705 14.5201C2.65062 14.4806 2.67668 14.4424 2.70453 14.4057C2.73916 14.372 2.77522 14.3402 2.81342 14.3103C2.85484 14.2868 2.89697 14.2649 2.94088 14.2458C2.98087 14.2351 3.02121 14.2264 3.06192 14.2195C3.09226 14.2195 3.12261 14.2212 3.15296 14.224C3.17867 14.2313 3.20366 14.2393 3.22865 14.2483C3.27649 14.2764 3.32183 14.3079 3.36575 14.3422C3.63674 14.5721 3.90308 14.8082 4.17335 15.0387C4.48433 15.3043 4.79566 15.5699 5.10663 15.8358C5.19696 15.9128 5.28586 15.9859 5.40261 16.0237C5.55114 16.0716 5.7093 16.0632 5.85461 16.0123C6.12167 15.918 6.28198 15.6916 6.31197 15.4198C6.3691 14.8983 6.42301 14.38 6.438 13.8555C6.453 13.3264 6.47835 12.7973 6.49906 12.2683C6.54083 11.2053 6.58367 10.1427 6.62366 9.07969C6.63509 8.77737 6.64651 8.4747 6.65865 8.17238C6.66472 8.02364 6.67115 7.87526 6.67757 7.72652C6.6815 7.63604 6.68364 7.5452 6.69364 7.4554C6.70721 7.40617 6.72363 7.35798 6.74291 7.31049C6.77361 7.25813 6.80789 7.20821 6.84502 7.16002C6.8925 7.11252 6.9432 7.06849 6.99676 7.02723C7.06102 6.9891 7.12779 6.95477 7.1967 6.9253C7.2656 6.90554 7.33558 6.88994 7.40663 6.87954C7.4659 6.87884 7.52516 6.88162 7.58443 6.88786C7.64298 6.90311 7.70011 6.92184 7.75616 6.94402C7.8315 6.98459 7.9029 7.03035 7.9711 7.08132C8.02287 7.1302 8.07106 7.18221 8.11569 7.23733C8.14711 7.28795 8.17496 7.3403 8.1996 7.39404C8.21495 7.44674 8.22709 7.49978 8.23566 7.55387C8.23994 7.75842 8.21138 7.96679 8.1971 8.1696C8.17925 8.42443 8.16139 8.67925 8.14354 8.93408C8.10784 9.44892 8.07178 9.96377 8.03608 10.4783C8.01573 10.7695 7.9943 11.0604 7.97609 11.3516C7.95931 11.6193 8.12533 11.8717 8.36883 11.9861C8.62375 12.1057 8.91473 12.0606 9.13145 11.8848C9.14609 11.873 9.16144 11.8623 9.17643 11.8509C9.22606 11.8221 9.27712 11.7961 9.32996 11.7732C9.38173 11.759 9.43385 11.7479 9.48705 11.7399C9.55132 11.7392 9.61522 11.7423 9.67878 11.7496C9.74054 11.7652 9.80088 11.7846 9.85979 11.8075C9.91013 11.8356 9.95869 11.8661 10.0051 11.8997C10.0433 11.9361 10.079 11.9743 10.1129 12.0148C10.1415 12.061 10.1683 12.1078 10.1911 12.1573C10.2889 12.3699 10.5382 12.5078 10.7706 12.5193C10.8955 12.5252 11.0134 12.5002 11.1244 12.4451C11.2204 12.3962 11.299 12.329 11.3625 12.2454C11.4018 12.2066 11.4436 12.1698 11.4875 12.1358C11.5364 12.1074 11.5871 12.0821 11.6392 12.0599C11.6928 12.045 11.7474 12.0336 11.8024 12.0249C11.8549 12.0245 11.9067 12.0273 11.9588 12.0329C12.007 12.0454 12.0537 12.061 12.1002 12.0786C12.143 12.1029 12.1844 12.1293 12.2241 12.158C12.263 12.1955 12.2994 12.2346 12.3337 12.2759C12.364 12.3251 12.3911 12.3758 12.4151 12.4278C12.4304 12.478 12.444 12.529 12.454 12.581C12.4743 12.6874 12.5418 12.806 12.6161 12.8861C12.7271 13.0054 12.8767 13.074 13.0395 13.0962C13.1441 13.1104 13.2516 13.1 13.3512 13.0667C13.4822 13.023 13.5686 12.9572 13.654 12.8656C13.6386 12.883 13.6236 12.9 13.6083 12.9173C13.6593 12.8594 13.715 12.807 13.7757 12.7596C13.8182 12.7353 13.8621 12.7131 13.9071 12.6933C13.9553 12.6802 14.0042 12.6694 14.0538 12.6614C14.0949 12.6614 14.136 12.6632 14.177 12.667C14.2152 12.6774 14.2531 12.6892 14.2902 12.703C14.333 12.7273 14.3748 12.7533 14.4148 12.7817C14.4494 12.815 14.4819 12.8504 14.5123 12.8871C14.538 12.9298 14.5608 12.9735 14.5815 13.0185C14.5972 13.073 14.6094 13.1284 14.6183 13.1843C14.6269 13.4474 14.5962 13.7164 14.5815 13.9779C14.564 14.2913 14.5444 14.6043 14.5301 14.9178C14.5012 15.5484 14.4883 16.1801 14.4462 16.8104C14.4227 17.1657 14.3891 17.5208 14.3395 17.8737C14.3298 17.9396 14.3188 18.0055 14.3073 18.0713C14.2249 18.4662 14.0988 18.8497 13.9253 19.2161C13.7486 19.5542 13.5344 19.8717 13.2859 20.164C13.0349 20.4372 12.755 20.6837 12.4497 20.8983L12.4515 20.898Z" fill="black"/>
+  <path d="M7.69828 3.23853C7.87751 3.23957 8.06602 3.19173 8.19741 3.06622C8.32844 2.94106 8.4152 2.78331 8.42484 2.60164C8.45411 2.04762 8.48303 1.49394 8.51231 0.939917C8.51624 0.86191 8.52052 0.783903 8.52445 0.705895C8.53338 0.533933 8.4659 0.349142 8.34701 0.22121C8.23311 0.098479 8.04103 0.00105666 7.86858 1.65628e-05C7.68935 -0.00102353 7.50084 0.0468209 7.36945 0.172326C7.23842 0.297484 7.15166 0.455232 7.14202 0.636902C7.11275 1.19093 7.08383 1.74461 7.05455 2.29863C7.05062 2.37664 7.04634 2.45464 7.04241 2.53265C7.03349 2.70461 7.10097 2.8894 7.21986 3.01734C7.33375 3.13972 7.52583 3.23714 7.69828 3.23818V3.23853Z" fill="black"/>
+  <path d="M3.56139 4.05115C3.6153 4.10905 3.66921 4.16729 3.72313 4.22519C3.84202 4.35313 4.02446 4.43737 4.20155 4.44604C4.37114 4.45436 4.5775 4.39126 4.70068 4.27373C4.8285 4.15169 4.92704 3.9884 4.92811 3.80916C4.92918 3.63061 4.87598 3.45934 4.75066 3.32447C4.36792 2.91294 3.98519 2.50106 3.60245 2.08953C3.54854 2.03163 3.49463 1.97338 3.44071 1.91549C3.32182 1.78755 3.13938 1.70331 2.96229 1.69464C2.7927 1.68632 2.58634 1.74942 2.46316 1.86695C2.33535 1.98899 2.2368 2.15228 2.23573 2.33152C2.23466 2.51007 2.28786 2.68134 2.41318 2.81621C2.79592 3.22774 3.17865 3.63962 3.56139 4.05115Z" fill="black"/>
+  <path d="M2.60849 7.7009C2.78558 7.70956 2.97587 7.64404 3.10762 7.52859C3.23365 7.41799 3.33398 7.23147 3.33505 7.06401C3.33612 6.88997 3.28685 6.70691 3.1576 6.57933C3.02871 6.45209 2.86626 6.36784 2.67918 6.35848C2.10864 6.33005 1.53846 6.30197 0.967929 6.27354C0.887597 6.26972 0.807265 6.26556 0.726933 6.26175C0.549845 6.25308 0.359548 6.31861 0.227803 6.43406C0.101414 6.54431 0.00108815 6.73083 1.70564e-05 6.89864C-0.00105404 7.07268 0.0482163 7.25574 0.177462 7.38332C0.30635 7.51056 0.468799 7.59481 0.655884 7.60417C1.22642 7.6326 1.7966 7.66068 2.36713 7.68911C2.44747 7.69292 2.5278 7.69708 2.60813 7.7009H2.60849Z" fill="black"/>
+  <path d="M11.0502 4.78549C11.234 4.78653 11.4104 4.73487 11.5493 4.61318C11.9731 4.24152 12.3973 3.86986 12.821 3.4982C12.8807 3.44585 12.9407 3.3935 13.0003 3.34114C13.132 3.22569 13.2188 3.04853 13.2277 2.87657C13.2363 2.71189 13.1713 2.51149 13.0503 2.39188C12.9246 2.26776 12.7564 2.17208 12.5718 2.17104C12.388 2.17 12.2116 2.22165 12.0727 2.34335C11.6489 2.71501 11.2248 3.08667 10.801 3.45833C10.7413 3.51068 10.6814 3.56303 10.6217 3.61538C10.49 3.73083 10.4032 3.908 10.3943 4.07996C10.3857 4.24464 10.4507 4.44503 10.5718 4.56464C10.6974 4.68876 10.8656 4.78445 11.0502 4.78549Z" fill="black"/>
+  <path d="M12.3644 6.83865C12.1873 6.82999 11.997 6.89551 11.8653 7.01096C11.7392 7.12156 11.6389 7.30808 11.6378 7.47554C11.6368 7.64958 11.686 7.83264 11.8153 7.96023C11.9442 8.08746 12.1066 8.17171 12.2937 8.18107C12.8642 8.2095 13.4344 8.23758 14.005 8.26601C14.0853 8.26983 14.1656 8.27399 14.2459 8.2778C14.423 8.28647 14.6133 8.22094 14.7451 8.10549C14.8711 7.9949 14.9714 7.80837 14.9725 7.64092C14.9736 7.46687 14.9243 7.28382 14.7951 7.15623C14.6662 7.02899 14.5037 6.94474 14.3166 6.93538C13.7461 6.90695 13.1759 6.87887 12.6054 6.85044C12.5251 6.84663 12.4447 6.84247 12.3644 6.83865Z" fill="black"/>
+  </g>
+  <defs>
+  <clipPath id="clip0_216_7632">
+  <rect width="16" height="23" fill="white"/>
+  </clipPath>
+  </defs>
+  </svg>
+  
+      후보를 클릭해, 상세 후보 정보를 확인하세요!
+    </p>    
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <p class="vote_state_text">지상파 3사 공동조사 결과입니다. (신뢰도 95%, 오차범위 ±2.2~5.1%p)</p>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">출구조사 뉴스</p>
+    </div>
+    <ul class="news_cluster_list thumb info">
+      <li id="spring1">
+        <a href="#">
+          <div class="candidate_search_wrap">
+  <div class="candidate_search_list">
+    <p class="candidate_search_title">화제의 선거구</p>
+    <a href="#">서울 강남갑</a>
+    <a href="#">부산 사하구</a>
+    <a href="#">서울 노원병</a>
+    <a href="#">부산 해운대갑</a>
+    <a href="#">서울 강남을</a>
+    <a href="#">서울 노원병</a>
+    <a href="#">경기 화성갑</a>                  
+    <a href="#" class="active">서울 송파을</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 을을을</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 갑갑갑</a>
+    <a href="#">서울 갑갑갑</a>
+    <a href="#">서울 마지막</a>
+    <div class="more_button_wrap">
+      <button class="more_button" aria-label="주요선거 더보기">
+      </button>
+      <span class="blur"></span>
+    </div>
+  </div>
+  <span class="candidate_blank"></span>
+</div>
+          <div class="text_wrap">
+            <h2 class="text"><span class="point">서울 종로</span> 사이즈17 1줄일 경우 세로 가운데 세로 가운데 세로 가운데 세로 가운데</h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">24.03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>  
+      <li id="spring2">
+        <a href="#">
+          <div class="candidate_search_wrap">
+  <div class="candidate_search_list">
+    <p class="candidate_search_title">화제의 선거구</p>
+    <a href="#">서울 강남갑</a>
+    <a href="#">부산 사하구</a>
+    <a href="#">서울 노원병</a>
+    <a href="#">부산 해운대갑</a>
+    <a href="#">서울 강남을</a>
+    <a href="#">서울 노원병</a>
+    <a href="#">경기 화성갑</a>                  
+    <a href="#" class="active">서울 송파을</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 을을을</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 갑갑갑</a>
+    <a href="#">서울 갑갑갑</a>
+    <a href="#">서울 마지막</a>
+    <div class="more_button_wrap">
+      <button class="more_button" aria-label="주요선거 더보기">
+      </button>
+      <span class="blur"></span>
+    </div>
+  </div>
+  <span class="candidate_blank"></span>
+</div>
+          <div class="text_wrap">
+            <h2 class="text"><span class="point">서울 종로</span> 사이즈</h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">24.03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>          
+      <li id="spring3">
+        <a href="#">
+          <div class="text_wrap">
+            <h2 class="text">사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데</h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">24.03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>         
+      <li id="spring4">
+        <a href="#">
+          <div class="text_wrap">
+            <h2 class="text">사이즈17</h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">24.03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>  
+      <li id="spring5">
+        <a href="#">
+          <div class="candidate_search_wrap">
+  <div class="candidate_search_list">
+    <p class="candidate_search_title">화제의 선거구</p>
+    <a href="#">서울 강남갑</a>
+    <a href="#">부산 사하구</a>
+    <a href="#">서울 노원병</a>
+    <a href="#">부산 해운대갑</a>
+    <a href="#">서울 강남을</a>
+    <a href="#">서울 노원병</a>
+    <a href="#">경기 화성갑</a>                  
+    <a href="#" class="active">서울 송파을</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 을을을</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 갑갑갑</a>
+    <a href="#">서울 갑갑갑</a>
+    <a href="#">서울 마지막</a>
+    <div class="more_button_wrap">
+      <button class="more_button" aria-label="주요선거 더보기">
+      </button>
+      <span class="blur"></span>
+    </div>
+  </div>
+  <span class="candidate_blank"></span>
+</div>
+          <div class="text_wrap">
+            <h2 class="text"><span class="point">서울 종로</span> 사이즈17 1줄일 경우 세로 가운데 세로 가운데 세로 가운데 세로 가운데</h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">24.03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>  
+      <li>
+        <a href="#">
+          <div class="candidate_search_wrap">
+  <div class="candidate_search_list">
+    <p class="candidate_search_title">화제의 선거구</p>
+    <a href="#">서울 강남갑</a>
+    <a href="#">부산 사하구</a>
+    <a href="#">서울 노원병</a>
+    <a href="#">부산 해운대갑</a>
+    <a href="#">서울 강남을</a>
+    <a href="#">서울 노원병</a>
+    <a href="#">경기 화성갑</a>                  
+    <a href="#" class="active">서울 송파을</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 을을을</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 갑갑갑</a>
+    <a href="#">서울 갑갑갑</a>
+    <a href="#">서울 마지막</a>
+    <div class="more_button_wrap">
+      <button class="more_button" aria-label="주요선거 더보기">
+      </button>
+      <span class="blur"></span>
+    </div>
+  </div>
+  <span class="candidate_blank"></span>
+</div>
+          <div class="text_wrap">
+            <h2 class="text"><span class="point">서울 종로</span> 사이즈17 1줄일 경우 세로 가운데 세로 가운데 세로 가운데 세로 가운데</h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">24.03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>  
+      <li>
+        <a href="#">
+          <div class="candidate_search_wrap">
+  <div class="candidate_search_list">
+    <p class="candidate_search_title">화제의 선거구</p>
+    <a href="#">서울 강남갑</a>
+    <a href="#">부산 사하구</a>
+    <a href="#">서울 노원병</a>
+    <a href="#">부산 해운대갑</a>
+    <a href="#">서울 강남을</a>
+    <a href="#">서울 노원병</a>
+    <a href="#">경기 화성갑</a>                  
+    <a href="#" class="active">서울 송파을</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 을을을</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 갑갑갑</a>
+    <a href="#">서울 갑갑갑</a>
+    <a href="#">서울 마지막</a>
+    <div class="more_button_wrap">
+      <button class="more_button" aria-label="주요선거 더보기">
+      </button>
+      <span class="blur"></span>
+    </div>
+  </div>
+  <span class="candidate_blank"></span>
+</div>
+          <div class="text_wrap">
+            <h2 class="text"><span class="point">서울 종로</span> 사이즈</h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">24.03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>          
+      <li>
+        <a href="#">
+          <div class="text_wrap">
+            <h2 class="text">사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데사이즈17 2줄일 경우 세로 가운데</h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">24.03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>         
+      <li>
+        <a href="#">
+          <div class="text_wrap">
+            <h2 class="text">사이즈17</h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">24.03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>  
+      <li id="spring99">
+        <a href="#">
+          <div class="candidate_search_wrap">
+  <div class="candidate_search_list">
+    <p class="candidate_search_title">화제의 선거구</p>
+    <a href="#">서울 강남갑</a>
+    <a href="#">부산 사하구</a>
+    <a href="#">서울 노원병</a>
+    <a href="#">부산 해운대갑</a>
+    <a href="#">서울 강남을</a>
+    <a href="#">서울 노원병</a>
+    <a href="#">경기 화성갑</a>                  
+    <a href="#" class="active">서울 송파을</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 을을을</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 갑갑갑</a>                  
+    <a href="#">서울 갑갑갑</a>
+    <a href="#">서울 갑갑갑</a>
+    <a href="#">서울 마지막</a>
+    <div class="more_button_wrap">
+      <button class="more_button" aria-label="주요선거 더보기">
+      </button>
+      <span class="blur"></span>
+    </div>
+  </div>
+  <span class="candidate_blank"></span>
+</div>
+          <div class="text_wrap">
+            <h2 class="text"><span class="point">서울 종로</span> 사이즈17 1줄일 경우 세로 가운데 세로 가운데 세로 가운데 세로 가운데</h2>            
+            <div class="info">
+              <span class="auth">언론사</span>
+              <span class="time">24.03.28</span>
+            </div>
+          </div>
+        </a>
+      </li>  
+    </ul>
+  </section>    
+  <button class="news_list_more">기사 더보기<span></span></button>
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>  
+  <hr class="cluster_line">
+  <section class="reply_section">
+    <!-- 댓글 안내 원칙:S -->
+<div class="reply-guide-popup" id="notes" role="alert" aria-hidden="false" aria-labelledby="alert_label" aria-describedby="alert_desc">
+	<div id="alert_label" class="tit"><strong>댓글 운영 원칙</strong></div>
+	<button type="button" aria-controls="notes" id="notes_confirm"><span>안내 가이드 닫기</span></button>
+	<article class="context">
+		<div id="alert_desc">
+			<p class="parag">
+				네이트 뉴스 댓글은 기사에 대한 자신의 생각을 말하고 남의 생각을 들으며 서로 다양한 의견을 나누는 공간입니다.
+				건전한 인터넷 문화 정착을 위해 아래와 같은 댓글 운영원칙을 적용합니다.
+			</p>
+			<h2 class="s-tit">1. 댓글 삭제</h2>
+			<p class="parag">네티즌들의 신고 또는 자체 모니터링을 통해 아래에 해당하는 내용이 포함된 댓글은 별도의 예고 없이 삭제&#183;노출 제한될 수 있습니다.</p>
+			<ol class="num-list">
+				<li>타인에 대한 욕설 또는 비방</li>
+				<li>인신공격 또는 명예훼손</li>
+				<li>개인정보 유출 또는 사생활 침해</li>
+				<li>음란성 내용 또는 음란물 링크</li>
+				<li>상업적 광고 또는 사이트/홈페이지 홍보</li>
+				<li>불법정보 유출</li>
+				<li>같은 내용의 반복 (도배)</li>
+				<li>지역감정 조장</li>
+				<li>폭력 또는 사행심 조장</li>
+				<li>언론보도 형식의 허위 게시물</li>
+				<li>자살유발정보</li>
+				<li>혐오표현 또는 특정 속성을 이유로 특정 집단이나 그 구성원에 대한 비하&#183;조롱 표현(이와 관련한 사항은 한국인터넷자율정책기구의 관련 가이드라인을 준수합니다)</li>
+				<li>기타 기사 내용과 관계없거나 부적절한 내용</li>
+			</ol>
+			<h2 class="s-tit">2. 권한 제한</h2>
+			<p class="parag">
+				불건전한 댓글이 발견되는 경우 별도의 통보 없이 즉시 삭제하며, 상습적이거나 위반 정도가 심한 댓글을 게시하는 분에 대해서는 일정 기간 댓글 작성에 대한 권한을 제한할 수 있습니다.
+			</p>
+			<p class="parag">또한 비정상적인 패턴으로 댓글 작성, 추천, 반대 등이 발생하는 것으로 관리자 또는 시스템이 판단하는 경우 부정 클릭여부를 확인하여 해당 IP나 ID를 제재할 수 있습니다.</p>
+			<p class="parag">댓글에 비속어 및 상대방의 불쾌감을 주는 단어를 사용하거나, 유명인이나 특정 일반인 또는 단체나 기관을 사칭하는 경우 제재될 수 있습니다.</p>
+			<p class="parag">명예훼손, 개인정보 유출, 욕설 등 법률에 위반되는 댓글은 관계 법령에 의거 민형사상의 불이익을 받을 수 있으니 이용에 주의를 부탁드립니다.</p>
+		</div>
+	</article>
+</div>  
+  <div id="areaComment">
+    <div class="reply_wrap">
+        <div class="replyContent">
+          <div class="replyWrite f_clear mal_guide_area">
+            <a class="go_re_list" href="#">
+              <span class="title">댓글 <em id="totalcntComment">128</em></span>
+            </a>
+            <button class="mal_guide_button" aria-controls="notes" aria-label="댓글운영원칙 안내">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="10" cy="10" r="7" stroke="#E1E1E1"/>
+  <path d="M9.38995 13.58V8.41H10.74V13.58H9.38995ZM9.38995 7.6V6.44H10.74V7.6H9.38995Z" fill="#7C7C7C"/>
+  </svg>
+                  
+            </button>
+            <script>
+                // 댓글 안내 원칙 > CORS이슈로 페이지 내 삽입
+                var replyBtn = document.querySelector('.mal_guide_button');
+                var replyPOP = parent.document.querySelector('.reply-guide-popup');
+                var closeBtn = parent.document.querySelector('#notes_confirm');
+                if (replyBtn) {
+                  replyBtn.onclick = function(e) {
+                    e.preventDefault();
+                    replyPOP.setAttribute('aria-hidden', true)
+                    replyPOP.querySelector('.context').scrollTop = 0;
+                    parent.document.body.style.overflow = 'hidden'
+                  }
+                  closeBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    replyPOP.setAttribute('aria-hidden', false);
+                    parent.document.body.style.overflow = 'visible';
+                  })
+                }
+              </script>            
+            <div class="info_layer_popup">
+                <p>'말말말' 영역의 <span>댓글쓰기</span> 버튼으로 댓글 작성 시, 해당 발언이 댓글에 표시됩니다.</p>
+            </div>
+          </div>
+
+          <div class="write_btn" id="op_write" style="display: block;">
+              <a class="colgray">로그인 해 주세요.</a>
+          </div>
+          <!-- <form name="frmCmt" id="frmCmt" method="POST" action="http://m.comm.news.nate.com/comment/commonComment/writeAction"> -->
+            <form>
+              <input type="hidden" name="__natkn" value="" id="__natkn">
+              <input type="hidden" name="r_url" value="http://m.comm.news.nate.com/poll/result?poll_sq=22671&amp;section=ent&amp;mid=e0008">
+              <input type="hidden" name="ctgr_cd" value="100"> <input type="hidden" name="ctgr_sq" value="22671">
+              <input type="hidden" name="mid" value="">
+              <input type="hidden" name="sndData" value="0">
+              <fieldset class="write" id="exp_write" style="display: none;">
+                  <legend>댓글쓰기</legend>
+                  <div class="textArea">
+                      <!-- AOS4.4 이슈로 인한 수정:S -->
+                      <textarea value="로그인 해 주세요." title="댓글 입력" name="cmt_content" id="cmt_content" class="colgray" placeholder="로그인 해 주세요." readonly></textarea>
+                      <!-- <div class="mal_comment_blank_area mal_comment_articles"> -->
+                      <div class="mal_comment_blank_area"></div>
+                  </div>
+                  <div class="btn">
+                      <a id="cls_wbox" href="#">취소</a>
+                      <a href="#" class="ok"><span class="reg">등록</span></a>
+                  </div>
+                  <script type="text/javascript">
+                      var writeForm = {
+                          target : {
+                              cancelBtn : document.getElementById('cls_wbox'),
+                              txtAreaWrap : document.getElementById('exp_write'),
+                              txtArea : document.getElementById('cmt_content'),
+                              txtNoti : document.getElementById('op_write'),
+                              emoticon : document.querySelectorAll('.emoticon_select label')
+                          },
+                          // 클릭시
+                          show : function(e){
+                              e.preventDefault();
+                              writeForm.target.txtNoti.style.display = 'none';
+                              writeForm.target.txtAreaWrap.style.display = 'block';
+                              writeForm.target.txtArea.focus();
+                          },
+                          close : function(){
+                              writeForm.target.txtNoti.style.display = 'block';
+                              writeForm.target.txtAreaWrap.style.display = 'none';
+                          },
+                          // 이모티콘 클릭 시
+                          click : function(e){
+                              var _input = e.target.previousSibling;
+                              var isChecked = _input.checked;
+                              if(isChecked){
+                                  e.preventDefault();
+                                  _input.checked = false;
+                              }
+                          }
+                      };
+                      window.addEventListener('load', function(){
+                          writeForm.target.txtNoti.onclick = writeForm.show;
+                          writeForm.target.cancelBtn.onclick = writeForm.close;
+                          for(var i=0;i<writeForm.target.emoticon.length;i++){
+                              writeForm.target.emoticon[i].onclick = writeForm.click;
+                          }
+                      });
+                  </script>
+              </fieldset>
+          </form>
+          <!-- //댓글쓰기 -->
+          <!-- 댓글리스트 -->
+          <div class="reply_common_wrap">
+              <div class="reply others">
+                  <dl>
+                      <dt>
+                          <span><a  class="n">jeny****</a></span>
+                          <em>08.02 11:55</em>
+                          <a href="javascript:reportArticleComment('20231124n03703', '249116412','','m03');" class="report"><span>신고</span></a>                          
+                      </dt>
+                      <dd class="userText">[inc/module]이모티콘없는댓글프레임.html / 당연히 김우빈 수지라고 생각했는데 뭐지? <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEpJREFUeNpi/O/j858BGWzezMiADfj6oqhjYiATMGE1Gc104jSSbSORNpNtIyNGqFLsVJI1guIRV1zSNlQJ2EwDGwnYTLaNAAEGAFrvFxU+JBp4AAAAAElFTkSuQmCC" width="7" height="7" alt="새글" /> </dd>
+                      <dd class="btn">
+                          <p class="updw">
+                              <a href="#" class="read"><em>추천</em><span>117</span></a>
+                              <a href="#" class="read"><em class="no">반대</em><span>52</span></a>
+                          </p>
+                      </dd>
+                      
+                  </dl>
+              </div>
+              <div class="reply others">
+                  <dl>
+                      <dt>
+                          <span><a  class="n">jeny****</a></span>
+                          <em>08.02 11:55</em>
+                          <a href="javascript:reportArticleComment('20231124n03703', '249116412','','m03');" class="report"><span>신고</span></a>                          
+                      </dt>
+                      <dd class="userText">당연히 김우빈 수지라고 생각했는데 뭐지? <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEpJREFUeNpi/O/j858BGWzezMiADfj6oqhjYiATMGE1Gc104jSSbSORNpNtIyNGqFLsVJI1guIRV1zSNlQJ2EwDGwnYTLaNAAEGAFrvFxU+JBp4AAAAAElFTkSuQmCC" width="7" height="7" alt="새글" /></dd>
+                      <dd class="btn">
+                          <p class="updw">
+                              <a href="#" class="read"><em>추천</em><span>117</span></a>
+                              <a href="#" class="read"><em class="no">반대</em><span>52</span></a>
+                          </p>
+                      </dd>
+                  </dl>
+              </div>
+              <div class="reply others">
+                  <dl>
+                      <dt>
+                          <span><a   class="n">김유진</a></span>
+                          <em>08.03 08:45</em>
+                      </dt>
+                      <dd class="userText">수지&amp;우빈</dd>
+                      <dd class="btn">
+                          <p class="updw">
+                              <a href="#" class="read"><em>추천</em><span>5</span></a>
+                              <a href="#" class="read"><em class="no">반대</em><span>4</span></a>
+                          </p>
+                      </dd>
+                  </dl>
+              </div>
+              <div class="reply others">
+                  <dl>
+                      <dt>
+                          <span><a  class="n">김유진</a></span>
+                          <em>08.03 08:45</em>
+                      </dt>
+                      <dd class="userText">추모합니다.</dd>
+                      <dd class="btn">
+                          <p class="updw">
+                              <a href="#" class="read"><em>추천</em><span>5</span></a>
+                              <a href="#" class="read"><em class="no">반대</em><span>4</span></a>
+                          </p>
+                      </dd>
+                  </dl>
+              </div>
+                      
+          </div>
+        </div>
+    </div>
+    
+  </div>
+  
+    <div class="replyBottom">
+        <div class="btn type1">
+        <div class="moreWrap">
+            <div class="btn_more">
+            <button type="button">
+                <span>더보기</span>
+            </button>
+            </div>
+        </div>
+        </div>
+    </div> 
+    
+
+
+
+
+
+
+    
+    
+  </section>
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>  
+  <hr class="cluster_line">
+  <div class="scroll_btns_wrap">
+  <a href="home.html" class="home">
+    <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 6L8 1L15 6" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M3 5V12H13V5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  
+  </a>
+  <a href="#" class="top">
+    <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 9L7 3L13 9" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7 3V16" stroke="black" stroke-linecap="round"/>
+  <path d="M1.5 0.5H12.5" stroke="black" stroke-linecap="round"/>
+</svg>
+  
+  </a>
+</div>
+  <footer id="footer" role="contentinfo">
+  <div class="footer">
+      <div class="svcBtn">
+        <a href="//m.nate.com">네이트홈</a><a href="#"><span id="loginbtnmsg">로그아웃</span></a><a href="//news.nate.com/view/20231124n16511">PC버전</a><a href="#" >전체서비스</a>
+      </div> 
+      <ul class="sitemap">
+        <li><a href="//news.nate.com/enews/editguide">기사배열기본방침(책임:김경옥)</a></li>
+        <li><span>청소년보호책임:조유형</span></li>
+        <li><a href="//m.news.nate.com/newssitemap">뉴스 전체서비스</a></li>
+      </ul>
+      <div class="copyright"><span>&copy; SK Communications</span><a class="cscenter" href="//m.helpdesk.nate.com">고객센터</a></div>
+  </div>
+</footer>
+  <script>
+
+
+  voteVersusSwiper();
+  sectionTargeting({
+    id: 'newsList',
+  });
+  // 화제의 선거구 출구조사 swiper 타게팅 사용할 경우  
+  // sectionTargeting({
+  //   id: 'cid',
+  // });
+  </script>
+</body>
+</html>

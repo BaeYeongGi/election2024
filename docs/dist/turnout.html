@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+
+
+  <meta charset="utf-8"/>
+  <title>제22대 국회의원 총선거</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <!--CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/election2024.css">
+  <!-- JS -->
+  <script type="text/javascript" src="../js/swiper-bundle.js"></script>
+  <script type="text/javascript" src="../js/election2024.js"></script>
+
+
+</head>
+<body class="body">
+  <header id="header" role="banner">
+	<div class="gnbWrap" id="type2">
+		<div class="gnb">
+			<a href="#" class="nate"><span class="hd-img">네이트</span></a>
+			<a href="#" class="service">뉴스</a>
+		</div>
+		<div class="relsvc">
+			<a href="#">스포츠</a>
+			<a href="#">연예</a>
+		</div>
+		<div class="searchWrap">
+			<button class="srchlink" aria-expanded="false" aria-controls="search-field" aria-label="검색창 열기"><span class="hd-img"></span></button>
+			<!-- 검색 레이어 열릴 때 -->
+			<form id="search-field" role="search" aria-labelledby="search-keyword">
+				<fieldset>
+					<legend id="search-keyword">뉴스 기사 검색</legend>
+					<input type="search" type="text">
+					<button class="delete hd-img" type="button" aria-label="검색어 삭제"><span class="hd-img"></span></button>
+					<button class="srchbtn" type="submit"><span class="hd-img" aria-label="검색하기"></span></button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</header>
+<div class="gnb_container">
+  <div class="gnb_title_wrap">
+    <a href="home.html" class="logo"><h1>제22대 국회의원 선거</h1></a>
+    <button class="gnb_share" aria-label="공유하기 버튼">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAsCAYAAAAwwXuTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMuSURBVHgB1VoNdeMwDFYPQRksEMpgYbAyWA/ByqBl0DHoMSiEbAg6Bh6DjMF39kWpFS9pEv8t972nl9dGT/Jny7LseEUBALDWj1LLo5ZCy0bLmsUHX1o++fmh5V3L22q1+qKc0MRKLZWWGnlw0bKl1DBOtCjHeaXlpOVJywOaUfW1v9ayYVsHti1hfD9TbGijheOs5gZ4k5npe+d07NX8TzGgDe1hQ9E8X+iH4BA1bdlTCLSBo+i1U44Rm9AmM6Jn0a4j+cAh92OjNgSOLD+SgpwJg0daKDgh1bNIOj2zoYUDzZLVYj+mXIgeWVxYDkEMSn03u3L6NThTInBYFRQZnAQNqiGFHSuoFA1gH6XwETUjoykS2ujb9ikofhm/Uug2ovVzTUCyDVXlvtj2vkgAnucq1VQQo1jKPy+pR89pRDKSaEpIOxc5bFoUlAnwWcOm2V2LjLqW4VlRZjBJJCBZsc2nX9RsVg3eKDP0RtZsan/zzwNCi2eLD36WHbaUETwPCw4pWT0F5wERlRe5uCcry5jECyczhXGUFADuOAMl02r0rRA7OqH/aEOx9L27UgAgEg21Fiky0N0oG1Q8ig8D+n+EbowwbXilIOg01oRlMaK/E/oHigBJMGqIws5pY3f0JAzd7U4scp0QVfzjgQKhbbyyLYUJRQO6i30UcsKuwVWWaUHLBKbuyay+LNdOFBGQxQvsPsrbCbob5dEEgfQF9+HGCRFKNdhTrtHGOuSib5nYR3WLSnQ3irOdwS6qmBiaSszTVGsvOnwE49kTHXZCn2foKiDZqUG75Fzkn22qrskDaL4lTBqNObqebVG38Bx4Eauizw4xeqrvZZts6pQ9nApO8noeUqpYIeq6lAOwmfx6T0muZ/9NqGJOkYHu5rOkhQPdY49pp/GwlYDpkcV+n+Ds71fLCpKLDFcn0vwKdYfkGch3rHinTabyeg0mJwzKnblCpsPhCW2J9zmds+tV9No/ojlGlEfsiO/HHwXFBr7fdmidHdAUCiajhV4jKdjWCf3XSLLclzH15AV5UDNRr0/pKwoAmtEyjkuy17gKCrvK1V7j+qTmtP095CrXXweDg+oiZHa7AAAAAElFTkSuQmCC" alt="">
+    </button>
+  </div>
+  <div class="vote_state_wrap">
+    <dl class="early_vote">
+      <dt><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAAAcCAYAAACERFoMAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQySURBVHgB7Zr/VdswEMe/4fE/6QSoEzSdADNB0wmSTkCYIGECYIKECQgTYCZomAAzAekE7h0+k/PFP2Q7oYXnz3t6RtJZlnSn00kB6Ojo6Ojo+Jj0yirjOJ7R44jSWoque73e2shM6TFTRWOSuZG6Eefhz5re/Snvxqo8ovKvUt6nxy3ac0Vt3kmbjh4jtOeG2ox0AbU9lLYHlJwUrySxfGjkC+eTOUQ5J5QClV9gozwfnHm/ishDpl+zzSIW6m+H7CQ1JYSMQYyADWuQIzeQNCY5NpxzeHJQUd9HR1Puka8sy0RWlRdVK8wq7A/q8YCs5TpkXWSErKXXWb0p7FquUJ8H7AlSQICN+2MiJOPm5xckHuJS1bPStrabPKoU5nTGp0EjHyJxE69Qp8bIKmxJMheq/pLSE+rRt/307NuN6WdP+lC6h8gY5qp+pscgOJNnt5cayDOlFbXD280QmzHoWKGQQoXJ5q6J0J6qjb3J5Ds0238u8H5kXKPMrXWXXt7rwPcjaKkwsczAFLMreJIN+jOxRHa1cHDxWzwIr072Ik7VR77eq8wlfjP5Ffy4kuPAMo1+RFmXBfKOEiuNLZ7D7EjKZ/AjQnYf/Ofw5Mt49JjTyNDCijqFJ2UK84lw8uiniTo9oecPbK+sFbbdH+8dEaVTPsuI0n15Rk04MEjPQPS3nkw77oDq9Xn1xNQPxCCZFbX5atj0ZMNlZfC4HPIJKZ3bs1sjxFVZBjly0zifOaX7nPIndoHsx8VFWKbSbuYd9T0X74a5xxjqMi2YyxNKZ/IdTiNKxwWywziZuzQFuv6w4CUWcjlVt1T3vcLfrlWycPh9od4/p/YesbHCq5yI68MiRuEKqnlfgwdHOlPkEouiOYdkcstO5hN1NcWHxwjJJrxUoe0bVLYguVDa9VVWiPb47sltCNDgyGFY6MyWwuIkYhujGI7sHmiil6iAZE6lPU49Wbkru0LFh/+CByLrvUl7co3NxHDb+pzF45yYvN4aAmwCJRuaR6hPGgPkklGYTO69kQmRWKPuNPvWledmyStnrPIBGt4yiMLvsTteD71iQGv5RmRk+EL6WfXBuvpI1xvYExVOfgGlF+aHqiMzepzlfIAtnzs5xGZ5swxb4a4tXTNTf9e6YfmP4Mtfhx2iV1hehDNLVxEplBWnrZvD3Qn2xHsFH7Jq9Z5tDTbQESVyrp3Mqtv6yWSXlJ3DFnrSuBPUMY7ytJL4TFJ3817muBUfAvnWuEJG14coP1RzhDpAeZuuon5o8mGJbBOPFOWWqrPES1xy3R8nVyzMmeSn5iwyMvLzeDccowKSGZt35g3eactItf0UtyczBr3CFtj8Clq2Al6jufRE/wl4wW4utlP2ut++KYwU4BtWW0XZ37weTb2+H2xD3d/ivJB/E7jDfuAtpG6UaHlER0dHR0fHJ+Av4qrVzTV9lH8AAAAASUVORK5CYII=" alt="사전투표일" /></dt>
+      <dd>4.5-4.6</dd>
+    </dl>
+  </div>
+  <div class="nav_wrap">
+    <ul class="nav">
+      
+      
+        <li><a href="home.html" ><span class="name">홈</span></a></li>
+        <li><a href="news_type_A.html" class="active"><span class="name">뉴스</span></a></li>
+        <li><a href="photo.html" ><span class="name">포토</span></a></li>
+        <li><a href="survey_type_A.html" ><span class="name">여론조사</span></a></li>
+        <li><a href="talk.html" ><span class="name">말말말</span></a></li>
+        <li><a href="guide_type_A.html" ><span class="name">선거안내</span></a></li>
+        <li><a href="candidate01.html"  class="new"><span class="name">후보자</span><img class="badge" src="data:image/png;base64,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" alt="new"></a></li>
+        <li><a href="#" ><span class="name">투&middot;개표</span></a></li>
+      
+    </ul>
+  </div>
+</div>
+<div class="dimmed"></div>
+<div id="sns_share_pop" style="display: none;">
+  <div class="sns_share_layer">
+    <button type="button" class="btnClosePopup">닫기</button>
+    <div class="title">공유하기</div>
+    <ul class="sns_btns">
+      <li><a class="no" title="새창으로 이동" id="sns-no" href="javascript:;">네이트온</a></li>
+      <li><a class="kt" title="새창으로 이동" id="sns-kt" href="javascript:;">카카오톡</a></li>
+      <li><a class="fb" title="새창으로 이동" id="sns-fb" href="javascript:;">페이스북</a></li>
+      <li><a class="tw" title="새창으로 이동" id="sns-tw" href="javascript:;">엑스</a></li>
+      <li><a class="ks" title="새창으로 이동" id="sns-ks" href="javascript:;">카카오스토리</a></li>
+      <li><a class="bd" title="새창으로 이동" id="sns-bd" href="javascript:;">밴드</a></li>
+      <li><a class="li" title="새창으로 이동" id="sns-li" href="javascript:;">라인</a></li>
+      <li><a class="lk" title="새창으로 이동" id="sns-url" href="javascript:;">URL 복사</a></li>
+    </ul>	
+  </div>
+  <div class="modal_backdrop"></div>
+</div>
+<script>
+  document.querySelector('.btnClosePopup').addEventListener('click', (e) => {
+    e.target.parentElement.parentElement.style.display = 'none';
+  })
+  document.querySelector('.modal_backdrop').addEventListener('click', (e) => {
+    e.target.parentElement.style.display = 'none';
+  })
+</script>
+
+
+<script>
+  document.querySelector('.gnb_share').addEventListener('click', function(){
+    const layer = document.querySelector('#sns_share_pop');
+    layer.classList.add('active');
+    layer.style.display = 'block';
+  })
+  navigationEvent();
+  setIOS();
+</script>
+  
+
+
+
+
+  <ul class="menu item4">
+    <li><a href="turnout.html" class="active">투표현황</a></li>
+    <li><a href="expect.html" >출구조사</a></li>
+    <li><a href="voteall.html" >개표현황</a></li>
+    <li><a href="live.html" >생중계</a></li>
+  </ul>
+
+
+  
+  <ul class="menu item4">
+    <li><a href="turnout.html" class="active">투표현황</a></li>
+    <li><a href="expect.html" class="disabled">출구조사</a></li>
+    <li><a href="voteall.html" class="disabled">개표현황</a></li>
+    <li><a href="live.html">생중계</a></li>
+  </ul>
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <dl class="news_cluster_title">
+        <dt>전국 투표율 <button><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 9.3094 17.9125 8.63924 17.748 8H16.7101C16.8987 8.63371 17 9.30503 17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C12.1571 3 14.0864 3.97574 15.3704 5.50994H16.6221C15.1829 3.39158 12.754 2 10 2Z" fill="#222222"/>
+  <path d="M16.7 2.5V6H13.2" stroke="#222222"/>
+  </svg>
+  </button></dt>
+        <dd>50.2<span>%</span></dd>
+      </dl>
+      <div class="vote_total_wrap">
+        <p class="vote_total_time">(3시 기준 집계중)</p>
+        <div class="vote_total_count">
+          <dl>
+            <dt>투표자수</dt>
+            <dd>21,000,230명</dd>
+          </dl>
+          <dl>
+            <dt>선거인수</dt>
+            <dd>41,210,349명</dd>
+          </dl>
+        </div>
+      </div>
+    </div>    
+  
+    <div class="vote_over_time_banner">
+      <p>오후 6시 투표 종료까지 <span>12시간 21분 42초</span> 남음</p>
+    </div>
+    <div class="vote_over_time_notice_container">
+      <div class="wrap">
+        <a href="#" class="vote_over_time_notice"><button><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="10" cy="10" r="7" stroke="#E1E1E1"/>
+  <path d="M9.38995 13.58V8.41H10.74V13.58H9.38995ZM9.38995 7.6V6.44H10.74V7.6H9.38995Z" fill="#7C7C7C"/>
+  </svg>
+  </button> 투표 전 꼭 확인하세요. <span class="arrow"></span></a>
+      </div>
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">시간대별 투표율 <span>(%)</span></p>
+    </div>    
+    <div class="graph_wrap">
+      <canvas id="lineArea"></canvas>
+      <ul class="line_guide">
+        <li>22대 총선</li>
+        <li>21대 총선</li>
+        <li>8회 지방선거</li>
+      </ul>
+    </div>
+
+    <ul class="timeSelect">
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li><span>19:30</span></li>
+    </ul>
+    
+    <div class="vote_graph_time_table_wrap">
+      <table class="fixed_table">
+        <thead>
+          <tr>
+            <th><span>구분</span></th>
+          </tr>        
+        </thead>
+        <tbody>
+          <tr>
+            <td><span>22대 국회의원 선거</span></td>
+          </tr>
+          <tr>
+            <td><span>21대 국회의원 선거</span></td>
+          </tr>
+          <tr>
+            <td><span>8회 지방 선거</span></td>
+          </tr>                    
+        </tbody>
+      </table>
+      <div class="scroll_table_wrap">
+        <table class="scroll_table">
+          <thead>
+            <tr class="scroll_time">
+              <th data-time="0700"><span>7시</span></th>
+              <th data-time="0800"><span>8시</span></th>
+              <th data-time="0900"><span>9시</span></th>
+              <th data-time="1000"><span>10시</span></th>
+              <th data-time="1100"><span>11시</span></th>
+              <th data-time="1200"><span>12시</span></th>
+              <th data-time="1300"><span>13시</span></th>
+              <th data-time="1400"><span>14시</span></th>
+              <th data-time="1500"><span>15시</span></th>
+              <th data-time="1600"><span>16시</span></th>
+              <th data-time="1700"><span>17시</span></th>
+              <th data-time="1800"><span>18시</span></th>
+              <th data-time="1930"><span>19시30분</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="scroll_time_cell">
+              <td><span>5.0%</span></td>
+              <td><span>10.0%</span></td>
+              <td><span>15.0%</span></td>
+              <td><span>20.0%</span></td>
+              <td><span>25.0%</span></td>
+              <td><span>30.0%</span></td>
+              <td><span>35.0%</span></td>
+              <td><span>40.0%</span></td>
+              <td><span>45.0%</span></td>
+              <td><span>50.0%</span></td>
+              <td><span>55.0%</span></td>
+              <td><span>60.0%</span></td>
+              <td><span>90.0%</span></td>      
+            </tr>
+            <tr class="scroll_time_cell">
+              <td><span>2.2%</span></td>
+              <td><span>5.1%</span></td>
+              <td><span>8.0%</span></td>
+              <td><span>11.4%</span></td>
+              <td><span>15.3%</span></td>
+              <td><span>19.2%</span></td>
+              <td><span>49.7%</span></td>
+              <td><span>53.0%</span></td>
+              <td><span>56.5%</span></td>
+              <td><span>59.7%</span></td>
+              <td><span>62.6%</span></td>
+              <td><span>66.2%</span></td>
+              <td><span>-</span></td>
+            </tr>
+            <tr class="scroll_time_cell">
+              <td><span>1.7%</span></td>
+              <td><span>3.8%</span></td>
+              <td><span>6.0%</span></td>
+              <td><span>8.7%</span></td>
+              <td><span>12.0%</span></td>
+              <td><span>15.0%</span></td>
+              <td><span>38.3%</span></td>
+              <td><span>40.7%</span></td>
+              <td><span>43.1%</span></td>
+              <td><span>45.4%</span></td>
+              <td><span>47.6%</span></td>
+              <td><span>50.0%</span></td>
+              <td><span>50.9%</span></td>
+            </tr>          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">지역별 투표율 <span>(%)</span></p>
+      <div class="vote_total_wrap">
+        <p class="vote_total_time">(3시 기준 집계중)</p>
+      </div>
+    </div>  
+    <div class="vote_swipe_buttons">
+  <button class="active">22대 국회의원 선거</button>
+  <button>지난 21대 국회의원 선거</button>
+</div>  
+    <div class="vote_swipe_container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="vote_rate_map_wrap">
+            <svg width="263" height="416" viewBox="0 0 263 416" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path data-local="local49" d="M83.58 385.09L77 386.5H70.5L55.5 393L47.5 401V408.05L55.5 416L64.06 412.2L82 412L84 407.5L93.5 409L102.5 406V400L105 396.5V390.5L100 385L83.58 385.09Z" fill="#DADADA" />
+  <path data-local="local29" d="M54.89 297.34L50.5401 293.25L44.89 296.98L43.8 304.63L47.5 305.65L49.68 310.6L59.73 307.36L62.84 309.25L67.6501 306.36L68.7301 300.82L61.0601 293.27L54.89 297.34Z" fill="#DADADA" />
+  <path data-local="local46" fill-rule="evenodd" clip-rule="evenodd" d="M107.89 286.65L108.02 295.66L121.48 309.5L119.99 318L110.99 319L114.49 332L120.49 328L121.49 337L128.99 347.5L122.49 348L121.49 341L117.49 336L112.99 339.5L111.99 344.5L107.99 341L111.99 334L107.99 321.5L97.99 327L96.99 333L94.99 335.5V338.5L102.99 345.5L96.99 348L100.99 355L103.99 359H92.49L88.99 353H78.49L81.49 347.5L88.99 349.5L86.49 343L92.49 343.5V335.5H82.99L79.99 340L73.99 341L66.99 351V359L56.49 361.5L50.99 349.5L48.11 362L39.49 366.5L37.99 373.5L32.49 375.5L28.99 364L27.99 353L19.99 349.5L15.49 343L19.99 334L26.99 327L21.99 315L30.99 307V304.5L23.49 298H17.49V290.5L23.99 287L25.48 277.04L30.07 278.05V282.08L35.16 289.03L50.33 279.11L50.46 272.98L52.51 272.08L63.37 279.5L70.43 275.91L76.04 285.35L85.63 283.66L95.75 287.35L101.1 283.57L107.89 286.65ZM62.82 312.75L70.34 308.25L71.97 299.81L61.43 289.43L55.21 293.53L50.86 289.44L42.1 295.21L40.45 306.81L45.32 308.16L48.02 314.29L59.34 310.64L62.82 312.75ZM7 362.5L11.5 355.5H18.5L21.5 362.5V366L16 368.5H2.31L0 364.5L7 362.5Z" fill="#DADADA" />
+  <path data-local="local53" d="M33.08 281.1L35.91 284.96L47.37 277.47L47.51 271.01L52.84 268.67L63.61 276.03L71.58 271.97L77.57 282.04L85.92 280.57L95.31 284L100.78 280.13L108.81 283.77L113.83 275.75L107.6 264.87L112.64 258L112.77 246.61L128.39 236.66L126.92 225.42L116.66 225.07L103.66 228.19L94.82 223.68L90.51 218.08L89.45 217.66L77.35 224.44L70.8 215.97H60.91L60.64 216.42V223.43L51.28 228.12L43.05 227.66L39.5 232.5L41.5 236H48.5L51.5 245L39.5 244.5V251.5L31 259L49 263V265L33 269L26.79 274.25L33.08 275.64V281.1Z" fill="#DADADA" />
+  <path data-local="local48" fill-rule="evenodd" clip-rule="evenodd" d="M208.16 289.52L198.74 295.4V302.59L196.45 305.67L181 295.5V305.5L174.5 303L172 329L163 316L153 320.5L145.5 317.5V304.5L133.5 314.5L134 328L136 330L139.5 325L145.5 328V337L136 334L133.5 338.5L128 328L129 317L123.11 317.65L124.71 308.5L111.01 294.42L110.89 286.1L117.33 275.82L111.17 265.08L115.63 259L115.75 248.27L130.28 239.02L142.8 241.89L150.17 255.85L166.64 259.95L175.71 260.93L198.87 263.09L205.57 258.82L212.42 258.67L210.76 265.68L215.37 272.28L221.82 274.71L222.81 277.49L210.42 284.62L208.16 289.52ZM192.5 317.5L190 320V322L193.5 323.5V327.5L184 338.5V327.5L178 328.01V326.03L179.25 322.58L185.5 322L185.89 319.68L185.54 315.29L190 311L192.5 317.5Z" fill="#DADADA"/>
+  <path data-local="local26" d="M224.83 279.78L212.74 286.74L210.52 291.59L201.74 297.06V303.58L198.96 307.32L201.5 309L208 304.5L217.5 306L229 294L230.87 279.99L230.45 281.43L224.83 279.78Z" fill="#DADADA" />
+  <path data-local="local31" d="M215.39 259.16L213.99 265.06L217.29 269.8L224.18 272.39L225.79 276.94L231.29 278.55L231.22 278.78L233.5 276.5L242.72 257.1L222.77 249.5L215.39 259.16Z" fill="#DADADA" />
+  <path data-local="local27" d="M194.68 236.25L193.39 228.83L185.87 226.6L172.72 232.77L169.88 250.13L164.85 256.42L167.26 257.02L176 257.95L179.23 258.25L186.89 249.84L194.68 236.25Z" fill="#DADADA" />
+  <path data-local="local47" fill-rule="evenodd" clip-rule="evenodd" d="M255 115L248.5 116.71V120.5L253.25 122.5L258 120.5L255 115ZM240.5 225L235.58 196.75L240.43 182.22L237.5 170L240.43 152.44L232.07 127.76L224.74 135.42L217.61 130.95L199.46 137.74L185.89 132.9L168.37 145.18L167.46 150.6L162.06 154.26L156.1 150.77L129.74 173.49V197.88L142.85 204.99L144.82 212.54H137.49L129.8 224.32L131.35 236.19L144.81 239.27L152.2 253.26L161.65 255.62L167.04 248.87L170.01 230.72L185.63 223.4L196.02 226.48L197.83 236.8L189.22 251.74L182.97 258.59L198.13 260.01L204.67 255.84L214.31 255.62L221.75 245.9L243.48 254.18L250.5 220L240.5 225ZM257 124L258 123L259.5 123.5L258.5 125H257V124Z" fill="#DADADA" />
+  <path data-local="local43" d="M140.94 209.54L140.27 207.01L126.74 199.67V172.11L155.77 147.09L161.94 150.72L164.71 148.84L165.63 143.45L182.42 131.67L155.27 121.99L144 123.92L139.42 118.52H136.67L132.13 127.35H125.78L121.8 122.13L121.07 124.72H112.83L109.66 131.3L88.88 147.84L89.02 147.94L99.95 160.41L90.78 162.99L89.43 165.69L96.74 181.06L104.05 183.37L111.04 191.55L108.08 202.58L117.46 222.1L127.45 222.44L135.87 209.54H140.94Z" fill="#DADADA" />
+  <path data-local="local30" d="M96.66 184.18L90.98 189.65L88.92 199.31L91.43 205.8L93.5 202.27L96.86 201.21L101.68 204.67L105.16 201.87L107.73 192.29L102.33 185.97L96.66 184.18Z" fill="#DADADA"  />
+  <path data-local="local51" d="M94.1 182.48L86.39 166.29L81.64 162.56L79.84 163.46L79.29 171.99L83.05 176.02L83.19 185.3L83.7 186.16L89.13 187.26L94.1 182.48Z" fill="#DADADA"/>
+  <path data-local="local44" d="M57.64 221.57V215.58L59.22 212.97H72.27L78.14 220.56L89.23 214.34L92.39 215.6L96.78 221.32L104.03 225.01L114.35 222.54L105.95 205.09L101.79 208.44L96.33 204.52L95.5 204.78L92.97 209.11H89.5L85.8 199.56L87.82 190.06L81.8 188.84L80.2 186.14L80.07 177.22L76.21 173.09L76.95 161.54L82.01 159.03L87.32 163.21L88.69 160.46L94.56 158.81L86.87 150.04L79.51 144.63H69.38L58.99 145.77L55 150L46.5 140L32 137L24 142.5L27 149.5L22 153L14.5 146.5L7.5 157.5L9.5 163.5H16L20.5 174L22 187.5L27 189.5L26.5 173.5L30.5 174L35 211L36.5 214L42 215L44.93 224.76L50.65 225.08L57.64 221.57Z" fill="#DADADA"  />
+  <path data-local="local52" d="M96.59 39.63L99.12 48.89L107.33 50.72L111.44 61.47L105.08 66.45V81.78L108.88 80.93L130.22 86.4L120.34 92.79L128.23 99.48L122.83 118.52L127.27 124.35H130.3L134.83 115.52H140.8L145.18 120.67L155.54 118.9L199.44 134.54L217.95 127.62L224.27 131.58L230.99 124.55L221.5 96.5L181 45.5L160.5 0L156 14.5L142 25.5H76.5L74.12 27.77L88.08 41.89L96.59 39.63Z" fill="#DADADA"/>
+  <path data-local="local28" fill-rule="evenodd" clip-rule="evenodd" d="M35 87H25.5L24.5 79L21.5 72L24.5 68L29 70L33 77.5L35 87ZM47.6871 89.0358L50.5 94L52 99.5L49 107.5L38 106.5L33 102L38 96V88L43.5 85L47.6871 89.0358Z" fill="#DADADA" />
+  <path data-local="local11" d="M59.49 99.83H63.57L67.17 97.43L70.61 99.63L74.36 97.96L79.27 92.89V88.31L74.31 87.65L71.6 77.9H68.86L66.37 81.28L61.82 82.5L59.9 90.09L53.69 87.36L52.16 88.47L56.7 96.16L59.49 99.83Z" fill="#DADADA"/>
+  <path data-local="local41" d="M80.49 141.63L86.38 145.99L107.26 129.38L110.95 121.72H118.8L124.82 100.52L115.31 92.46L122.83 87.6L108.83 84.01L102.08 85.53V64.99L107.85 60.48L105.11 53.3L96.7 51.43L94.48 43.29L87.17 45.24L71.95 29.85L65 36.5L61 34L55.5 39L58.5 44L55.5 50.5L57 59.5L39 74.5H35.5L38.15 84.72L44.57 81.02L50.27 86.13L53.31 83.91L57.86 85.91L59.34 80.06L64.58 78.65L67.35 74.9H73.89L76.67 84.94L82.27 85.69V94.11L76.11 100.47L70.35 103.03L67.2 101.01L64.48 102.83H58L55.16 99.08L51.64 107.14L55.5 111L54 117H44.5V126.5L53 122V135.5L59.37 142.71L69.3 141.63H80.49Z" fill="#DADADA"/>
+  </svg>
+  
+            <ul class="vote_rate_items_wrap">
+              <li class="local11">
+                <dl>
+                  <dt>서울</dt>
+                  <dd>1.8</dd>
+                </dl>
+              </li>
+              <li class="local26 low">
+                <dl>
+                  <dt>부산</dt>
+                  <dd>1.5</dd>
+                </dl>
+              </li>
+              <li class="local27 high">
+                <dl>
+                  <dt>대구</dt>
+                  <dd>2.4</dd>
+                </dl>
+              </li>
+              <li class="local28">
+                <dl>
+                  <dt>인천</dt>
+                  <dd>2.1</dd>
+                </dl>
+              </li>
+              <li class="local29">
+                <dl>
+                  <dt>광주</dt>
+                  <dd>2.1</dd>
+                </dl>
+              </li>
+              <li class="local30">
+                <dl>
+                  <dt>대전</dt>
+                  <dd>1.8</dd>
+                </dl>
+              </li>
+              <li class="local31">
+                <dl>
+                  <dt>울산</dt>
+                  <dd>2.2</dd>
+                </dl>
+              </li>
+              <li class="local51">
+                <dl>
+                  <dt>세종</dt>
+                  <dd>1.9</dd>
+                </dl>
+              </li>         
+              <li class="local41">
+                <dl>
+                  <dt>경기</dt>
+                  <dd>1.9</dd>
+                </dl>
+              </li>        
+              <li class="local52">
+                <dl>
+                  <dt>강원</dt>
+                  <dd>2.1</dd>
+                </dl>
+              </li>
+              <li class="local43 high">
+                <dl>
+                  <dt>충북</dt>
+                  <dd>2.4</dd>
+                </dl>  
+              </li>
+              <li class="local44">
+                <dl>
+                  <dt>충남</dt>
+                  <dd>2.0</dd>
+                </dl>
+              </li>
+              <li class="local53 low">
+                <dl>
+                  <dt>전북</dt>
+                  <dd>1.5</dd>
+                </dl>
+              </li>
+              <li class="local46 low">
+                <dl>
+                  <dt>전남</dt>
+                  <dd>1.5</dd>
+                </dl>
+              </li>
+              <li class="local47">
+                <dl>
+                  <dt>경북</dt>
+                  <dd>2.1</dd>
+                </dl>
+              </li>
+              <li class="local48">
+                <dl>
+                  <dt>경남</dt>
+                  <dd>2.2</dd>
+                </dl>
+              </li>
+              <li class="local49 high">
+                <dl>
+                  <dt>제주</dt>
+                  <dd>2.4</dd>
+                </dl>
+              </li>
+            </ul>
+            <ul class="vote_rate_guide">
+              <li class="highest">최고</li>
+              <li class="lowest">최저</li>
+            </ul>
+            <p class="vote_rate_map_caption">
+              지난 선거의 동일 시간대<br/>
+              투표율과 비교해 보세요!
+            </p>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="vote_rate_map_wrap">
+            <svg width="263" height="416" viewBox="0 0 263 416" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path data-local="local49" d="M83.58 385.09L77 386.5H70.5L55.5 393L47.5 401V408.05L55.5 416L64.06 412.2L82 412L84 407.5L93.5 409L102.5 406V400L105 396.5V390.5L100 385L83.58 385.09Z" fill="#DADADA" />
+  <path data-local="local29" d="M54.89 297.34L50.5401 293.25L44.89 296.98L43.8 304.63L47.5 305.65L49.68 310.6L59.73 307.36L62.84 309.25L67.6501 306.36L68.7301 300.82L61.0601 293.27L54.89 297.34Z" fill="#DADADA" />
+  <path data-local="local46" fill-rule="evenodd" clip-rule="evenodd" d="M107.89 286.65L108.02 295.66L121.48 309.5L119.99 318L110.99 319L114.49 332L120.49 328L121.49 337L128.99 347.5L122.49 348L121.49 341L117.49 336L112.99 339.5L111.99 344.5L107.99 341L111.99 334L107.99 321.5L97.99 327L96.99 333L94.99 335.5V338.5L102.99 345.5L96.99 348L100.99 355L103.99 359H92.49L88.99 353H78.49L81.49 347.5L88.99 349.5L86.49 343L92.49 343.5V335.5H82.99L79.99 340L73.99 341L66.99 351V359L56.49 361.5L50.99 349.5L48.11 362L39.49 366.5L37.99 373.5L32.49 375.5L28.99 364L27.99 353L19.99 349.5L15.49 343L19.99 334L26.99 327L21.99 315L30.99 307V304.5L23.49 298H17.49V290.5L23.99 287L25.48 277.04L30.07 278.05V282.08L35.16 289.03L50.33 279.11L50.46 272.98L52.51 272.08L63.37 279.5L70.43 275.91L76.04 285.35L85.63 283.66L95.75 287.35L101.1 283.57L107.89 286.65ZM62.82 312.75L70.34 308.25L71.97 299.81L61.43 289.43L55.21 293.53L50.86 289.44L42.1 295.21L40.45 306.81L45.32 308.16L48.02 314.29L59.34 310.64L62.82 312.75ZM7 362.5L11.5 355.5H18.5L21.5 362.5V366L16 368.5H2.31L0 364.5L7 362.5Z" fill="#DADADA" />
+  <path data-local="local53" d="M33.08 281.1L35.91 284.96L47.37 277.47L47.51 271.01L52.84 268.67L63.61 276.03L71.58 271.97L77.57 282.04L85.92 280.57L95.31 284L100.78 280.13L108.81 283.77L113.83 275.75L107.6 264.87L112.64 258L112.77 246.61L128.39 236.66L126.92 225.42L116.66 225.07L103.66 228.19L94.82 223.68L90.51 218.08L89.45 217.66L77.35 224.44L70.8 215.97H60.91L60.64 216.42V223.43L51.28 228.12L43.05 227.66L39.5 232.5L41.5 236H48.5L51.5 245L39.5 244.5V251.5L31 259L49 263V265L33 269L26.79 274.25L33.08 275.64V281.1Z" fill="#DADADA" />
+  <path data-local="local48" fill-rule="evenodd" clip-rule="evenodd" d="M208.16 289.52L198.74 295.4V302.59L196.45 305.67L181 295.5V305.5L174.5 303L172 329L163 316L153 320.5L145.5 317.5V304.5L133.5 314.5L134 328L136 330L139.5 325L145.5 328V337L136 334L133.5 338.5L128 328L129 317L123.11 317.65L124.71 308.5L111.01 294.42L110.89 286.1L117.33 275.82L111.17 265.08L115.63 259L115.75 248.27L130.28 239.02L142.8 241.89L150.17 255.85L166.64 259.95L175.71 260.93L198.87 263.09L205.57 258.82L212.42 258.67L210.76 265.68L215.37 272.28L221.82 274.71L222.81 277.49L210.42 284.62L208.16 289.52ZM192.5 317.5L190 320V322L193.5 323.5V327.5L184 338.5V327.5L178 328.01V326.03L179.25 322.58L185.5 322L185.89 319.68L185.54 315.29L190 311L192.5 317.5Z" fill="#DADADA"/>
+  <path data-local="local26" d="M224.83 279.78L212.74 286.74L210.52 291.59L201.74 297.06V303.58L198.96 307.32L201.5 309L208 304.5L217.5 306L229 294L230.87 279.99L230.45 281.43L224.83 279.78Z" fill="#DADADA" />
+  <path data-local="local31" d="M215.39 259.16L213.99 265.06L217.29 269.8L224.18 272.39L225.79 276.94L231.29 278.55L231.22 278.78L233.5 276.5L242.72 257.1L222.77 249.5L215.39 259.16Z" fill="#DADADA" />
+  <path data-local="local27" d="M194.68 236.25L193.39 228.83L185.87 226.6L172.72 232.77L169.88 250.13L164.85 256.42L167.26 257.02L176 257.95L179.23 258.25L186.89 249.84L194.68 236.25Z" fill="#DADADA" />
+  <path data-local="local47" fill-rule="evenodd" clip-rule="evenodd" d="M255 115L248.5 116.71V120.5L253.25 122.5L258 120.5L255 115ZM240.5 225L235.58 196.75L240.43 182.22L237.5 170L240.43 152.44L232.07 127.76L224.74 135.42L217.61 130.95L199.46 137.74L185.89 132.9L168.37 145.18L167.46 150.6L162.06 154.26L156.1 150.77L129.74 173.49V197.88L142.85 204.99L144.82 212.54H137.49L129.8 224.32L131.35 236.19L144.81 239.27L152.2 253.26L161.65 255.62L167.04 248.87L170.01 230.72L185.63 223.4L196.02 226.48L197.83 236.8L189.22 251.74L182.97 258.59L198.13 260.01L204.67 255.84L214.31 255.62L221.75 245.9L243.48 254.18L250.5 220L240.5 225ZM257 124L258 123L259.5 123.5L258.5 125H257V124Z" fill="#DADADA" />
+  <path data-local="local43" d="M140.94 209.54L140.27 207.01L126.74 199.67V172.11L155.77 147.09L161.94 150.72L164.71 148.84L165.63 143.45L182.42 131.67L155.27 121.99L144 123.92L139.42 118.52H136.67L132.13 127.35H125.78L121.8 122.13L121.07 124.72H112.83L109.66 131.3L88.88 147.84L89.02 147.94L99.95 160.41L90.78 162.99L89.43 165.69L96.74 181.06L104.05 183.37L111.04 191.55L108.08 202.58L117.46 222.1L127.45 222.44L135.87 209.54H140.94Z" fill="#DADADA" />
+  <path data-local="local30" d="M96.66 184.18L90.98 189.65L88.92 199.31L91.43 205.8L93.5 202.27L96.86 201.21L101.68 204.67L105.16 201.87L107.73 192.29L102.33 185.97L96.66 184.18Z" fill="#DADADA"  />
+  <path data-local="local51" d="M94.1 182.48L86.39 166.29L81.64 162.56L79.84 163.46L79.29 171.99L83.05 176.02L83.19 185.3L83.7 186.16L89.13 187.26L94.1 182.48Z" fill="#DADADA"/>
+  <path data-local="local44" d="M57.64 221.57V215.58L59.22 212.97H72.27L78.14 220.56L89.23 214.34L92.39 215.6L96.78 221.32L104.03 225.01L114.35 222.54L105.95 205.09L101.79 208.44L96.33 204.52L95.5 204.78L92.97 209.11H89.5L85.8 199.56L87.82 190.06L81.8 188.84L80.2 186.14L80.07 177.22L76.21 173.09L76.95 161.54L82.01 159.03L87.32 163.21L88.69 160.46L94.56 158.81L86.87 150.04L79.51 144.63H69.38L58.99 145.77L55 150L46.5 140L32 137L24 142.5L27 149.5L22 153L14.5 146.5L7.5 157.5L9.5 163.5H16L20.5 174L22 187.5L27 189.5L26.5 173.5L30.5 174L35 211L36.5 214L42 215L44.93 224.76L50.65 225.08L57.64 221.57Z" fill="#DADADA"  />
+  <path data-local="local52" d="M96.59 39.63L99.12 48.89L107.33 50.72L111.44 61.47L105.08 66.45V81.78L108.88 80.93L130.22 86.4L120.34 92.79L128.23 99.48L122.83 118.52L127.27 124.35H130.3L134.83 115.52H140.8L145.18 120.67L155.54 118.9L199.44 134.54L217.95 127.62L224.27 131.58L230.99 124.55L221.5 96.5L181 45.5L160.5 0L156 14.5L142 25.5H76.5L74.12 27.77L88.08 41.89L96.59 39.63Z" fill="#DADADA"/>
+  <path data-local="local28" fill-rule="evenodd" clip-rule="evenodd" d="M35 87H25.5L24.5 79L21.5 72L24.5 68L29 70L33 77.5L35 87ZM47.6871 89.0358L50.5 94L52 99.5L49 107.5L38 106.5L33 102L38 96V88L43.5 85L47.6871 89.0358Z" fill="#DADADA" />
+  <path data-local="local11" d="M59.49 99.83H63.57L67.17 97.43L70.61 99.63L74.36 97.96L79.27 92.89V88.31L74.31 87.65L71.6 77.9H68.86L66.37 81.28L61.82 82.5L59.9 90.09L53.69 87.36L52.16 88.47L56.7 96.16L59.49 99.83Z" fill="#DADADA"/>
+  <path data-local="local41" d="M80.49 141.63L86.38 145.99L107.26 129.38L110.95 121.72H118.8L124.82 100.52L115.31 92.46L122.83 87.6L108.83 84.01L102.08 85.53V64.99L107.85 60.48L105.11 53.3L96.7 51.43L94.48 43.29L87.17 45.24L71.95 29.85L65 36.5L61 34L55.5 39L58.5 44L55.5 50.5L57 59.5L39 74.5H35.5L38.15 84.72L44.57 81.02L50.27 86.13L53.31 83.91L57.86 85.91L59.34 80.06L64.58 78.65L67.35 74.9H73.89L76.67 84.94L82.27 85.69V94.11L76.11 100.47L70.35 103.03L67.2 101.01L64.48 102.83H58L55.16 99.08L51.64 107.14L55.5 111L54 117H44.5V126.5L53 122V135.5L59.37 142.71L69.3 141.63H80.49Z" fill="#DADADA"/>
+  </svg>
+  
+            <ul class="vote_rate_items_wrap">
+              <li class="local11">
+                <dl>
+                  <dt>서울</dt>
+                  <dd>1.8</dd>
+                </dl>
+              </li>
+              <li class="local26 low">
+                <dl>
+                  <dt>부산</dt>
+                  <dd>1.5</dd>
+                </dl>
+              </li>
+              <li class="local27 high">
+                <dl>
+                  <dt>대구</dt>
+                  <dd>2.4</dd>
+                </dl>
+              </li>
+              <li class="local28">
+                <dl>
+                  <dt>인천</dt>
+                  <dd>2.1</dd>
+                </dl>
+              </li>
+              <li class="local29">
+                <dl>
+                  <dt>광주</dt>
+                  <dd>2.1</dd>
+                </dl>
+              </li>
+              <li class="local30">
+                <dl>
+                  <dt>대전</dt>
+                  <dd>1.8</dd>
+                </dl>
+              </li>
+              <li class="local31">
+                <dl>
+                  <dt>울산</dt>
+                  <dd>2.2</dd>
+                </dl>
+              </li>
+              <li class="local51">
+                <dl>
+                  <dt>세종</dt>
+                  <dd>1.9</dd>
+                </dl>
+              </li>         
+              <li class="local41">
+                <dl>
+                  <dt>경기</dt>
+                  <dd>1.9</dd>
+                </dl>
+              </li>        
+              <li class="local52">
+                <dl>
+                  <dt>강원</dt>
+                  <dd>2.1</dd>
+                </dl>
+              </li>
+              <li class="local43 high">
+                <dl>
+                  <dt>충북</dt>
+                  <dd>2.4</dd>
+                </dl>  
+              </li>
+              <li class="local44">
+                <dl>
+                  <dt>충남</dt>
+                  <dd>2.0</dd>
+                </dl>
+              </li>
+              <li class="local53 low">
+                <dl>
+                  <dt>전북</dt>
+                  <dd>1.5</dd>
+                </dl>
+              </li>
+              <li class="local46 low">
+                <dl>
+                  <dt>전남</dt>
+                  <dd>1.5</dd>
+                </dl>
+              </li>
+              <li class="local47">
+                <dl>
+                  <dt>경북</dt>
+                  <dd>2.1</dd>
+                </dl>
+              </li>
+              <li class="local48">
+                <dl>
+                  <dt>경남</dt>
+                  <dd>2.2</dd>
+                </dl>
+              </li>
+              <li class="local49 high">
+                <dl>
+                  <dt>제주</dt>
+                  <dd>2.4</dd>
+                </dl>
+              </li>
+            </ul>
+            <ul class="vote_rate_guide">
+              <li class="highest">최고</li>
+              <li class="lowest">최저</li>
+            </ul>
+            <p class="vote_rate_map_caption">
+              지난 선거의 동일 시간대<br/>
+              투표율과 비교해 보세요!
+            </p>
+          </div>
+        </li>        
+      </ul>
+    </div>    
+  </section>
+  <hr class="cluster_line">
+
+  <ul class="candidate_caption">
+    <li>사전, 거소, 선상, 재외 투표율은 13시 투표율에 합산됩니다.</li>
+    <li>투·개표 정보는 <a href="#">중앙선거관리위원회</a>에서 제공하며, 정보제공처의 사정에 따라 지연되거나 변경될 수 있습니다.</li>
+  </ul> 
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>  
+  <hr class="cluster_line">
+  <section class="reply_section">
+    <!-- 댓글 안내 원칙:S -->
+<div class="reply-guide-popup" id="notes" role="alert" aria-hidden="false" aria-labelledby="alert_label" aria-describedby="alert_desc">
+	<div id="alert_label" class="tit"><strong>댓글 운영 원칙</strong></div>
+	<button type="button" aria-controls="notes" id="notes_confirm"><span>안내 가이드 닫기</span></button>
+	<article class="context">
+		<div id="alert_desc">
+			<p class="parag">
+				네이트 뉴스 댓글은 기사에 대한 자신의 생각을 말하고 남의 생각을 들으며 서로 다양한 의견을 나누는 공간입니다.
+				건전한 인터넷 문화 정착을 위해 아래와 같은 댓글 운영원칙을 적용합니다.
+			</p>
+			<h2 class="s-tit">1. 댓글 삭제</h2>
+			<p class="parag">네티즌들의 신고 또는 자체 모니터링을 통해 아래에 해당하는 내용이 포함된 댓글은 별도의 예고 없이 삭제&#183;노출 제한될 수 있습니다.</p>
+			<ol class="num-list">
+				<li>타인에 대한 욕설 또는 비방</li>
+				<li>인신공격 또는 명예훼손</li>
+				<li>개인정보 유출 또는 사생활 침해</li>
+				<li>음란성 내용 또는 음란물 링크</li>
+				<li>상업적 광고 또는 사이트/홈페이지 홍보</li>
+				<li>불법정보 유출</li>
+				<li>같은 내용의 반복 (도배)</li>
+				<li>지역감정 조장</li>
+				<li>폭력 또는 사행심 조장</li>
+				<li>언론보도 형식의 허위 게시물</li>
+				<li>자살유발정보</li>
+				<li>혐오표현 또는 특정 속성을 이유로 특정 집단이나 그 구성원에 대한 비하&#183;조롱 표현(이와 관련한 사항은 한국인터넷자율정책기구의 관련 가이드라인을 준수합니다)</li>
+				<li>기타 기사 내용과 관계없거나 부적절한 내용</li>
+			</ol>
+			<h2 class="s-tit">2. 권한 제한</h2>
+			<p class="parag">
+				불건전한 댓글이 발견되는 경우 별도의 통보 없이 즉시 삭제하며, 상습적이거나 위반 정도가 심한 댓글을 게시하는 분에 대해서는 일정 기간 댓글 작성에 대한 권한을 제한할 수 있습니다.
+			</p>
+			<p class="parag">또한 비정상적인 패턴으로 댓글 작성, 추천, 반대 등이 발생하는 것으로 관리자 또는 시스템이 판단하는 경우 부정 클릭여부를 확인하여 해당 IP나 ID를 제재할 수 있습니다.</p>
+			<p class="parag">댓글에 비속어 및 상대방의 불쾌감을 주는 단어를 사용하거나, 유명인이나 특정 일반인 또는 단체나 기관을 사칭하는 경우 제재될 수 있습니다.</p>
+			<p class="parag">명예훼손, 개인정보 유출, 욕설 등 법률에 위반되는 댓글은 관계 법령에 의거 민형사상의 불이익을 받을 수 있으니 이용에 주의를 부탁드립니다.</p>
+		</div>
+	</article>
+</div>  
+  <div id="areaComment">
+    <div class="reply_wrap">
+        <div class="replyContent">
+          <div class="replyWrite f_clear mal_guide_area">
+            <a class="go_re_list" href="#">
+              <span class="title">댓글 <em id="totalcntComment">128</em></span>
+            </a>
+            <button class="mal_guide_button" aria-controls="notes" aria-label="댓글운영원칙 안내">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="10" cy="10" r="7" stroke="#E1E1E1"/>
+  <path d="M9.38995 13.58V8.41H10.74V13.58H9.38995ZM9.38995 7.6V6.44H10.74V7.6H9.38995Z" fill="#7C7C7C"/>
+  </svg>
+                  
+            </button>
+            <script>
+                // 댓글 안내 원칙 > CORS이슈로 페이지 내 삽입
+                var replyBtn = document.querySelector('.mal_guide_button');
+                var replyPOP = parent.document.querySelector('.reply-guide-popup');
+                var closeBtn = parent.document.querySelector('#notes_confirm');
+                if (replyBtn) {
+                  replyBtn.onclick = function(e) {
+                    e.preventDefault();
+                    replyPOP.setAttribute('aria-hidden', true)
+                    replyPOP.querySelector('.context').scrollTop = 0;
+                    parent.document.body.style.overflow = 'hidden'
+                  }
+                  closeBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    replyPOP.setAttribute('aria-hidden', false);
+                    parent.document.body.style.overflow = 'visible';
+                  })
+                }
+              </script>            
+            <div class="info_layer_popup">
+                <p>'말말말' 영역의 <span>댓글쓰기</span> 버튼으로 댓글 작성 시, 해당 발언이 댓글에 표시됩니다.</p>
+            </div>
+          </div>
+
+          <div class="write_btn" id="op_write" style="display: block;">
+              <a class="colgray">로그인 해 주세요.</a>
+          </div>
+          <!-- <form name="frmCmt" id="frmCmt" method="POST" action="http://m.comm.news.nate.com/comment/commonComment/writeAction"> -->
+            <form>
+              <input type="hidden" name="__natkn" value="" id="__natkn">
+              <input type="hidden" name="r_url" value="http://m.comm.news.nate.com/poll/result?poll_sq=22671&amp;section=ent&amp;mid=e0008">
+              <input type="hidden" name="ctgr_cd" value="100"> <input type="hidden" name="ctgr_sq" value="22671">
+              <input type="hidden" name="mid" value="">
+              <input type="hidden" name="sndData" value="0">
+              <fieldset class="write" id="exp_write" style="display: none;">
+                  <legend>댓글쓰기</legend>
+                  <div class="textArea">
+                      <!-- AOS4.4 이슈로 인한 수정:S -->
+                      <textarea value="로그인 해 주세요." title="댓글 입력" name="cmt_content" id="cmt_content" class="colgray" placeholder="로그인 해 주세요." readonly></textarea>
+                      <!-- <div class="mal_comment_blank_area mal_comment_articles"> -->
+                      <div class="mal_comment_blank_area"></div>
+                  </div>
+                  <div class="btn">
+                      <a id="cls_wbox" href="#">취소</a>
+                      <a href="#" class="ok"><span class="reg">등록</span></a>
+                  </div>
+                  <script type="text/javascript">
+                      var writeForm = {
+                          target : {
+                              cancelBtn : document.getElementById('cls_wbox'),
+                              txtAreaWrap : document.getElementById('exp_write'),
+                              txtArea : document.getElementById('cmt_content'),
+                              txtNoti : document.getElementById('op_write'),
+                              emoticon : document.querySelectorAll('.emoticon_select label')
+                          },
+                          // 클릭시
+                          show : function(e){
+                              e.preventDefault();
+                              writeForm.target.txtNoti.style.display = 'none';
+                              writeForm.target.txtAreaWrap.style.display = 'block';
+                              writeForm.target.txtArea.focus();
+                          },
+                          close : function(){
+                              writeForm.target.txtNoti.style.display = 'block';
+                              writeForm.target.txtAreaWrap.style.display = 'none';
+                          },
+                          // 이모티콘 클릭 시
+                          click : function(e){
+                              var _input = e.target.previousSibling;
+                              var isChecked = _input.checked;
+                              if(isChecked){
+                                  e.preventDefault();
+                                  _input.checked = false;
+                              }
+                          }
+                      };
+                      window.addEventListener('load', function(){
+                          writeForm.target.txtNoti.onclick = writeForm.show;
+                          writeForm.target.cancelBtn.onclick = writeForm.close;
+                          for(var i=0;i<writeForm.target.emoticon.length;i++){
+                              writeForm.target.emoticon[i].onclick = writeForm.click;
+                          }
+                      });
+                  </script>
+              </fieldset>
+          </form>
+          <!-- //댓글쓰기 -->
+          <!-- 댓글리스트 -->
+          <div class="reply_common_wrap">
+              <div class="reply others">
+                  <dl>
+                      <dt>
+                          <span><a  class="n">jeny****</a></span>
+                          <em>08.02 11:55</em>
+                          <a href="javascript:reportArticleComment('20231124n03703', '249116412','','m03');" class="report"><span>신고</span></a>                          
+                      </dt>
+                      <dd class="userText">[inc/module]이모티콘없는댓글프레임.html / 당연히 김우빈 수지라고 생각했는데 뭐지? <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEpJREFUeNpi/O/j858BGWzezMiADfj6oqhjYiATMGE1Gc104jSSbSORNpNtIyNGqFLsVJI1guIRV1zSNlQJ2EwDGwnYTLaNAAEGAFrvFxU+JBp4AAAAAElFTkSuQmCC" width="7" height="7" alt="새글" /> </dd>
+                      <dd class="btn">
+                          <p class="updw">
+                              <a href="#" class="read"><em>추천</em><span>117</span></a>
+                              <a href="#" class="read"><em class="no">반대</em><span>52</span></a>
+                          </p>
+                      </dd>
+                      
+                  </dl>
+              </div>
+              <div class="reply others">
+                  <dl>
+                      <dt>
+                          <span><a  class="n">jeny****</a></span>
+                          <em>08.02 11:55</em>
+                          <a href="javascript:reportArticleComment('20231124n03703', '249116412','','m03');" class="report"><span>신고</span></a>                          
+                      </dt>
+                      <dd class="userText">당연히 김우빈 수지라고 생각했는데 뭐지? <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEpJREFUeNpi/O/j858BGWzezMiADfj6oqhjYiATMGE1Gc104jSSbSORNpNtIyNGqFLsVJI1guIRV1zSNlQJ2EwDGwnYTLaNAAEGAFrvFxU+JBp4AAAAAElFTkSuQmCC" width="7" height="7" alt="새글" /></dd>
+                      <dd class="btn">
+                          <p class="updw">
+                              <a href="#" class="read"><em>추천</em><span>117</span></a>
+                              <a href="#" class="read"><em class="no">반대</em><span>52</span></a>
+                          </p>
+                      </dd>
+                  </dl>
+              </div>
+              <div class="reply others">
+                  <dl>
+                      <dt>
+                          <span><a   class="n">김유진</a></span>
+                          <em>08.03 08:45</em>
+                      </dt>
+                      <dd class="userText">수지&amp;우빈</dd>
+                      <dd class="btn">
+                          <p class="updw">
+                              <a href="#" class="read"><em>추천</em><span>5</span></a>
+                              <a href="#" class="read"><em class="no">반대</em><span>4</span></a>
+                          </p>
+                      </dd>
+                  </dl>
+              </div>
+              <div class="reply others">
+                  <dl>
+                      <dt>
+                          <span><a  class="n">김유진</a></span>
+                          <em>08.03 08:45</em>
+                      </dt>
+                      <dd class="userText">추모합니다.</dd>
+                      <dd class="btn">
+                          <p class="updw">
+                              <a href="#" class="read"><em>추천</em><span>5</span></a>
+                              <a href="#" class="read"><em class="no">반대</em><span>4</span></a>
+                          </p>
+                      </dd>
+                  </dl>
+              </div>
+                      
+          </div>
+        </div>
+    </div>
+    
+  </div>
+  
+    <div class="replyBottom">
+        <div class="btn type1">
+        <div class="moreWrap">
+            <div class="btn_more">
+            <button type="button">
+                <span>더보기</span>
+            </button>
+            </div>
+        </div>
+        </div>
+    </div> 
+    
+
+
+
+
+
+
+    
+  </section>
+  <hr class="cluster_line">
+  <a href="#" class="guide_button" aria-label="내 투표소 찾기"></a>
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>  
+  <hr class="cluster_line">
+  <div class="scroll_btns_wrap">
+  <a href="home.html" class="home">
+    <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 6L8 1L15 6" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M3 5V12H13V5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  
+  </a>
+  <a href="#" class="top">
+    <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 9L7 3L13 9" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7 3V16" stroke="black" stroke-linecap="round"/>
+  <path d="M1.5 0.5H12.5" stroke="black" stroke-linecap="round"/>
+</svg>
+  
+  </a>
+</div>
+  <footer id="footer" role="contentinfo">
+  <div class="footer">
+      <div class="svcBtn">
+        <a href="//m.nate.com">네이트홈</a><a href="#"><span id="loginbtnmsg">로그아웃</span></a><a href="//news.nate.com/view/20231124n16511">PC버전</a><a href="#" >전체서비스</a>
+      </div> 
+      <ul class="sitemap">
+        <li><a href="//news.nate.com/enews/editguide">기사배열기본방침(책임:김경옥)</a></li>
+        <li><span>청소년보호책임:조유형</span></li>
+        <li><a href="//m.news.nate.com/newssitemap">뉴스 전체서비스</a></li>
+      </ul>
+      <div class="copyright"><span>&copy; SK Communications</span><a class="cscenter" href="//m.helpdesk.nate.com">고객센터</a></div>
+  </div>
+</footer>
+  <script>
+
+  var vote = new Graph([
+      {
+        activeData: false,
+        color: '#979DE4', // 선 그래프 전체 컬러
+        data:  [2.2, 5.1, 8.0, 11.4, 15.3, 19.2, 49.7, 53.0, 56.5, 59.7, 62.6, 66.2,] // 투표율 20대 대선
+      },
+      {
+        activeData: false,
+        color: '#5FCAD3', // 선 그래프 전체 컬러
+        data:  [1.7, 3.8, 6.0, 8.7, 12.0, 15.0, 38.3, 40.7, 43.1, 45.4, 47.6, 50.0, 50.9] 
+        // 제8회 지방선거
+      },
+      {
+        activeData: true,
+        color: '#CD20A7',
+        text: {
+          font: '300 11px Arial',
+          align: 'center',
+          color: '#CD20A7'
+        },
+        data: [5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0]
+        // 22대 총선
+      }
+  ], 'lineArea');
+  var options = {
+      dotSize: 3.5, // 점 크기
+      x: [7,8,9,10,11,12,13,14,15,16,17,18,19.5], // 시간
+      color: '#6486B8', // 현재 시간 활성화 컬러
+      current: 18 // 현재 시간
+  }
+  vote.lineGraph(options);
+  window.addEventListener('resize', function(){
+      if (vote.timer) clearTimeout(vote.timer);
+      vote.timer = setTimeout(function(){
+          vote.setCanvasSize();
+          vote.lineGraph(options);
+      }, 400)
+  })
+  document.addEventListener('DOMContentLoaded', function(){
+      if (document.getElementById('lineArea')) {
+      function replaceAll(strTemp, strValue1, strValue2){
+          while(true){
+              if( strTemp.indexOf(strValue1) !== -1 ) {
+                  strTemp = strTemp.replace(strValue1, strValue2);
+              } else {
+                  break;
+              }
+          }
+          return strTemp;
+      }
+      const timeList = document.querySelectorAll('.timeSelect > li');
+      timeList.forEach((function(list, idx){
+        if(idx === vote.currentIdx){
+          // if(options.current === 'end'){
+          list.classList.add('active');
+          if(options.current === 'end'){
+            const spanElement = document.createElement('span');
+            const emElement = document.createElement('p');
+            emElement.className = "state final";
+            list.appendChild(emElement, spanElement);
+          } else if(options.current === 19.5) {
+            return;
+          } else {
+            const spanElement = document.createElement('span');
+            const emElement = document.createElement('p');
+            emElement.className = "state current";
+            list.appendChild(emElement, spanElement);
+          }
+          
+        }
+      }))
+    }
+  })
+  </script>
+  <script>
+    voteSwiper();    
+    voteTimeTable({
+      // 총선 투표 유효날짜 지정
+      start: '2024-04-01T00:00:00',
+      end: '2024-04-01T23:59:59',
+      // 현재 시각 세팅
+      current: '2024-04-01T17:00:00',
+    });
+    xScrollActive({
+      box: document.querySelector('.scroll_table_wrap'),
+      list: document.querySelectorAll('.scroll_time th'),
+    })
+  </script>
+</body>
+</html>

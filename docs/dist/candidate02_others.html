@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+
+
+  <meta charset="utf-8"/>
+  <title>제22대 국회의원 총선거</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <!--CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/election2024.css">
+  <!-- JS -->
+  <script type="text/javascript" src="../js/swiper-bundle.js"></script>
+  <script type="text/javascript" src="../js/election2024.js"></script>
+
+
+</head>
+<body class="body">
+  <header id="header" role="banner">
+	<div class="gnbWrap" id="type2">
+		<div class="gnb">
+			<a href="#" class="nate"><span class="hd-img">네이트</span></a>
+			<a href="#" class="service">뉴스</a>
+		</div>
+		<div class="relsvc">
+			<a href="#">스포츠</a>
+			<a href="#">연예</a>
+		</div>
+		<div class="searchWrap">
+			<button class="srchlink" aria-expanded="false" aria-controls="search-field" aria-label="검색창 열기"><span class="hd-img"></span></button>
+			<!-- 검색 레이어 열릴 때 -->
+			<form id="search-field" role="search" aria-labelledby="search-keyword">
+				<fieldset>
+					<legend id="search-keyword">뉴스 기사 검색</legend>
+					<input type="search" type="text">
+					<button class="delete hd-img" type="button" aria-label="검색어 삭제"><span class="hd-img"></span></button>
+					<button class="srchbtn" type="submit"><span class="hd-img" aria-label="검색하기"></span></button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</header>
+<div class="gnb_container">
+  <div class="gnb_title_wrap">
+    <a href="home.html" class="logo"><h1>제22대 국회의원 선거</h1></a>
+    <button class="gnb_share" aria-label="공유하기 버튼">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAsCAYAAAAwwXuTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMuSURBVHgB1VoNdeMwDFYPQRksEMpgYbAyWA/ByqBl0DHoMSiEbAg6Bh6DjMF39kWpFS9pEv8t972nl9dGT/Jny7LseEUBALDWj1LLo5ZCy0bLmsUHX1o++fmh5V3L22q1+qKc0MRKLZWWGnlw0bKl1DBOtCjHeaXlpOVJywOaUfW1v9ayYVsHti1hfD9TbGijheOs5gZ4k5npe+d07NX8TzGgDe1hQ9E8X+iH4BA1bdlTCLSBo+i1U44Rm9AmM6Jn0a4j+cAh92OjNgSOLD+SgpwJg0daKDgh1bNIOj2zoYUDzZLVYj+mXIgeWVxYDkEMSn03u3L6NThTInBYFRQZnAQNqiGFHSuoFA1gH6XwETUjoykS2ujb9ikofhm/Uug2ovVzTUCyDVXlvtj2vkgAnucq1VQQo1jKPy+pR89pRDKSaEpIOxc5bFoUlAnwWcOm2V2LjLqW4VlRZjBJJCBZsc2nX9RsVg3eKDP0RtZsan/zzwNCi2eLD36WHbaUETwPCw4pWT0F5wERlRe5uCcry5jECyczhXGUFADuOAMl02r0rRA7OqH/aEOx9L27UgAgEg21Fiky0N0oG1Q8ig8D+n+EbowwbXilIOg01oRlMaK/E/oHigBJMGqIws5pY3f0JAzd7U4scp0QVfzjgQKhbbyyLYUJRQO6i30UcsKuwVWWaUHLBKbuyay+LNdOFBGQxQvsPsrbCbob5dEEgfQF9+HGCRFKNdhTrtHGOuSib5nYR3WLSnQ3irOdwS6qmBiaSszTVGsvOnwE49kTHXZCn2foKiDZqUG75Fzkn22qrskDaL4lTBqNObqebVG38Bx4Eauizw4xeqrvZZts6pQ9nApO8noeUqpYIeq6lAOwmfx6T0muZ/9NqGJOkYHu5rOkhQPdY49pp/GwlYDpkcV+n+Ds71fLCpKLDFcn0vwKdYfkGch3rHinTabyeg0mJwzKnblCpsPhCW2J9zmds+tV9No/ojlGlEfsiO/HHwXFBr7fdmidHdAUCiajhV4jKdjWCf3XSLLclzH15AV5UDNRr0/pKwoAmtEyjkuy17gKCrvK1V7j+qTmtP095CrXXweDg+oiZHa7AAAAAElFTkSuQmCC" alt="">
+    </button>
+  </div>
+  <div class="vote_state_wrap">
+    <dl class="early_vote">
+      <dt><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAAAcCAYAAACERFoMAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQySURBVHgB7Zr/VdswEMe/4fE/6QSoEzSdADNB0wmSTkCYIGECYIKECQgTYCZomAAzAekE7h0+k/PFP2Q7oYXnz3t6RtJZlnSn00kB6Ojo6Ojo+Jj0yirjOJ7R44jSWoque73e2shM6TFTRWOSuZG6Eefhz5re/Snvxqo8ovKvUt6nxy3ac0Vt3kmbjh4jtOeG2ox0AbU9lLYHlJwUrySxfGjkC+eTOUQ5J5QClV9gozwfnHm/ishDpl+zzSIW6m+H7CQ1JYSMQYyADWuQIzeQNCY5NpxzeHJQUd9HR1Puka8sy0RWlRdVK8wq7A/q8YCs5TpkXWSErKXXWb0p7FquUJ8H7AlSQICN+2MiJOPm5xckHuJS1bPStrabPKoU5nTGp0EjHyJxE69Qp8bIKmxJMheq/pLSE+rRt/307NuN6WdP+lC6h8gY5qp+pscgOJNnt5cayDOlFbXD280QmzHoWKGQQoXJ5q6J0J6qjb3J5Ds0238u8H5kXKPMrXWXXt7rwPcjaKkwsczAFLMreJIN+jOxRHa1cHDxWzwIr072Ik7VR77eq8wlfjP5Ffy4kuPAMo1+RFmXBfKOEiuNLZ7D7EjKZ/AjQnYf/Ofw5Mt49JjTyNDCijqFJ2UK84lw8uiniTo9oecPbK+sFbbdH+8dEaVTPsuI0n15Rk04MEjPQPS3nkw77oDq9Xn1xNQPxCCZFbX5atj0ZMNlZfC4HPIJKZ3bs1sjxFVZBjly0zifOaX7nPIndoHsx8VFWKbSbuYd9T0X74a5xxjqMi2YyxNKZ/IdTiNKxwWywziZuzQFuv6w4CUWcjlVt1T3vcLfrlWycPh9od4/p/YesbHCq5yI68MiRuEKqnlfgwdHOlPkEouiOYdkcstO5hN1NcWHxwjJJrxUoe0bVLYguVDa9VVWiPb47sltCNDgyGFY6MyWwuIkYhujGI7sHmiil6iAZE6lPU49Wbkru0LFh/+CByLrvUl7co3NxHDb+pzF45yYvN4aAmwCJRuaR6hPGgPkklGYTO69kQmRWKPuNPvWledmyStnrPIBGt4yiMLvsTteD71iQGv5RmRk+EL6WfXBuvpI1xvYExVOfgGlF+aHqiMzepzlfIAtnzs5xGZ5swxb4a4tXTNTf9e6YfmP4Mtfhx2iV1hehDNLVxEplBWnrZvD3Qn2xHsFH7Jq9Z5tDTbQESVyrp3Mqtv6yWSXlJ3DFnrSuBPUMY7ytJL4TFJ3817muBUfAvnWuEJG14coP1RzhDpAeZuuon5o8mGJbBOPFOWWqrPES1xy3R8nVyzMmeSn5iwyMvLzeDccowKSGZt35g3eactItf0UtyczBr3CFtj8Clq2Al6jufRE/wl4wW4utlP2ut++KYwU4BtWW0XZ37weTb2+H2xD3d/ivJB/E7jDfuAtpG6UaHlER0dHR0fHJ+Av4qrVzTV9lH8AAAAASUVORK5CYII=" alt="사전투표일" /></dt>
+      <dd>4.5-4.6</dd>
+    </dl>
+  </div>
+  <div class="nav_wrap">
+    <ul class="nav">
+      
+        <li><a href="home.html" ><span class="name">홈</span></a></li>
+        <li><a href="news_type_A.html" ><span class="name">뉴스</span></a></li>
+        <li><a href="photo.html" ><span class="name">포토</span></a></li>
+        <li><a href="survey_type_A.html" ><span class="name">여론조사</span></a></li>
+        <li><a href="talk.html" ><span class="name">말말말</span></a></li>
+        <li><a href="candidate01.html" class="active new" class="new"><span class="name">후보자</span><img class="badge" src="data:image/png;base64,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" alt="new"></a></li>
+        <li><a href="guide_type_A.html" ><span class="name">선거안내</span></a></li>
+        <li><a href="#" ><span class="name">투&middot;개표</span></a></li>
+      
+      
+    </ul>
+  </div>
+</div>
+<div class="dimmed"></div>
+<div id="sns_share_pop" style="display: none;">
+  <div class="sns_share_layer">
+    <button type="button" class="btnClosePopup">닫기</button>
+    <div class="title">공유하기</div>
+    <ul class="sns_btns">
+      <li><a class="no" title="새창으로 이동" id="sns-no" href="javascript:;">네이트온</a></li>
+      <li><a class="kt" title="새창으로 이동" id="sns-kt" href="javascript:;">카카오톡</a></li>
+      <li><a class="fb" title="새창으로 이동" id="sns-fb" href="javascript:;">페이스북</a></li>
+      <li><a class="tw" title="새창으로 이동" id="sns-tw" href="javascript:;">엑스</a></li>
+      <li><a class="ks" title="새창으로 이동" id="sns-ks" href="javascript:;">카카오스토리</a></li>
+      <li><a class="bd" title="새창으로 이동" id="sns-bd" href="javascript:;">밴드</a></li>
+      <li><a class="li" title="새창으로 이동" id="sns-li" href="javascript:;">라인</a></li>
+      <li><a class="lk" title="새창으로 이동" id="sns-url" href="javascript:;">URL 복사</a></li>
+    </ul>	
+  </div>
+  <div class="modal_backdrop"></div>
+</div>
+<script>
+  document.querySelector('.btnClosePopup').addEventListener('click', (e) => {
+    e.target.parentElement.parentElement.style.display = 'none';
+  })
+  document.querySelector('.modal_backdrop').addEventListener('click', (e) => {
+    e.target.parentElement.style.display = 'none';
+  })
+</script>
+
+
+<script>
+  document.querySelector('.gnb_share').addEventListener('click', function(){
+    const layer = document.querySelector('#sns_share_pop');
+    layer.classList.add('active');
+    layer.style.display = 'block';
+  })
+  navigationEvent();
+  setIOS();
+</script>
+  
+
+
+  <ul class="menu item3">
+    <li><a href="candidate01.html" >지역구별 후보</a></li>
+    <li><a href="mycandidate.html" >내 지역 후보</a></li>
+    <li><a href="candidate02.html" class="active">비례대표 후보</a></li>
+  </ul>
+
+
+
+
+
+  <ul class="candidate_clan_buttons_wrap">
+    <li><a href="#" class="bg clan1">번정당</a></li>
+    <li><a href="#" class="bg clan2">기호2번정당</a></li>
+    <li><a href="#" class="bg clan3">정의당</a></li>
+    <li><a href="#" class="bg clan4">당당당</a></li>
+    <li><a href="#" class="bg clan_independent">무소속</a></li>
+    <li><a href="#" class="bg clan_others active">기타정당</a></li>
+  </ul>
+  <div class="candidate_title_wrap">
+    <div class="title_area">
+      <p class="candidate_local">국민의힘</p>
+      <span class="candidate_count">10명</span>
+    </div>
+    <a href="#" class="pledge">
+      정당정책&middot;공약 <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_416_32591)">
+  <path d="M14.9429 10.0513C14.806 10.6219 14.4408 10.9301 14.087 11.2382C13.9158 11.3866 13.7561 11.5235 13.5849 11.6605C13.311 11.9001 13.0371 12.1284 12.7632 12.368C12.6719 12.4479 12.592 12.5164 12.5007 12.5963C12.1013 12.9272 11.7361 13.2468 11.4508 13.6348C11.4279 13.669 11.4051 13.6918 11.3823 13.7261C11.1883 13.9657 10.96 14.057 10.7318 14.1027C10.7318 14.1027 10.7318 14.1027 10.7204 14.1027C10.6405 14.0114 10.5264 13.9543 10.4008 13.9543H2.49214C2.35519 13.9543 2.24107 14.0114 2.16119 14.1141C2.16119 14.1141 2.16119 14.1141 2.14977 14.1141H1.77317C1.57916 14.1141 1.47645 13.9886 1.41939 13.8858C1.39656 13.8516 1.38515 13.8288 1.37374 13.7945C0.768889 12.6533 -0.00714475 10.9301 0.323811 9.12693C0.346636 9.0014 0.380872 8.87586 0.426521 8.76174C0.460758 8.64762 0.494995 8.54491 0.506407 8.44219C0.529232 8.32807 0.506407 8.20254 0.506407 8.05418C0.506407 7.96288 0.506407 7.87158 0.506407 7.7917V2.679C0.506407 1.78884 1.14549 0.989984 2.03565 0.875862C3.08558 0.750327 3.98715 1.57201 3.98715 2.59911V8.53349C3.98715 8.53349 3.98715 8.54491 3.97574 8.54491H3.25676C3.25676 8.54491 3.24535 8.54491 3.24535 8.53349V2.59911C3.24535 2.05133 2.80027 1.60625 2.2639 1.60625C1.72752 1.60625 1.28244 2.06274 1.28244 2.5877V7.78028C1.28244 7.84876 1.28244 7.92864 1.28244 8.00853C1.28244 8.1683 1.30527 8.36231 1.28244 8.54491C1.25962 8.70468 1.21397 8.84162 1.17973 8.97857C1.14549 9.08128 1.12267 9.17258 1.09985 9.26388C0.814539 10.7931 1.47645 12.311 2.03565 13.3495H2.04706H7.13693C8.24393 13.3495 9.36233 13.3495 10.4693 13.3495H10.4807C10.6862 13.3495 10.7546 13.3152 10.8231 13.2468C10.8345 13.2239 10.8573 13.2125 10.8687 13.1897C11.1997 12.7218 11.6334 12.3566 12.0442 12.0028C12.1241 11.9344 12.2154 11.8545 12.3067 11.786C12.5806 11.5463 12.8659 11.3181 13.1398 11.0784C13.2996 10.9415 13.4707 10.8045 13.6305 10.6676C13.9501 10.3937 14.1669 10.1997 14.2468 9.86873C14.3153 9.57201 14.2468 9.25247 14.0642 9.01281C13.7675 8.6362 13.1512 8.62479 12.6719 8.77315C12.4436 8.85304 12.2268 8.96716 12.0442 9.11552C11.8046 9.30953 11.6105 9.53777 11.4508 9.80026C11.3823 9.91438 11.3024 10.0285 11.2568 10.154C11.1883 10.3024 11.1426 10.4508 11.0285 10.5763C10.903 10.7132 10.7318 10.7703 10.5492 10.7361C10.4008 10.7018 10.2525 10.6105 10.321 10.4393C10.3552 10.3366 10.3894 10.2567 10.4123 10.2111C10.515 9.9372 10.6633 9.6519 10.8459 9.378C11.0057 9.13834 11.1883 8.9101 11.4051 8.70468C11.6334 8.48784 11.8959 8.30525 12.1812 8.17971C12.2725 8.13406 12.3523 8.09983 12.4436 8.077C13.117 7.86017 14.0984 7.86017 14.6576 8.56773C14.9772 8.97857 15.1027 9.53777 14.9772 10.0513H14.9429Z" fill="black"/>
+  <path d="M5.9843 5.13271C5.699 4.92729 5.34522 4.80176 4.96861 4.80176C4.59201 4.80176 4.26105 4.91588 3.97574 5.10989C3.51925 5.41802 3.22253 5.94298 3.22253 6.53642V8.53357C3.22253 9.4922 3.99857 10.2682 4.9572 10.2682C5.50499 10.2682 6.00713 10.0058 6.31526 9.60632C6.55492 9.3096 6.69186 8.933 6.69186 8.53357V6.53642C6.69186 5.9544 6.40656 5.44084 5.97289 5.13271H5.9843ZM4.96861 9.52644C4.42082 9.52644 3.97574 9.08136 3.97574 8.53357V6.53642C3.97574 5.98863 4.42082 5.54356 4.96861 5.54356C5.5164 5.54356 5.95007 5.98863 5.95007 6.53642V8.53357C5.95007 9.08136 5.50499 9.52644 4.96861 9.52644Z" fill="black"/>
+  <path d="M9.39658 5.13265C9.24822 4.32238 8.54066 3.71753 7.68474 3.71753C6.82882 3.71753 6.12126 4.33379 5.9729 5.13265C5.95007 5.23536 5.93866 5.33807 5.93866 5.45219V8.53351C5.93866 8.94435 6.07561 9.30954 6.31526 9.60626C6.63481 10.0057 7.12554 10.2682 7.68474 10.2682C8.24394 10.2682 8.74608 9.99428 9.06562 9.57202C9.28245 9.2753 9.4194 8.92152 9.4194 8.52209V5.44078C9.4194 5.33807 9.4194 5.22395 9.38516 5.12124L9.39658 5.13265ZM8.6776 8.53351C8.6776 9.08129 8.23253 9.52637 7.69615 9.52637C7.15977 9.52637 6.70328 9.08129 6.70328 8.53351V5.45219C6.70328 4.90441 7.14836 4.47074 7.69615 4.47074C8.24394 4.47074 8.6776 4.91582 8.6776 5.45219V8.53351Z" fill="black"/>
+  <path d="M10.4123 4.80176C10.0357 4.80176 9.68189 4.92729 9.39659 5.13271C8.96292 5.45226 8.67761 5.96581 8.67761 6.53642V8.47651C8.67761 8.89876 8.82597 9.27537 9.07704 9.5835C9.38517 9.9601 9.86449 10.2112 10.3895 10.2112H10.4123C10.7546 10.2112 11.0742 10.1085 11.3481 9.93728C11.5193 9.62915 11.7475 9.34384 12.0214 9.12701C12.1013 8.92159 12.1469 8.70475 12.1469 8.47651V6.53642C12.1469 5.57779 11.3709 4.80176 10.4123 4.80176ZM10.8117 9.37808C10.6862 9.43514 10.5492 9.45796 10.4123 9.45796C9.86449 9.45796 9.41941 9.01288 9.41941 8.47651V6.53642C9.41941 5.98863 9.86449 5.54356 10.4123 5.54356C10.9601 5.54356 11.3937 5.98863 11.3937 6.53642V8.47651C11.3937 8.55639 11.3937 8.63628 11.3709 8.70475C11.3024 9.00147 11.0856 9.25254 10.8117 9.37808Z" fill="black"/>
+  <path d="M11.3823 13.7261C11.2454 13.5092 11.0399 13.3495 10.7889 13.2582C10.7204 13.3267 10.6519 13.3609 10.4465 13.3609H10.4351C9.32809 13.3609 8.20969 13.3609 7.1027 13.3609H2.00142C2.00142 13.3609 1.99 13.3381 1.97859 13.3152C1.73893 13.4294 1.53351 13.6348 1.4308 13.8744C1.36233 14.0228 1.31668 14.194 1.31668 14.3652V17.3894C1.31668 18.0399 1.84165 18.5649 2.49214 18.5649H10.4008C11.0513 18.5649 11.5763 18.0399 11.5763 17.3894V14.3652C11.5763 14.1255 11.5078 13.8973 11.3823 13.7147V13.7261ZM10.8231 17.4008C10.8231 17.6405 10.6291 17.8345 10.3894 17.8345H2.49214C2.25249 17.8345 2.05848 17.6405 2.05848 17.4008V14.3766C2.05848 14.2739 2.09272 14.1826 2.14978 14.1141C2.22966 14.0114 2.34378 13.9543 2.48073 13.9543H10.3894C10.515 13.9543 10.6405 14.0114 10.7204 14.1027C10.7889 14.1826 10.8231 14.2739 10.8231 14.3766V17.4008Z" fill="black"/>
+  </g>
+  <defs>
+  <clipPath id="clip0_416_32591">
+  <rect width="16" height="19" fill="white"/>
+  </clipPath>
+  </defs>
+  </svg>
+  
+    </a>
+  </div>
+  <section class="candidate_list_section">
+    <button class="candidate_button active">
+      <div class="candidate_thumb confirm">
+        <img src="https://picsum.photos/90/112" alt="후보자 홍길동" />
+      </div>
+      <div class="candidate_summary">
+        <span class="rank">1순위</span>
+        <dl class="text">
+          <dt>길동이</dt>
+          <dd>1964. 12. 22 (57세)</dd>
+        </dl>
+      </div>
+    </button>
+    <div class="candidate_table_wrap active">
+      <table class="candidate_table">
+        <tbody>
+          <tr>
+            <th>주소</th>
+            <td>서울특별시 종로구 북촌로6길</td>
+          </tr>
+          <tr>
+            <th>직업</th>
+            <td>34대 경기도지사</td>
+          </tr>     
+          <tr>
+            <th>학력</th>
+            <td>중앙대학교 법학과 졸업</td>
+          </tr>     
+          <tr>
+            <th>경력</th>
+            <td>
+              <div>(전) 경기도지사</div>
+              <div>(전) 성남시장</div>
+            </td>
+          </tr>     
+          <tr>
+            <th>전과유무 <span>(건수)</span></th>
+            <td>1건</td>
+          </tr>                                
+        </tbody>
+      </table>
+      <a href="#" class="candidate_info_detail_button">후보자 상세정보 확인<span class="arrow"></span></a>
+    </div>    
+    
+      <button class="candidate_button">
+        <div class="candidate_thumb">
+          <img src="https://picsum.photos/90/112" alt="후보자 홍길동" />
+        </div>
+        <div class="candidate_summary">
+          <span class="rank">2순위</span>
+          <dl class="text">
+            <dt>길동이</dt>
+            <dd>1964. 12. 22 (57세)</dd>
+          </dl>
+        </div>
+      </button>
+      <div class="candidate_table_wrap">
+        <table class="candidate_table">
+          <tbody>
+            <tr>
+              <th>주소</th>
+              <td>서울특별시 종로구 북촌로6길</td>
+            </tr>
+            <tr>
+              <th>직업</th>
+              <td>34대 경기도지사</td>
+            </tr>     
+            <tr>
+              <th>학력</th>
+              <td>중앙대학교 법학과 졸업</td>
+            </tr>     
+            <tr>
+              <th>경력</th>
+              <td>
+                <div>(전) 경기도지사</div>
+                <div>(전) 성남시장</div>
+              </td>
+            </tr>     
+            <tr>
+              <th>전과유무 <span>(건수)</span></th>
+              <td>1건</td>
+            </tr>                                
+          </tbody>
+        </table>
+        <a href="#" class="candidate_info_detail_button">후보자 상세정보 확인<span class="arrow"></span></a>
+      </div>
+    
+      <button class="candidate_button">
+        <div class="candidate_thumb">
+          <img src="https://picsum.photos/90/112" alt="후보자 홍길동" />
+        </div>
+        <div class="candidate_summary">
+          <span class="rank">3순위</span>
+          <dl class="text">
+            <dt>길동이</dt>
+            <dd>1964. 12. 22 (57세)</dd>
+          </dl>
+        </div>
+      </button>
+      <div class="candidate_table_wrap">
+        <table class="candidate_table">
+          <tbody>
+            <tr>
+              <th>주소</th>
+              <td>서울특별시 종로구 북촌로6길</td>
+            </tr>
+            <tr>
+              <th>직업</th>
+              <td>34대 경기도지사</td>
+            </tr>     
+            <tr>
+              <th>학력</th>
+              <td>중앙대학교 법학과 졸업</td>
+            </tr>     
+            <tr>
+              <th>경력</th>
+              <td>
+                <div>(전) 경기도지사</div>
+                <div>(전) 성남시장</div>
+              </td>
+            </tr>     
+            <tr>
+              <th>전과유무 <span>(건수)</span></th>
+              <td>1건</td>
+            </tr>                                
+          </tbody>
+        </table>
+        <a href="#" class="candidate_info_detail_button">후보자 상세정보 확인<span class="arrow"></span></a>
+      </div>
+    
+      <button class="candidate_button">
+        <div class="candidate_thumb">
+          <img src="https://picsum.photos/90/112" alt="후보자 홍길동" />
+        </div>
+        <div class="candidate_summary">
+          <span class="rank">4순위</span>
+          <dl class="text">
+            <dt>길동이</dt>
+            <dd>1964. 12. 22 (57세)</dd>
+          </dl>
+        </div>
+      </button>
+      <div class="candidate_table_wrap">
+        <table class="candidate_table">
+          <tbody>
+            <tr>
+              <th>주소</th>
+              <td>서울특별시 종로구 북촌로6길</td>
+            </tr>
+            <tr>
+              <th>직업</th>
+              <td>34대 경기도지사</td>
+            </tr>     
+            <tr>
+              <th>학력</th>
+              <td>중앙대학교 법학과 졸업</td>
+            </tr>     
+            <tr>
+              <th>경력</th>
+              <td>
+                <div>(전) 경기도지사</div>
+                <div>(전) 성남시장</div>
+              </td>
+            </tr>     
+            <tr>
+              <th>전과유무 <span>(건수)</span></th>
+              <td>1건</td>
+            </tr>                                
+          </tbody>
+        </table>
+        <a href="#" class="candidate_info_detail_button">후보자 상세정보 확인<span class="arrow"></span></a>
+      </div>
+    
+  </section>
+  <hr class="cluster_line">
+  <div class="candidate_title_wrap">
+    <div class="title_area">
+      <p class="candidate_local">진보당</p>
+      <span class="candidate_count">10명</span>
+    </div>
+    <a href="#" class="pledge">
+      정당정책&middot;공약 <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_416_32591)">
+  <path d="M14.9429 10.0513C14.806 10.6219 14.4408 10.9301 14.087 11.2382C13.9158 11.3866 13.7561 11.5235 13.5849 11.6605C13.311 11.9001 13.0371 12.1284 12.7632 12.368C12.6719 12.4479 12.592 12.5164 12.5007 12.5963C12.1013 12.9272 11.7361 13.2468 11.4508 13.6348C11.4279 13.669 11.4051 13.6918 11.3823 13.7261C11.1883 13.9657 10.96 14.057 10.7318 14.1027C10.7318 14.1027 10.7318 14.1027 10.7204 14.1027C10.6405 14.0114 10.5264 13.9543 10.4008 13.9543H2.49214C2.35519 13.9543 2.24107 14.0114 2.16119 14.1141C2.16119 14.1141 2.16119 14.1141 2.14977 14.1141H1.77317C1.57916 14.1141 1.47645 13.9886 1.41939 13.8858C1.39656 13.8516 1.38515 13.8288 1.37374 13.7945C0.768889 12.6533 -0.00714475 10.9301 0.323811 9.12693C0.346636 9.0014 0.380872 8.87586 0.426521 8.76174C0.460758 8.64762 0.494995 8.54491 0.506407 8.44219C0.529232 8.32807 0.506407 8.20254 0.506407 8.05418C0.506407 7.96288 0.506407 7.87158 0.506407 7.7917V2.679C0.506407 1.78884 1.14549 0.989984 2.03565 0.875862C3.08558 0.750327 3.98715 1.57201 3.98715 2.59911V8.53349C3.98715 8.53349 3.98715 8.54491 3.97574 8.54491H3.25676C3.25676 8.54491 3.24535 8.54491 3.24535 8.53349V2.59911C3.24535 2.05133 2.80027 1.60625 2.2639 1.60625C1.72752 1.60625 1.28244 2.06274 1.28244 2.5877V7.78028C1.28244 7.84876 1.28244 7.92864 1.28244 8.00853C1.28244 8.1683 1.30527 8.36231 1.28244 8.54491C1.25962 8.70468 1.21397 8.84162 1.17973 8.97857C1.14549 9.08128 1.12267 9.17258 1.09985 9.26388C0.814539 10.7931 1.47645 12.311 2.03565 13.3495H2.04706H7.13693C8.24393 13.3495 9.36233 13.3495 10.4693 13.3495H10.4807C10.6862 13.3495 10.7546 13.3152 10.8231 13.2468C10.8345 13.2239 10.8573 13.2125 10.8687 13.1897C11.1997 12.7218 11.6334 12.3566 12.0442 12.0028C12.1241 11.9344 12.2154 11.8545 12.3067 11.786C12.5806 11.5463 12.8659 11.3181 13.1398 11.0784C13.2996 10.9415 13.4707 10.8045 13.6305 10.6676C13.9501 10.3937 14.1669 10.1997 14.2468 9.86873C14.3153 9.57201 14.2468 9.25247 14.0642 9.01281C13.7675 8.6362 13.1512 8.62479 12.6719 8.77315C12.4436 8.85304 12.2268 8.96716 12.0442 9.11552C11.8046 9.30953 11.6105 9.53777 11.4508 9.80026C11.3823 9.91438 11.3024 10.0285 11.2568 10.154C11.1883 10.3024 11.1426 10.4508 11.0285 10.5763C10.903 10.7132 10.7318 10.7703 10.5492 10.7361C10.4008 10.7018 10.2525 10.6105 10.321 10.4393C10.3552 10.3366 10.3894 10.2567 10.4123 10.2111C10.515 9.9372 10.6633 9.6519 10.8459 9.378C11.0057 9.13834 11.1883 8.9101 11.4051 8.70468C11.6334 8.48784 11.8959 8.30525 12.1812 8.17971C12.2725 8.13406 12.3523 8.09983 12.4436 8.077C13.117 7.86017 14.0984 7.86017 14.6576 8.56773C14.9772 8.97857 15.1027 9.53777 14.9772 10.0513H14.9429Z" fill="black"/>
+  <path d="M5.9843 5.13271C5.699 4.92729 5.34522 4.80176 4.96861 4.80176C4.59201 4.80176 4.26105 4.91588 3.97574 5.10989C3.51925 5.41802 3.22253 5.94298 3.22253 6.53642V8.53357C3.22253 9.4922 3.99857 10.2682 4.9572 10.2682C5.50499 10.2682 6.00713 10.0058 6.31526 9.60632C6.55492 9.3096 6.69186 8.933 6.69186 8.53357V6.53642C6.69186 5.9544 6.40656 5.44084 5.97289 5.13271H5.9843ZM4.96861 9.52644C4.42082 9.52644 3.97574 9.08136 3.97574 8.53357V6.53642C3.97574 5.98863 4.42082 5.54356 4.96861 5.54356C5.5164 5.54356 5.95007 5.98863 5.95007 6.53642V8.53357C5.95007 9.08136 5.50499 9.52644 4.96861 9.52644Z" fill="black"/>
+  <path d="M9.39658 5.13265C9.24822 4.32238 8.54066 3.71753 7.68474 3.71753C6.82882 3.71753 6.12126 4.33379 5.9729 5.13265C5.95007 5.23536 5.93866 5.33807 5.93866 5.45219V8.53351C5.93866 8.94435 6.07561 9.30954 6.31526 9.60626C6.63481 10.0057 7.12554 10.2682 7.68474 10.2682C8.24394 10.2682 8.74608 9.99428 9.06562 9.57202C9.28245 9.2753 9.4194 8.92152 9.4194 8.52209V5.44078C9.4194 5.33807 9.4194 5.22395 9.38516 5.12124L9.39658 5.13265ZM8.6776 8.53351C8.6776 9.08129 8.23253 9.52637 7.69615 9.52637C7.15977 9.52637 6.70328 9.08129 6.70328 8.53351V5.45219C6.70328 4.90441 7.14836 4.47074 7.69615 4.47074C8.24394 4.47074 8.6776 4.91582 8.6776 5.45219V8.53351Z" fill="black"/>
+  <path d="M10.4123 4.80176C10.0357 4.80176 9.68189 4.92729 9.39659 5.13271C8.96292 5.45226 8.67761 5.96581 8.67761 6.53642V8.47651C8.67761 8.89876 8.82597 9.27537 9.07704 9.5835C9.38517 9.9601 9.86449 10.2112 10.3895 10.2112H10.4123C10.7546 10.2112 11.0742 10.1085 11.3481 9.93728C11.5193 9.62915 11.7475 9.34384 12.0214 9.12701C12.1013 8.92159 12.1469 8.70475 12.1469 8.47651V6.53642C12.1469 5.57779 11.3709 4.80176 10.4123 4.80176ZM10.8117 9.37808C10.6862 9.43514 10.5492 9.45796 10.4123 9.45796C9.86449 9.45796 9.41941 9.01288 9.41941 8.47651V6.53642C9.41941 5.98863 9.86449 5.54356 10.4123 5.54356C10.9601 5.54356 11.3937 5.98863 11.3937 6.53642V8.47651C11.3937 8.55639 11.3937 8.63628 11.3709 8.70475C11.3024 9.00147 11.0856 9.25254 10.8117 9.37808Z" fill="black"/>
+  <path d="M11.3823 13.7261C11.2454 13.5092 11.0399 13.3495 10.7889 13.2582C10.7204 13.3267 10.6519 13.3609 10.4465 13.3609H10.4351C9.32809 13.3609 8.20969 13.3609 7.1027 13.3609H2.00142C2.00142 13.3609 1.99 13.3381 1.97859 13.3152C1.73893 13.4294 1.53351 13.6348 1.4308 13.8744C1.36233 14.0228 1.31668 14.194 1.31668 14.3652V17.3894C1.31668 18.0399 1.84165 18.5649 2.49214 18.5649H10.4008C11.0513 18.5649 11.5763 18.0399 11.5763 17.3894V14.3652C11.5763 14.1255 11.5078 13.8973 11.3823 13.7147V13.7261ZM10.8231 17.4008C10.8231 17.6405 10.6291 17.8345 10.3894 17.8345H2.49214C2.25249 17.8345 2.05848 17.6405 2.05848 17.4008V14.3766C2.05848 14.2739 2.09272 14.1826 2.14978 14.1141C2.22966 14.0114 2.34378 13.9543 2.48073 13.9543H10.3894C10.515 13.9543 10.6405 14.0114 10.7204 14.1027C10.7889 14.1826 10.8231 14.2739 10.8231 14.3766V17.4008Z" fill="black"/>
+  </g>
+  <defs>
+  <clipPath id="clip0_416_32591">
+  <rect width="16" height="19" fill="white"/>
+  </clipPath>
+  </defs>
+  </svg>
+  
+    </a>
+  </div>
+  <section class="candidate_list_section">
+    <button class="candidate_button active">
+      <div class="candidate_thumb confirm">
+        <img src="https://picsum.photos/90/112" alt="후보자 홍길동" />
+      </div>
+      <div class="candidate_summary">
+        <span class="rank">1순위</span>
+        <dl class="text">
+          <dt>길동이</dt>
+          <dd>1964. 12. 22 (57세)</dd>
+        </dl>
+      </div>
+    </button>
+    <div class="candidate_table_wrap active">
+      <table class="candidate_table">
+        <tbody>
+          <tr>
+            <th>주소</th>
+            <td>서울특별시 종로구 북촌로6길</td>
+          </tr>
+          <tr>
+            <th>직업</th>
+            <td>34대 경기도지사</td>
+          </tr>     
+          <tr>
+            <th>학력</th>
+            <td>중앙대학교 법학과 졸업</td>
+          </tr>     
+          <tr>
+            <th>경력</th>
+            <td>
+              <div>(전) 경기도지사</div>
+              <div>(전) 성남시장</div>
+            </td>
+          </tr>     
+          <tr>
+            <th>전과유무 <span>(건수)</span></th>
+            <td>1건</td>
+          </tr>                                
+        </tbody>
+      </table>
+      <a href="#" class="candidate_info_detail_button">후보자 상세정보 확인<span class="arrow"></span></a>
+    </div>    
+    <button class="candidate_button">
+      <div class="candidate_thumb">
+        <img src="https://picsum.photos/90/112" alt="후보자 홍길동" />
+      </div>
+      <div class="candidate_summary">
+        <span class="rank">2순위</span>
+        <dl class="text">
+          <dt>길동이</dt>
+          <dd>1964. 12. 22 (57세)</dd>
+        </dl>
+      </div>
+    </button>
+    <div class="candidate_table_wrap">
+      <table class="candidate_table">
+        <tbody>
+          <tr>
+            <th>주소</th>
+            <td>서울특별시 종로구 북촌로6길</td>
+          </tr>
+          <tr>
+            <th>직업</th>
+            <td>34대 경기도지사</td>
+          </tr>     
+          <tr>
+            <th>학력</th>
+            <td>중앙대학교 법학과 졸업</td>
+          </tr>     
+          <tr>
+            <th>경력</th>
+            <td>
+              <div>(전) 경기도지사</div>
+              <div>(전) 성남시장</div>
+            </td>
+          </tr>     
+          <tr>
+            <th>전과유무 <span>(건수)</span></th>
+            <td>1건</td>
+          </tr>                                
+        </tbody>
+      </table>
+      <a href="#" class="candidate_info_detail_button">후보자 상세정보 확인<span class="arrow"></span></a>
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <div class="candidate_title_wrap">
+    <div class="title_area">
+      <p class="candidate_local">당당당</p>
+      <span class="candidate_count">10명</span>
+    </div>
+    <a href="#" class="pledge">
+      정당정책&middot;공약 <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_416_32591)">
+  <path d="M14.9429 10.0513C14.806 10.6219 14.4408 10.9301 14.087 11.2382C13.9158 11.3866 13.7561 11.5235 13.5849 11.6605C13.311 11.9001 13.0371 12.1284 12.7632 12.368C12.6719 12.4479 12.592 12.5164 12.5007 12.5963C12.1013 12.9272 11.7361 13.2468 11.4508 13.6348C11.4279 13.669 11.4051 13.6918 11.3823 13.7261C11.1883 13.9657 10.96 14.057 10.7318 14.1027C10.7318 14.1027 10.7318 14.1027 10.7204 14.1027C10.6405 14.0114 10.5264 13.9543 10.4008 13.9543H2.49214C2.35519 13.9543 2.24107 14.0114 2.16119 14.1141C2.16119 14.1141 2.16119 14.1141 2.14977 14.1141H1.77317C1.57916 14.1141 1.47645 13.9886 1.41939 13.8858C1.39656 13.8516 1.38515 13.8288 1.37374 13.7945C0.768889 12.6533 -0.00714475 10.9301 0.323811 9.12693C0.346636 9.0014 0.380872 8.87586 0.426521 8.76174C0.460758 8.64762 0.494995 8.54491 0.506407 8.44219C0.529232 8.32807 0.506407 8.20254 0.506407 8.05418C0.506407 7.96288 0.506407 7.87158 0.506407 7.7917V2.679C0.506407 1.78884 1.14549 0.989984 2.03565 0.875862C3.08558 0.750327 3.98715 1.57201 3.98715 2.59911V8.53349C3.98715 8.53349 3.98715 8.54491 3.97574 8.54491H3.25676C3.25676 8.54491 3.24535 8.54491 3.24535 8.53349V2.59911C3.24535 2.05133 2.80027 1.60625 2.2639 1.60625C1.72752 1.60625 1.28244 2.06274 1.28244 2.5877V7.78028C1.28244 7.84876 1.28244 7.92864 1.28244 8.00853C1.28244 8.1683 1.30527 8.36231 1.28244 8.54491C1.25962 8.70468 1.21397 8.84162 1.17973 8.97857C1.14549 9.08128 1.12267 9.17258 1.09985 9.26388C0.814539 10.7931 1.47645 12.311 2.03565 13.3495H2.04706H7.13693C8.24393 13.3495 9.36233 13.3495 10.4693 13.3495H10.4807C10.6862 13.3495 10.7546 13.3152 10.8231 13.2468C10.8345 13.2239 10.8573 13.2125 10.8687 13.1897C11.1997 12.7218 11.6334 12.3566 12.0442 12.0028C12.1241 11.9344 12.2154 11.8545 12.3067 11.786C12.5806 11.5463 12.8659 11.3181 13.1398 11.0784C13.2996 10.9415 13.4707 10.8045 13.6305 10.6676C13.9501 10.3937 14.1669 10.1997 14.2468 9.86873C14.3153 9.57201 14.2468 9.25247 14.0642 9.01281C13.7675 8.6362 13.1512 8.62479 12.6719 8.77315C12.4436 8.85304 12.2268 8.96716 12.0442 9.11552C11.8046 9.30953 11.6105 9.53777 11.4508 9.80026C11.3823 9.91438 11.3024 10.0285 11.2568 10.154C11.1883 10.3024 11.1426 10.4508 11.0285 10.5763C10.903 10.7132 10.7318 10.7703 10.5492 10.7361C10.4008 10.7018 10.2525 10.6105 10.321 10.4393C10.3552 10.3366 10.3894 10.2567 10.4123 10.2111C10.515 9.9372 10.6633 9.6519 10.8459 9.378C11.0057 9.13834 11.1883 8.9101 11.4051 8.70468C11.6334 8.48784 11.8959 8.30525 12.1812 8.17971C12.2725 8.13406 12.3523 8.09983 12.4436 8.077C13.117 7.86017 14.0984 7.86017 14.6576 8.56773C14.9772 8.97857 15.1027 9.53777 14.9772 10.0513H14.9429Z" fill="black"/>
+  <path d="M5.9843 5.13271C5.699 4.92729 5.34522 4.80176 4.96861 4.80176C4.59201 4.80176 4.26105 4.91588 3.97574 5.10989C3.51925 5.41802 3.22253 5.94298 3.22253 6.53642V8.53357C3.22253 9.4922 3.99857 10.2682 4.9572 10.2682C5.50499 10.2682 6.00713 10.0058 6.31526 9.60632C6.55492 9.3096 6.69186 8.933 6.69186 8.53357V6.53642C6.69186 5.9544 6.40656 5.44084 5.97289 5.13271H5.9843ZM4.96861 9.52644C4.42082 9.52644 3.97574 9.08136 3.97574 8.53357V6.53642C3.97574 5.98863 4.42082 5.54356 4.96861 5.54356C5.5164 5.54356 5.95007 5.98863 5.95007 6.53642V8.53357C5.95007 9.08136 5.50499 9.52644 4.96861 9.52644Z" fill="black"/>
+  <path d="M9.39658 5.13265C9.24822 4.32238 8.54066 3.71753 7.68474 3.71753C6.82882 3.71753 6.12126 4.33379 5.9729 5.13265C5.95007 5.23536 5.93866 5.33807 5.93866 5.45219V8.53351C5.93866 8.94435 6.07561 9.30954 6.31526 9.60626C6.63481 10.0057 7.12554 10.2682 7.68474 10.2682C8.24394 10.2682 8.74608 9.99428 9.06562 9.57202C9.28245 9.2753 9.4194 8.92152 9.4194 8.52209V5.44078C9.4194 5.33807 9.4194 5.22395 9.38516 5.12124L9.39658 5.13265ZM8.6776 8.53351C8.6776 9.08129 8.23253 9.52637 7.69615 9.52637C7.15977 9.52637 6.70328 9.08129 6.70328 8.53351V5.45219C6.70328 4.90441 7.14836 4.47074 7.69615 4.47074C8.24394 4.47074 8.6776 4.91582 8.6776 5.45219V8.53351Z" fill="black"/>
+  <path d="M10.4123 4.80176C10.0357 4.80176 9.68189 4.92729 9.39659 5.13271C8.96292 5.45226 8.67761 5.96581 8.67761 6.53642V8.47651C8.67761 8.89876 8.82597 9.27537 9.07704 9.5835C9.38517 9.9601 9.86449 10.2112 10.3895 10.2112H10.4123C10.7546 10.2112 11.0742 10.1085 11.3481 9.93728C11.5193 9.62915 11.7475 9.34384 12.0214 9.12701C12.1013 8.92159 12.1469 8.70475 12.1469 8.47651V6.53642C12.1469 5.57779 11.3709 4.80176 10.4123 4.80176ZM10.8117 9.37808C10.6862 9.43514 10.5492 9.45796 10.4123 9.45796C9.86449 9.45796 9.41941 9.01288 9.41941 8.47651V6.53642C9.41941 5.98863 9.86449 5.54356 10.4123 5.54356C10.9601 5.54356 11.3937 5.98863 11.3937 6.53642V8.47651C11.3937 8.55639 11.3937 8.63628 11.3709 8.70475C11.3024 9.00147 11.0856 9.25254 10.8117 9.37808Z" fill="black"/>
+  <path d="M11.3823 13.7261C11.2454 13.5092 11.0399 13.3495 10.7889 13.2582C10.7204 13.3267 10.6519 13.3609 10.4465 13.3609H10.4351C9.32809 13.3609 8.20969 13.3609 7.1027 13.3609H2.00142C2.00142 13.3609 1.99 13.3381 1.97859 13.3152C1.73893 13.4294 1.53351 13.6348 1.4308 13.8744C1.36233 14.0228 1.31668 14.194 1.31668 14.3652V17.3894C1.31668 18.0399 1.84165 18.5649 2.49214 18.5649H10.4008C11.0513 18.5649 11.5763 18.0399 11.5763 17.3894V14.3652C11.5763 14.1255 11.5078 13.8973 11.3823 13.7147V13.7261ZM10.8231 17.4008C10.8231 17.6405 10.6291 17.8345 10.3894 17.8345H2.49214C2.25249 17.8345 2.05848 17.6405 2.05848 17.4008V14.3766C2.05848 14.2739 2.09272 14.1826 2.14978 14.1141C2.22966 14.0114 2.34378 13.9543 2.48073 13.9543H10.3894C10.515 13.9543 10.6405 14.0114 10.7204 14.1027C10.7889 14.1826 10.8231 14.2739 10.8231 14.3766V17.4008Z" fill="black"/>
+  </g>
+  <defs>
+  <clipPath id="clip0_416_32591">
+  <rect width="16" height="19" fill="white"/>
+  </clipPath>
+  </defs>
+  </svg>
+  
+    </a>
+  </div>
+  <section class="candidate_list_section">
+    <button class="candidate_button active">
+      <div class="candidate_thumb confirm">
+        <img src="https://picsum.photos/90/112" alt="후보자 홍길동" />
+      </div>
+      <div class="candidate_summary">
+        <span class="rank">1순위</span>
+        <dl class="text">
+          <dt>길동이</dt>
+          <dd>1964. 12. 22 (57세)</dd>
+        </dl>
+      </div>
+    </button>
+    <div class="candidate_table_wrap active">
+      <table class="candidate_table">
+        <tbody>
+          <tr>
+            <th>주소</th>
+            <td>서울특별시 종로구 북촌로6길</td>
+          </tr>
+          <tr>
+            <th>직업</th>
+            <td>34대 경기도지사</td>
+          </tr>     
+          <tr>
+            <th>학력</th>
+            <td>중앙대학교 법학과 졸업</td>
+          </tr>     
+          <tr>
+            <th>경력</th>
+            <td>
+              <div>(전) 경기도지사</div>
+              <div>(전) 성남시장</div>
+            </td>
+          </tr>     
+          <tr>
+            <th>전과유무 <span>(건수)</span></th>
+            <td>1건</td>
+          </tr>                                
+        </tbody>
+      </table>
+      <a href="#" class="candidate_info_detail_button">후보자 상세정보 확인<span class="arrow"></span></a>
+    </div>    
+    <button class="candidate_button">
+      <div class="candidate_thumb">
+        <img src="https://picsum.photos/90/112" alt="후보자 홍길동" />
+      </div>
+      <div class="candidate_summary">
+        <span class="rank">2순위</span>
+        <dl class="text">
+          <dt>길동이</dt>
+          <dd>1964. 12. 22 (57세)</dd>
+        </dl>
+      </div>
+    </button>
+    <div class="candidate_table_wrap">
+      <table class="candidate_table">
+        <tbody>
+          <tr>
+            <th>주소</th>
+            <td>서울특별시 종로구 북촌로6길</td>
+          </tr>
+          <tr>
+            <th>직업</th>
+            <td>34대 경기도지사</td>
+          </tr>     
+          <tr>
+            <th>학력</th>
+            <td>중앙대학교 법학과 졸업</td>
+          </tr>     
+          <tr>
+            <th>경력</th>
+            <td>
+              <div>(전) 경기도지사</div>
+              <div>(전) 성남시장</div>
+            </td>
+          </tr>     
+          <tr>
+            <th>전과유무 <span>(건수)</span></th>
+            <td>1건</td>
+          </tr>                                
+        </tbody>
+      </table>
+      <a href="#" class="candidate_info_detail_button">후보자 상세정보 확인<span class="arrow"></span></a>
+    </div>
+  </section>  
+  <hr class="cluster_line">
+  <ul class="candidate_caption">
+    <li>
+      후보자 정보는 <a href="#">중앙선거관리위원회</a>에서 제공하며, 정보제공처의 사정에 따라 지연되거나 변경될 수 있습니다. 
+    </li>
+    <li>의석수 5석 이상의 정당만 정당 컬러로 표기합니다.</li>
+    <li>MM/DD 기준으로 국회의원 5석 미만인 정당을 ‘기타정당’ 으로 구분해 제공합니다</li>
+  </ul>
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>  
+  <hr class="cluster_line">
+  <div class="scroll_btns_wrap">
+  <a href="home.html" class="home">
+    <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 6L8 1L15 6" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M3 5V12H13V5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  
+  </a>
+  <a href="#" class="top">
+    <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 9L7 3L13 9" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7 3V16" stroke="black" stroke-linecap="round"/>
+  <path d="M1.5 0.5H12.5" stroke="black" stroke-linecap="round"/>
+</svg>
+  
+  </a>
+</div>
+  <footer id="footer" role="contentinfo">
+  <div class="footer">
+      <div class="svcBtn">
+        <a href="//m.nate.com">네이트홈</a><a href="#"><span id="loginbtnmsg">로그아웃</span></a><a href="//news.nate.com/view/20231124n16511">PC버전</a><a href="#" >전체서비스</a>
+      </div> 
+      <ul class="sitemap">
+        <li><a href="//news.nate.com/enews/editguide">기사배열기본방침(책임:김경옥)</a></li>
+        <li><span>청소년보호책임:조유형</span></li>
+        <li><a href="//m.news.nate.com/newssitemap">뉴스 전체서비스</a></li>
+      </ul>
+      <div class="copyright"><span>&copy; SK Communications</span><a class="cscenter" href="//m.helpdesk.nate.com">고객센터</a></div>
+  </div>
+</footer>
+  <script>
+    
+    candidateSelectActiveStyle();
+    candidateToggleTable();
+    xScrollActive({
+      box: document.querySelector('.candidate_clan_buttons_wrap'),
+      list: document.querySelectorAll('.candidate_clan_buttons_wrap li a')
+    }); 
+    fixedTabs({
+      fixedTarget: document.querySelector('.candidate_clan_buttons_wrap'),
+      fixedTop: document.querySelector('.candidate_clan_buttons_wrap').getBoundingClientRect().top
+    });    
+  </script>
+</body>
+</html>

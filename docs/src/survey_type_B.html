@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  @@include("include/head.html", {
+  @@include("@@SRC/include/head.html", {
     "type": ""
   })
 </head>
 <body class="body">
-  @@include("include/header.html", {
+  @@include("@@SRC/include/header.html", {
     "active": "n4",
     "type": ""
   })
-  @@include("include/keyword_swiper.html", {
+  @@include("@@SRC/include/keyword_swiper.html", {
     "isBackground": "true",
     "isMain": "false"    
   })
@@ -20,7 +20,7 @@
         @@for(var i = 0; i < 2; i++){
           <li>
             <a href="#" class="img_area">
-              @@include("include/image.html", {
+              @@include("@@SRC/include/image.html", {
                 x: "134",
                 y: "100",
                 alt: "사이즈17 1줄일 경우 세로 가운데",
@@ -63,7 +63,7 @@
         </li>        
         <li>
           <a href="#" class="img_area">
-            @@include("include/image.html", {
+            @@include("@@SRC/include/image.html", {
               x: "134",
               y: "100",
               alt: "사이즈17 1줄일 경우 세로 가운데",
@@ -117,13 +117,13 @@
       }
     </ul>
   </section>
-  @@include("include/news_list_more_button.html", {
+  @@include("@@SRC/include/news_list_more_button.html", {
     "value": "더보기"
   })
   <hr class="cluster_line">
   <section class="survey_banner_section">
     <a href="#">
-      @@include("../base64/icon_survey.html")
+      @@include("@@SRC/base64/icon_survey.html")
       <dl>
         <dt>중앙선거관리위원회</dt>
         <dd>선거여론조사결과 자세히보기</dd>
@@ -131,8 +131,8 @@
     </a>
   </section>
   <hr class="cluster_line">
-  @@include("include/scroll_button.html")
-  @@include("include/footer.html")
+  @@include("@@SRC/include/scroll_button.html")
+  @@include("@@SRC/include/footer.html")
   <script>
     fixedTabs({
       fixedTarget: document.querySelector('.keyword_swiper'),

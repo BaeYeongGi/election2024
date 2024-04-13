@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  @@include("include/head.html", {
+  @@include("@@SRC/include/head.html", {
     "type": ""
   })
 </head>
 <body class="body rest view_pg">
-  @@include("include/view_shortcut.html")
-  @@include("include/header.html", {
+  @@include("@@SRC/include/view_shortcut.html")
+  @@include("@@SRC/include/header.html", {
     "active": "n1",
     "type": ""
   })
@@ -45,7 +45,7 @@
                   </button>
                 </li>
                 <li class="ai_btn_wrap">
-                  @@include("../base64/icon_view_ai_summary_chat.html")
+                  @@include("@@SRC/base64/icon_view_ai_summary_chat.html")
                   <button class="ai_summary_btn">
                     @@include("svg/icon_view_ai_summary_btn.html")
                   </button>
@@ -89,7 +89,7 @@
           </header>
           <article>
             <div id="txt_size" class="view_cont">
-              @@include("@@ROOT/m/src/doc/sisa/inc/contents.html")
+              @@include("@@SRC/include/view_article.html")
             </div>
             <div class="isolation">
               <h3>댓글 차단</h3>
@@ -175,7 +175,7 @@
                 <a href="javascript:;" id="copyURL" class="copyURL" title="URL 복사"><span class="hide">URL 복사</span></a>
               </div>
             </div>
-            @@include("include/reply_guide_pop.html")  
+            @@include("@@SRC/include/reply_guide_pop.html")  
             <div class="news_cmt"></div>
             <script type="text/javascript">
               // 성능개선_0324  : 초기 로딩 속도에 필요 없는 자원 나중에 로딩
@@ -196,12 +196,12 @@
       <section class="rwd_right">
         <aside class="news_point view_special">
           <hr class="cluster_line">
-          @@include("include/view_dday_link.html", {
+          @@include("@@SRC/include/view_dday_link.html", {
             type: "step1_2"
           })
           <hr class="cluster_line">
           <section class="section">
-            @@include("include/news_cluster_normal.html", {
+            @@include("@@SRC/include/news_cluster_normal.html", {
               "type": ""
             })
           </section>
@@ -218,23 +218,23 @@
             </ul>
             <div class="mal_swiper">
               <div class="swiper-wrapper">
-                @@include("include/mal.html")
-                @@include("include/mal.html")
-                @@include("include/mal.html")
+                @@include("@@SRC/include/mal.html")
+                @@include("@@SRC/include/mal.html")
+                @@include("@@SRC/include/mal.html")
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </section>  
           <hr class="cluster_line"> 
           <section class="section">
-            @@include("include/news_cluster_photo.html")            
+            @@include("@@SRC/include/news_cluster_photo.html")            
           </section>         
           <hr class="cluster_line">
           <div class="cluster_title_more_wrap view">
             <p class="news_cluster_title">화제의 선거구 후보자</p>
             <a href="#" class="more">더보기</a>
           </div>   
-          @@include("include/candidate_list.html", {
+          @@include("@@SRC/include/candidate_list.html", {
             "type": "view"
           })     
           <ul class="view_candidate_buttons">
@@ -243,18 +243,18 @@
           </ul>       
           <hr class="cluster_line"> 
           <section class="section">
-            @@include("include/news_cluster_ranking.html")
+            @@include("@@SRC/include/news_cluster_ranking.html")
           </section>
         </aside>
       </section>
     </div>
   </section>
-  @@include("@@SRC/m/src/inc/module/viewAiSummaryPop.html", {
+  @@include("@@SRC/include/view_ai_summary_pop.html", {
       type: "active"
   })
-  @@include("@@ROOT/m/src/inc/module/viewAppPop2023.html")
-  @@include("include/scroll_button.html")
-  @@include("include/footer.html")
+  @@include("@@SRC/include/view_app_pop_2023.html")
+  @@include("@@SRC/include/scroll_button.html")
+  @@include("@@SRC/include/footer.html")
 <script>
   mainNewsSwiper();
   malmalmalSwiper({

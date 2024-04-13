@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  @@include("include/head.html", {
+  @@include("@@SRC/include/head.html", {
     "type": ""
   })
 </head>
 <body class="body">
-  @@include("include/header.html", {
+  @@include("@@SRC/include/header.html", {
     "active": "n2",
     "type": ""
   })
-  @@include("include/menu.html", {
+  @@include("@@SRC/include/menu.html", {
     "type": "result",
     "active": "n4",
   })  
@@ -56,7 +56,7 @@
   </div> 
   <hr class="cluster_line">
   <section class="reply_section">
-    @@include("include/special_reply.html", {
+    @@include("@@SRC/include/special_reply.html", {
       type: "vote"
     })
   </section>
@@ -65,7 +65,7 @@
     <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
   </section>  
   <hr class="cluster_line">
-  @@include("include/scroll_button.html")
-  @@include("include/footer.html")
+  @@include("@@SRC/include/scroll_button.html")
+  @@include("@@SRC/include/footer.html")
 </body>
 </html>
