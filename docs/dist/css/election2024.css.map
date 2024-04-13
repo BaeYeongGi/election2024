@@ -1,0 +1,1 @@
+{"version":3,"sources":["election2024.scss"],"names":[],"mappings":"AACE,OACE,UACA,cACE","file":"election2024.css","sourcesContent":["body {\r\n  p {\r\n    color:red;\r\n    &.active {\r\n      color:blue;\r\n    }\r\n  }\r\n}"]}
