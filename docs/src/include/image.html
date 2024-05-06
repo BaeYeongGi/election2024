@@ -1,26 +1,9 @@
-<div class="candidate_search_wrap">
-  <div class="candidate_search_list">
-    <p class="candidate_search_title">화제의 선거구</p>
-    <a href="#">서울 강남갑</a>
-    <a href="#">부산 사하구</a>
-    <a href="#">서울 노원병</a>
-    <a href="#">부산 해운대갑</a>
-    <a href="#">서울 강남을</a>
-    <a href="#">서울 노원병</a>
-    <a href="#">경기 화성갑</a>                  
-    <a href="#" class="active">서울 송파을</a>                  
-    <a href="#">서울 갑갑갑</a>                  
-    <a href="#">서울 을을을</a>                  
-    <a href="#">서울 갑갑갑</a>                  
-    <a href="#">서울 갑갑갑</a>                  
-    <a href="#">서울 갑갑갑</a>
-    <a href="#">서울 갑갑갑</a>
-    <a href="#">서울 마지막</a>
-    <div class="more_button_wrap">
-      <button class="more_button" aria-label="주요선거 더보기">
-      </button>
-      <span class="blur"></span>
-    </div>
+@@if(imageWithText === "true"){
+  <img src="https://picsum.photos/@@x/@@y" alt="@@alt" />
+}
+@@if(imageWithText === "false"){
+  <div class="img_wrap @@type">
+    <img src="https://picsum.photos/@@x/@@y" alt="@@alt" />
   </div>
-  <span class="candidate_blank"></span>
-</div>
+}
+

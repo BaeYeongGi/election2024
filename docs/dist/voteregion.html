@@ -128,7 +128,7 @@
   </li>
   <li>
     <a href="voteregion.html"
-    
+    class="active"
     
     >
       시도별
@@ -145,174 +145,366 @@
     </a>
   </li>
   <li>
-    <a href="myregion.html" class="active">
+    <a href="myregion.html" >
       내지역조회
     </a>
   </li>
 </ul>
-
+  <ul class="local_nav">
+    <li><a href="#">서울</a></li>
+    <li><a href="#">부산</a></li>
+    <li><a href="#">대구</a></li>
+    <li><a href="#">인천</a></li>
+    <li><a href="#">광주</a></li>
+    <li><a href="#">대전</a></li>
+    <li><a href="#" class="active">울산</a></li>
+    <li><a href="#">세종</a></li>
+    <li><a href="#">경기</a></li>
+    <li><a href="#">강원</a></li>
+  </ul>
   <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">서울 정당별 의석수</p>
+    </div>    
+    <div class="vote_swipe_buttons">
+  <button class="active">22대 (254석)</button>
+  <button>지난 21대 (253석)</button>
+</div>
+    <div class="vote_swipe_container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <ul class="graph_bar">
+            <li class="bg clan1" style="width:50.7%">
+              <p>50.7<span>%</span></p>
+            </li>
+            <li class="bg clan2" style="width:30.3%">
+              <p>30.3<span>%</span></p>
+            </li>
+            <li class="bg clan3" style="width:10.2%">
+              <p>10.2<span>%</span></p>
+            </li>         
+            <li class="bg clan4" style="width:8.8%">
+              <p>8.8<span>%</span></p>
+            </li>                
+          </ul>
+          
+
+
+
+
+
+
+
+  <table class="vote_seat_table clan_dotted">
+    <colgroup>
+      <col width="35%">
+      <col width="37%">
+      <col width="28%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th><span>정당</span></th>
+        <th><span>지역구 의석수(석)</span></th>
+        <th><span>비율(%)</span></th>
+      </tr>
+    </thead>
     
+      <tbody>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan1"></span>더불어민주당</p>
+          </td>
+          <td><span class="highlight">103</span></td>
+          <td><span class="highlight">30.7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan2"></span>국민의힘</p>     
+          </td>
+          <td><span class="highlight">100</span></td>
+          <td><span class="highlight">20.3</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan3"></span>녹색정의당</p>           
+          </td>
+          <td><span class="highlight">100</span></td>
+          <td><span class="highlight">20.3</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan4"></span>새로운미래</p>   
+          </td>
+          <td><span class="highlight">5</span></td>
+          <td><span class="highlight">8.8</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan5"></span>개혁신당</p>  
+          </td>
+          <td><span class="highlight">5</span></td>
+          <td><span class="highlight">8.8</span></td>
+        </tr>           
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan_others"></span>기타정당</p>  
+          </td>
+          <td><span class="highlight">1</span></td>
+          <td><span class="highlight">0.1</span></td>
+        </tr>        
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan_independent"></span>무소속</p>  
+          </td>
+          <td><span class="highlight">12</span></td>
+          <td><span class="highlight">0.1</span></td>
+        </tr>                         
+      </tbody>
+    
+    
+  </table>
 
 
-  <form class="candidate_search_form type2">
-    <select class="select step1">
-      <option value="default">시·도</option>
-      <option value="1">경기</option>
-      <option value="2">경북</option> 
-      <option value="3">전북</option> 
-    </select>
-    <select class="select step2" disabled>
-      <option value="default">구·시·군</option>
-      <option value="1">선거구명1</option>
-      <option value="2">선거구명2</option>
-      <option value="3">선거구명3</option>
-      <option value="4">선거구명4</option>
-    </select>
-    <select class="select step3" disabled>
-      <option value="default">읍·면·동</option>
-      <option value="1">강남구</option>
-      <option value="2">서초구</option>
-      <option value="3">구</option>
-      <option value="4">구</option>
-    </select>
-    <button class="button"></button>
-  </form>    
+    
+          <p class="vote_state_text">20개 선거구 개표 준비중</p>              
+        </li>
+          <li class="swiper-slide">
+            <ul class="graph_bar">
+              <li class="bg clan1" style="width:50.7%">
+                <p>50.7<span>%</span></p>
+              </li>
+              <li class="bg clan2" style="width:30.3%">
+                <p>30.3<span>%</span></p>
+              </li>
+              <li class="bg clan3" style="width:10.2%">
+                <p>10.2<span>%</span></p>
+              </li>         
+              <li class="bg clan4" style="width:8.8%">
+                <p>8.8<span>%</span></p>
+              </li>                
+            </ul>
+            
 
-    <dl class="candidate_select_list">
-      <dt>선거구 선택</dt>
-      <dd><a href="#" class="active">갑선거구</a></dd>
-      <dd><a href="#">을선거구</a></dd>
-      <dd><a href="#">갑을병선거구</a></dd>
-    </dl>
 
+
+
+
+
+
+  <table class="vote_seat_table clan_dotted">
+    <colgroup>
+      <col width="35%">
+      <col width="37%">
+      <col width="28%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th><span>정당</span></th>
+        <th><span>지역구 의석수(석)</span></th>
+        <th><span>비율(%)</span></th>
+      </tr>
+    </thead>
+    
+    
+      <tbody>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan001"></span>더불어민주당</p>
+          </td>
+          <td><span class="highlight">163</span></td>
+          <td><span class="highlight">64.4</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan002"></span>미래통합당</p>      
+          </td>
+          <td><span class="highlight">84</span></td>
+          <td><span class="highlight">33.2</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan003"></span>정의당</p> 
+          </td>
+          <td><span class="highlight">1</span></td>
+          <td><span class="highlight">0.4</span></td>
+        </tr>  
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan00_independent"></span>무소속</p>              
+          </td>
+          <td><span class="highlight">5</span></td>
+          <td><span class="highlight">2.0</span></td>
+        </tr>                     
+      </tbody>
+    
+  </table>
+
+
+  
+          </li>
+      </ul>
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">서울 정당별 의석수(개표 준비중 UI)</p>
+    </div>    
+    <div class="vote_swipe_buttons">
+  <button class="active">개표 준비 UI</button>
+  <button>지난 21대 국회의원 선거</button>
+</div>
+    <div class="vote_swipe_container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <p class="ready">개표 준비중입니다.<br/>
+            잠시 후 업데이트 됩니다.</p>
+        </li>
+        <li class="swiper-slide">222</li>
+      </ul>
+      <p class="vote_state_text">20개 선거구 개표 준비중</p>      
+    </div>
   </section>
   <hr class="cluster_line">
 
   <section class="section">
     <div class="cluster_title_more_wrap">
-      <p class="news_cluster_title refresh">서울 강남을<button><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 9.3094 17.9125 8.63924 17.748 8H16.7101C16.8987 8.63371 17 9.30503 17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C12.1571 3 14.0864 3.97574 15.3704 5.50994H16.6221C15.1829 3.39158 12.754 2 10 2Z" fill="#222222"/>
-  <path d="M16.7 2.5V6H13.2" stroke="#222222"/>
-  </svg>
-  </button></p>
+      <p class="news_cluster_title">서울 강남갑</p>
+      <a href="#" class="more">더보기</a>
     </div>    
-    <div class="vote_versus_contents_container result">
-      <div class="vote_versus_box">
-        <div class="vote_versus_wrap">
-          <dl class="vote_rate">
-            <dt aria-label="개표율"></dt>
-            <dd>100.0<span>%</span></dd>
-          </dl>
-          <a href="#" class="left">
-            <div class="vote_candidate_img_wrap selected">
-              <span class="rank">1위</span>
-              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
-            </div>
-            <div class="vote_candidate_info">
-              <p class="name">이름네자</p>
-              <p class="font clan2">`+i+`국민의힘</p>
-              <p class="value">64.9<span>%</span></p>
-              <p class="count">629,632표</p>
-            </div>
-          </a>
-          <a href="#" class="right">
-            <div class="vote_candidate_img_wrap">
-              <span class="rank">2위</span>
-              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
-            </div>
-            <div class="vote_candidate_info">
-              <p class="name">홍길동</p>
-              <p class="font clan1">더불어민주당</p>
-              <p class="value">23.2<span>%</span></p>
-              <p class="count">629,632표</p>
-            </div>
-          </a>
-          <span class="state gap">99표차</span>
-          <div class="graph_wrap">
-            <div class="left_graph">
-              <span class="clan2 bg" style="height:64%;"></span>
-            </div>
-            <div class="right_graph">
-              <span class="clan1 bg" style="height:23%"></span>
-            </div>
+    <div class="vote_versus_contents_container single">
+      <div class="vote_versus_wrap">
+        <div class="vote_open complete" aria-label="개표완료"></div>
+        <a href="#" class="left">
+          <div class="vote_candidate_img_wrap confirm">
+            <span class="rank">1위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">이름네자</p>
+            <p class="font clan2">`+i+`국민의힘</p>
+            <p class="value">64.9<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="vote_candidate_img_wrap">
+            <span class="rank">2위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">홍길동</p>
+            <p class="font clan1">더불어민주당</p>
+            <p class="value">23.2<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <span class="state gap">99표차</span>
+        <div class="graph_wrap">
+          <div class="left_graph">
+            <span class="clan2 bg" style="height:64%;"></span>
+          </div>
+          <div class="right_graph">
+            <span class="clan1 bg" style="height:23%"></span>
           </div>
         </div>
-        <a href="#" class="vote_versus_others_rank">
-          <span class="rank">3위</span>
-          <span class="name">이름네자</span>
-          <span class="font clan1">더불어민주당</span>
-          <span class="value">99.9%</span>
-          <span class="count">9,999,999표</span>
+      </div>
+      <div class="vote_versus_result_history">
+        <p class="text">지난 21대 선거 결과</p>
+        <p class="name">홍길동 <span class="font clan2">국민의힘</span></p>
+      </div>
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">서울 강남을</p>
+      <a href="#" class="more">더보기</a>
+    </div>    
+    <div class="vote_versus_contents_container single">
+      <div class="vote_versus_wrap">
+        <dl class="vote_rate">
+          <dt aria-label="개표율"></dt>
+          <dd>100.0<span>%</span></dd>
+        </dl>
+        <a href="#" class="left">
+          <div class="vote_candidate_img_wrap confirm">
+            <span class="rank">1위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">이름네자</p>
+            <p class="font clan2">`+i+`국민의힘</p>
+            <p class="value">64.9<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
         </a>
-        <a href="#" class="vote_versus_others_rank">
-          <span class="rank">4위</span>
-          <span class="name">이름네자</span>
-          <span class="font clan2">국민의힘</span>
-          <span class="value">99.9%</span>
-          <span class="count">9,999,999표</span>
-        </a>     
+        <a href="#" class="right">
+          <div class="vote_candidate_img_wrap">
+            <span class="rank">2위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">홍길동</p>
+            <p class="font clan1">더불어민주당</p>
+            <p class="value">23.2<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <span class="state gap">99표차</span>
+        <div class="graph_wrap">
+          <div class="left_graph">
+            <span class="clan2 bg" style="height:64%;"></span>
+          </div>
+          <div class="right_graph">
+            <span class="clan1 bg" style="height:23%"></span>
+          </div>
+        </div>
       </div>
       <div class="vote_versus_result_history">
         <p class="text">지난 21대 선거 결과</p>
         <p class="name">홍길동 <span class="font clan1">더불어민주당</span></p>
-      </div>         
+      </div>
     </div>
   </section>
   <hr class="cluster_line">
   <section class="section">
     <div class="cluster_title_more_wrap">
-      <p class="news_cluster_title refresh">서울 서초갑<button><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 9.3094 17.9125 8.63924 17.748 8H16.7101C16.8987 8.63371 17 9.30503 17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C12.1571 3 14.0864 3.97574 15.3704 5.50994H16.6221C15.1829 3.39158 12.754 2 10 2Z" fill="#222222"/>
-  <path d="M16.7 2.5V6H13.2" stroke="#222222"/>
-  </svg>
-  </button></p>
+      <p class="news_cluster_title">서울 서초갑</p>
+      <a href="#" class="more">더보기</a>
+    </div>    
+    <div class="vote_versus_contents_container single">
+      <div class="vote_versus_wrap">
+        <div class="vote_open no_select" aria-label="무투표당선"></div>
+        <a href="#" class="center">
+          <div class="vote_candidate_img_wrap selected">
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">이름네자</p>
+            <p class="font clan2">`+i+`국민의힘</p>
+          </div>
+        </a>
+      </div>
+      <div class="vote_versus_result_history">
+        <p class="text">지난 21대 선거 결과</p>
+        <p class="name">홍길동 <span class="font clan1">더불어민주당</span></p>
+      </div>
+    </div>
+  </section>  
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">서울 서초갑</p>
+      <a href="#" class="more">더보기</a>
     </div>
     <p class="vote_blank_wrap">개표 준비중입니다.<br/>잠시 후 업데이트 됩니다.</p> 
-    <p class="vote_blank_wrap">
-      아직 지역 설정을 안하셨네요.<br/>
-      거주하고 계신 지역을 선택하면<br/>
-      내지역 개표현황을 확인할 수 있습니다!
-    </p>     
     <div class="vote_versus_result_history">
       <p class="text">지난 21대 선거 결과</p>
       <p class="name">홍길동 <span class="font clan1">더불어민주당</span></p>
     </div>
   </section>
-  <hr class="cluster_line">
-  <section class="section">
-    <div class="cluster_title_more_wrap">
-      <p class="news_cluster_title refresh">서울 서초갑 <button><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 9.3094 17.9125 8.63924 17.748 8H16.7101C16.8987 8.63371 17 9.30503 17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C12.1571 3 14.0864 3.97574 15.3704 5.50994H16.6221C15.1829 3.39158 12.754 2 10 2Z" fill="#222222"/>
-  <path d="M16.7 2.5V6H13.2" stroke="#222222"/>
-  </svg>
-  </button></p>
-    </div>        
-    <div class="vote_versus_contents_container result">
-      <div class="vote_versus_box">
-        <div class="vote_versus_wrap">
-          <div class="vote_open no_select" aria-label="무투표당선"></div>
-          <a href="#" class="cemter">
-            <div class="vote_candidate_img_wrap selected">
-              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
-            </div>
-            <div class="vote_candidate_info">
-              <p class="name">이름네자</p>
-              <p class="font clan2">`+i+`국민의힘</p>
-            </div>
-          </a>
-
-
-        </div>
-   
-      </div>
-      <div class="vote_versus_result_history">
-        <p class="text">지난 21대 선거 결과</p>
-        <p class="name">홍길동 <span class="font clan1">더불어민주당</span></p>
-      </div>         
-    </div>
-  </section>
-  <hr class="cluster_line">
+  <hr class="cluster_line">  
   <ul class="candidate_caption">
     <li>선거구가 변경된 지역의 경우 지난 21대 선거 결과를 제공하지 않습니다.</li>
     <li>
@@ -588,11 +780,21 @@
   </div>
 </footer>
   <script>
-    candidateSelectActiveStyle();
+    voteVersusSwiper();
+    voteHideGraphText();
+    voteSwiper();
+
+    xScrollActive({
+      box: document.querySelector('.local_nav'),
+      list: document.querySelectorAll('.local_nav li a')
+    })  
+ 
     fixedTabs({
       fixedTarget: document.querySelector('.three_depth_menu'),
       fixedTop: document.querySelector('.three_depth_menu').offsetTop
     });
+
+
   </script>
 </body>
 </html>

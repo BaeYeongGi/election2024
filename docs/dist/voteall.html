@@ -1,0 +1,2499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+
+
+  <meta charset="utf-8"/>
+  <title>제22대 국회의원 총선거</title>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, width=device-width" />
+  <!--CSS -->
+  <link rel="stylesheet" type="text/css" href="../dist/css/election2024.css">
+  <!-- JS -->
+  <script type="text/javascript" src="../dist/js/swiper-bundle.js"></script>
+  <script type="text/javascript" src="../dist/js/election2024.js"></script>
+
+
+</head>
+<body class="body">
+  <header id="header" role="banner">
+	<div class="gnbWrap" id="type2">
+		<div class="gnb">
+			<a href="#" class="nate"><span class="hd-img">네이트</span></a>
+			<a href="#" class="service">뉴스</a>
+		</div>
+		<div class="relsvc">
+			<a href="#">스포츠</a>
+			<a href="#">연예</a>
+		</div>
+		<div class="searchWrap">
+			<button class="srchlink" aria-expanded="false" aria-controls="search-field" aria-label="검색창 열기"><span class="hd-img"></span></button>
+			<!-- 검색 레이어 열릴 때 -->
+			<form id="search-field" role="search" aria-labelledby="search-keyword">
+				<fieldset>
+					<legend id="search-keyword">뉴스 기사 검색</legend>
+					<input type="search" type="text">
+					<button class="delete hd-img" type="button" aria-label="검색어 삭제"><span class="hd-img"></span></button>
+					<button class="srchbtn" type="submit"><span class="hd-img" aria-label="검색하기"></span></button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</header>
+<div class="gnb_container">
+  <div class="gnb_title_wrap">
+    <a href="home.html" class="logo"><h1>제22대 국회의원 선거</h1></a>
+    <button class="gnb_share" aria-label="공유하기 버튼">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAsCAYAAAAwwXuTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMuSURBVHgB1VoNdeMwDFYPQRksEMpgYbAyWA/ByqBl0DHoMSiEbAg6Bh6DjMF39kWpFS9pEv8t972nl9dGT/Jny7LseEUBALDWj1LLo5ZCy0bLmsUHX1o++fmh5V3L22q1+qKc0MRKLZWWGnlw0bKl1DBOtCjHeaXlpOVJywOaUfW1v9ayYVsHti1hfD9TbGijheOs5gZ4k5npe+d07NX8TzGgDe1hQ9E8X+iH4BA1bdlTCLSBo+i1U44Rm9AmM6Jn0a4j+cAh92OjNgSOLD+SgpwJg0daKDgh1bNIOj2zoYUDzZLVYj+mXIgeWVxYDkEMSn03u3L6NThTInBYFRQZnAQNqiGFHSuoFA1gH6XwETUjoykS2ujb9ikofhm/Uug2ovVzTUCyDVXlvtj2vkgAnucq1VQQo1jKPy+pR89pRDKSaEpIOxc5bFoUlAnwWcOm2V2LjLqW4VlRZjBJJCBZsc2nX9RsVg3eKDP0RtZsan/zzwNCi2eLD36WHbaUETwPCw4pWT0F5wERlRe5uCcry5jECyczhXGUFADuOAMl02r0rRA7OqH/aEOx9L27UgAgEg21Fiky0N0oG1Q8ig8D+n+EbowwbXilIOg01oRlMaK/E/oHigBJMGqIws5pY3f0JAzd7U4scp0QVfzjgQKhbbyyLYUJRQO6i30UcsKuwVWWaUHLBKbuyay+LNdOFBGQxQvsPsrbCbob5dEEgfQF9+HGCRFKNdhTrtHGOuSib5nYR3WLSnQ3irOdwS6qmBiaSszTVGsvOnwE49kTHXZCn2foKiDZqUG75Fzkn22qrskDaL4lTBqNObqebVG38Bx4Eauizw4xeqrvZZts6pQ9nApO8noeUqpYIeq6lAOwmfx6T0muZ/9NqGJOkYHu5rOkhQPdY49pp/GwlYDpkcV+n+Ds71fLCpKLDFcn0vwKdYfkGch3rHinTabyeg0mJwzKnblCpsPhCW2J9zmds+tV9No/ojlGlEfsiO/HHwXFBr7fdmidHdAUCiajhV4jKdjWCf3XSLLclzH15AV5UDNRr0/pKwoAmtEyjkuy17gKCrvK1V7j+qTmtP095CrXXweDg+oiZHa7AAAAAElFTkSuQmCC" alt="">
+    </button>
+  </div>
+  <div class="vote_state_wrap">
+    <dl class="early_vote">
+      <dt><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAAAcCAYAAACERFoMAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQySURBVHgB7Zr/VdswEMe/4fE/6QSoEzSdADNB0wmSTkCYIGECYIKECQgTYCZomAAzAekE7h0+k/PFP2Q7oYXnz3t6RtJZlnSn00kB6Ojo6Ojo+Jj0yirjOJ7R44jSWoque73e2shM6TFTRWOSuZG6Eefhz5re/Snvxqo8ovKvUt6nxy3ac0Vt3kmbjh4jtOeG2ox0AbU9lLYHlJwUrySxfGjkC+eTOUQ5J5QClV9gozwfnHm/ishDpl+zzSIW6m+H7CQ1JYSMQYyADWuQIzeQNCY5NpxzeHJQUd9HR1Puka8sy0RWlRdVK8wq7A/q8YCs5TpkXWSErKXXWb0p7FquUJ8H7AlSQICN+2MiJOPm5xckHuJS1bPStrabPKoU5nTGp0EjHyJxE69Qp8bIKmxJMheq/pLSE+rRt/307NuN6WdP+lC6h8gY5qp+pscgOJNnt5cayDOlFbXD280QmzHoWKGQQoXJ5q6J0J6qjb3J5Ds0238u8H5kXKPMrXWXXt7rwPcjaKkwsczAFLMreJIN+jOxRHa1cHDxWzwIr072Ik7VR77eq8wlfjP5Ffy4kuPAMo1+RFmXBfKOEiuNLZ7D7EjKZ/AjQnYf/Ofw5Mt49JjTyNDCijqFJ2UK84lw8uiniTo9oecPbK+sFbbdH+8dEaVTPsuI0n15Rk04MEjPQPS3nkw77oDq9Xn1xNQPxCCZFbX5atj0ZMNlZfC4HPIJKZ3bs1sjxFVZBjly0zifOaX7nPIndoHsx8VFWKbSbuYd9T0X74a5xxjqMi2YyxNKZ/IdTiNKxwWywziZuzQFuv6w4CUWcjlVt1T3vcLfrlWycPh9od4/p/YesbHCq5yI68MiRuEKqnlfgwdHOlPkEouiOYdkcstO5hN1NcWHxwjJJrxUoe0bVLYguVDa9VVWiPb47sltCNDgyGFY6MyWwuIkYhujGI7sHmiil6iAZE6lPU49Wbkru0LFh/+CByLrvUl7co3NxHDb+pzF45yYvN4aAmwCJRuaR6hPGgPkklGYTO69kQmRWKPuNPvWledmyStnrPIBGt4yiMLvsTteD71iQGv5RmRk+EL6WfXBuvpI1xvYExVOfgGlF+aHqiMzepzlfIAtnzs5xGZ5swxb4a4tXTNTf9e6YfmP4Mtfhx2iV1hehDNLVxEplBWnrZvD3Qn2xHsFH7Jq9Z5tDTbQESVyrp3Mqtv6yWSXlJ3DFnrSuBPUMY7ytJL4TFJ3817muBUfAvnWuEJG14coP1RzhDpAeZuuon5o8mGJbBOPFOWWqrPES1xy3R8nVyzMmeSn5iwyMvLzeDccowKSGZt35g3eactItf0UtyczBr3CFtj8Clq2Al6jufRE/wl4wW4utlP2ut++KYwU4BtWW0XZ37weTb2+H2xD3d/ivJB/E7jDfuAtpG6UaHlER0dHR0fHJ+Av4qrVzTV9lH8AAAAASUVORK5CYII=" alt="사전투표일" /></dt>
+      <dd>4.5-4.6</dd>
+    </dl>
+  </div>
+  <div class="nav_wrap">
+    <ul class="nav">
+      
+      
+        <li><a href="home.html" ><span class="name">홈</span></a></li>
+        <li><a href="news_type_A.html" class="active"><span class="name">뉴스</span></a></li>
+        <li><a href="photo.html" ><span class="name">포토</span></a></li>
+        <li><a href="survey_type_A.html" ><span class="name">여론조사</span></a></li>
+        <li><a href="talk.html" ><span class="name">말말말</span></a></li>
+        <li><a href="guide_type_A.html" ><span class="name">선거안내</span></a></li>
+        <li><a href="candidate01.html"  class="new"><span class="name">후보자</span><img class="badge" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAYAAABzJ5OsAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA1FSURBVHgB7VprbFxnmX6/27nMzMn4knEuddOsaxLWbtoEb3+tdmNWWtj9sWJ3WcMCq16ohMQWuoVdVK20rMe7QiDuUC6/EPeiYoSQqMRF/JhwERKtS0qxKalrQpvEiSfxbTxzLt+N9xuPk3GTuPY05RevNZozc+ac83zv916f1wB/EgC7/iLWWtL6TNrOkc0/tnAjhEKn0gbAgSu7e40jSELIePN4nOD31K4/o3k8DuPuMxkvl/HdEniZ0ukNyAb0MoyT4bEJUhoaJdFjleb95gaGCEzPQCEbJAc8zz6fZeTAMc8mczN42QjUoilbLYEdmwRbbt1norV5KG792wMBOxMyjhotT0zA5BhsAlyLDjI/VaQWSboXP58/D+D19JIVqcnuXgDpM5utXLK9HrW1Nd+UFk6bGRiCgXDGzk2BmYbmQtx2bNumtg2+ZRpkGMZICSZJNAJkA3Dq72JhmNE4VlSzgDFtSIyvYmiJjoldw+tDRm2aNky+B8Ff9PRNxZqWXr8t6im9sjBi3G4AjEKlUjFl5ziEvOQitgTf2kLnhA46qYyeoFGtRop9K7S6nFBDEy5FgaGOuZdpWs9zLrimatVQkxcMkqR5H48Sy3lqlMobKVKTJ56KdaKZFlpIX1NTV6nPbXUhZ0p9M2b0+Lgp43UTExNmK3x8q5OXgZcJqaDDlUpDNA8NelbcJKr+WdYFwl3PqdFijStOUstBcmaE5UEiiQ58ypW0uDkWaM75rNoFBb2SNBQEgcIlKwlaQtduVlrOlF9c1cvhIKmcQA+ogGlGqXUF2p1p3rp4QAjaNl2aG6E3o7b7WJEtVH/HPRsKlisKxROPK+JRo4S0VFBOhbZEWGKZZxiakCROP7g4YygxxFINwqg0TmXAchnuj1TKZkVuMiOkpDRQfKGuFvryOoz7dbVUQqeeNC2Qdvuady6PoW/pMaB/g8B/frbGRZ/h6IUeEYlHVd3zMggyEGjkntfz6jt6Dtz1zuPhgcFjQW/pDuqHe9pvpxu151Sjcb52auZnpx/57Inl6acWMYim1KPJxUSmXkoSIWimukPSx+qwEJ6B0mRFl5sKtuZaeibX0TrBmEJG0cb7w5DN6bOcXlrjuV7iqwR8KUQINg2o5WF06PbeQw/+75sLg0NvpJznYZuSzL/wg99/+eEvnPvhd543hMZGydgGJAkZSXLSZLAUy40dqBxHJy5f7cTXBO+McxLPDY0Nsbm5JR52h6IXdVQjNqDChAlheZrJ8NinHn1r8bbX3EO52DboTc/Ram356amvnHzv3Y9orRuMsYbUqoGmlwjfZHHQLZMwVqVqn3FRCD1hkwOzawB3CyLJCLCiyjPoCoTJmAcy9gVjIfpjITp0bM9ffPqRh6JXDb+FUDzXoRBKvXBv/537/vYNN60++9S0Oj+f+sZYnSMgZGwKdYIhdA32XviVPTUP9sSLr78K/DjQygmg8ZlBFvZ7Ik1XPRHmQip4aDOV7xk+unf4Q1/4DM8XBuEGilyrPTfzvnvvX3pm6oI0tI5BqG4KNtlne9Kzcw0V9s/q0Qro9iS2qbZpFlUzQKoLQ7Tv1XWmagnjoRBKpRiYk5BSkzv83x95740G7kQUolsPv/9j76GU5ai1oWXU1yn3Fi69wLtKCT1VgWYAaS/yNhdmrqZAYy/ckpFkaReLIy4sDX0KXoCngjs++rW3BfsPvA5eIQn23/L62z/+9bd6QgSB5wXcMMH3lYTL4DcPrltEe8S8DL65IlzZ1DtGaBdmz6pImaeZ0Kh1PBv0/90bD+46MnIPvMJSvG3k7ujPj+zO8Jkac0i6krp8wrpKgNl9BEsUcm3NT04ACX4akzwWVxHWKCHJeIgJiBnl3XzX/fdRxjuKKjsRwnhh4F3/82aWKA/DiW+YYsR6PB/dToM4dvUVbAK/0UCURoHk+xo0XokYxnGeCcyYzPeiI0d7cril133i4xWA+0avvL72yat/8+EHN/9mC4ledds/R8MjvdQ6xXHhZYrGrMGez2YIjI01o6H73UaGtWWMMqMYi+ZdlRhiRk81o4HPMXuLW/7t3ce3fNq50wBPtAUyd3znKMDho1e+++3Jzb/ZQpz2/+yuf//rxYfeMenRlIEGjkqXXaV+WqlOko2av6l5d1CeWL8Qq0OSpjmqlE8tBnVOGIsGh/8KdioP/hMW+cvQqYQHbz1KOREZcKxcscC7tITaPgPO7p3ZOx9tt3nrQmQt6qZ+tkQjbihjCbVJhqkp3As7Fbcbn5+ATsXv6TuKdRu1BKvUtMbSsEDz9T3reLEhcm/t4MlAGFpYqEKMFfeaRvDulfOZiHYNQCfydbT9JyrQibAg3COJcY0NVh8+4sgTbM4gGBhoAnfJah18q5meG4jJSncPYdgBBfhZoiNr+TIb5fff27H5YFtAFGLActo2u7Ooi8L0tOtSmufXo03LewfmQlsU7HIW8ASAwr8dy2v/8crxyzQfgRgyY8ka9pKXsY2Pw2XwTsr4RYCad8eu7wRUvcUOiJHtN8RXwL9h8wKc+fz2KdipUKqNTlSzksTaBHFUIcGGfZPmm4JfOGoiW7xkw2LdKon9D3aXrvsxSXwBdir//0WA/QevfN6h6Zh6bdYYYgTxLXdYWB2xUetoFadoZ+obodJiaQC1KUxNglrNipYLajDF4uVUJ4vVnast6gL4vy9CpyIbjQtYWClplMbwp12ejfLCONNG6sUF+iuaR8Xb6hjYxGM2QYpCSGZ8gu0zGBWfnv0ldCIuUb3tQehEVmenf6Jw14mguP9c78487b7/LlIk5Rat2F6YATJYUEIKgkpPX1KZRp5FWSzNZr/yuR8jb1GHTuSd45vNZ5ty5quf/zHTaWZBKy9jZoEj7zPP7XBpzLqOylnLpsKs3ExUOROGntmLnQdWD8pPIG2cmrpUn/3Nt6AT6cB8sL/9/vIzTyxmlimsUnSsEn1TXNPVXM4gm3A5gFxhcl1xhnY0NTLCz8E5QUPh51PqG6Hz1GNR4fDI/pHPPvooVguFq57mnLHdIR1g92oXFzLb5Tq74fra33zoobcv/Ojbz5qM16xeXauluVSGKi35g3L0+HFDWmTUpgTUivf0e4ODHHrBBw/8yJgQ81xeWRUd+/Sjd3UfvfN+eAVl+alffObJd//rVymzqxgy6jJJGmsizbwLXdnasVn1pm9avVHSbzKbVn9o+4qzaOKzKmRKqgxpCMgSTkj8+H+MPZKce+EH8AqJu/eTD7zpGxQZBExMKQY6aXVD0URoh2kaWeW2XuRFbeB6mWBrEdjTK6BXkEfEojjD1JwKmcXIOTae/sB/flLV12bhBovBe8588D2fwO6pAciG5/GZaYqqk57iyN+MTIEu281Tiat7WJQK8oRH+kd1UaRy2TSUTFSWGpu4G6/8+hcXTr7v3gdu5A64e538r3vetTj1xEKICoLYJqvUlxfx2d5qqP8eiadmSfAi3n4LxoyQf0Du5ty+fSKcdxyQ79mIBtT4oeI2ZxXLH334G2/pOvKau6/pxNuQddLpl19+Gs0Ri6+GbkgknOIYRDe2rotpsC+Q84/Ny3NYsbyYcLo++Jb52zGCzNkQG4iX+BIuINfb42cZ8pS4AKw4Q0dR7Hndv9wycN8Dbw/23/z67YJGaq/uQu+pT0xMrj775EWjSGwI0n2xwd01iaBplveWsqczUN0DYMa+icDJZZ98SfCwPjNCansUCahwkKmFOgshETLne7uMQCY4CAzNfHywzyn4AnvOAWzdug7d9pc0CPchr3Zr+/001kdy8eLJ2ulnT/7+Sw+fqM2eXAQpESzPUm5TizZeQKamWkuk03gyN6/GhrEBnFwnWck1WOKthwu4AEc1lHGEMw3rvCUOCbhX6BPpaiI8j3paZB7GUmzUCVbQDHtizSW+U0dqY2ywrao00xopZqqc3rFgwi6ByRwX2RoGFkU9ydA5k8VEZvVAwa4zGhA4ZnzTaliviW/r4YIjqNYvpmWY0T/D9Rw6eNCscGuLedRKLcZO10MgnGspBaOq2fmAl+OImhJuiZRYk2Mqx0kBpgtrUszazvXBcrUMSmqDCSTCpmFll/JTrk6dOa27cYXTWGeNNUFcX78MXkqwYjvhFoCcTg2PDh5dtrbQbQvP4GwAMqtMrF0BlUP2O7ZGu+5F20xi64mjEXdgsyyDtEBZqnHbPJwtKMJT5ppjI7IwTiTanTyfPqf2vvZWk0zNm7FxsKMTLz1c2/5ArcXtNKkGNKOpOaALK0AdHYGhgYVRkcapommoaIbzKZ6zpBmCsANaKxRANaj1vIaJ4zXj+7tNWFsxtZAbvpJvJqARdMzy0Hiz3L3eJKRj8FctBNfgRj6Y9cjwEFA3c3WEqKNO4Nw81A6XmjkE5z1ECoIFHzbPCHb3wEGbPj5vS1hkVXF4Vq00zaOZ2XcyxuwY/Ma1G0+abCU7bI3JfhxxdsdDpDlfxff1X8zgvBXsFA6QD0WRxUEB+iNYN3udaKZ1siPQN1w2hhL2yotuHOPgeX1s3/YdvDzF/RGl/f8UbtA/TTj5Azl/8sF4tG48AAAAAElFTkSuQmCC" alt="new"></a></li>
+        <li><a href="#" ><span class="name">투&middot;개표</span></a></li>
+      
+    </ul>
+  </div>
+</div>
+<div class="dimmed"></div>
+<div id="sns_share_pop" style="display: none;">
+  <div class="sns_share_layer">
+    <button type="button" class="btnClosePopup">닫기</button>
+    <div class="title">공유하기</div>
+    <ul class="sns_btns">
+      <li><a class="no" title="새창으로 이동" id="sns-no" href="javascript:;">네이트온</a></li>
+      <li><a class="kt" title="새창으로 이동" id="sns-kt" href="javascript:;">카카오톡</a></li>
+      <li><a class="fb" title="새창으로 이동" id="sns-fb" href="javascript:;">페이스북</a></li>
+      <li><a class="tw" title="새창으로 이동" id="sns-tw" href="javascript:;">엑스</a></li>
+      <li><a class="ks" title="새창으로 이동" id="sns-ks" href="javascript:;">카카오스토리</a></li>
+      <li><a class="bd" title="새창으로 이동" id="sns-bd" href="javascript:;">밴드</a></li>
+      <li><a class="li" title="새창으로 이동" id="sns-li" href="javascript:;">라인</a></li>
+      <li><a class="lk" title="새창으로 이동" id="sns-url" href="javascript:;">URL 복사</a></li>
+    </ul>	
+  </div>
+  <div class="modal_backdrop"></div>
+</div>
+<script>
+  document.querySelector('.btnClosePopup').addEventListener('click', (e) => {
+    e.target.parentElement.parentElement.style.display = 'none';
+  })
+  document.querySelector('.modal_backdrop').addEventListener('click', (e) => {
+    e.target.parentElement.style.display = 'none';
+  })
+</script>
+
+
+<script>
+  document.querySelector('.gnb_share').addEventListener('click', function(){
+    const layer = document.querySelector('#sns_share_pop');
+    layer.classList.add('active');
+    layer.style.display = 'block';
+  })
+  navigationEvent();
+  setIOS();
+</script>
+  
+
+
+
+
+  <ul class="menu item4">
+    <li><a href="turnout.html" >투표현황</a></li>
+    <li><a href="expect.html" >출구조사</a></li>
+    <li><a href="voteall.html" class="active">개표현황</a></li>
+    <li><a href="live.html" >생중계</a></li>
+  </ul>
+
+
+  
+  <ul class="three_depth_menu">
+  <li>
+    <a href="voteall.html" class="active">
+        종합
+    </a>
+  </li>
+  <li>
+    <a href="voteregion.html"
+    
+    class="disabled"
+    >
+      시도별
+    </a>
+  </li>
+  <li>
+    <a href="ratio.html" >
+      비례대표
+    </a>
+  </li>
+  <li>
+    <a href="counting.html" >
+      지역구조회
+    </a>
+  </li>
+  <li>
+    <a href="myregion.html" >
+      내지역조회
+    </a>
+  </li>
+</ul>
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">정당별 지역구 1위 의석수</p>
+      <a href="#" class="more">더보기</a>
+    </div>    
+    <div class="vote_swipe_buttons">
+  <button class="active">22대 (254석)</button>
+  <button>지난 21대(253석)</button>
+</div>
+    <div class="vote_swipe_container">
+      <ul class="swiper-wrapper">
+
+          <li class="swiper-slide">
+            <ul class="graph_bar">
+              <li class="bg clan1" style="width:64.5%">
+                <p>64.5<span>%</span></p>
+              </li>
+              <li class="bg clan2" style="width:33.5%">
+                <p>33.5<span>%</span></p>
+              </li>
+              <li class="bg clan3" style="width:1.6%">
+                <p>1.6<span>%</span></p>
+              </li>         
+              <li class="bg clan4" style="width:0.4%">
+                <p>0.4<span>%</span></p>
+              </li>                
+            </ul>
+            <!-- * TEST UI:: START
+              -- 아래부터는 경우의 수 확인을 위한 UI 입니다(테스트 
+              -- 반영 X)
+              -->
+            <ul class="graph_bar">
+              <li class="bg clan1" style="width:50.7%">
+                <p>50.7<span>%</span></p>
+              </li>
+              <li class="bg clan2" style="width:30.3%">
+                <p>30.3<span>%</span></p>
+              </li>
+              <li class="bg clan3" style="width:11%">
+                <p>10.2<span>%</span></p>
+              </li>         
+              <li class="bg clan_independent" style="width:8%">
+                <p>8.8<span>%</span></p>
+              </li>                
+            </ul>     
+            <!-- * TEST UI:: END -->       
+            
+
+
+
+
+
+
+
+  <table class="vote_seat_table clan_dotted">
+    <colgroup>
+      <col width="35%">
+      <col width="37%">
+      <col width="28%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th><span>정당</span></th>
+        <th><span>지역구 의석수(석)</span></th>
+        <th><span>비율(%)</span></th>
+      </tr>
+    </thead>
+    
+      <tbody>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan1"></span>더불어민주당</p>
+          </td>
+          <td><span class="highlight">103</span></td>
+          <td><span class="highlight">30.7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan2"></span>국민의힘</p>     
+          </td>
+          <td><span class="highlight">100</span></td>
+          <td><span class="highlight">20.3</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan3"></span>녹색정의당</p>           
+          </td>
+          <td><span class="highlight">100</span></td>
+          <td><span class="highlight">20.3</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan4"></span>새로운미래</p>   
+          </td>
+          <td><span class="highlight">5</span></td>
+          <td><span class="highlight">8.8</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan5"></span>개혁신당</p>  
+          </td>
+          <td><span class="highlight">5</span></td>
+          <td><span class="highlight">8.8</span></td>
+        </tr>           
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan_others"></span>기타정당</p>  
+          </td>
+          <td><span class="highlight">1</span></td>
+          <td><span class="highlight">0.1</span></td>
+        </tr>        
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan_independent"></span>무소속</p>  
+          </td>
+          <td><span class="highlight">12</span></td>
+          <td><span class="highlight">0.1</span></td>
+        </tr>                         
+      </tbody>
+    
+    
+  </table>
+
+
+    
+            <p class="vote_state_text">254개 선거구 중 200개 선거구 개표 준비중</p>               
+          </li>
+          <li class="swiper-slide">
+            <ul class="graph_bar">
+              <li class="bg clan001" style="width:64%">
+                <p>64.4<span>%</span></p>
+              </li>
+              <li class="bg clan002" style="width:33%">
+                <p>33.2<span>%</span></p>
+              </li>
+              <li class="bg clan00_independent" style="width:2%">
+                <p>2.0<span>%</span></p>
+              </li>         
+              <li class="bg clan003" style="width:0%">
+                <p>0.4<span>%</span></p>
+              </li>                
+            </ul>     
+            
+
+
+
+
+
+
+
+  <table class="vote_seat_table clan_dotted">
+    <colgroup>
+      <col width="35%">
+      <col width="37%">
+      <col width="28%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th><span>정당</span></th>
+        <th><span>지역구 의석수(석)</span></th>
+        <th><span>비율(%)</span></th>
+      </tr>
+    </thead>
+    
+    
+      <tbody>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan001"></span>더불어민주당</p>
+          </td>
+          <td><span class="highlight">163</span></td>
+          <td><span class="highlight">64.4</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan002"></span>미래통합당</p>      
+          </td>
+          <td><span class="highlight">84</span></td>
+          <td><span class="highlight">33.2</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan003"></span>정의당</p> 
+          </td>
+          <td><span class="highlight">1</span></td>
+          <td><span class="highlight">0.4</span></td>
+        </tr>  
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan00_independent"></span>무소속</p>              
+          </td>
+          <td><span class="highlight">5</span></td>
+          <td><span class="highlight">2.0</span></td>
+        </tr>                     
+      </tbody>
+    
+  </table>
+
+
+    
+          </li>          
+      </ul>
+   
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <section class="section vote">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">지도별 1위 의석수 <button class="info"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="10" cy="10" r="7" stroke="#E1E1E1"/>
+  <path d="M9.38995 13.58V8.41H10.74V13.58H9.38995ZM9.38995 7.6V6.44H10.74V7.6H9.38995Z" fill="#7C7C7C"/>
+  </svg>
+    </button></p>
+      <a href="#" class="more">더보기</a>
+      <div class="map_info_layer_popup"><p>지도에서 지역은 1위 의석수/당선자수가 많은 정당 컬러로 표시됩니다. 정당별 1위 의석수/당선자수가 동일하거나, 개표 준비중일 경우 회색으로 표시됩니다.</p></div>      
+    </div>      
+    <div class="vote_swipe_buttons">
+  <button class="active">22대 국회의원 선거</button>
+  <button>지난 21대 국회의원 선거</button>
+</div>  
+    <div class="vote_swipe_container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="map_wrap">
+            <svg width="263" height="416" viewBox="0 0 263 416" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path data-local="local49" d="M83.58 385.09L77 386.5H70.5L55.5 393L47.5 401V408.05L55.5 416L64.06 412.2L82 412L84 407.5L93.5 409L102.5 406V400L105 396.5V390.5L100 385L83.58 385.09Z" fill="#DADADA" />
+  <path data-local="local29" d="M54.89 297.34L50.5401 293.25L44.89 296.98L43.8 304.63L47.5 305.65L49.68 310.6L59.73 307.36L62.84 309.25L67.6501 306.36L68.7301 300.82L61.0601 293.27L54.89 297.34Z" fill="#DADADA" />
+  <path data-local="local46" fill-rule="evenodd" clip-rule="evenodd" d="M107.89 286.65L108.02 295.66L121.48 309.5L119.99 318L110.99 319L114.49 332L120.49 328L121.49 337L128.99 347.5L122.49 348L121.49 341L117.49 336L112.99 339.5L111.99 344.5L107.99 341L111.99 334L107.99 321.5L97.99 327L96.99 333L94.99 335.5V338.5L102.99 345.5L96.99 348L100.99 355L103.99 359H92.49L88.99 353H78.49L81.49 347.5L88.99 349.5L86.49 343L92.49 343.5V335.5H82.99L79.99 340L73.99 341L66.99 351V359L56.49 361.5L50.99 349.5L48.11 362L39.49 366.5L37.99 373.5L32.49 375.5L28.99 364L27.99 353L19.99 349.5L15.49 343L19.99 334L26.99 327L21.99 315L30.99 307V304.5L23.49 298H17.49V290.5L23.99 287L25.48 277.04L30.07 278.05V282.08L35.16 289.03L50.33 279.11L50.46 272.98L52.51 272.08L63.37 279.5L70.43 275.91L76.04 285.35L85.63 283.66L95.75 287.35L101.1 283.57L107.89 286.65ZM62.82 312.75L70.34 308.25L71.97 299.81L61.43 289.43L55.21 293.53L50.86 289.44L42.1 295.21L40.45 306.81L45.32 308.16L48.02 314.29L59.34 310.64L62.82 312.75ZM7 362.5L11.5 355.5H18.5L21.5 362.5V366L16 368.5H2.31L0 364.5L7 362.5Z" fill="#DADADA" />
+  <path data-local="local53" d="M33.08 281.1L35.91 284.96L47.37 277.47L47.51 271.01L52.84 268.67L63.61 276.03L71.58 271.97L77.57 282.04L85.92 280.57L95.31 284L100.78 280.13L108.81 283.77L113.83 275.75L107.6 264.87L112.64 258L112.77 246.61L128.39 236.66L126.92 225.42L116.66 225.07L103.66 228.19L94.82 223.68L90.51 218.08L89.45 217.66L77.35 224.44L70.8 215.97H60.91L60.64 216.42V223.43L51.28 228.12L43.05 227.66L39.5 232.5L41.5 236H48.5L51.5 245L39.5 244.5V251.5L31 259L49 263V265L33 269L26.79 274.25L33.08 275.64V281.1Z" fill="#DADADA" />
+  <path data-local="local48" fill-rule="evenodd" clip-rule="evenodd" d="M208.16 289.52L198.74 295.4V302.59L196.45 305.67L181 295.5V305.5L174.5 303L172 329L163 316L153 320.5L145.5 317.5V304.5L133.5 314.5L134 328L136 330L139.5 325L145.5 328V337L136 334L133.5 338.5L128 328L129 317L123.11 317.65L124.71 308.5L111.01 294.42L110.89 286.1L117.33 275.82L111.17 265.08L115.63 259L115.75 248.27L130.28 239.02L142.8 241.89L150.17 255.85L166.64 259.95L175.71 260.93L198.87 263.09L205.57 258.82L212.42 258.67L210.76 265.68L215.37 272.28L221.82 274.71L222.81 277.49L210.42 284.62L208.16 289.52ZM192.5 317.5L190 320V322L193.5 323.5V327.5L184 338.5V327.5L178 328.01V326.03L179.25 322.58L185.5 322L185.89 319.68L185.54 315.29L190 311L192.5 317.5Z" fill="#DADADA"/>
+  <path data-local="local26" d="M224.83 279.78L212.74 286.74L210.52 291.59L201.74 297.06V303.58L198.96 307.32L201.5 309L208 304.5L217.5 306L229 294L230.87 279.99L230.45 281.43L224.83 279.78Z" fill="#DADADA" />
+  <path data-local="local31" d="M215.39 259.16L213.99 265.06L217.29 269.8L224.18 272.39L225.79 276.94L231.29 278.55L231.22 278.78L233.5 276.5L242.72 257.1L222.77 249.5L215.39 259.16Z" fill="#DADADA" />
+  <path data-local="local27" d="M194.68 236.25L193.39 228.83L185.87 226.6L172.72 232.77L169.88 250.13L164.85 256.42L167.26 257.02L176 257.95L179.23 258.25L186.89 249.84L194.68 236.25Z" fill="#DADADA" />
+  <path data-local="local47" fill-rule="evenodd" clip-rule="evenodd" d="M255 115L248.5 116.71V120.5L253.25 122.5L258 120.5L255 115ZM240.5 225L235.58 196.75L240.43 182.22L237.5 170L240.43 152.44L232.07 127.76L224.74 135.42L217.61 130.95L199.46 137.74L185.89 132.9L168.37 145.18L167.46 150.6L162.06 154.26L156.1 150.77L129.74 173.49V197.88L142.85 204.99L144.82 212.54H137.49L129.8 224.32L131.35 236.19L144.81 239.27L152.2 253.26L161.65 255.62L167.04 248.87L170.01 230.72L185.63 223.4L196.02 226.48L197.83 236.8L189.22 251.74L182.97 258.59L198.13 260.01L204.67 255.84L214.31 255.62L221.75 245.9L243.48 254.18L250.5 220L240.5 225ZM257 124L258 123L259.5 123.5L258.5 125H257V124Z" fill="#DADADA" />
+  <path data-local="local43" d="M140.94 209.54L140.27 207.01L126.74 199.67V172.11L155.77 147.09L161.94 150.72L164.71 148.84L165.63 143.45L182.42 131.67L155.27 121.99L144 123.92L139.42 118.52H136.67L132.13 127.35H125.78L121.8 122.13L121.07 124.72H112.83L109.66 131.3L88.88 147.84L89.02 147.94L99.95 160.41L90.78 162.99L89.43 165.69L96.74 181.06L104.05 183.37L111.04 191.55L108.08 202.58L117.46 222.1L127.45 222.44L135.87 209.54H140.94Z" fill="#DADADA" />
+  <path data-local="local30" d="M96.66 184.18L90.98 189.65L88.92 199.31L91.43 205.8L93.5 202.27L96.86 201.21L101.68 204.67L105.16 201.87L107.73 192.29L102.33 185.97L96.66 184.18Z" fill="#DADADA"  />
+  <path data-local="local51" d="M94.1 182.48L86.39 166.29L81.64 162.56L79.84 163.46L79.29 171.99L83.05 176.02L83.19 185.3L83.7 186.16L89.13 187.26L94.1 182.48Z" fill="#DADADA"/>
+  <path data-local="local44" d="M57.64 221.57V215.58L59.22 212.97H72.27L78.14 220.56L89.23 214.34L92.39 215.6L96.78 221.32L104.03 225.01L114.35 222.54L105.95 205.09L101.79 208.44L96.33 204.52L95.5 204.78L92.97 209.11H89.5L85.8 199.56L87.82 190.06L81.8 188.84L80.2 186.14L80.07 177.22L76.21 173.09L76.95 161.54L82.01 159.03L87.32 163.21L88.69 160.46L94.56 158.81L86.87 150.04L79.51 144.63H69.38L58.99 145.77L55 150L46.5 140L32 137L24 142.5L27 149.5L22 153L14.5 146.5L7.5 157.5L9.5 163.5H16L20.5 174L22 187.5L27 189.5L26.5 173.5L30.5 174L35 211L36.5 214L42 215L44.93 224.76L50.65 225.08L57.64 221.57Z" fill="#DADADA"  />
+  <path data-local="local52" d="M96.59 39.63L99.12 48.89L107.33 50.72L111.44 61.47L105.08 66.45V81.78L108.88 80.93L130.22 86.4L120.34 92.79L128.23 99.48L122.83 118.52L127.27 124.35H130.3L134.83 115.52H140.8L145.18 120.67L155.54 118.9L199.44 134.54L217.95 127.62L224.27 131.58L230.99 124.55L221.5 96.5L181 45.5L160.5 0L156 14.5L142 25.5H76.5L74.12 27.77L88.08 41.89L96.59 39.63Z" fill="#DADADA"/>
+  <path data-local="local28" fill-rule="evenodd" clip-rule="evenodd" d="M35 87H25.5L24.5 79L21.5 72L24.5 68L29 70L33 77.5L35 87ZM47.6871 89.0358L50.5 94L52 99.5L49 107.5L38 106.5L33 102L38 96V88L43.5 85L47.6871 89.0358Z" fill="#DADADA" />
+  <path data-local="local11" d="M59.49 99.83H63.57L67.17 97.43L70.61 99.63L74.36 97.96L79.27 92.89V88.31L74.31 87.65L71.6 77.9H68.86L66.37 81.28L61.82 82.5L59.9 90.09L53.69 87.36L52.16 88.47L56.7 96.16L59.49 99.83Z" fill="#DADADA"/>
+  <path data-local="local41" d="M80.49 141.63L86.38 145.99L107.26 129.38L110.95 121.72H118.8L124.82 100.52L115.31 92.46L122.83 87.6L108.83 84.01L102.08 85.53V64.99L107.85 60.48L105.11 53.3L96.7 51.43L94.48 43.29L87.17 45.24L71.95 29.85L65 36.5L61 34L55.5 39L58.5 44L55.5 50.5L57 59.5L39 74.5H35.5L38.15 84.72L44.57 81.02L50.27 86.13L53.31 83.91L57.86 85.91L59.34 80.06L64.58 78.65L67.35 74.9H73.89L76.67 84.94L82.27 85.69V94.11L76.11 100.47L70.35 103.03L67.2 101.01L64.48 102.83H58L55.16 99.08L51.64 107.14L55.5 111L54 117H44.5V126.5L53 122V135.5L59.37 142.71L69.3 141.63H80.49Z" fill="#DADADA"/>
+  </svg>
+  
+            <ul class="local_tabs">
+  <li class="local11">
+    <button data-local="local11" data-idx="0"><span>서울</span></button>
+  </li>
+  <li class="local26">
+      <button data-local="local26" data-idx="1"><span>부산</span></button>
+  </li>
+  <li class="local27">
+      <button data-local="local27" data-idx="2"><span>대구</span></button>
+  </li>
+  <li class="local28">
+      <button data-local="local28" data-idx="3"><span>인천</span></button>
+  </li>
+  <li class="local29">
+      <button data-local="local29" data-idx="4"><span>광주</span></button>
+  </li>
+  <li class="local30">
+      <button data-local="local30" data-idx="5"><span>대전</span></button>
+  </li>
+  <li class="local31">
+      <button data-local="local31" data-idx="6"><span>울산</span></button>
+  </li>
+  <li class="local51">
+      <button data-local="local51" data-idx="7"><span>세종</span></button>
+  </li>         
+  <li class="local41">
+      <button data-local="local41" data-idx="8"><span>경기</span></button>
+  </li>        
+  <li class="local52">
+      <button data-local="local52" data-idx="9"><span>강원</span></button>
+  </li>
+  <li class="local43">
+      <button data-local="local43" data-idx="10">
+        <span>충북</span>
+      </button>
+  </li>
+  <li class="local44">
+      <button data-local="local44" data-idx="11">
+        <span>충남</span>
+      </button>
+  </li>
+  <li class="local53">
+      <button data-local="local53" data-idx="12" disabled>
+        <span>전북</span>
+      </button>
+  </li>
+  <li class="local46">
+      <button data-local="local46" data-idx="13">
+        <span>전남</span>
+      </button>
+  </li>
+  <li class="local47">
+      <button data-local="local47" data-idx="14" disabled><span>경북</span>
+      </button>
+  </li>
+  <li class="local48">
+      <button data-local="local48" data-idx="15">
+        <span>경남</span>
+      </button>
+  </li>
+  <li class="local49">
+      <button data-local="local49" data-idx="16">
+        <span>제주</span>
+      </button>
+  </li>
+  <!-- 데이터 준비중일경우 button : disabled -->
+</ul>  
+          </div>
+          <p class="vote_versus_caption">
+            <svg width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_216_7632)">
+  <path d="M15.9482 14.3523C15.9657 14.0507 15.9843 13.7487 15.9961 13.4467C16.0061 13.1815 16.0025 12.9107 15.9129 12.6576C15.809 12.3636 15.664 12.0838 15.4288 11.8658C15.1971 11.6512 14.9193 11.4674 14.6058 11.3873C14.2598 11.2989 13.8807 11.2871 13.539 11.4012C13.4987 11.4147 13.459 11.4282 13.4198 11.4424C13.2684 11.2469 13.0809 11.0788 12.8671 10.9574C12.5879 10.799 12.2794 10.6998 11.9549 10.6832C11.6296 10.6665 11.3211 10.7352 11.0234 10.8565C10.9912 10.8697 10.9598 10.8846 10.9291 10.8995C10.6924 10.6967 10.4089 10.5445 10.1119 10.4717C9.88407 10.4159 9.65593 10.3902 9.426 10.4013C9.48312 9.53872 9.54453 8.67648 9.61094 7.81493C9.62451 7.64089 9.61665 7.47309 9.59452 7.29904C9.57417 7.13922 9.5174 6.99014 9.45813 6.84036C9.41957 6.74329 9.37066 6.65072 9.31104 6.56439C9.22142 6.43368 9.13002 6.30506 9.0147 6.19446C8.6059 5.802 8.04179 5.5184 7.45447 5.53747C6.89465 5.55584 6.34375 5.75277 5.9403 6.14003C5.71716 6.35394 5.55756 6.589 5.43653 6.86914C5.32442 7.12881 5.30621 7.41207 5.29408 7.68943C5.24088 8.89698 5.1991 10.1049 5.15162 11.3124C5.12806 11.9146 5.10449 12.5172 5.08021 13.1194C5.06843 13.4152 5.05915 13.7105 5.04522 14.0056C4.86564 13.8523 4.68427 13.7005 4.50646 13.5452C4.32366 13.3853 4.14943 13.203 3.92915 13.0917C3.68458 12.9679 3.43109 12.8837 3.15189 12.8771C2.87162 12.8708 2.62241 12.928 2.36463 13.0272C2.16898 13.1024 1.98404 13.2234 1.82873 13.3593C1.6163 13.5459 1.46991 13.7639 1.34995 14.0132C1.10217 14.5294 1.17858 15.1296 1.44135 15.6247C1.53739 15.8053 1.65878 15.9721 1.77232 16.1426C1.89799 16.3312 2.02153 16.5212 2.14399 16.7116C2.63027 17.4677 3.10297 18.2329 3.62031 18.97C4.13622 19.705 4.68248 20.4264 5.33156 21.0567C5.65896 21.375 6.01242 21.6746 6.39195 21.9329C6.77361 22.1929 7.1917 22.4054 7.62299 22.5763C9.25748 23.225 11.2208 23.129 12.7642 22.2861C14.1431 21.5331 15.1913 20.2222 15.5712 18.7273C15.6369 18.469 15.6851 18.2055 15.724 17.942C15.8915 16.7535 15.8786 15.5477 15.9486 14.3519L15.9482 14.3523ZM12.4515 20.898C12.1459 21.0952 11.8195 21.2589 11.4771 21.3875C11.0858 21.5175 10.6813 21.6038 10.2697 21.6451C9.85158 21.6708 9.43278 21.65 9.0197 21.5827C8.61125 21.5005 8.21423 21.3736 7.83542 21.2044C7.43805 21.0089 7.06959 20.7676 6.7272 20.4906C6.03492 19.8974 5.45438 19.1887 4.92491 18.4565C4.2619 17.5222 3.67601 16.54 3.04371 15.5865C2.89304 15.3594 2.72595 15.1372 2.61527 14.8883C2.60099 14.8401 2.58921 14.7912 2.58064 14.742C2.58064 14.708 2.58278 14.674 2.58599 14.64C2.59742 14.5995 2.61099 14.5596 2.62705 14.5201C2.65062 14.4806 2.67668 14.4424 2.70453 14.4057C2.73916 14.372 2.77522 14.3402 2.81342 14.3103C2.85484 14.2868 2.89697 14.2649 2.94088 14.2458C2.98087 14.2351 3.02121 14.2264 3.06192 14.2195C3.09226 14.2195 3.12261 14.2212 3.15296 14.224C3.17867 14.2313 3.20366 14.2393 3.22865 14.2483C3.27649 14.2764 3.32183 14.3079 3.36575 14.3422C3.63674 14.5721 3.90308 14.8082 4.17335 15.0387C4.48433 15.3043 4.79566 15.5699 5.10663 15.8358C5.19696 15.9128 5.28586 15.9859 5.40261 16.0237C5.55114 16.0716 5.7093 16.0632 5.85461 16.0123C6.12167 15.918 6.28198 15.6916 6.31197 15.4198C6.3691 14.8983 6.42301 14.38 6.438 13.8555C6.453 13.3264 6.47835 12.7973 6.49906 12.2683C6.54083 11.2053 6.58367 10.1427 6.62366 9.07969C6.63509 8.77737 6.64651 8.4747 6.65865 8.17238C6.66472 8.02364 6.67115 7.87526 6.67757 7.72652C6.6815 7.63604 6.68364 7.5452 6.69364 7.4554C6.70721 7.40617 6.72363 7.35798 6.74291 7.31049C6.77361 7.25813 6.80789 7.20821 6.84502 7.16002C6.8925 7.11252 6.9432 7.06849 6.99676 7.02723C7.06102 6.9891 7.12779 6.95477 7.1967 6.9253C7.2656 6.90554 7.33558 6.88994 7.40663 6.87954C7.4659 6.87884 7.52516 6.88162 7.58443 6.88786C7.64298 6.90311 7.70011 6.92184 7.75616 6.94402C7.8315 6.98459 7.9029 7.03035 7.9711 7.08132C8.02287 7.1302 8.07106 7.18221 8.11569 7.23733C8.14711 7.28795 8.17496 7.3403 8.1996 7.39404C8.21495 7.44674 8.22709 7.49978 8.23566 7.55387C8.23994 7.75842 8.21138 7.96679 8.1971 8.1696C8.17925 8.42443 8.16139 8.67925 8.14354 8.93408C8.10784 9.44892 8.07178 9.96377 8.03608 10.4783C8.01573 10.7695 7.9943 11.0604 7.97609 11.3516C7.95931 11.6193 8.12533 11.8717 8.36883 11.9861C8.62375 12.1057 8.91473 12.0606 9.13145 11.8848C9.14609 11.873 9.16144 11.8623 9.17643 11.8509C9.22606 11.8221 9.27712 11.7961 9.32996 11.7732C9.38173 11.759 9.43385 11.7479 9.48705 11.7399C9.55132 11.7392 9.61522 11.7423 9.67878 11.7496C9.74054 11.7652 9.80088 11.7846 9.85979 11.8075C9.91013 11.8356 9.95869 11.8661 10.0051 11.8997C10.0433 11.9361 10.079 11.9743 10.1129 12.0148C10.1415 12.061 10.1683 12.1078 10.1911 12.1573C10.2889 12.3699 10.5382 12.5078 10.7706 12.5193C10.8955 12.5252 11.0134 12.5002 11.1244 12.4451C11.2204 12.3962 11.299 12.329 11.3625 12.2454C11.4018 12.2066 11.4436 12.1698 11.4875 12.1358C11.5364 12.1074 11.5871 12.0821 11.6392 12.0599C11.6928 12.045 11.7474 12.0336 11.8024 12.0249C11.8549 12.0245 11.9067 12.0273 11.9588 12.0329C12.007 12.0454 12.0537 12.061 12.1002 12.0786C12.143 12.1029 12.1844 12.1293 12.2241 12.158C12.263 12.1955 12.2994 12.2346 12.3337 12.2759C12.364 12.3251 12.3911 12.3758 12.4151 12.4278C12.4304 12.478 12.444 12.529 12.454 12.581C12.4743 12.6874 12.5418 12.806 12.6161 12.8861C12.7271 13.0054 12.8767 13.074 13.0395 13.0962C13.1441 13.1104 13.2516 13.1 13.3512 13.0667C13.4822 13.023 13.5686 12.9572 13.654 12.8656C13.6386 12.883 13.6236 12.9 13.6083 12.9173C13.6593 12.8594 13.715 12.807 13.7757 12.7596C13.8182 12.7353 13.8621 12.7131 13.9071 12.6933C13.9553 12.6802 14.0042 12.6694 14.0538 12.6614C14.0949 12.6614 14.136 12.6632 14.177 12.667C14.2152 12.6774 14.2531 12.6892 14.2902 12.703C14.333 12.7273 14.3748 12.7533 14.4148 12.7817C14.4494 12.815 14.4819 12.8504 14.5123 12.8871C14.538 12.9298 14.5608 12.9735 14.5815 13.0185C14.5972 13.073 14.6094 13.1284 14.6183 13.1843C14.6269 13.4474 14.5962 13.7164 14.5815 13.9779C14.564 14.2913 14.5444 14.6043 14.5301 14.9178C14.5012 15.5484 14.4883 16.1801 14.4462 16.8104C14.4227 17.1657 14.3891 17.5208 14.3395 17.8737C14.3298 17.9396 14.3188 18.0055 14.3073 18.0713C14.2249 18.4662 14.0988 18.8497 13.9253 19.2161C13.7486 19.5542 13.5344 19.8717 13.2859 20.164C13.0349 20.4372 12.755 20.6837 12.4497 20.8983L12.4515 20.898Z" fill="black"/>
+  <path d="M7.69828 3.23853C7.87751 3.23957 8.06602 3.19173 8.19741 3.06622C8.32844 2.94106 8.4152 2.78331 8.42484 2.60164C8.45411 2.04762 8.48303 1.49394 8.51231 0.939917C8.51624 0.86191 8.52052 0.783903 8.52445 0.705895C8.53338 0.533933 8.4659 0.349142 8.34701 0.22121C8.23311 0.098479 8.04103 0.00105666 7.86858 1.65628e-05C7.68935 -0.00102353 7.50084 0.0468209 7.36945 0.172326C7.23842 0.297484 7.15166 0.455232 7.14202 0.636902C7.11275 1.19093 7.08383 1.74461 7.05455 2.29863C7.05062 2.37664 7.04634 2.45464 7.04241 2.53265C7.03349 2.70461 7.10097 2.8894 7.21986 3.01734C7.33375 3.13972 7.52583 3.23714 7.69828 3.23818V3.23853Z" fill="black"/>
+  <path d="M3.56139 4.05115C3.6153 4.10905 3.66921 4.16729 3.72313 4.22519C3.84202 4.35313 4.02446 4.43737 4.20155 4.44604C4.37114 4.45436 4.5775 4.39126 4.70068 4.27373C4.8285 4.15169 4.92704 3.9884 4.92811 3.80916C4.92918 3.63061 4.87598 3.45934 4.75066 3.32447C4.36792 2.91294 3.98519 2.50106 3.60245 2.08953C3.54854 2.03163 3.49463 1.97338 3.44071 1.91549C3.32182 1.78755 3.13938 1.70331 2.96229 1.69464C2.7927 1.68632 2.58634 1.74942 2.46316 1.86695C2.33535 1.98899 2.2368 2.15228 2.23573 2.33152C2.23466 2.51007 2.28786 2.68134 2.41318 2.81621C2.79592 3.22774 3.17865 3.63962 3.56139 4.05115Z" fill="black"/>
+  <path d="M2.60849 7.7009C2.78558 7.70956 2.97587 7.64404 3.10762 7.52859C3.23365 7.41799 3.33398 7.23147 3.33505 7.06401C3.33612 6.88997 3.28685 6.70691 3.1576 6.57933C3.02871 6.45209 2.86626 6.36784 2.67918 6.35848C2.10864 6.33005 1.53846 6.30197 0.967929 6.27354C0.887597 6.26972 0.807265 6.26556 0.726933 6.26175C0.549845 6.25308 0.359548 6.31861 0.227803 6.43406C0.101414 6.54431 0.00108815 6.73083 1.70564e-05 6.89864C-0.00105404 7.07268 0.0482163 7.25574 0.177462 7.38332C0.30635 7.51056 0.468799 7.59481 0.655884 7.60417C1.22642 7.6326 1.7966 7.66068 2.36713 7.68911C2.44747 7.69292 2.5278 7.69708 2.60813 7.7009H2.60849Z" fill="black"/>
+  <path d="M11.0502 4.78549C11.234 4.78653 11.4104 4.73487 11.5493 4.61318C11.9731 4.24152 12.3973 3.86986 12.821 3.4982C12.8807 3.44585 12.9407 3.3935 13.0003 3.34114C13.132 3.22569 13.2188 3.04853 13.2277 2.87657C13.2363 2.71189 13.1713 2.51149 13.0503 2.39188C12.9246 2.26776 12.7564 2.17208 12.5718 2.17104C12.388 2.17 12.2116 2.22165 12.0727 2.34335C11.6489 2.71501 11.2248 3.08667 10.801 3.45833C10.7413 3.51068 10.6814 3.56303 10.6217 3.61538C10.49 3.73083 10.4032 3.908 10.3943 4.07996C10.3857 4.24464 10.4507 4.44503 10.5718 4.56464C10.6974 4.68876 10.8656 4.78445 11.0502 4.78549Z" fill="black"/>
+  <path d="M12.3644 6.83865C12.1873 6.82999 11.997 6.89551 11.8653 7.01096C11.7392 7.12156 11.6389 7.30808 11.6378 7.47554C11.6368 7.64958 11.686 7.83264 11.8153 7.96023C11.9442 8.08746 12.1066 8.17171 12.2937 8.18107C12.8642 8.2095 13.4344 8.23758 14.005 8.26601C14.0853 8.26983 14.1656 8.27399 14.2459 8.2778C14.423 8.28647 14.6133 8.22094 14.7451 8.10549C14.8711 7.9949 14.9714 7.80837 14.9725 7.64092C14.9736 7.46687 14.9243 7.28382 14.7951 7.15623C14.6662 7.02899 14.5037 6.94474 14.3166 6.93538C13.7461 6.90695 13.1759 6.87887 12.6054 6.85044C12.5251 6.84663 12.4447 6.84247 12.3644 6.83865Z" fill="black"/>
+  </g>
+  <defs>
+  <clipPath id="clip0_216_7632">
+  <rect width="16" height="23" fill="white"/>
+  </clipPath>
+  </defs>
+  </svg>
+  
+            지역을 클릭해, 상세 개표현황을 확인하세요!
+          </p>   
+          
+  <ul class="clan_gradient_guide_list">
+    <li class="clan1">
+      <div class="clan_step_wrap">
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+      </div>
+      <p class="text">더불어민주당</p>
+    </li>
+    <li class="clan2">
+      <div class="clan_step_wrap">
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+      </div>
+      <p class="text">국민의힘</p>
+    </li>    
+    <li class="clan3">
+      <div class="clan_step_wrap">
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+      </div>
+      <p class="text">녹색정의당</p>
+    </li>                 
+    <li class="clan4">
+      <div class="clan_step_wrap">
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+      </div>
+      <p class="text">새로운미래</p>
+    </li>  
+    <li class="clan_others">
+      <div class="clan_step_wrap">
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+      </div>
+      <p class="text">기타정당</p>
+    </li>                 
+    <li class="clan_independent">
+      <div class="clan_step_wrap">
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+      </div>
+      <p class="text">무소속</p>
+    </li>                                 
+  </ul>
+
+
+
+
+
+
+
+        </li>
+        <li class="swiper-slide">
+          <div class="map_wrap">
+            <svg width="263" height="416" viewBox="0 0 263 416" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path data-local="local49" d="M83.58 385.09L77 386.5H70.5L55.5 393L47.5 401V408.05L55.5 416L64.06 412.2L82 412L84 407.5L93.5 409L102.5 406V400L105 396.5V390.5L100 385L83.58 385.09Z" fill="#DADADA" />
+  <path data-local="local29" d="M54.89 297.34L50.5401 293.25L44.89 296.98L43.8 304.63L47.5 305.65L49.68 310.6L59.73 307.36L62.84 309.25L67.6501 306.36L68.7301 300.82L61.0601 293.27L54.89 297.34Z" fill="#DADADA" />
+  <path data-local="local46" fill-rule="evenodd" clip-rule="evenodd" d="M107.89 286.65L108.02 295.66L121.48 309.5L119.99 318L110.99 319L114.49 332L120.49 328L121.49 337L128.99 347.5L122.49 348L121.49 341L117.49 336L112.99 339.5L111.99 344.5L107.99 341L111.99 334L107.99 321.5L97.99 327L96.99 333L94.99 335.5V338.5L102.99 345.5L96.99 348L100.99 355L103.99 359H92.49L88.99 353H78.49L81.49 347.5L88.99 349.5L86.49 343L92.49 343.5V335.5H82.99L79.99 340L73.99 341L66.99 351V359L56.49 361.5L50.99 349.5L48.11 362L39.49 366.5L37.99 373.5L32.49 375.5L28.99 364L27.99 353L19.99 349.5L15.49 343L19.99 334L26.99 327L21.99 315L30.99 307V304.5L23.49 298H17.49V290.5L23.99 287L25.48 277.04L30.07 278.05V282.08L35.16 289.03L50.33 279.11L50.46 272.98L52.51 272.08L63.37 279.5L70.43 275.91L76.04 285.35L85.63 283.66L95.75 287.35L101.1 283.57L107.89 286.65ZM62.82 312.75L70.34 308.25L71.97 299.81L61.43 289.43L55.21 293.53L50.86 289.44L42.1 295.21L40.45 306.81L45.32 308.16L48.02 314.29L59.34 310.64L62.82 312.75ZM7 362.5L11.5 355.5H18.5L21.5 362.5V366L16 368.5H2.31L0 364.5L7 362.5Z" fill="#DADADA" />
+  <path data-local="local53" d="M33.08 281.1L35.91 284.96L47.37 277.47L47.51 271.01L52.84 268.67L63.61 276.03L71.58 271.97L77.57 282.04L85.92 280.57L95.31 284L100.78 280.13L108.81 283.77L113.83 275.75L107.6 264.87L112.64 258L112.77 246.61L128.39 236.66L126.92 225.42L116.66 225.07L103.66 228.19L94.82 223.68L90.51 218.08L89.45 217.66L77.35 224.44L70.8 215.97H60.91L60.64 216.42V223.43L51.28 228.12L43.05 227.66L39.5 232.5L41.5 236H48.5L51.5 245L39.5 244.5V251.5L31 259L49 263V265L33 269L26.79 274.25L33.08 275.64V281.1Z" fill="#DADADA" />
+  <path data-local="local48" fill-rule="evenodd" clip-rule="evenodd" d="M208.16 289.52L198.74 295.4V302.59L196.45 305.67L181 295.5V305.5L174.5 303L172 329L163 316L153 320.5L145.5 317.5V304.5L133.5 314.5L134 328L136 330L139.5 325L145.5 328V337L136 334L133.5 338.5L128 328L129 317L123.11 317.65L124.71 308.5L111.01 294.42L110.89 286.1L117.33 275.82L111.17 265.08L115.63 259L115.75 248.27L130.28 239.02L142.8 241.89L150.17 255.85L166.64 259.95L175.71 260.93L198.87 263.09L205.57 258.82L212.42 258.67L210.76 265.68L215.37 272.28L221.82 274.71L222.81 277.49L210.42 284.62L208.16 289.52ZM192.5 317.5L190 320V322L193.5 323.5V327.5L184 338.5V327.5L178 328.01V326.03L179.25 322.58L185.5 322L185.89 319.68L185.54 315.29L190 311L192.5 317.5Z" fill="#DADADA"/>
+  <path data-local="local26" d="M224.83 279.78L212.74 286.74L210.52 291.59L201.74 297.06V303.58L198.96 307.32L201.5 309L208 304.5L217.5 306L229 294L230.87 279.99L230.45 281.43L224.83 279.78Z" fill="#DADADA" />
+  <path data-local="local31" d="M215.39 259.16L213.99 265.06L217.29 269.8L224.18 272.39L225.79 276.94L231.29 278.55L231.22 278.78L233.5 276.5L242.72 257.1L222.77 249.5L215.39 259.16Z" fill="#DADADA" />
+  <path data-local="local27" d="M194.68 236.25L193.39 228.83L185.87 226.6L172.72 232.77L169.88 250.13L164.85 256.42L167.26 257.02L176 257.95L179.23 258.25L186.89 249.84L194.68 236.25Z" fill="#DADADA" />
+  <path data-local="local47" fill-rule="evenodd" clip-rule="evenodd" d="M255 115L248.5 116.71V120.5L253.25 122.5L258 120.5L255 115ZM240.5 225L235.58 196.75L240.43 182.22L237.5 170L240.43 152.44L232.07 127.76L224.74 135.42L217.61 130.95L199.46 137.74L185.89 132.9L168.37 145.18L167.46 150.6L162.06 154.26L156.1 150.77L129.74 173.49V197.88L142.85 204.99L144.82 212.54H137.49L129.8 224.32L131.35 236.19L144.81 239.27L152.2 253.26L161.65 255.62L167.04 248.87L170.01 230.72L185.63 223.4L196.02 226.48L197.83 236.8L189.22 251.74L182.97 258.59L198.13 260.01L204.67 255.84L214.31 255.62L221.75 245.9L243.48 254.18L250.5 220L240.5 225ZM257 124L258 123L259.5 123.5L258.5 125H257V124Z" fill="#DADADA" />
+  <path data-local="local43" d="M140.94 209.54L140.27 207.01L126.74 199.67V172.11L155.77 147.09L161.94 150.72L164.71 148.84L165.63 143.45L182.42 131.67L155.27 121.99L144 123.92L139.42 118.52H136.67L132.13 127.35H125.78L121.8 122.13L121.07 124.72H112.83L109.66 131.3L88.88 147.84L89.02 147.94L99.95 160.41L90.78 162.99L89.43 165.69L96.74 181.06L104.05 183.37L111.04 191.55L108.08 202.58L117.46 222.1L127.45 222.44L135.87 209.54H140.94Z" fill="#DADADA" />
+  <path data-local="local30" d="M96.66 184.18L90.98 189.65L88.92 199.31L91.43 205.8L93.5 202.27L96.86 201.21L101.68 204.67L105.16 201.87L107.73 192.29L102.33 185.97L96.66 184.18Z" fill="#DADADA"  />
+  <path data-local="local51" d="M94.1 182.48L86.39 166.29L81.64 162.56L79.84 163.46L79.29 171.99L83.05 176.02L83.19 185.3L83.7 186.16L89.13 187.26L94.1 182.48Z" fill="#DADADA"/>
+  <path data-local="local44" d="M57.64 221.57V215.58L59.22 212.97H72.27L78.14 220.56L89.23 214.34L92.39 215.6L96.78 221.32L104.03 225.01L114.35 222.54L105.95 205.09L101.79 208.44L96.33 204.52L95.5 204.78L92.97 209.11H89.5L85.8 199.56L87.82 190.06L81.8 188.84L80.2 186.14L80.07 177.22L76.21 173.09L76.95 161.54L82.01 159.03L87.32 163.21L88.69 160.46L94.56 158.81L86.87 150.04L79.51 144.63H69.38L58.99 145.77L55 150L46.5 140L32 137L24 142.5L27 149.5L22 153L14.5 146.5L7.5 157.5L9.5 163.5H16L20.5 174L22 187.5L27 189.5L26.5 173.5L30.5 174L35 211L36.5 214L42 215L44.93 224.76L50.65 225.08L57.64 221.57Z" fill="#DADADA"  />
+  <path data-local="local52" d="M96.59 39.63L99.12 48.89L107.33 50.72L111.44 61.47L105.08 66.45V81.78L108.88 80.93L130.22 86.4L120.34 92.79L128.23 99.48L122.83 118.52L127.27 124.35H130.3L134.83 115.52H140.8L145.18 120.67L155.54 118.9L199.44 134.54L217.95 127.62L224.27 131.58L230.99 124.55L221.5 96.5L181 45.5L160.5 0L156 14.5L142 25.5H76.5L74.12 27.77L88.08 41.89L96.59 39.63Z" fill="#DADADA"/>
+  <path data-local="local28" fill-rule="evenodd" clip-rule="evenodd" d="M35 87H25.5L24.5 79L21.5 72L24.5 68L29 70L33 77.5L35 87ZM47.6871 89.0358L50.5 94L52 99.5L49 107.5L38 106.5L33 102L38 96V88L43.5 85L47.6871 89.0358Z" fill="#DADADA" />
+  <path data-local="local11" d="M59.49 99.83H63.57L67.17 97.43L70.61 99.63L74.36 97.96L79.27 92.89V88.31L74.31 87.65L71.6 77.9H68.86L66.37 81.28L61.82 82.5L59.9 90.09L53.69 87.36L52.16 88.47L56.7 96.16L59.49 99.83Z" fill="#DADADA"/>
+  <path data-local="local41" d="M80.49 141.63L86.38 145.99L107.26 129.38L110.95 121.72H118.8L124.82 100.52L115.31 92.46L122.83 87.6L108.83 84.01L102.08 85.53V64.99L107.85 60.48L105.11 53.3L96.7 51.43L94.48 43.29L87.17 45.24L71.95 29.85L65 36.5L61 34L55.5 39L58.5 44L55.5 50.5L57 59.5L39 74.5H35.5L38.15 84.72L44.57 81.02L50.27 86.13L53.31 83.91L57.86 85.91L59.34 80.06L64.58 78.65L67.35 74.9H73.89L76.67 84.94L82.27 85.69V94.11L76.11 100.47L70.35 103.03L67.2 101.01L64.48 102.83H58L55.16 99.08L51.64 107.14L55.5 111L54 117H44.5V126.5L53 122V135.5L59.37 142.71L69.3 141.63H80.49Z" fill="#DADADA"/>
+  </svg>
+  
+            <ul class="local_tabs">
+  <li class="local11">
+    <button data-local="local11" data-idx="0"><span>서울</span></button>
+  </li>
+  <li class="local26">
+      <button data-local="local26" data-idx="1"><span>부산</span></button>
+  </li>
+  <li class="local27">
+      <button data-local="local27" data-idx="2"><span>대구</span></button>
+  </li>
+  <li class="local28">
+      <button data-local="local28" data-idx="3"><span>인천</span></button>
+  </li>
+  <li class="local29">
+      <button data-local="local29" data-idx="4"><span>광주</span></button>
+  </li>
+  <li class="local30">
+      <button data-local="local30" data-idx="5"><span>대전</span></button>
+  </li>
+  <li class="local31">
+      <button data-local="local31" data-idx="6"><span>울산</span></button>
+  </li>
+  <li class="local51">
+      <button data-local="local51" data-idx="7"><span>세종</span></button>
+  </li>         
+  <li class="local41">
+      <button data-local="local41" data-idx="8"><span>경기</span></button>
+  </li>        
+  <li class="local52">
+      <button data-local="local52" data-idx="9"><span>강원</span></button>
+  </li>
+  <li class="local43">
+      <button data-local="local43" data-idx="10">
+        <span>충북</span>
+      </button>
+  </li>
+  <li class="local44">
+      <button data-local="local44" data-idx="11">
+        <span>충남</span>
+      </button>
+  </li>
+  <li class="local53">
+      <button data-local="local53" data-idx="12" disabled>
+        <span>전북</span>
+      </button>
+  </li>
+  <li class="local46">
+      <button data-local="local46" data-idx="13">
+        <span>전남</span>
+      </button>
+  </li>
+  <li class="local47">
+      <button data-local="local47" data-idx="14" disabled><span>경북</span>
+      </button>
+  </li>
+  <li class="local48">
+      <button data-local="local48" data-idx="15">
+        <span>경남</span>
+      </button>
+  </li>
+  <li class="local49">
+      <button data-local="local49" data-idx="16">
+        <span>제주</span>
+      </button>
+  </li>
+  <!-- 데이터 준비중일경우 button : disabled -->
+</ul>  
+          </div>
+          <p class="vote_versus_caption">
+            <svg width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_216_7632)">
+  <path d="M15.9482 14.3523C15.9657 14.0507 15.9843 13.7487 15.9961 13.4467C16.0061 13.1815 16.0025 12.9107 15.9129 12.6576C15.809 12.3636 15.664 12.0838 15.4288 11.8658C15.1971 11.6512 14.9193 11.4674 14.6058 11.3873C14.2598 11.2989 13.8807 11.2871 13.539 11.4012C13.4987 11.4147 13.459 11.4282 13.4198 11.4424C13.2684 11.2469 13.0809 11.0788 12.8671 10.9574C12.5879 10.799 12.2794 10.6998 11.9549 10.6832C11.6296 10.6665 11.3211 10.7352 11.0234 10.8565C10.9912 10.8697 10.9598 10.8846 10.9291 10.8995C10.6924 10.6967 10.4089 10.5445 10.1119 10.4717C9.88407 10.4159 9.65593 10.3902 9.426 10.4013C9.48312 9.53872 9.54453 8.67648 9.61094 7.81493C9.62451 7.64089 9.61665 7.47309 9.59452 7.29904C9.57417 7.13922 9.5174 6.99014 9.45813 6.84036C9.41957 6.74329 9.37066 6.65072 9.31104 6.56439C9.22142 6.43368 9.13002 6.30506 9.0147 6.19446C8.6059 5.802 8.04179 5.5184 7.45447 5.53747C6.89465 5.55584 6.34375 5.75277 5.9403 6.14003C5.71716 6.35394 5.55756 6.589 5.43653 6.86914C5.32442 7.12881 5.30621 7.41207 5.29408 7.68943C5.24088 8.89698 5.1991 10.1049 5.15162 11.3124C5.12806 11.9146 5.10449 12.5172 5.08021 13.1194C5.06843 13.4152 5.05915 13.7105 5.04522 14.0056C4.86564 13.8523 4.68427 13.7005 4.50646 13.5452C4.32366 13.3853 4.14943 13.203 3.92915 13.0917C3.68458 12.9679 3.43109 12.8837 3.15189 12.8771C2.87162 12.8708 2.62241 12.928 2.36463 13.0272C2.16898 13.1024 1.98404 13.2234 1.82873 13.3593C1.6163 13.5459 1.46991 13.7639 1.34995 14.0132C1.10217 14.5294 1.17858 15.1296 1.44135 15.6247C1.53739 15.8053 1.65878 15.9721 1.77232 16.1426C1.89799 16.3312 2.02153 16.5212 2.14399 16.7116C2.63027 17.4677 3.10297 18.2329 3.62031 18.97C4.13622 19.705 4.68248 20.4264 5.33156 21.0567C5.65896 21.375 6.01242 21.6746 6.39195 21.9329C6.77361 22.1929 7.1917 22.4054 7.62299 22.5763C9.25748 23.225 11.2208 23.129 12.7642 22.2861C14.1431 21.5331 15.1913 20.2222 15.5712 18.7273C15.6369 18.469 15.6851 18.2055 15.724 17.942C15.8915 16.7535 15.8786 15.5477 15.9486 14.3519L15.9482 14.3523ZM12.4515 20.898C12.1459 21.0952 11.8195 21.2589 11.4771 21.3875C11.0858 21.5175 10.6813 21.6038 10.2697 21.6451C9.85158 21.6708 9.43278 21.65 9.0197 21.5827C8.61125 21.5005 8.21423 21.3736 7.83542 21.2044C7.43805 21.0089 7.06959 20.7676 6.7272 20.4906C6.03492 19.8974 5.45438 19.1887 4.92491 18.4565C4.2619 17.5222 3.67601 16.54 3.04371 15.5865C2.89304 15.3594 2.72595 15.1372 2.61527 14.8883C2.60099 14.8401 2.58921 14.7912 2.58064 14.742C2.58064 14.708 2.58278 14.674 2.58599 14.64C2.59742 14.5995 2.61099 14.5596 2.62705 14.5201C2.65062 14.4806 2.67668 14.4424 2.70453 14.4057C2.73916 14.372 2.77522 14.3402 2.81342 14.3103C2.85484 14.2868 2.89697 14.2649 2.94088 14.2458C2.98087 14.2351 3.02121 14.2264 3.06192 14.2195C3.09226 14.2195 3.12261 14.2212 3.15296 14.224C3.17867 14.2313 3.20366 14.2393 3.22865 14.2483C3.27649 14.2764 3.32183 14.3079 3.36575 14.3422C3.63674 14.5721 3.90308 14.8082 4.17335 15.0387C4.48433 15.3043 4.79566 15.5699 5.10663 15.8358C5.19696 15.9128 5.28586 15.9859 5.40261 16.0237C5.55114 16.0716 5.7093 16.0632 5.85461 16.0123C6.12167 15.918 6.28198 15.6916 6.31197 15.4198C6.3691 14.8983 6.42301 14.38 6.438 13.8555C6.453 13.3264 6.47835 12.7973 6.49906 12.2683C6.54083 11.2053 6.58367 10.1427 6.62366 9.07969C6.63509 8.77737 6.64651 8.4747 6.65865 8.17238C6.66472 8.02364 6.67115 7.87526 6.67757 7.72652C6.6815 7.63604 6.68364 7.5452 6.69364 7.4554C6.70721 7.40617 6.72363 7.35798 6.74291 7.31049C6.77361 7.25813 6.80789 7.20821 6.84502 7.16002C6.8925 7.11252 6.9432 7.06849 6.99676 7.02723C7.06102 6.9891 7.12779 6.95477 7.1967 6.9253C7.2656 6.90554 7.33558 6.88994 7.40663 6.87954C7.4659 6.87884 7.52516 6.88162 7.58443 6.88786C7.64298 6.90311 7.70011 6.92184 7.75616 6.94402C7.8315 6.98459 7.9029 7.03035 7.9711 7.08132C8.02287 7.1302 8.07106 7.18221 8.11569 7.23733C8.14711 7.28795 8.17496 7.3403 8.1996 7.39404C8.21495 7.44674 8.22709 7.49978 8.23566 7.55387C8.23994 7.75842 8.21138 7.96679 8.1971 8.1696C8.17925 8.42443 8.16139 8.67925 8.14354 8.93408C8.10784 9.44892 8.07178 9.96377 8.03608 10.4783C8.01573 10.7695 7.9943 11.0604 7.97609 11.3516C7.95931 11.6193 8.12533 11.8717 8.36883 11.9861C8.62375 12.1057 8.91473 12.0606 9.13145 11.8848C9.14609 11.873 9.16144 11.8623 9.17643 11.8509C9.22606 11.8221 9.27712 11.7961 9.32996 11.7732C9.38173 11.759 9.43385 11.7479 9.48705 11.7399C9.55132 11.7392 9.61522 11.7423 9.67878 11.7496C9.74054 11.7652 9.80088 11.7846 9.85979 11.8075C9.91013 11.8356 9.95869 11.8661 10.0051 11.8997C10.0433 11.9361 10.079 11.9743 10.1129 12.0148C10.1415 12.061 10.1683 12.1078 10.1911 12.1573C10.2889 12.3699 10.5382 12.5078 10.7706 12.5193C10.8955 12.5252 11.0134 12.5002 11.1244 12.4451C11.2204 12.3962 11.299 12.329 11.3625 12.2454C11.4018 12.2066 11.4436 12.1698 11.4875 12.1358C11.5364 12.1074 11.5871 12.0821 11.6392 12.0599C11.6928 12.045 11.7474 12.0336 11.8024 12.0249C11.8549 12.0245 11.9067 12.0273 11.9588 12.0329C12.007 12.0454 12.0537 12.061 12.1002 12.0786C12.143 12.1029 12.1844 12.1293 12.2241 12.158C12.263 12.1955 12.2994 12.2346 12.3337 12.2759C12.364 12.3251 12.3911 12.3758 12.4151 12.4278C12.4304 12.478 12.444 12.529 12.454 12.581C12.4743 12.6874 12.5418 12.806 12.6161 12.8861C12.7271 13.0054 12.8767 13.074 13.0395 13.0962C13.1441 13.1104 13.2516 13.1 13.3512 13.0667C13.4822 13.023 13.5686 12.9572 13.654 12.8656C13.6386 12.883 13.6236 12.9 13.6083 12.9173C13.6593 12.8594 13.715 12.807 13.7757 12.7596C13.8182 12.7353 13.8621 12.7131 13.9071 12.6933C13.9553 12.6802 14.0042 12.6694 14.0538 12.6614C14.0949 12.6614 14.136 12.6632 14.177 12.667C14.2152 12.6774 14.2531 12.6892 14.2902 12.703C14.333 12.7273 14.3748 12.7533 14.4148 12.7817C14.4494 12.815 14.4819 12.8504 14.5123 12.8871C14.538 12.9298 14.5608 12.9735 14.5815 13.0185C14.5972 13.073 14.6094 13.1284 14.6183 13.1843C14.6269 13.4474 14.5962 13.7164 14.5815 13.9779C14.564 14.2913 14.5444 14.6043 14.5301 14.9178C14.5012 15.5484 14.4883 16.1801 14.4462 16.8104C14.4227 17.1657 14.3891 17.5208 14.3395 17.8737C14.3298 17.9396 14.3188 18.0055 14.3073 18.0713C14.2249 18.4662 14.0988 18.8497 13.9253 19.2161C13.7486 19.5542 13.5344 19.8717 13.2859 20.164C13.0349 20.4372 12.755 20.6837 12.4497 20.8983L12.4515 20.898Z" fill="black"/>
+  <path d="M7.69828 3.23853C7.87751 3.23957 8.06602 3.19173 8.19741 3.06622C8.32844 2.94106 8.4152 2.78331 8.42484 2.60164C8.45411 2.04762 8.48303 1.49394 8.51231 0.939917C8.51624 0.86191 8.52052 0.783903 8.52445 0.705895C8.53338 0.533933 8.4659 0.349142 8.34701 0.22121C8.23311 0.098479 8.04103 0.00105666 7.86858 1.65628e-05C7.68935 -0.00102353 7.50084 0.0468209 7.36945 0.172326C7.23842 0.297484 7.15166 0.455232 7.14202 0.636902C7.11275 1.19093 7.08383 1.74461 7.05455 2.29863C7.05062 2.37664 7.04634 2.45464 7.04241 2.53265C7.03349 2.70461 7.10097 2.8894 7.21986 3.01734C7.33375 3.13972 7.52583 3.23714 7.69828 3.23818V3.23853Z" fill="black"/>
+  <path d="M3.56139 4.05115C3.6153 4.10905 3.66921 4.16729 3.72313 4.22519C3.84202 4.35313 4.02446 4.43737 4.20155 4.44604C4.37114 4.45436 4.5775 4.39126 4.70068 4.27373C4.8285 4.15169 4.92704 3.9884 4.92811 3.80916C4.92918 3.63061 4.87598 3.45934 4.75066 3.32447C4.36792 2.91294 3.98519 2.50106 3.60245 2.08953C3.54854 2.03163 3.49463 1.97338 3.44071 1.91549C3.32182 1.78755 3.13938 1.70331 2.96229 1.69464C2.7927 1.68632 2.58634 1.74942 2.46316 1.86695C2.33535 1.98899 2.2368 2.15228 2.23573 2.33152C2.23466 2.51007 2.28786 2.68134 2.41318 2.81621C2.79592 3.22774 3.17865 3.63962 3.56139 4.05115Z" fill="black"/>
+  <path d="M2.60849 7.7009C2.78558 7.70956 2.97587 7.64404 3.10762 7.52859C3.23365 7.41799 3.33398 7.23147 3.33505 7.06401C3.33612 6.88997 3.28685 6.70691 3.1576 6.57933C3.02871 6.45209 2.86626 6.36784 2.67918 6.35848C2.10864 6.33005 1.53846 6.30197 0.967929 6.27354C0.887597 6.26972 0.807265 6.26556 0.726933 6.26175C0.549845 6.25308 0.359548 6.31861 0.227803 6.43406C0.101414 6.54431 0.00108815 6.73083 1.70564e-05 6.89864C-0.00105404 7.07268 0.0482163 7.25574 0.177462 7.38332C0.30635 7.51056 0.468799 7.59481 0.655884 7.60417C1.22642 7.6326 1.7966 7.66068 2.36713 7.68911C2.44747 7.69292 2.5278 7.69708 2.60813 7.7009H2.60849Z" fill="black"/>
+  <path d="M11.0502 4.78549C11.234 4.78653 11.4104 4.73487 11.5493 4.61318C11.9731 4.24152 12.3973 3.86986 12.821 3.4982C12.8807 3.44585 12.9407 3.3935 13.0003 3.34114C13.132 3.22569 13.2188 3.04853 13.2277 2.87657C13.2363 2.71189 13.1713 2.51149 13.0503 2.39188C12.9246 2.26776 12.7564 2.17208 12.5718 2.17104C12.388 2.17 12.2116 2.22165 12.0727 2.34335C11.6489 2.71501 11.2248 3.08667 10.801 3.45833C10.7413 3.51068 10.6814 3.56303 10.6217 3.61538C10.49 3.73083 10.4032 3.908 10.3943 4.07996C10.3857 4.24464 10.4507 4.44503 10.5718 4.56464C10.6974 4.68876 10.8656 4.78445 11.0502 4.78549Z" fill="black"/>
+  <path d="M12.3644 6.83865C12.1873 6.82999 11.997 6.89551 11.8653 7.01096C11.7392 7.12156 11.6389 7.30808 11.6378 7.47554C11.6368 7.64958 11.686 7.83264 11.8153 7.96023C11.9442 8.08746 12.1066 8.17171 12.2937 8.18107C12.8642 8.2095 13.4344 8.23758 14.005 8.26601C14.0853 8.26983 14.1656 8.27399 14.2459 8.2778C14.423 8.28647 14.6133 8.22094 14.7451 8.10549C14.8711 7.9949 14.9714 7.80837 14.9725 7.64092C14.9736 7.46687 14.9243 7.28382 14.7951 7.15623C14.6662 7.02899 14.5037 6.94474 14.3166 6.93538C13.7461 6.90695 13.1759 6.87887 12.6054 6.85044C12.5251 6.84663 12.4447 6.84247 12.3644 6.83865Z" fill="black"/>
+  </g>
+  <defs>
+  <clipPath id="clip0_216_7632">
+  <rect width="16" height="23" fill="white"/>
+  </clipPath>
+  </defs>
+  </svg>
+  
+            지역을 클릭해, 상세 개표현황을 확인하세요!
+          </p>   
+          
+
+
+
+
+  <ul class="clan_gradient_guide_list">
+    <li class="clan001">
+      <div class="clan_step_wrap">
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+      </div>
+      <p class="text">더불어민주당</p>
+    </li>
+    <li class="clan002">
+      <div class="clan_step_wrap">
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+          <span></span>                  
+        
+      </div>
+      <p class="text">미래통합당</p>
+    </li>                                  
+  </ul>
+
+
+
+        </li>
+      </ul>
+    </div>
+    <div class="map_data_popup">
+  <div class="popup">
+    <div class="data_top">
+      <p class="local"></p>
+      <button class="close"></button>
+    </div>
+    <ul class="data_list"></ul>
+    
+      <a href="#" class="more">상세보기</a>
+    
+  </div>
+</div>
+
+  </section>
+  <hr class="cluster_line">
+  <section class="section" id="voteall1">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">화제의 선거구 개표현황</p>
+      <a href="#" class="more mutate_links">더보기</a>
+    </div>        
+    <ul class="vote_versus_tab_container">
+      <li><button>서울 종로</button></li>
+      <li><button>서울 용산</button></li>
+      <li><button>경기 의정부갑</button></li>
+      
+        <li><button>서울 서울</button></li>
+      
+        <li><button>서울 서울</button></li>
+      
+        <li><button>서울 서울</button></li>
+      
+        <li><button>서울 서울</button></li>
+      
+    </ul>
+    
+
+
+  <div class="vote_versus_contents_container count">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        
+          <dl class="vote_rate">
+            <dt aria-label="개표율"></dt>
+            <dd>100.0<span>%</span></dd>
+          </dl>
+        
+        
+        <a href="#" class="left">
+          <div class="vote_candidate_img_wrap confirm">
+            <span class="rank">1위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">이름네자</p>
+            <p class="font clan2">`+i+`국민의힘</p>
+            <p class="value">100<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="vote_candidate_img_wrap">
+            <span class="rank">2위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">홍길동</p>
+            <p class="font clan1">더불어민주당</p>
+            <p class="value">2<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <span class="state gap">999,999표차</span>
+        <div class="graph_wrap">
+          <div class="left_graph">
+            <span class="clan2 bg" style="height:100%;"></span>
+          </div>
+          <div class="right_graph">
+            <span class="clan1 bg" style="height:2%"></span>
+          </div>
+        </div>
+      </li>        
+      <li class="swiper-slide">
+        
+          <dl class="vote_rate">
+            <dt aria-label="개표율"></dt>
+            <dd>100.0<span>%</span></dd>
+          </dl>
+        
+        
+        <a href="#" class="left">
+          <div class="vote_candidate_img_wrap certain">
+            <span class="rank">1위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">이름네자</p>
+            <p class="font clan2">`+i+`국민의힘</p>
+            <p class="value">64.9<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="vote_candidate_img_wrap">
+            <span class="rank">2위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">홍길동</p>
+            <p class="font clan1">더불어민주당</p>
+            <p class="value">2<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <span class="state gap">999,999표차</span>
+        <div class="graph_wrap">
+          <div class="left_graph">
+            <span class="clan2 bg" style="height:64%;"></span>
+          </div>
+          <div class="right_graph">
+            <span class="clan1 bg" style="height:2%"></span>
+          </div>
+        </div>
+      </li>        
+      <li class="swiper-slide">
+        
+          <dl class="vote_rate">
+            <dt aria-label="개표율"></dt>
+            <dd>100.0<span>%</span></dd>
+          </dl>
+        
+        
+        <a href="#" class="left">
+          <div class="vote_candidate_img_wrap selected">
+            <span class="rank">1위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">이름네자</p>
+            <p class="font clan2">`+i+`국민의힘</p>
+            <p class="value">64.9<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="vote_candidate_img_wrap">
+            <span class="rank">2위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">홍길동</p>
+            <p class="font clan1">더불어민주당</p>
+            <p class="value">23.2<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <span class="state gap">999,999표차</span>
+        <div class="graph_wrap">
+          <div class="left_graph">
+            <span class="clan2 bg" style="height:64%;"></span>
+          </div>
+          <div class="right_graph">
+            <span class="clan1 bg" style="height:23%"></span>
+          </div>
+        </div>
+      </li>        
+      
+        <li class="swiper-slide">
+          
+            <dl class="vote_rate">
+              <dt aria-label="개표율"></dt>
+              <dd>100.0<span>%</span></dd>
+            </dl>
+          
+          
+          <a href="#" class="left">
+            <div class="vote_candidate_img_wrap lead">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">1국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">23.2<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <span class="state gap">999,999표차</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:23%"></span>
+            </div>
+          </div>
+        </li>
+      
+        <li class="swiper-slide">
+          
+            <dl class="vote_rate">
+              <dt aria-label="개표율"></dt>
+              <dd>100.0<span>%</span></dd>
+            </dl>
+          
+          
+          <a href="#" class="left">
+            <div class="vote_candidate_img_wrap lead">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">2국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">23.2<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <span class="state gap">999,999표차</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:23%"></span>
+            </div>
+          </div>
+        </li>
+      
+        <li class="swiper-slide">
+          
+            <dl class="vote_rate">
+              <dt aria-label="개표율"></dt>
+              <dd>100.0<span>%</span></dd>
+            </dl>
+          
+          
+          <a href="#" class="left">
+            <div class="vote_candidate_img_wrap lead">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">3국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">23.2<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <span class="state gap">999,999표차</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:23%"></span>
+            </div>
+          </div>
+        </li>
+      
+        <li class="swiper-slide">
+          
+            <dl class="vote_rate">
+              <dt aria-label="개표율"></dt>
+              <dd>100.0<span>%</span></dd>
+            </dl>
+          
+          
+          <a href="#" class="left">
+            <div class="vote_candidate_img_wrap lead">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">4국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">23.2<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <span class="state gap">999,999표차</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:23%"></span>
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+    
+    <div class="swiper-pagination"></div>
+    
+    
+  </div>
+
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">격전지 개표현황</p>
+      <a href="#" class="more mutate_links">더보기</a>
+    </div>        
+    <ul class="vote_versus_tab_container">
+      <li><button>서울 종로</button></li>
+      <li><button>서울 용산</button></li>
+      <li><button>경기 의정부갑</button></li>
+      
+        <li><button>서울 서울</button></li>
+      
+        <li><button>서울 서울</button></li>
+      
+        <li><button>서울 서울</button></li>
+      
+        <li><button>서울 서울</button></li>
+      
+    </ul>
+    
+
+
+  <div class="vote_versus_contents_container count">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+        
+        
+          <div class="vote_open complete" aria-label="개표완료"></div>
+        
+        <a href="#" class="left">
+          <div class="vote_candidate_img_wrap confirm">
+            <span class="rank">1위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">이름네자</p>
+            <p class="font clan2">`+i+`국민의힘</p>
+            <p class="value">100<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="vote_candidate_img_wrap">
+            <span class="rank">2위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">홍길동</p>
+            <p class="font clan1">더불어민주당</p>
+            <p class="value">2<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <span class="state gap">999,999표차</span>
+        <div class="graph_wrap">
+          <div class="left_graph">
+            <span class="clan2 bg" style="height:100%;"></span>
+          </div>
+          <div class="right_graph">
+            <span class="clan1 bg" style="height:2%"></span>
+          </div>
+        </div>
+      </li>        
+      <li class="swiper-slide">
+        
+        
+          <div class="vote_open complete" aria-label="개표완료"></div>
+        
+        <a href="#" class="left">
+          <div class="vote_candidate_img_wrap certain">
+            <span class="rank">1위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">이름네자</p>
+            <p class="font clan2">`+i+`국민의힘</p>
+            <p class="value">64.9<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="vote_candidate_img_wrap">
+            <span class="rank">2위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">홍길동</p>
+            <p class="font clan1">더불어민주당</p>
+            <p class="value">2<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <span class="state gap">999,999표차</span>
+        <div class="graph_wrap">
+          <div class="left_graph">
+            <span class="clan2 bg" style="height:64%;"></span>
+          </div>
+          <div class="right_graph">
+            <span class="clan1 bg" style="height:2%"></span>
+          </div>
+        </div>
+      </li>        
+      <li class="swiper-slide">
+        
+        
+          <div class="vote_open complete" aria-label="개표완료"></div>
+        
+        <a href="#" class="left">
+          <div class="vote_candidate_img_wrap selected">
+            <span class="rank">1위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">이름네자</p>
+            <p class="font clan2">`+i+`국민의힘</p>
+            <p class="value">64.9<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <a href="#" class="right">
+          <div class="vote_candidate_img_wrap">
+            <span class="rank">2위</span>
+            <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+          </div>
+          <div class="vote_candidate_info">
+            <p class="name">홍길동</p>
+            <p class="font clan1">더불어민주당</p>
+            <p class="value">23.2<span>%</span></p>
+            <p class="count">629,632표</p>
+          </div>
+        </a>
+        <span class="state gap">999,999표차</span>
+        <div class="graph_wrap">
+          <div class="left_graph">
+            <span class="clan2 bg" style="height:64%;"></span>
+          </div>
+          <div class="right_graph">
+            <span class="clan1 bg" style="height:23%"></span>
+          </div>
+        </div>
+      </li>        
+      
+        <li class="swiper-slide">
+          
+          
+            <div class="vote_open complete" aria-label="개표완료"></div>
+          
+          <a href="#" class="left">
+            <div class="vote_candidate_img_wrap lead">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">1국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">23.2<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <span class="state gap">999,999표차</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:23%"></span>
+            </div>
+          </div>
+        </li>
+      
+        <li class="swiper-slide">
+          
+          
+            <div class="vote_open complete" aria-label="개표완료"></div>
+          
+          <a href="#" class="left">
+            <div class="vote_candidate_img_wrap lead">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">2국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">23.2<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <span class="state gap">999,999표차</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:23%"></span>
+            </div>
+          </div>
+        </li>
+      
+        <li class="swiper-slide">
+          
+          
+            <div class="vote_open complete" aria-label="개표완료"></div>
+          
+          <a href="#" class="left">
+            <div class="vote_candidate_img_wrap lead">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">3국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">23.2<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <span class="state gap">999,999표차</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:23%"></span>
+            </div>
+          </div>
+        </li>
+      
+        <li class="swiper-slide">
+          
+          
+            <div class="vote_open complete" aria-label="개표완료"></div>
+          
+          <a href="#" class="left">
+            <div class="vote_candidate_img_wrap lead">
+              <span class="rank">1위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">이름네자</p>
+              <p class="font clan2">4국민의힘</p>
+              <p class="value">64.9<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <a href="#" class="right">
+            <div class="vote_candidate_img_wrap">
+              <span class="rank">2위</span>
+              <img src="https://picsum.photos/90/112" alt="○○○ 후보자" />
+            </div>
+            <div class="vote_candidate_info">
+              <p class="name">홍길동</p>
+              <p class="font clan1">더불어민주당</p>
+              <p class="value">23.2<span>%</span></p>
+              <p class="count">629,632표</p>
+            </div>
+          </a>
+          <span class="state gap">999,999표차</span>
+          <div class="graph_wrap">
+            <div class="left_graph">
+              <span class="clan2 bg" style="height:64%;"></span>
+            </div>
+            <div class="right_graph">
+              <span class="clan1 bg" style="height:23%"></span>
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+    
+    <div class="swiper-pagination"></div>
+    
+    
+  </div>
+
+  </section>
+  <hr class="cluster_line">  
+  <section class="section">
+    <p class="vote_state_text">지상파 3사 공동조사 결과입니다. (신뢰도 95%, 오차범위 ±2.2~5.1%p)</p>
+  </section>
+
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">정당별 비례대표 개표현황</p>
+      <a href="#" class="more">더보기</a>
+    </div> 
+    <div class="vote_swipe_buttons">
+  <button class="active">22대 (46석)</button>
+  <button>지난 21대 (47석)</button>
+</div>    
+    <div class="vote_swipe_container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          
+
+
+
+
+
+
+
+
+
+  <table class="vote_seat_table clan_dotted_graph">
+    <colgroup>
+      <col width="35%">
+      <col width="20%">
+      <col width="45%">
+    </colgroup>
+    
+      <tbody>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan1"></span>더불어민주당</p>    
+          </td>
+          <td><p class="value">100%</p></td>
+          <td>
+            <div class="graph_wrap"><span  class="bg clan1" style="width:100%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>   
+            <p class="party"><span class="dotted bg clan2"></span>국민의힘</p>
+          </td>
+          <td><p class="value">89.8%</p></td>
+          <td><div class="graph_wrap"><span  class="bg clan2" style="width:89.8%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>            
+            <p class="party"><span class="dotted bg clan3"></span>녹색정의당</p> 
+          </td>
+          <td><p class="value">30%</p></td>
+          <td><div class="graph_wrap"><span  class="bg clan3" style="width:30%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan4"></span>새로운미래</p>  
+          </td>
+          <td><p class="value">34석</p></td>
+          <td><div class="graph_wrap"><span  class="bg clan4" style="width:50%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan5"></span>개혁신당</p>  
+          </td>
+          <td><p class="value">50석</p></td>
+          <td><div class="graph_wrap"><span  class="bg clan5" style="width:44%;"></span></div></td>
+        </tr>           
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan_others"></span>기본소득당</p>  
+          </td>
+          <td><p class="value">2석</p></td>
+          <td><div class="graph_wrap"><span class="bg clan_others" style="width:33%;"></span></div></td>
+        </tr>        
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan_independent"></span>무소속</p>  
+          </td>
+          <td><p class="value">1석</p></td>
+          <td><div class="graph_wrap"><span class="bg clan_independent" style="width:20%;"></span></div></td>
+        </tr>                         
+      </tbody>
+    
+    
+    
+  </table>
+   
+        </li>
+        <li class="swiper-slide">
+          
+
+
+
+
+
+
+
+
+
+  <table class="vote_seat_table clan_dotted_graph">
+    <colgroup>
+      <col width="35%">
+      <col width="20%">
+      <col width="45%">
+    </colgroup>
+    
+    
+      <tbody>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan002"></span>미래한국당</p>
+          </td>
+          <td><p class="value">19석</p></td>
+          <td>
+            <div class="graph_wrap"><span class="bg clan002" style="width:40%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>   
+            <p class="party"><span class="dotted bg clan001"></span>더불어시민당</p>
+          </td>
+          <td><p class="value">17석</p></td>
+          <td><div class="graph_wrap"><span class="bg clan001" style="width:36%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>            
+            <p class="party"><span class="dotted bg clan003"></span>정의당</p> 
+          </td>
+          <td><p class="value">5석</p></td>
+          <td><div class="graph_wrap"><span class="bg clan003" style="width:11%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan004"></span>국민의당</p> 
+          </td>
+          <td><p class="value">3석</p></td>
+          <td><div class="graph_wrap"><span class="bg clan004"  style="width:6%;"></span></div></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="party"><span class="dotted bg clan005"></span>열린민주당</p> 
+          </td>
+          <td><p class="value">3석</p></td>
+          <td><div class="graph_wrap"><span class="bg clan005" style="width:6%;"></span></div></td>
+        </tr>                                
+      </tbody>
+    
+    
+  </table>
+ 
+        </li>        
+      </ul>
+    </div>
+  </section>
+  <hr class="cluster_line">
+  <section class="section">
+    <div class="cluster_title_more_wrap">
+      <p class="news_cluster_title">내지역 개표현황 검색</p>
+      <a href="#" class="more">더보기</a>
+    </div>     
+    
+
+
+  <form class="candidate_search_form type2">
+    <select class="select step1">
+      <option value="default">시·도</option>
+      <option value="1">경기</option>
+      <option value="2">경북</option> 
+      <option value="3">전북</option> 
+    </select>
+    <select class="select step2" disabled>
+      <option value="default">구·시·군</option>
+      <option value="1">선거구명1</option>
+      <option value="2">선거구명2</option>
+      <option value="3">선거구명3</option>
+      <option value="4">선거구명4</option>
+    </select>
+    <select class="select step3" disabled>
+      <option value="default">읍·면·동</option>
+      <option value="1">강남구</option>
+      <option value="2">서초구</option>
+      <option value="3">구</option>
+      <option value="4">구</option>
+    </select>
+    <button class="button"></button>
+  </form>    
+  
+  </section>
+  <hr class="cluster_line">
+  <ul class="candidate_caption">
+    <li>
+      X/XX 기준으로 의석수가 5석 미만인 정당은 ‘기타정당’으로 구분하여 공통 정당컬러를 사용했습니다. 
+    </li>
+    <li>투·개표 정보는 <a href="#">중앙선거관리위원회</a>에서 제공하며, 정보제공처의 사정에 따라 지연되거나 변경될 수 있습니다.</li>
+  </ul> 
+  <hr class="cluster_line">
+  <section class="reply_section">
+    <!-- 댓글 안내 원칙:S -->
+<div class="reply-guide-popup" id="notes" role="alert" aria-hidden="false" aria-labelledby="alert_label" aria-describedby="alert_desc">
+	<div id="alert_label" class="tit"><strong>댓글 운영 원칙</strong></div>
+	<button type="button" aria-controls="notes" id="notes_confirm"><span>안내 가이드 닫기</span></button>
+	<article class="context">
+		<div id="alert_desc">
+			<p class="parag">
+				네이트 뉴스 댓글은 기사에 대한 자신의 생각을 말하고 남의 생각을 들으며 서로 다양한 의견을 나누는 공간입니다.
+				건전한 인터넷 문화 정착을 위해 아래와 같은 댓글 운영원칙을 적용합니다.
+			</p>
+			<h2 class="s-tit">1. 댓글 삭제</h2>
+			<p class="parag">네티즌들의 신고 또는 자체 모니터링을 통해 아래에 해당하는 내용이 포함된 댓글은 별도의 예고 없이 삭제&#183;노출 제한될 수 있습니다.</p>
+			<ol class="num-list">
+				<li>타인에 대한 욕설 또는 비방</li>
+				<li>인신공격 또는 명예훼손</li>
+				<li>개인정보 유출 또는 사생활 침해</li>
+				<li>음란성 내용 또는 음란물 링크</li>
+				<li>상업적 광고 또는 사이트/홈페이지 홍보</li>
+				<li>불법정보 유출</li>
+				<li>같은 내용의 반복 (도배)</li>
+				<li>지역감정 조장</li>
+				<li>폭력 또는 사행심 조장</li>
+				<li>언론보도 형식의 허위 게시물</li>
+				<li>자살유발정보</li>
+				<li>혐오표현 또는 특정 속성을 이유로 특정 집단이나 그 구성원에 대한 비하&#183;조롱 표현(이와 관련한 사항은 한국인터넷자율정책기구의 관련 가이드라인을 준수합니다)</li>
+				<li>기타 기사 내용과 관계없거나 부적절한 내용</li>
+			</ol>
+			<h2 class="s-tit">2. 권한 제한</h2>
+			<p class="parag">
+				불건전한 댓글이 발견되는 경우 별도의 통보 없이 즉시 삭제하며, 상습적이거나 위반 정도가 심한 댓글을 게시하는 분에 대해서는 일정 기간 댓글 작성에 대한 권한을 제한할 수 있습니다.
+			</p>
+			<p class="parag">또한 비정상적인 패턴으로 댓글 작성, 추천, 반대 등이 발생하는 것으로 관리자 또는 시스템이 판단하는 경우 부정 클릭여부를 확인하여 해당 IP나 ID를 제재할 수 있습니다.</p>
+			<p class="parag">댓글에 비속어 및 상대방의 불쾌감을 주는 단어를 사용하거나, 유명인이나 특정 일반인 또는 단체나 기관을 사칭하는 경우 제재될 수 있습니다.</p>
+			<p class="parag">명예훼손, 개인정보 유출, 욕설 등 법률에 위반되는 댓글은 관계 법령에 의거 민형사상의 불이익을 받을 수 있으니 이용에 주의를 부탁드립니다.</p>
+		</div>
+	</article>
+</div>  
+<div id="areaComment">
+  <div class="reply_wrap">
+    <div class="replyContent">
+      <div class="replyWrite f_clear">
+        <a class="go_re_list" href="#">
+          <span class="title">댓글 <em id="totalcntComment">39</em>
+          </span>
+        </a>
+        <button class="reply_guid_btn" aria-controls="notes">
+          <span>댓글 운영 원칙 안내</span>
+        </button>
+        <script>
+          // 댓글 안내 원칙 > CORS이슈로 페이지 내 삽입
+          var replyBtn = document.querySelector('.reply_guid_btn');
+          var replyPOP = parent.document.querySelector('.reply-guide-popup');
+          var closeBtn = parent.document.querySelector('#notes_confirm');
+          if (replyBtn) {
+            replyBtn.onclick = function(e) {
+              e.preventDefault();
+              replyPOP.setAttribute('aria-hidden', true)
+              replyPOP.querySelector('.context').scrollTop = 0;
+              parent.document.body.style.overflow = 'hidden'
+            }
+            closeBtn.addEventListener('click', function(e) {
+              e.preventDefault();
+              replyPOP.setAttribute('aria-hidden', false);
+              parent.document.body.style.overflow = 'visible';
+            })
+          }
+        </script>          
+      </div>
+      <div class="write_btn" id="op_write" style="display: block;">
+        <a class="colgray">댓글을 작성해 주세요</a>
+      </div>
+      <iframe name="frm_hidden" id="frm_hidden" src="about:blank" style="position:absolute;left:-999em;" width="100%" height="0" frameborder="0"></iframe>
+      <!-- //댓글쓰기 -->
+      <!-- 댓글리스트 -->
+      <div class="reply_best_wrap">
+        <div class="reply">
+          <dl>
+            <dt>
+              <span class="bestReple">베플</span>
+              <span>
+                <a class="n">tkat****</a>
+              </span>
+              <em>03.11 16:22</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">중립적으로 정치얘기좀 할게... 여 야를 떠나서 이놈들아 민생이랑 아무 상관도 없는거랑 싸우는거 안지겹냐? 국민들 그거 아는지 모르겠네 정치인들 도와주는 보좌관들이 전세계에서 한국이 젤 많대 ㄷㄷㄷ 보좌관이 그렇게 많으니깐 일은 안하고 쓸데없는거 가지고 싸우지.... 싸우는거 좋아 그러면 니들이 받는 혜택 억대 연봉 다 반으로 줄여라 줄이고 싸워라 그럼 인정한다... 국민좀 챙겨라... </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>119</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>16</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply">
+          <dl>
+            <dt>
+              <span class="bestReple">베플</span>
+              <span>
+                <a class="n">k544****</a>
+              </span>
+              <em>03.11 16:31</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">검은사제들이 훨씬 재밌었다. 진짜로 무서웠음. </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span id="best_cmt_9907972_O">91</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="best_cmt_9907972_X">21</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="best_cmt_9907981" class="reply">
+          <dl>
+            <dt>
+              <span class="bestReple">베플</span>
+              <span>
+                <a class="n">tkat****</a>
+              </span>
+              <em>03.11 19:55</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">대학생들 돈아끼려고 점심때 싼걸로 떼우고 힘들다고 ㄷㄷ 대학생들아 sns에 올리려고 스타벅스 가서 비싼 커피 디저트 먹지말고 점심에 맛있고 든든하게 돈까스 김치찌개 볶음밥 제육볶음 이런거 사먹어라... 세월 지나봐라 그런거 다 쓸모 없더라.... 남들한테 잘보여서 뭐하게??? 그런거 올리면 부자됨? 취업됨? 다 한때다... </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>66</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>8</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="reply_common_wrap" id="reply_common_wrap">
+        <div id="list_cmt_9908473" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">jun8****</a>
+              </span>
+              <em>03.15 12:26</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">파묘는 검은 사제들 사바하에 절대 못비빔 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>2</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">levi****</a>
+              </span>
+              <em>03.15 12:05</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">파묘는 강시영화 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908470_O">0</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>1</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="#" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">wind****</a>
+              </span>
+              <em>03.15 11:37</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">中, '파묘' 조롱하더니 또 도둑시청…서경덕 "이젠 당국 나서야" •••••••••• ㅂㅅ같은 상상이지만 짱깨들이 한국을 포함한 해외 콘텐츠 도둑시청하면 실명시켜버리는 기술이든 초능력이든 등장 했으면 좋겠다. </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>0</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908469_X">0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908462" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">pes0****</a>
+              </span>
+              <em>03.15 10:17</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">파묘는 영화관에서 봐야 심장 쫄깃 집에서 보면 그 느낌이 안 나겠던데 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908462_O">3</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>2</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">bcu1****</a>
+              </span>
+              <em>03.15 00:45</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">아아 잊으랴 어찌 우리 2022.3.9 친일매국 국짐들이짓밟아 오던 날을눈물과 좌절감에 원수를 못막아내어 발을 굴러 땅을 치며 의분에 떤 날을 이제야 갚으리 그 날의 원수를 2024.4.10 친일파 무리들을 쫓고 또 쫓아 민주당 국회의원 모두 당선시켜 이제야 빛내리 이 나라 이 겨레 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>3</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>3</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908397" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">leew****</a>
+              </span>
+              <em>03.14 20:05</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">까만신부들이 장르에 훨씬 충실하다는 느낌. 파묘는 대작의 느낌이고~! 오컬트측면에서 검은사제들 한표!! </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>6</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">wind****</a>
+              </span>
+              <em>03.14 18:51</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">[단독] '세상에 이런 일이' 임성훈 "종영까지 한달 이상 남아"…사실상 인정 •••••••••• 솔직히 나도 방송 본 지 오래된 입장에서 폐지하지 말라고 반대하고 욕할 명분은 없다. 너무 아쉽지만 시대의 흐름으로 받아들여야 하지 않을까 싶다. </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908393_O">4</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908393_X">3</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">wind****</a>
+              </span>
+              <em>03.14 16:13</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">김창완, 23년만 라디오 DJ 하차…연주하며 '한참 오열'[스타이슈] •••••••••• 그래도 새로운 프로그램으로 돌아신다니 그나마 다행 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>3</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">bobo****</a>
+              </span>
+              <em>03.14 15:30</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">여자들 쳐벗고 다니는게 이쁘다고 생각되는 줄 아나 봐 천해 보이는데 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>6</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908283" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">bboo****</a>
+              </span>
+              <em>03.13 18:34</em>
+              <a href="javascript:reportCommonComment('100','31217','9908283');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">홍록기도 여기저기 방송 다시 나오겠네 사업망해서... </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908283', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908283_O">13</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908283', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908283_X">0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908253" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">wing****</a>
+              </span>
+              <em>03.13 14:50</em>
+              <a href="javascript:reportCommonComment('100','31217','9908253');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">귀신나오는거 너무 별로다 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908253', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908253_O">6</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908253', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908253_X">6</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908240" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">meef****</a>
+              </span>
+              <em>03.13 13:28</em>
+              <a href="javascript:reportCommonComment('100','31217','9908240');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">파묘 핵심은 일제가 우리나라의 정기를 끊으려 했다는걸 알리는거 같은데..과거에 얽매일 필욘 없지만 역사를 잃어버리면 안되지. </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908240', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908240_O">33</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908240', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908240_X">3</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908236" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">kang****</a>
+              </span>
+              <em>03.13 13:21</em>
+              <a href="javascript:reportCommonComment('100','31217','9908236');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">솔직히 스토리로는 검은 사제들이 더 잘 만들었음. 파묘는 중간부터 에러야.. </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908236', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908236_O">12</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908236', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908236_X">4</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908214" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">pure****</a>
+              </span>
+              <em>03.13 10:20</em>
+              <a href="javascript:reportCommonComment('100','31217','9908214');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">사바하!!! </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908214', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908214_O">1</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908214', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908214_X">5</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908196" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">chun****</a>
+              </span>
+              <em>03.13 08:50</em>
+              <a href="javascript:reportCommonComment('100','31217','9908196');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">파묘 극장에서 보고 왔는데 같이 간 5명 다 이게 800만 넘었다고..... 다같이 이런 소리 했음그냥 쏘쏘지....이게 이렇게 많이 볼일 인가 하고 낚여서 옴 ㅜㅜ </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908196', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908196_O">17</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908196', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908196_X">22</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908190" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">milu****</a>
+              </span>
+              <em>03.13 08:32</em>
+              <a href="javascript:reportCommonComment('100','31217','9908190');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">대박!! </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908190', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908190_O">2</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908190', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908190_X">0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908180" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">asca****</a>
+              </span>
+              <em>03.13 07:20</em>
+              <a href="javascript:reportCommonComment('100','31217','9908180');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">검은사제들이 좀더무서움 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908180', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908180_O">6</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908180', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908180_X">3</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908166" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">zzar****</a>
+              </span>
+              <em>03.12 23:26</em>
+              <a href="javascript:reportCommonComment('100','31217','9908166');" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">이거 1년뒤에 투표 다시해보면 검은사제들이 이길걸 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="javascript:voteCommonComment('100','31217','9908166', 1);" class="read" role="button">
+                  <em>추천</em>
+                  <span id="list_cmt_9908166_O">23</span>
+                </a>
+                <a href="javascript:voteCommonComment('100','31217','9908166', -1);" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span id="list_cmt_9908166_X">9</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div id="list_cmt_9908157" class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">rldb****</a>
+              </span>
+              <em>03.12 21:16</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">나에겐 랑종과 비슷했음.. 내용이 비슷하다는 것이 아니라 그렇~~~게 무섭고 재밌다고 해서 봤더니 그냥.. 그냥 그냥..... </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>4</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>1</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="reply others">
+          <dl>
+            <dt>
+              <span>
+                <a class="n">rive****</a>
+              </span>
+              <em>03.12 18:37</em>
+              <a href="#" class="report">
+                <span>신고</span>
+              </a>
+            </dt>
+            <dd class="userText">한국형 오컬트 파묘 검은사제들 여기에 추가적으로 변신이나 사바하 곡성도 좋음. 사도같은 좀 캐쥬얼한것도 좋음 </dd>
+            <dd class="btn">
+              <p class="updw">
+                <a href="#" class="read" role="button">
+                  <em>추천</em>
+                  <span>3</span>
+                </a>
+                <a href="#" class="read" role="button">
+                  <em class="no">반대</em>
+                  <span>0</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <div class="replyBottom">
+      <div class="btn type1 f_clear">
+        <div class="moreWrap">
+          <div class="btn_more">
+            <button type="button">
+              <span>더보기</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <hr class="cluster_line">
+  <section class="ad_section" style="background-color:#ececec;">
+    <iframe src="../iframe/ad320x150.html" frameborder="0"></iframe>
+  </section>  
+  <hr class="cluster_line">
+  <div class="scroll_btns_wrap">
+  <a href="home.html" class="home">
+    <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 6L8 1L15 6" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M3 5V12H13V5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+  
+  </a>
+  <a href="#" class="top">
+    <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 9L7 3L13 9" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7 3V16" stroke="black" stroke-linecap="round"/>
+  <path d="M1.5 0.5H12.5" stroke="black" stroke-linecap="round"/>
+</svg>
+  
+  </a>
+</div>
+  <footer id="footer" role="contentinfo">
+  <div class="footer">
+      <div class="svcBtn">
+        <a href="//m.nate.com">네이트홈</a><a href="#"><span id="loginbtnmsg">로그아웃</span></a><a href="//news.nate.com/view/20231124n16511">PC버전</a><a href="#" >전체서비스</a>
+      </div> 
+      <ul class="sitemap">
+        <li><a href="//news.nate.com/enews/editguide">기사배열기본방침(책임:김경옥)</a></li>
+        <li><span>청소년보호책임:조유형</span></li>
+        <li><a href="//m.news.nate.com/newssitemap">뉴스 전체서비스</a></li>
+      </ul>
+      <div class="copyright"><span>&copy; SK Communications</span><a class="cscenter" href="//m.helpdesk.nate.com">고객센터</a></div>
+  </div>
+</footer>
+  <script>
+    voteVersusSwiper({
+      links: [
+        ['0_0','0_1','0_2','0_3'],
+        ['1_1','1_2','1_3']
+      ]
+    });
+    voteHideGraphText();
+    voteSwiper();
+    // 투개표 지도 set data
+    const mapData = {
+      current: {
+        local11: {
+          name: '서울',
+          seat: 48,
+          link: 'local11_link',
+          list: {
+              0: {
+                clan: 'clan1',
+                party: '더불어민주당',
+                value: 22,
+              },    
+              1: {
+                clan: 'clan2',
+                party: '국민의힘',
+                value: 21
+              },
+              2: {
+                clan: 'clan3',
+                party: '녹색정의당',
+                value: 2
+              },              
+            }        
+        },
+        local28: {
+          name: '인천',
+          seat: 14,
+          link: 'local28_link',
+          list: {
+            0 : { clan: 'clan2', party: '국민의힘', value: 10}, 1 : { clan: 'clan1', party: '더불어민주당', value: 3}, 2 : { clan: 'clan3', party: '녹색정의당', value: 1},
+          }        
+        },
+        local52: {
+          name: '강원',
+          seat: 8,
+          link: 'local52_link',
+          list: {
+            0 : { clan: 'clan2', party: '미래통합당', value: 4}, 1 : { clan: 'clan1', party: '더불어민주당', value: 3}, 2 : { clan: 'clan_independent', party: '무소속', value: 1},
+          }
+        },        
+        local27: {
+          name: '대구',
+          seat: 12,
+          link: 'local27_link',
+          list: {
+            0 : { clan: 'clan2', party: '국민의힘', value: 7}, 1 : { clan: 'clan1', party: '더불어민주당', value: 4}, 2 : { clan: 'clan3', party: '녹색정의당', value: 1}
+          }
+        }, 
+        local49: {
+          name: '제주',
+          seat: 3,
+          link: 'local49_link',
+          list: {
+            0 : { clan: 'clan2', party: '국민의힘', value: 2}, 1 : { clan: 'clan1', party: '더불어민주당', value: 1},
+          }
+        },   
+        local53: {
+          name: '전북',
+          seat: 10,
+          link: 'local53_link',
+          list: {
+            0:{
+              clan: 'clan4',
+              party: '새로운미래당',
+              value: 44.0
+            },
+            1:{
+              clan: 'clan2',
+              party: '국민의힘',
+              value: 43
+            },        
+            2: {
+              clan: 'clan3',
+              party: 'local27',
+              value: 13,
+            }
+          }
+        },        
+      },
+      previous: {
+        local11: {
+          name: '서울2',
+          seat: 10,
+          link: 'local11_link',
+          list: {
+            0:{
+              clan: 'clan002',
+              party: '더불어민주당·위성정당명',
+              value: 66
+            },
+            1:{
+              clan: 'clan001',
+              party: '국민의힘',
+              value: 55
+            },        
+            2: {
+              clan: 'clan003',
+              party: 'local11',
+              value: 33,
+            }
+          }        
+        },
+        local28: {
+          name: '인천2',
+          seat: 10,
+          link: 'local28_link',
+          list: {
+            0:{
+              clan: 'clan001',
+              party: '더불어민주당·위성정당명',
+              value: 55
+            },
+            1:{
+              clan: 'clan002',
+              party: '국민의힘',
+              value: 43
+            },        
+            2: {
+              clan: 'clan003',
+              party: 'local11',
+              value: 28,
+            }
+          }        
+        },
+        local52: {
+          name: '강원2',
+          seat: 10,
+          link: 'local52_link2',
+          list: {
+            0:{
+              clan: 'clan2',
+              party: '국민의힘',
+              value: 60
+            },
+            1:{
+              clan: 'clan1',
+              party: '더불어민주당·위성정당명',
+              value: 44
+            },        
+            2: {
+              clan: 'clan3',
+              party: 'local26',
+              value: 5,
+            }
+          }
+        }, 
+        local53: {
+          name: '전북2',
+          seat: 10,
+          link: 'local52_link2',
+          list: {
+            0:{
+              clan: 'clan1',
+              party: '더민',
+              value: 50
+            },
+            1:{
+              clan: 'clan2',
+              party: '국힘',
+              value: 44
+            },        
+            2: {
+              clan: 'clan3',
+              party: 'local26',
+              value: 5,
+            }
+          }
+        },                  
+      }
+      
+    }
+  
+    voteMapSetData({
+      data: mapData,
+      type: 'voteall',
+    });
+    candidateSelectActiveStyle();
+    voteMapGuidePopupUI();
+    sectionTargeting({
+      id: 'count'
+    })
+
+    fixedTabs({
+      fixedTarget: document.querySelector('.three_depth_menu'),
+      fixedTop: document.querySelector('.three_depth_menu').offsetTop
+    });
+
+  </script>
+</body>
+</html>

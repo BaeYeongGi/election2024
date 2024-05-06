@@ -30,6 +30,10 @@ function server() {
   });
 }
 
+console.log('__dirname',__dirname)
+console.log('split', __dirname.split("election2024")[0]);
+console.log('place', __dirname.split("election2024")[0].replace(/\\/g, "/"));
+let dir = __dirname.split("election2024")[0].replace(/\\/g, "/");
 function html(){
   return new Promise((resolve, reject) => {
     try {
@@ -47,7 +51,7 @@ function html(){
         .pipe(include({
           context: {
             
-            SRC: "/work/workspace/election2024/docs/src/"
+            SRC: `${dir}election2024/docs/src/`
           },
           prefix: "@@",
           basepath: "@file",
@@ -105,17 +109,6 @@ function scss(){
     }
   })
 }
-
-// function copy(cb){
-//   return src('docs/src/js/*.js', {
-//     sourcemaps: true
-//   })
-//   .pipe(uglify())
-//   .pipe(dest('docs/dist/js/', {
-//     sourcemaps: true 
-//   }))
-//   .pipe(browserSync.reload({ stream: true }));
-// }
 
 async function election2024(){
   PATH = await getPath();
